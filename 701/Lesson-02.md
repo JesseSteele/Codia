@@ -4,7 +4,7 @@
 Ready the CLI
 
 ```console
-cd ~/School/VIP/701
+cd ~/School/Codia/701
 ```
 
 Ready services
@@ -2986,7 +2986,7 @@ func main() {
     )
 
     http.HandleFunc("/", handler)
-    http.Handle("/style.css", http.FileServer(http.Dir("/home/jc/School/VIP/701")))
+    http.Handle("/style.css", http.FileServer(http.Dir("/home/jc/School/Codia/701")))
 
     fmt.Printf("Starting Go server on port %d...\n", PORT)
     err := http.ListenAndServe(fmt.Sprintf("%s:%d", HOST, PORT), nil)
@@ -3143,4 +3143,4 @@ ___
         - This could cause a runtime panic in Go if not properly tested for `nil[0]`
 ___
 
-#### [Lesson 3: Database Connections](https://github.com/inkVerb/vip/blob/master/701/Lesson-03.md)
+#### [Lesson 3: Database Connections](https://github.com/JesseSteele/Codia/blob/master/701/Lesson-03.md)

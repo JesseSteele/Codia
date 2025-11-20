@@ -4,7 +4,7 @@
 Ready the CLI
 
 ```console
-cd ~/School/VIP/401
+cd ~/School/Codia/401
 ```
 
 ___
@@ -36,12 +36,12 @@ Three Golden Rules of General Security & Safety:
   3. **Be proper: Follow formatting and procedure**
 
 ##### 1. Validate (Check if correct, yes/no)
-- Confirm a user-input with a [character class](https://github.com/inkVerb/VIP/blob/master/Cheat-Sheets/Characters.md) test (requires BASH)
+- Confirm a user-input with a [character class](https://github.com/JesseSteele/Codia/blob/master/Cheat-Sheets/Characters.md) test (requires BASH)
 - **Validating is generally a good idea anyway, so a user mistake doesn't break your script**
 - **Validation** does not remove anything unwanted, but rejects everything if an input has the wrong format or characters
 - This test would reject non-alphanumerics characters (`[:alnum:]`):
   - `[[ "$inputname" =~ [:alnum:] ]]`
-  - `[:alnum:]` from: [Characters: Grouped classes](https://github.com/inkVerb/VIP/blob/master/Cheat-Sheets/Characters.md#grouped-classes)
+  - `[:alnum:]` from: [Characters: Grouped classes](https://github.com/JesseSteele/Codia/blob/master/Cheat-Sheets/Characters.md#grouped-classes)
   - Example using `read`:
 ```bash
 #!/bin/bash
@@ -120,13 +120,13 @@ cp file destination
   - For`cp`: `which cp`
 
 ##### 6. Don't put `.` (here) in your `$PATH` setting
-- [Lesson 3 Section I.](https://github.com/inkVerb/vip/blob/master/401/Lesson-03.md#i-the-path-environment-variable) explained how directories can be added to your `$PATH`
+- [Lesson 3 Section I.](https://github.com/JesseSteele/Codia/blob/master/401/Lesson-03.md#i-the-path-environment-variable) explained how directories can be added to your `$PATH`
   - Probably `~/.bashrc` containing: `export PATH=$PATH:/added/dir:/add/another/dir:/add/more/dirs`
 - It's tempting to add `.` to `$PATH` so testing scrips won't need the "here" path `./` like in these Codia lessons
   - Developers might do this on test machines to make work faster
 - This would allow a deadly script named `ls` or `sed` do destroy everything
 - This security measure is similar to putting absolute paths in your scripts
-- Review the `$PATH` environment variable in [Lesson 03](https://github.com/inkVerb/vip/blob/master/401/Lesson-03.md)
+- Review the `$PATH` environment variable in [Lesson 03](https://github.com/JesseSteele/Codia/blob/master/401/Lesson-03.md)
 
 ##### 7. Consider guides from Apple and Google
 - *(Yep, Google uses Linux and Apple uses Unix, similar)*
@@ -365,7 +365,7 @@ Open a new terminal window: <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>T</kbd> (not
 > | **T1** :$
 
 ```console
-cd ~/School/VIP/401
+cd ~/School/Codia/401
 ```
 >
 > | **T2** :$
@@ -531,7 +531,7 @@ ___
   2. **Don't do more less necessary**
   3. **Be proper: follow formatting and procedure**
 - Best practices:
-  1. Sanitize user input for what it should be, [character class](https://github.com/inkVerb/VIP/blob/master/Cheat-Sheets/Characters.md) tests are great!
+  1. Sanitize user input for what it should be, [character class](https://github.com/JesseSteele/Codia/blob/master/Cheat-Sheets/Characters.md) tests are great!
   2. Don't use file extensions in script file names, `.sh` if you must
   3. Quote variables
   4. Use absolute paths for normal commands, find them with: `which COMMAND`
@@ -546,7 +546,7 @@ ___
 - Study reference lists & charts, they come in handy
 
 *Be sure to read...*
-# [Moving On](https://github.com/inkVerb/vip/blob/master/Moving-On.md)
+# [Moving On](https://github.com/JesseSteele/Codia/blob/master/Moving-On.md)
 
 ___
 
@@ -642,6 +642,6 @@ sudo apt install bsdgames
 
 ___
 
-## Next: [Linux 501: Web Stack](https://github.com/inkVerb/VIP/blob/master/501/README.md)
+## Next: [Linux 501: Web Stack](https://github.com/JesseSteele/Codia/blob/master/501/README.md)
 
-## After: [Linux 601: SysAdmin](https://github.com/inkVerb/VIP/blob/master/601/README.md)
+## After: [Linux 601: SysAdmin](https://github.com/JesseSteele/Codia/blob/master/601/README.md)

@@ -1,12 +1,12 @@
 # Linux 501
 ## Lesson 12: XML
 
-This lesson uses XML CLI tools install in [Lesson 0: Server, LAMP Setup & HTML Fast](https://github.com/inkVerb/vip/blob/master/501/Lesson-00.md)
+This lesson uses XML CLI tools install in [Lesson 0: Server, LAMP Setup & HTML Fast](https://github.com/JesseSteele/Codia/blob/master/501/Lesson-00.md)
 
 Ready the CLI
 
 ```console
-cd ~/School/VIP/501
+cd ~/School/Codia/501
 ```
 Ready services
 
@@ -24,7 +24,7 @@ If teaching multiple students
 
 Prep directory
 ```console
-cd ~/School/VIP
+cd ~/School/Codia
 ```
 
 Webapp database ***dump***
@@ -62,7 +62,7 @@ sudo chown -R www:www 501/web
 Re-ready the CLI
 
 ```console
-cd ~/School/VIP/501
+cd ~/School/Codia/501
 ```
 
 ___
@@ -3107,7 +3107,7 @@ ___
     - Then applying templates is not necessary
 
 - Template example for an iTunes podcast-ready RSS feed:
-  - [rss.xml](https://github.com/inkVerb/vip/blob/master/Design/rss.xsl)
+  - [rss.xml](https://github.com/JesseSteele/Codia/blob/master/Design/rss.xsl)
 
 ## XML XPath
 - A file/path/type method for defining XML hierarchy
@@ -3549,4 +3549,4 @@ ___
 
 _
 
-## Next: [Linux 601: SysAdmin](https://github.com/inkVerb/VIP/blob/master/601/README.md)
+## Next: [Linux 601: SysAdmin](https://github.com/JesseSteele/Codia/blob/master/601/README.md)

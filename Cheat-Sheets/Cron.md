@@ -1,6 +1,6 @@
 # Cron Schedule Tasks
 
-Learn more about using `cron` tasks in: **[Linux 401 Lesson 3: Cron Daemon](https://github.com/inkVerb/vip/blob/master/401-shell/Lesson-03.md)**
+Learn more about using `cron` tasks in: **[Linux 401 Lesson 3: Cron Daemon](https://github.com/JesseSteele/Codia/blob/master/401-shell/Lesson-03.md)**
 
 ## I. Proper `cron` task line formatting
 
@@ -100,7 +100,7 @@ Put a **`cron` task file** in this directory:
 - Cron directory: `/etc/cron.d/`
 
 **Instructions:**
-1. Each `cron` file has one to-be-run Shell script *per line* with `cron` schedule settings (here: [VIP/Cheat-Sheets: Cron Schedule Tasks](https://github.com/inkVerb/VIP/blob/master/Cheat-Sheets/Cron.md))
+1. Each `cron` file has one to-be-run Shell script *per line* with `cron` schedule settings (here: [Codia/Cheat-Sheets: Cron Schedule Tasks](https://github.com/JesseSteele/Codia/blob/master/Cheat-Sheets/Cron.md))
 2. File Permissions: `rw-r--r--` set with: `chmod 644 Cron_Task_File`
 3. If creating the file by using `echo` use single 'quotes' since double "quotes" will change the meaning of some characters, though you may never see the difference in the text file
 4. The Shell script listed at the end of the line *must be executable*, probably `rwxr-xr-x` set with: `chmod 755 Script_Name`
@@ -110,7 +110,7 @@ Put a **`cron` task file** in this directory:
 Every user gets a `crontab` file
 
 **Before you start:**
-1. The `crontab` profile has one to-be-run Shell script *per line* with `cron` schedule line formatting (here: [VIP/Cheat-Sheets: Cron Schedule Tasks](https://github.com/inkVerb/VIP/blob/master/Cheat-Sheets/Cron.md))
+1. The `crontab` profile has one to-be-run Shell script *per line* with `cron` schedule line formatting (here: [Codia/Cheat-Sheets: Cron Schedule Tasks](https://github.com/JesseSteele/Codia/blob/master/Cheat-Sheets/Cron.md))
 2. The Shell script listed at the end of the line *must be executable*, probably using: `chmod ug+x Script_Name`
 3. The first time you run `crontab` you will be asked to choose an editor, that's normal
 4. `crontab` records are usually kept here: `/var/spool/cron/crontabs/Username`, don't touch!
@@ -120,7 +120,7 @@ Every user gets a `crontab` file
 **Instructions:**
 1. Edit and make entries in your `crontab` profile with:
   - `crontab -e`
-2. Use proper `cron` task line formatting (here: [VIP/Cheat-Sheets: Cron Schedule Tasks](https://github.com/inkVerb/VIP/blob/master/Cheat-Sheets/Cron.md))
+2. Use proper `cron` task line formatting (here: [Codia/Cheat-Sheets: Cron Schedule Tasks](https://github.com/JesseSteele/Codia/blob/master/Cheat-Sheets/Cron.md))
 
 ### 4. PHP script as `cron` task
 

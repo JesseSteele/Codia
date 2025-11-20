@@ -4,7 +4,7 @@
 Ready the CLI
 
 ```console
-cd ~/School/VIP/501
+cd ~/School/Codia/501
 ```
 
 Ready services
@@ -23,7 +23,7 @@ If teaching multiple students
 
 Prep directory
 ```console
-cd ~/School/VIP
+cd ~/School/Codia
 ```
 
 Webapp database ***dump***
@@ -61,7 +61,7 @@ sudo chown -R www:www 501/web
 Re-ready the CLI
 
 ```console
-cd ~/School/VIP/501
+cd ~/School/Codia/501
 ```
 
 ### This lesson uses two terminals and two browser tabs!
@@ -1076,7 +1076,7 @@ PDO has drivers for many database platforms:
 
 Ensure that the `pdo_mysql` extension is enabled in your php.ini file
 
-We did this when we set up our [LAMP Desktop](https://github.com/inkVerb/vip/blob/master/Cheat-Sheets/LAMP-Desktop.md), but if you have trouble:
+We did this when we set up our [LAMP Desktop](https://github.com/JesseSteele/Codia/blob/master/Cheat-Sheets/LAMP-Desktop.md), but if you have trouble:
 
 | **P0** :$ (Only if you have trouble)
 
@@ -2631,7 +2631,7 @@ localhost/web/
 
 #### AJAX Security
 
-To this point, we have not implemented the [AJAX security](https://github.com/inkVerb/VIP/blob/master/Cheat-Sheets/AJAX-security.md) discussed at the end of [Lesson 6](https://github.com/inkVerb/vip/blob/master/501/Lesson-06.md)
+To this point, we have not implemented the [AJAX security](https://github.com/JesseSteele/Codia/blob/master/Cheat-Sheets/AJAX-security.md) discussed at the end of [Lesson 6](https://github.com/JesseSteele/Codia/blob/master/501/Lesson-06.md)
 
 Now, we will implement security tokens in our AJAX forms
 
@@ -4437,4 +4437,4 @@ echo ($pdo->change) ? "Stuff changed<br>" : "No change<br>";
 
 ___
 
-#### [Lesson 12: Production & XML](https://github.com/inkVerb/vip/blob/master/501/Lesson-12.md)
+#### [Lesson 12: Production & XML](https://github.com/JesseSteele/Codia/blob/master/501/Lesson-12.md)

@@ -4,7 +4,7 @@
 Ready the CLI
 
 ```console
-cd ~/School/VIP/201
+cd ~/School/Codia/201
 ```
 
 **FOR** | **3 - 11** :$
@@ -112,16 +112,16 @@ chromium-browser verb.ink.html
 cd ..
 ```
 
-## Download the inkVerb/VIP repo from GitHub
+## Download the JesseSteele/Codia repo from GitHub
 
 ### `.zip` file via `wget`
 
-*Download VIP using wget*
+*Download Codia using wget*
 
 | **13** :$
 
 ```console
-wget https://github.com/inkVerb/vip/archive/master.zip
+wget https://github.com/JesseSteele/Codia/archive/master.zip
 ```
 
 | **14** :$
@@ -135,7 +135,7 @@ ls
 | **15** :$
 
 ```console
-wget -O vip.zip https://github.com/inkVerb/vip/archive/master.zip
+wget -O vip.zip https://github.com/JesseSteele/Codia/archive/master.zip
 ```
 
 | **16** :$
@@ -157,7 +157,7 @@ rm master.zip
 | **18** :$ *(wrong)*
 
 ```console
-curl https://github.com/inkVerb/vip/archive/master.zip
+curl https://github.com/JesseSteele/Codia/archive/master.zip
 ```
 
 *Note it doesn't work; use `-L` to follow redirects*
@@ -165,7 +165,7 @@ curl https://github.com/inkVerb/vip/archive/master.zip
 | **19** :$ *(wrong)*
 
 ```console
-curl -L https://github.com/inkVerb/vip/archive/master.zip
+curl -L https://github.com/JesseSteele/Codia/archive/master.zip
 ```
 
 *Note the problem of raw output of the `.zip` binary file, because `curl` does not save by default rather than saving it*
@@ -177,7 +177,7 @@ curl -L https://github.com/inkVerb/vip/archive/master.zip
 | **20** :$
 
 ```console
-curl -L https://github.com/inkVerb/vip/archive/master.zip > vip-curl.zip
+curl -L https://github.com/JesseSteele/Codia/archive/master.zip > vip-curl.zip
 ```
 
 | **21** :$
@@ -201,7 +201,7 @@ rm vip-curl.zip
 | **23** :$
 
 ```console
-curl -L https://api.github.com/repos/inkVerb/vip/tarball > vip.tar
+curl -L https://api.github.com/repos/JesseSteele/Codia/tarball > vip.tar
 ```
 
 | **24** :$
@@ -224,14 +224,14 @@ tar xzf vip.tar
 ls
 ```
 
-*Note the strange new directory `inkVerb-VIP-SOME_CRAZY_NUMBER`*
+*Note the strange new directory `inkVerb-Codia-SOME_CRAZY_NUMBER`*
 
 *...that's it, delete it with:*
 
 | **27** :$
 
 ```console
-rm -r inkVerb-VIP-SOME_CRAZY_NUMBER
+rm -r inkVerb-Codia-SOME_CRAZY_NUMBER
 ```
 
 *We don't need to keep that tarball either...*
@@ -249,7 +249,7 @@ rm vip.tar
 | **29** :$
 
 ```console
-curl -L https://api.github.com/repos/inkVerb/vip/tarball | tar xz
+curl -L https://api.github.com/repos/JesseSteele/Codia/tarball | tar xz
 ```
 
 | **30** :$
@@ -258,14 +258,14 @@ curl -L https://api.github.com/repos/inkVerb/vip/tarball | tar xz
 ls
 ```
 
-*Note the same strange directory `inkVerb-VIP-SOME_CRAZY_NUMBER`*
+*Note the same strange directory `inkVerb-Codia-SOME_CRAZY_NUMBER`*
 
 *...that's it, delete it with:*
 
 | **31** :$
 
 ```console
-rm -r inkVerb-VIP-SOME_CRAZY_NUMBER
+rm -r inkVerb-Codia-SOME_CRAZY_NUMBER
 ```
 
 ### repo via `git clone`
@@ -273,7 +273,7 @@ rm -r inkVerb-VIP-SOME_CRAZY_NUMBER
 | **32** :$
 
 ```console
-git clone https://github.com/inkVerb/vip
+git clone https://github.com/JesseSteele/Codia
 ```
 
 | **33** :$
@@ -367,4 +367,4 @@ ___
 
 ___
 
-#### [Lesson 7: tar, xz, zip, gzip, bzip2](https://github.com/inkVerb/vip/blob/master/201/Lesson-07.md)
+#### [Lesson 7: tar, xz, zip, gzip, bzip2](https://github.com/JesseSteele/Codia/blob/master/201/Lesson-07.md)

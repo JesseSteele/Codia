@@ -4,7 +4,7 @@
 Ready the CLI
 
 ```console
-cd ~/School/VIP/101
+cd ~/School/Codia/101
 ```
 
 ___
@@ -185,4 +185,4 @@ sudo dnf install cowsay
 
 ___
 
-## Next: [Linux 201: Files](https://github.com/inkVerb/VIP/blob/master/201/README.md)
+## Next: [Linux 201: Files](https://github.com/JesseSteele/Codia/blob/master/201/README.md)

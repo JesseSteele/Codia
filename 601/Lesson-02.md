@@ -7,7 +7,7 @@
 - **builtin** - a command that does not need a specific program in `/sbin/` or `/usr/bin/`, but is "built-in" as part of the shell
   - ie: `echo`, `cd`, `kill`, `ulimit`, `exit`, `exec`, `time`, `eval`, `printf`, `jobs`, `bg`, `fg`, `getopts`, `history`, `pwd`, `type`, `read`, `return`, `export`, `shift`, `unset`, `wait`, `source`, `case`, `if`, `true`, `false`, `for`, `while`, `until`, `continue`
   - See with: `type echo`, `type cd`, `type kill`, etc
-  - More on shells in ([Lesson 3: Users & Groups](https://github.com/inkVerb/vip/blob/master/601/Lesson-03.md))
+  - More on shells in ([Lesson 3: Users & Groups](https://github.com/JesseSteele/Codia/blob/master/601/Lesson-03.md))
   - All non-builtin commands are **programs**
 - **program** - written "instruction" saved in an executable file that can be "run" in the operating system
 - **process** - a program that is running in the operating system with a PID, using RAM and CPU, etc
@@ -249,7 +249,7 @@ userjohn         soft    nproc           4012
   - `at now + 1 week`
   - `at now + 1 month`
   - `at now + 1 year`
-  - When finished, press <kbd>Ctrl</kbd> + <kbd>D</kbd> to end your command (showing `<EOT>` as the [heredoc](https://github.com/inkVerb/vip/blob/master/401/Lesson-11.md) delimiter)
+  - When finished, press <kbd>Ctrl</kbd> + <kbd>D</kbd> to end your command (showing `<EOT>` as the [heredoc](https://github.com/JesseSteele/Codia/blob/master/401/Lesson-11.md) delimiter)
 - Plain command examples :$
   - `at 22:00 -f /path/to/command/or/script`
   - `echo "echo 'hello world'" | at 22:00`
@@ -266,7 +266,7 @@ userjohn         soft    nproc           4012
   - `-` range operator
   - `/` step operator (every `/n` values; eg. every `/2` hours)
   - `cron.d` directory for cron tasks like this
-  - Learn more from the [Cron Cheat Sheet](https://github.com/inkVerb/VIP/blob/master/Cheat-Sheets/Cron.md) and [401 Lesson 3](https://github.com/inkVerb/vip/blob/master/401/Lesson-03.md)
+  - Learn more from the [Cron Cheat Sheet](https://github.com/JesseSteele/Codia/blob/master/Cheat-Sheets/Cron.md) and [401 Lesson 3](https://github.com/JesseSteele/Codia/blob/master/401/Lesson-03.md)
 - `anacron` is an alternative to `cron` that runs jobs with staggered timing
 - `chrony` is the [Arch Linux package](https://wiki.archlinux.org/title/Chrony) for `cron` task functionality (not native)
 - `cron.d/` files must have `0644` permissions
@@ -497,4 +497,4 @@ sudo systemctl enable monit
 
 ___
 
-#### [Lesson 3: Users & Groups](https://github.com/inkVerb/vip/blob/master/601/Lesson-03.md)
+#### [Lesson 3: Users & Groups](https://github.com/JesseSteele/Codia/blob/master/601/Lesson-03.md)

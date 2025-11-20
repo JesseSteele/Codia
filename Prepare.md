@@ -49,4 +49,4 @@ gsettings set org.gnome.TextEditor restore-session false
 gsettings set org.gnome.TextEditor spellcheck false
 ```
 
-*Setup the [Arch F12 Terminal](https://github.com/inkVerb/vip/blob/master/Arch-Drop-Terminal.md)*
+*Setup the [Arch F12 Terminal](https://github.com/JesseSteele/Codia/blob/master/Arch-Drop-Terminal.md)*

@@ -4,10 +4,10 @@
 Ready the CLI
 
 ```console
-cd ~/School/VIP/401
+cd ~/School/Codia/401
 ```
 
-- [Cron Schedule Tasks](https://github.com/inkVerb/VIP/blob/master/Cheat-Sheets/Cron.md)
+- [Cron Schedule Tasks](https://github.com/JesseSteele/Codia/blob/master/Cheat-Sheets/Cron.md)
 - [Cnronitor](https://crontab.guru)
 ___
 
@@ -59,7 +59,7 @@ echo $PATH
 
 *Note each colon `:` separates a different directory path included in the `$PATH`*
 
-*Note this contains many directories from the [Filesystem Hierarchy Standard (FHS) in 201 Lesson 12](https://github.com/inkVerb/vip/blob/master/201/Lesson-12.md)*
+*Note this contains many directories from the [Filesystem Hierarchy Standard (FHS) in 201 Lesson 12](https://github.com/JesseSteele/Codia/blob/master/201/Lesson-12.md)*
 
 **The point of all this so far:**
 - *`$PATH` contains many directories*
@@ -116,7 +116,7 @@ echo "$(pwd)/iamexec"
 | **8** :$
 
 ```console
-~/School/VIP/401/iamexec
+~/School/Codia/401/iamexec
 ```
 
 *...or (since `.` = "current directory") this an easier way to do the same thing...*
@@ -129,7 +129,7 @@ echo "$(pwd)/iamexec"
 ./iamexec
 ```
 
-*...Something like: `/home/USERNAME/School/VIP/shell/401/iamexec` ...enter it as a command*
+*...Something like: `/home/USERNAME/School/Codia/shell/401/iamexec` ...enter it as a command*
 
 **The point of all this so far:**
 
@@ -177,7 +177,7 @@ which firefox
 whereis firefox
 ```
 
-*You should find that these locations generally respect the [Filesystem Hierarchy Standard (FHS)](https://github.com/inkVerb/vip/blob/master/201/Lesson-12.md).*
+*You should find that these locations generally respect the [Filesystem Hierarchy Standard (FHS)](https://github.com/JesseSteele/Codia/blob/master/201/Lesson-12.md).*
 
 **Add dirs to $PATH:**
 
@@ -261,7 +261,7 @@ Or, maybe with a user, such as "jim":
 
 **Instructions:**
 
-1. Each `cron` file has one to-be-run Shell script *per line* with `cron` schedule settings (below & here: [VIP/Cheat-Sheets: Cron Schedule Tasks: I. Proper cron Task Line Formatting](https://github.com/inkVerb/vip/blob/master/Cheat-Sheets/Cron.md#i-proper-cron-task-line-formatting))
+1. Each `cron` file has one to-be-run Shell script *per line* with `cron` schedule settings (below & here: [Codia/Cheat-Sheets: Cron Schedule Tasks: I. Proper cron Task Line Formatting](https://github.com/JesseSteele/Codia/blob/master/Cheat-Sheets/Cron.md#i-proper-cron-task-line-formatting))
 2. File Permissions: `rw-r--r--` set with: `chmod 644 Cron_Task_File`
 3. If creating the file by using `echo` use single 'quotes' since double "quotes" will change the meaning of some characters, though you may never see the difference in the text file
 4. The Shell script listed at the end of the line *must be executable*, probably `rwxr-xr-x` set with: `chmod 755 SCRIPT_NAME`
@@ -273,7 +273,7 @@ The favorite way for a system admin to set up a custom `cron` task is using the 
 
 This will edit the file `/etc/crontab`, which is managed by the system
 
-Crontab entries follow the same format as the files in `cd cron.d/` (see *Cron file schedule format* (below & here: [VIP/Cheat-Sheets: Cron Schedule Tasks: I. Proper cron Task Line Formatting](https://github.com/inkVerb/VIP/blob/master/Cheat-Sheets/Cron.md#i-proper-cron-task-line-formatting))
+Crontab entries follow the same format as the files in `cd cron.d/` (see *Cron file schedule format* (below & here: [Codia/Cheat-Sheets: Cron Schedule Tasks: I. Proper cron Task Line Formatting](https://github.com/JesseSteele/Codia/blob/master/Cheat-Sheets/Cron.md#i-proper-cron-task-line-formatting))
 
 **Know this:**
 
@@ -288,7 +288,7 @@ Crontab entries follow the same format as the files in `cd cron.d/` (see *Cron f
 
 1. Edit and make entries in your `crontab` profile with:
   - `crontab -e`
-2. Use proper `cron` task line formatting (below & here: [VIP/Cheat-Sheets: Cron Schedule Tasks: I. Proper cron Task Line Formatting](https://github.com/inkVerb/VIP/blob/master/Cheat-Sheets/Cron.md#i-proper-cron-task-line-formatting))
+2. Use proper `cron` task line formatting (below & here: [Codia/Cheat-Sheets: Cron Schedule Tasks: I. Proper cron Task Line Formatting](https://github.com/JesseSteele/Codia/blob/master/Cheat-Sheets/Cron.md#i-proper-cron-task-line-formatting))
 
 #### `cron` File Schedule Format
 
@@ -306,20 +306,20 @@ Example of a cron line:
 
 *An astric* **\*** *will run at all times for that setting.*
 
-*Refer to this cheat-sheet for more about `cron` scheduling:* [VIP/Cheat-Sheets: Cron Schedule Tasks: I. Proper cron Task Line Formatting](https://github.com/inkVerb/VIP/blob/master/Cheat-Sheets/Cron.md#i-proper-cron-task-line-formatting)
+*Refer to this cheat-sheet for more about `cron` scheduling:* [Codia/Cheat-Sheets: Cron Schedule Tasks: I. Proper cron Task Line Formatting](https://github.com/JesseSteele/Codia/blob/master/Cheat-Sheets/Cron.md#i-proper-cron-task-line-formatting)
 
 ### III. `cron` Problems
 `cron` is a system-level process, so it is unforgiving, problems are common
 
 **Consider:**
 
-1. Proper formatting of the task line - *[cheat sheet](https://github.com/inkVerb/vip/blob/master/Cheat-Sheets/Cron.md#i-proper-cron-task-line-formatting)*
-2. File permissions (`cron` task file & the script to run) - *[cheat sheet](https://github.com/inkVerb/vip/blob/master/Cheat-Sheets/Cron.md#1-permissions)*
-3. $PATH declaration inside the `cron` task file - *[cheat sheet](https://github.com/inkVerb/vip/blob/master/Cheat-Sheets/Cron.md#2-path)*
-4. If using `echo` to create the `cron` task file, use 'single quotes' - *[cheat sheet](https://github.com/inkVerb/vip/blob/master/Cheat-Sheets/Cron.md#3-characters-matter)*
-5. Watch `journalctl` for `cron` errors and sear the Internet for solutions - *[cheat sheet](https://github.com/inkVerb/vip/blob/master/Cheat-Sheets/Cron.md#4-use-journalctl--f-to-troubleshoot-your-cron-task)*
+1. Proper formatting of the task line - *[cheat sheet](https://github.com/JesseSteele/Codia/blob/master/Cheat-Sheets/Cron.md#i-proper-cron-task-line-formatting)*
+2. File permissions (`cron` task file & the script to run) - *[cheat sheet](https://github.com/JesseSteele/Codia/blob/master/Cheat-Sheets/Cron.md#1-permissions)*
+3. $PATH declaration inside the `cron` task file - *[cheat sheet](https://github.com/JesseSteele/Codia/blob/master/Cheat-Sheets/Cron.md#2-path)*
+4. If using `echo` to create the `cron` task file, use 'single quotes' - *[cheat sheet](https://github.com/JesseSteele/Codia/blob/master/Cheat-Sheets/Cron.md#3-characters-matter)*
+5. Watch `journalctl` for `cron` errors and sear the Internet for solutions - *[cheat sheet](https://github.com/JesseSteele/Codia/blob/master/Cheat-Sheets/Cron.md#4-use-journalctl--f-to-troubleshoot-your-cron-task)*
 
-- [VIP/Cheat-Sheets: Cron Schedule Tasks: III. Troubleshooting](https://github.com/inkVerb/VIP/blob/master/Cheat-Sheets/Cron.md#iii-troubleshooting)
+- [Codia/Cheat-Sheets: Cron Schedule Tasks: III. Troubleshooting](https://github.com/JesseSteele/Codia/blob/master/Cheat-Sheets/Cron.md#iii-troubleshooting)
 
 ___
 
@@ -360,8 +360,8 @@ ___
   - Permissions requirements can be different for `cron` files in different locations!
   - Usually, `cron` files in `/etc/cron.SOMEDIR/` directories need to be `644`
 - Follow `cron` structure carefully and don't be sloppy!
-- Refer to this cheat-sheet for more about `cron` scheduling: [VIP/Cheat-Sheets: Cron Schedule Tasks](https://github.com/inkVerb/VIP/blob/master/Cheat-Sheets/Cron.md)
+- Refer to this cheat-sheet for more about `cron` scheduling: [Codia/Cheat-Sheets: Cron Schedule Tasks](https://github.com/JesseSteele/Codia/blob/master/Cheat-Sheets/Cron.md)
 
 ___
 
-#### [Lesson 4: MySQL & systemctl](https://github.com/inkVerb/vip/blob/master/401/Lesson-04.md)
+#### [Lesson 4: MySQL & systemctl](https://github.com/JesseSteele/Codia/blob/master/401/Lesson-04.md)

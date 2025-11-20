@@ -329,7 +329,7 @@ eval "$varONE='$(echo "$MyMessage")'"
 echo $varTWO # -> "I love apples."
 ```
 
-OR, to include a [heredoc](https://github.com/inkVerb/vip/blob/master/401-shell/Lesson-11.md#ii-heredoc-cat-eof)...
+OR, to include a [heredoc](https://github.com/JesseSteele/Codia/blob/master/401-shell/Lesson-11.md#ii-heredoc-cat-eof)...
 ```sh
 #!/bin/sh
 varONE="varTWO"

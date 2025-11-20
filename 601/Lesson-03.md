@@ -210,7 +210,7 @@
 - `chown -R user:group somedir`
 
 ### Permissions
-- [Permissions Cheat Sheet](https://github.com/inkVerb/vip/blob/master/Cheat-Sheets/Permissions.md)
+- [Permissions Cheat Sheet](https://github.com/JesseSteele/Codia/blob/master/Cheat-Sheets/Permissions.md)
 - `uuu`-`ggg`-`ooo` (User - Group - Other)
 - `rwx`-`rwx`-`rwx` (Read Write eXecute)
   - Represented by `0`-`7`
@@ -695,4 +695,4 @@ ls
 
 ___
 
-#### [Lesson 4: Git](https://github.com/inkVerb/vip/blob/master/601/Lesson-04.md)
+#### [Lesson 4: Git](https://github.com/JesseSteele/Codia/blob/master/601/Lesson-04.md)

@@ -4,7 +4,7 @@
 Ready the CLI
 
 ```console
-cd ~/School/VIP/701
+cd ~/School/Codia/701
 ```
 ___
 
@@ -15,4 +15,4 @@ ___
 
 ___
 
-#### [Lesson 10: BASH as server-side via Go](https://github.com/inkVerb/vip/blob/master/701/Lesson-10.md)
+#### [Lesson 10: BASH as server-side via Go](https://github.com/JesseSteele/Codia/blob/master/701/Lesson-10.md)

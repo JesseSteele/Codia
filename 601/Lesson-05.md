@@ -52,7 +52,7 @@
 - Update/Repairing GRUB:
   - Do this if GRUB's menu doesn't work or if other systems (ie Windows) had changes
   - This will automatically see what all operating systems are available and create a GRUB menue with options for each
-  - On a damaged system, these could be run from a rescue and `chroot`, explained in [Lesson 12: Backup & System Rescue](https://github.com/inkVerb/vip/blob/master/601/Lesson-12.md)
+  - On a damaged system, these could be run from a rescue and `chroot`, explained in [Lesson 12: Backup & System Rescue](https://github.com/JesseSteele/Codia/blob/master/601/Lesson-12.md)
   - Arch & Debian :# `update-grub` (short version of `grub-mkconfig -o`)
   - RedHat/CentOS :# `grub2-mkconfig -o "$(readlink -e /etc/grub2.conf)"`
 
@@ -266,7 +266,7 @@ crw--w----   1 root tty         4,  16  1月 18 21:14 tty16
 crw-rw-rw-   1 root root        1,   5  1月 18 21:14 zero
 ```
 
-The first number is a ***major***, the second number is a ***minor***; see the [kernel docs](https://github.com/inkVerb/vip/blob/master/Cheat-Sheets/Kernel-Devices.md)
+The first number is a ***major***, the second number is a ***minor***; see the [kernel docs](https://github.com/JesseSteele/Codia/blob/master/Cheat-Sheets/Kernel-Devices.md)
 
 ##### Create Custom Device Node (`mknod`)
 - **`mknod`** creates a device node :#
@@ -279,7 +279,7 @@ The first number is a ***major***, the second number is a ***minor***; see the [
     - `p` fifo (pipe)
     - `b` block device
   - MAJOR/MINOR
-    - Device types listed in [kernel documentation](https://github.com/inkVerb/vip/blob/master/Cheat-Sheets/Kernel-Devices.md)
+    - Device types listed in [kernel documentation](https://github.com/JesseSteele/Codia/blob/master/Cheat-Sheets/Kernel-Devices.md)
     - This takes experience to know, sometimes just follow instructions
   - Remove a device `/dev/devicename` created with `mknod` using :# `rm /dev/devicename`
   - *`mknod` is an old school tool only used in a nightmare scenario today*
@@ -442,4 +442,4 @@ udevadm monitor
 
 ___
 
-#### [Lesson 6: Networks](https://github.com/inkVerb/vip/blob/master/601/Lesson-06.md)
+#### [Lesson 6: Networks](https://github.com/JesseSteele/Codia/blob/master/601/Lesson-06.md)

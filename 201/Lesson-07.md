@@ -4,7 +4,7 @@
 Ready the CLI
 
 ```console
-cd ~/School/VIP/201
+cd ~/School/Codia/201
 ```
 
 **FOR** | **14 - 16** :$
@@ -15,9 +15,9 @@ cd verb.ink
 
 Reference
 
-`wget -O vip.zip https://github.com/inkVerb/vip/archive/master.zip`
+`wget -O vip.zip https://github.com/JesseSteele/Codia/archive/master.zip`
 
-#### [Compression Cheat Sheet](https://github.com/inkVerb/VIP/blob/master/Cheat-Sheets/Compression.md)
+#### [Compression Cheat Sheet](https://github.com/JesseSteele/Codia/blob/master/Cheat-Sheets/Compression.md)
 
 ___
 
@@ -49,12 +49,12 @@ unzip vip.zip
 ls -l
 ```
 
-*What a strange name, "`VIP-master`"*
+*What a strange name, "`Codia-master`"*
 
 | **5** :$
 
 ```console
-mv VIP-master vip
+mv Codia-master vip
 ```
 
 | **6** :$
@@ -194,7 +194,7 @@ rm -r vip
 Ready the CLI (if needed)
 
 ```console
-cd ~/School/VIP/201/compress
+cd ~/School/Codia/201/compress
 ```
 
 | **25** :$
@@ -332,7 +332,7 @@ ___
 Ready the CLI (if needed)
 
 ```console
-cd ~/School/VIP/201/compress
+cd ~/School/Codia/201/compress
 ```
 
 ___
@@ -598,7 +598,7 @@ ___
 Ready the CLI (if needed)
 
 ```console
-cd ~/School/VIP/201/compress
+cd ~/School/Codia/201/compress
 ```
 
 ___
@@ -836,4 +836,4 @@ ___
 
 ___
 
-#### [Lesson 8: Hash – md5sum, sha1sum, sha256sum, sha512sum](https://github.com/inkVerb/vip/blob/master/201/Lesson-08.md)
+#### [Lesson 8: Hash – md5sum, sha1sum, sha256sum, sha512sum](https://github.com/JesseSteele/Codia/blob/master/201/Lesson-08.md)

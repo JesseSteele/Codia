@@ -1,45 +1,45 @@
-# VIP Cheat Sheets
+# Codia Cheat Sheets
 
-### [Permissions](https://github.com/inkVerb/VIP/blob/master/Cheat-Sheets/Permissions.md)
-
-___
-### [Variables](https://github.com/inkVerb/vip/blob/master/Cheat-Sheets/Variables.md)
+### [Permissions](https://github.com/JesseSteele/Codia/blob/master/Cheat-Sheets/Permissions.md)
 
 ___
-### [Tests](https://github.com/inkVerb/vip/blob/master/Cheat-Sheets/Tests.md)
+### [Variables](https://github.com/JesseSteele/Codia/blob/master/Cheat-Sheets/Variables.md)
 
 ___
-### [Arrays](https://github.com/inkVerb/vip/blob/master/Cheat-Sheets/Arrays.md)
+### [Tests](https://github.com/JesseSteele/Codia/blob/master/Cheat-Sheets/Tests.md)
 
 ___
-### [Code Headers](https://github.com/inkVerb/vip/blob/master/Cheat-Sheets/SH-XML-HTML-PHP-headers.md)
+### [Arrays](https://github.com/JesseSteele/Codia/blob/master/Cheat-Sheets/Arrays.md)
 
 ___
-### [Resources & Things That Run](https://github.com/inkVerb/vip/blob/master/Cheat-Sheets/Resources.md)
+### [Code Headers](https://github.com/JesseSteele/Codia/blob/master/Cheat-Sheets/SH-XML-HTML-PHP-headers.md)
 
 ___
-### [Cron Schedule Tasks](https://github.com/inkVerb/vip/blob/master/Cheat-Sheets/Cron.md)
+### [Resources & Things That Run](https://github.com/JesseSteele/Codia/blob/master/Cheat-Sheets/Resources.md)
 
 ___
-### [Mail Servers wtih Postfix](https://github.com/inkVerb/VIP/blob/master/Cheat-Sheets/Mail-Postfix.md)
+### [Cron Schedule Tasks](https://github.com/JesseSteele/Codia/blob/master/Cheat-Sheets/Cron.md)
 
 ___
-### [AJAX security](https://github.com/inkVerb/vip/blob/master/Cheat-Sheets/AJAX-security.md)
+### [Mail Servers wtih Postfix](https://github.com/JesseSteele/Codia/blob/master/Cheat-Sheets/Mail-Postfix.md)
 
 ___
-### [GitHub cheat sheet](https://github.com/inkVerb/vip/blob/master/Cheat-Sheets/GitCheat.md)
+### [AJAX security](https://github.com/JesseSteele/Codia/blob/master/Cheat-Sheets/AJAX-security.md)
 
 ___
-### [Jupyter Notebook](https://github.com/inkVerb/vip/blob/master/Cheat-Sheets/Jupyter-Notebook.md)
+### [GitHub cheat sheet](https://github.com/JesseSteele/Codia/blob/master/Cheat-Sheets/GitCheat.md)
 
 ___
-### [LEMP Desktop](https://github.com/inkVerb/VIP/blob/master/Cheat-Sheets/LEMP-Desktop.md)
+### [Jupyter Notebook](https://github.com/JesseSteele/Codia/blob/master/Cheat-Sheets/Jupyter-Notebook.md)
 
 ___
-### [LAMP Desktop](https://github.com/inkVerb/VIP/blob/master/Cheat-Sheets/LAMP-Desktop.md)
+### [LEMP Desktop](https://github.com/JesseSteele/Codia/blob/master/Cheat-Sheets/LEMP-Desktop.md)
 
 ___
-### [Android: adb & fastboot](https://github.com/inkVerb/VIP/blob/master/Cheat-Sheets/Android-adb-fastboot.md)
+### [LAMP Desktop](https://github.com/JesseSteele/Codia/blob/master/Cheat-Sheets/LAMP-Desktop.md)
+
+___
+### [Android: adb & fastboot](https://github.com/JesseSteele/Codia/blob/master/Cheat-Sheets/Android-adb-fastboot.md)
 
 ___
 ### Style & Documents

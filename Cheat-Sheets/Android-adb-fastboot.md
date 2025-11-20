@@ -3,7 +3,7 @@
 
 This repo is merely a list of instructions about Android mods and development.
 
-*For custom ROMs and rooting your Android device, learn how to use [adb-fastboot page](https://github.com/inkVerb/VIP/blob/master/Android/adb-fastboot.md).*
+*For custom ROMs and rooting your Android device, learn how to use [adb-fastboot page](https://github.com/JesseSteele/Codia/blob/master/Android/adb-fastboot.md).*
 
 ## adb (tool)
 `adb` accesses the phone when it's running the normal Android OS or a "recovery" (like TWRP).

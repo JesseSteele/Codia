@@ -4,7 +4,7 @@
 Ready the CLI
 
 ```console
-cd ~/School/VIP/701
+cd ~/School/Codia/701
 ```
 ___
 
@@ -17,4 +17,4 @@ ___
 
 ___
 
-#### [Lesson 11: Frontend State Intergration](https://github.com/inkVerb/vip/blob/master/701/Lesson-11.md)
+#### [Lesson 11: Frontend State Intergration](https://github.com/JesseSteele/Codia/blob/master/701/Lesson-11.md)

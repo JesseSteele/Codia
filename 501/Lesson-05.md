@@ -4,7 +4,7 @@
 Ready the CLI
 
 ```console
-cd ~/School/VIP/501
+cd ~/School/Codia/501
 ```
 
 Ready services
@@ -23,7 +23,7 @@ If teaching multiple students
 
 Prep directory
 ```console
-cd ~/School/VIP
+cd ~/School/Codia
 ```
 
 Backup Student 1 schoolwork directory
@@ -51,10 +51,10 @@ sudo chown -R www:www 501/web
 Re-ready the CLI
 
 ```console
-cd ~/School/VIP/501
+cd ~/School/Codia/501
 ```
 
-- [Characters for Classes & RegEx](https://github.com/inkVerb/VIP/blob/master/Cheat-Sheets/Characters.md)
+- [Characters for Classes & RegEx](https://github.com/JesseSteele/Codia/blob/master/Cheat-Sheets/Characters.md)
 
 ___
 
@@ -472,4 +472,4 @@ RewriteRule ^/?([a-zA-Z0-9_-]+)(.*/)?([a-zA-Z0-9_-]+)?$ pretty_page.php?n=$1&o=$
 
 ___
 
-#### [Lesson 6: AJAX](https://github.com/inkVerb/vip/blob/master/501/Lesson-06.md)
+#### [Lesson 6: AJAX](https://github.com/JesseSteele/Codia/blob/master/501/Lesson-06.md)

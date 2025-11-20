@@ -2,12 +2,12 @@
 ## Lesson 0: 401 Cheat Sheets & Setup
 
 ### Cheat Sheets
-- [Cron](https://github.com/inkVerb/vip/blob/master/Cheat-Sheets/Cron.md)
-- [Resources](https://github.com/inkVerb/vip/blob/master/Cheat-Sheets/Resources.md)
-- [LAMP-Desktop](https://github.com/inkVerb/vip/blob/master/Cheat-Sheets/LAMP-Desktop.md)
-- [Variables](https://github.com/inkVerb/vip/blob/master/Cheat-Sheets/Variables.md)
-- [Tests: BASH](https://github.com/inkVerb/vip/blob/master/Cheat-Sheets/Tests.md#welcome-to-bash)
-- [Characters](https://github.com/inkVerb/vip/blob/master/Cheat-Sheets/Characters.md)
+- [Cron](https://github.com/JesseSteele/Codia/blob/master/Cheat-Sheets/Cron.md)
+- [Resources](https://github.com/JesseSteele/Codia/blob/master/Cheat-Sheets/Resources.md)
+- [LAMP-Desktop](https://github.com/JesseSteele/Codia/blob/master/Cheat-Sheets/LAMP-Desktop.md)
+- [Variables](https://github.com/JesseSteele/Codia/blob/master/Cheat-Sheets/Variables.md)
+- [Tests: BASH](https://github.com/JesseSteele/Codia/blob/master/Cheat-Sheets/Tests.md#welcome-to-bash)
+- [Characters](https://github.com/JesseSteele/Codia/blob/master/Cheat-Sheets/Characters.md)
 
 ___
 
@@ -93,7 +93,7 @@ exit
 > | **M3** :$
 >
 ```console
-mkdir -p ~/School/VIP
+mkdir -p ~/School/Codia
 ```
 >
 
@@ -102,7 +102,7 @@ mkdir -p ~/School/VIP
 | **1** :$
 
 ```console
-cd ~/School/VIP
+cd ~/School/Codia
 ```
 
 | **2** :$
@@ -136,4 +136,4 @@ ___
 
 ___
 
-#### [Lesson 1: Returns & Terminal](https://github.com/inkVerb/vip/blob/master/401/Lesson-01.md)
+#### [Lesson 1: Returns & Terminal](https://github.com/JesseSteele/Codia/blob/master/401/Lesson-01.md)

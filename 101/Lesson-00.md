@@ -12,17 +12,17 @@ Ready the CLI
 | **1** :$
 
 ```console
-mkdir -p ~/School/VIP/101
+mkdir -p ~/School/Codia/101
 ```
 
-*Note in the command line above, `mkdir` is the **command** while `mkdir -p ~/School/VIP/101` is the **command line***
+*Note in the command line above, `mkdir` is the **command** while `mkdir -p ~/School/Codia/101` is the **command line***
 
 *Using the terminal is also called using the **CLI** (as opposed to the **GUI**, which uses the mouse much more)*
 
 | **2** :$
 
 ```console
-cd ~/School/VIP/101
+cd ~/School/Codia/101
 ```
 
 ___
@@ -199,4 +199,4 @@ ___
 
 ___
 
-#### [Lesson 1: gedit, echo & sed](https://github.com/inkVerb/vip/blob/master/101/Lesson-01.md)
+#### [Lesson 1: gedit, echo & sed](https://github.com/JesseSteele/Codia/blob/master/101/Lesson-01.md)

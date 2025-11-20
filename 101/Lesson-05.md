@@ -4,7 +4,7 @@
 Ready the CLI
 
 ```console
-cd ~/School/VIP/101
+cd ~/School/Codia/101
 ```
 
 ___
@@ -424,4 +424,4 @@ variable="$(echo "something here")"
 
 ___
 
-#### [Lesson 6: tee & < file input](https://github.com/inkVerb/vip/blob/master/101/Lesson-06.md)
+#### [Lesson 6: tee & < file input](https://github.com/JesseSteele/Codia/blob/master/101/Lesson-06.md)

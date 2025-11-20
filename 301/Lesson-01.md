@@ -4,11 +4,11 @@
 Ready the CLI
 
 ```console
-cd ~/School/VIP/301
+cd ~/School/Codia/301
 ```
 
-- [Variables](https://github.com/inkVerb/vip/blob/master/Cheat-Sheets/Variables.md)
-- [Tests](https://github.com/inkVerb/vip/blob/master/Cheat-Sheets/Tests.md)
+- [Variables](https://github.com/JesseSteele/Codia/blob/master/Cheat-Sheets/Variables.md)
+- [Tests](https://github.com/JesseSteele/Codia/blob/master/Cheat-Sheets/Tests.md)
 
 ___
 
@@ -619,7 +619,7 @@ ___
 - Shell scripts use logic tests
 - **whitespace** - any extra space, including more than one continguous space, leading or trailing space on a line or string, or tabs
   - Often seen as a problem and removed by many text operations
-  - A kind of metacharacter (see [Characters](https://github.com/inkVerb/vip/blob/master/Cheat-Sheets/Characters.md#RegEx-Metacharacters) cheat sheet) and dealt with in RegEx ([401 Lesson 11](https://github.com/inkVerb/vip/blob/master/401/Lesson-11.md))
+  - A kind of metacharacter (see [Characters](https://github.com/JesseSteele/Codia/blob/master/Cheat-Sheets/Characters.md#RegEx-Metacharacters) cheat sheet) and dealt with in RegEx ([401 Lesson 11](https://github.com/JesseSteele/Codia/blob/master/401/Lesson-11.md))
 
 ## `if` (a logical test)
 - Procedure of an `if` test:
@@ -648,7 +648,7 @@ ___
   - `1`, `2`, `3`... = `false`
   - This is how `if` performs tests
 - `if` tests can be used just as they are in the reminal directly
-- See usage and examples here: [Tests: if](https://github.com/inkVerb/vip/blob/master/Cheat-Sheets/Tests.md#ii-if-then-else--elif-fi)
+- See usage and examples here: [Tests: if](https://github.com/JesseSteele/Codia/blob/master/Cheat-Sheets/Tests.md#ii-if-then-else--elif-fi)
 ___
 
-#### [Lesson 2: Docs & Pausing (odt2txt, pandoc, sleep, read & wait)](https://github.com/inkVerb/vip/blob/master/301/Lesson-02.md)
+#### [Lesson 2: Docs & Pausing (odt2txt, pandoc, sleep, read & wait)](https://github.com/JesseSteele/Codia/blob/master/301/Lesson-02.md)

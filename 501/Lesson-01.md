@@ -4,7 +4,7 @@
 Ready the CLI
 
 ```console
-cd ~/School/VIP/501
+cd ~/School/Codia/501
 ```
 
 Ready services
@@ -23,7 +23,7 @@ If teaching multiple students
 
 Prep directory
 ```console
-cd ~/School/VIP
+cd ~/School/Codia
 ```
 
 Backup Student 1 schoolwork directory
@@ -51,11 +51,11 @@ sudo chown -R www:www 501/web
 Re-ready the CLI
 
 ```console
-cd ~/School/VIP/501
+cd ~/School/Codia/501
 ```
 
-- [Tests: Ternary Statements](https://github.com/inkVerb/vip/blob/master/Cheat-Sheets/Tests.md#xi-ternary-statements-)
-- [Characters](https://github.com/inkVerb/VIP/blob/master/Cheat-Sheets/Characters.md)
+- [Tests: Ternary Statements](https://github.com/JesseSteele/Codia/blob/master/Cheat-Sheets/Tests.md#xi-ternary-statements-)
+- [Characters](https://github.com/JesseSteele/Codia/blob/master/Cheat-Sheets/Characters.md)
 
 ___
 
@@ -485,7 +485,7 @@ localhost/web/phppost.php
 
 *Try the form and developer view*
 
-#### [Ternary Statements](https://github.com/inkVerb/vip/blob/master/Cheat-Sheets/Tests.md#xi-ternary-statements-)
+#### [Ternary Statements](https://github.com/JesseSteele/Codia/blob/master/Cheat-Sheets/Tests.md#xi-ternary-statements-)
 
 | **PHP Ternary** :
 
@@ -567,7 +567,7 @@ localhost/web/phppost.php
 
 #### `switch`-`case` Statements
 
-This is comparable to a Shell [case Statement](https://github.com/inkVerb/vip/blob/master/Cheat-Sheets/Tests.md#vii-case-esac)
+This is comparable to a Shell [case Statement](https://github.com/JesseSteele/Codia/blob/master/Cheat-Sheets/Tests.md#vii-case-esac)
 
 ```php
 switch ($variable_to_test) {
@@ -659,7 +659,7 @@ exit(header("Location: to_page.php"));
 3. Escape before using
 
 #### Know the datatype!
-A "string" is a "datatype", which we looked at in [Linux 401 Lesson 6](https://github.com/inkVerb/vip/blob/master/401/Lesson-06.md)
+A "string" is a "datatype", which we looked at in [Linux 401 Lesson 6](https://github.com/JesseSteele/Codia/blob/master/401/Lesson-06.md)
 
 ##### Four Important Datatypes in PHP:
 - string *- any kind of raw text: name, email, web address (URL), blog post, mailing address, passwords, etc*
@@ -761,7 +761,7 @@ $Variable = ucwords($Variable);
 *Review the diagram above along side the following two steps and elaboration...*
 
 ##### RegEx Replacement & Arguments (Useful for Sanitizing and More)
-We looked at RegEx briefly in [401 Lesson 1](https://github.com/inkVerb/vip/blob/master/401/Lesson-11.md)
+We looked at RegEx briefly in [401 Lesson 1](https://github.com/JesseSteele/Codia/blob/master/401/Lesson-11.md)
 
 **RegEx arguments come from `(parentheses)`:**
 
@@ -825,7 +825,7 @@ localhost/web/phpreplace.php
 *Try matching characters and watch them get replaced*
 
 #### Basic PHP Escaping
-We looked at "escaping" certain characters in [Linux 101 Lesson 1](https://github.com/inkVerb/vip/blob/master/101/Lesson-11.md)
+We looked at "escaping" certain characters in [Linux 101 Lesson 1](https://github.com/JesseSteele/Codia/blob/master/101/Lesson-11.md)
 
 In any code language, certain characters "mean something", they must be "escaped" (AKA 'quoted' or 'cancelled') so the characters mean only themselves and are not "working" in the code
 
@@ -1686,4 +1686,4 @@ set_error_handler ('my_error_handler');
 
 ___
 
-#### [Lesson 2: MySQL & phpMyAdmin](https://github.com/inkVerb/vip/blob/master/501/Lesson-02.md)
+#### [Lesson 2: MySQL & phpMyAdmin](https://github.com/JesseSteele/Codia/blob/master/501/Lesson-02.md)

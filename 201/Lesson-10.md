@@ -4,7 +4,7 @@
 Ready the CLI
 
 ```console
-cd ~/School/VIP/201
+cd ~/School/Codia/201
 ```
 
 ___
@@ -243,4 +243,4 @@ ___
 
 ___
 
-#### [Lesson 11: more, less, head, tail, sort, tac, diff, nano, vim](https://github.com/inkVerb/vip/blob/master/201/Lesson-11.md)
+#### [Lesson 11: more, less, head, tail, sort, tac, diff, nano, vim](https://github.com/JesseSteele/Codia/blob/master/201/Lesson-11.md)

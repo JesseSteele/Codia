@@ -2,7 +2,7 @@
 ## Lesson 0: LAMP Server Setup & HTML Fast
 
 ### Cheat Sheets
-- Manjaro/Ubuntu/CentOS: [LAMP Desktop](https://github.com/inkVerb/vip/blob/master/Cheat-Sheets/LAMP-Desktop.md)
+- Manjaro/Ubuntu/CentOS: [LAMP Desktop](https://github.com/JesseSteele/Codia/blob/master/Cheat-Sheets/LAMP-Desktop.md)
 
 ___
 ### Web Address Terminology
@@ -166,13 +166,13 @@ exit
 > | **M3** :$
 >
 ```console
-mkdir -p ~/School/VIP
+mkdir -p ~/School/Codia
 ```
 >
 
 ### II. Install LAMP Desktop
 
-Now, follow all instructions in [LAMP Desktop](https://github.com/inkVerb/vip/blob/master/Cheat-Sheets/LAMP-Desktop.md)
+Now, follow all instructions in [LAMP Desktop](https://github.com/JesseSteele/Codia/blob/master/Cheat-Sheets/LAMP-Desktop.md)
 - Setup the LAMP server
 - Also setup:
   - MySQL phpMyAdmin
@@ -185,7 +185,7 @@ Now, follow all instructions in [LAMP Desktop](https://github.com/inkVerb/vip/bl
 | **AP1** :$
 
 ```console
-cd ~/School/VIP
+cd ~/School/Codia
 ```
 
 | **AP2** :$
@@ -197,13 +197,13 @@ git clone https://github.com/inkVerb/501
 | **AP3** :$
 
 ```console
-sudo mkdir -p ~/School/VIP/501/web
+sudo mkdir -p ~/School/Codia/501/web
 ```
 
 | **AP4** :$
 
 ```console
-sudo ln -sfn ~/School/VIP/501/web /srv/www/html/
+sudo ln -sfn ~/School/Codia/501/web /srv/www/html/
 ```
 
 | **AP5** :$
@@ -217,7 +217,7 @@ sudo chown -R www:www /srv/www
 | **DP1** :$
 
 ```console
-cd ~/School/VIP
+cd ~/School/Codia
 ```
 
 | **DP2** :$
@@ -229,13 +229,13 @@ git clone https://github.com/inkVerb/501
 | **DP3** :$
 
 ```console
-sudo mkdir -p ~/School/VIP/501/web
+sudo mkdir -p ~/School/Codia/501/web
 ```
 
 | **DP4** :$
 
 ```console
-sudo ln -sfn ~/School/VIP/501/web /srv/www/html/
+sudo ln -sfn ~/School/Codia/501/web /srv/www/html/
 ```
 
 | **DP5** :$
@@ -256,7 +256,7 @@ sudo chown -R www:www /srv/www
 | **EP1** :$
 
 ```console
-cd ~/School/VIP
+cd ~/School/Codia
 ```
 
 | **EP2** :$
@@ -274,7 +274,7 @@ sudo mkdir -p /srv/www/html/web
 | **EP4** :$
 
 ```console
-sudo ln -sfn /srv/www/html/web ~/School/VIP/501/
+sudo ln -sfn /srv/www/html/web ~/School/Codia/501/
 ```
 
 | **EP5** :$
@@ -288,7 +288,7 @@ sudo chown -R www:www /srv/www/html/
 | **CP1** :$
 
 ```console
-cd ~/School/VIP
+cd ~/School/Codia
 ```
 
 | **CP2** :$
@@ -306,7 +306,7 @@ sudo mkdir /var/www/html/web
 | **CP4** :$
 
 ```console
-ln -sfn /var/www/html/web ~/School/VIP/501/
+ln -sfn /var/www/html/web ~/School/Codia/501/
 ```
 
 | **CP5** :$
@@ -569,4 +569,4 @@ alias code='codium'
 ```
 ___
 
-#### [Lesson 1: PHP Core](https://github.com/inkVerb/vip/blob/master/501/Lesson-01.md)
+#### [Lesson 1: PHP Core](https://github.com/JesseSteele/Codia/blob/master/501/Lesson-01.md)

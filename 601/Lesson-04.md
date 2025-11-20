@@ -1,6 +1,6 @@
 # Linux 601
 ## Lesson 4: Git & Revision Control
-- *Git setup and beginner reference: the [GitCheat Cheat Sheet]((https://github.com/inkVerb/VIP/blob/master/Cheat-Sheets/GitCheat.md))*
+- *Git setup and beginner reference: the [GitCheat Cheat Sheet]((https://github.com/JesseSteele/Codia/blob/master/Cheat-Sheets/GitCheat.md))*
 
 # The Chalk
 ## Revision Control Systems
@@ -388,7 +388,7 @@ git push
 | **clone unowned repo** :$
 
 ```console
-git clone https://github.com/inkverb/vip
+git clone https://github.com/jessesteele/codia
 ```
 
 - A repo you own which you will push back requires `git@` notation, under "SSH" on the GitHub website
@@ -397,7 +397,7 @@ git clone https://github.com/inkverb/vip
 | **clone owned repo** :$
 
 ```console
-git clone git@github.com:inkverb/vip.git
+git clone git@github.com:jessesteele/codia.git
 ```
 
 - Now edit and push changes
@@ -424,7 +424,7 @@ git tag -a v0.2 -m 'Devel stage 2'
 | **clone owned repo `devel` branch** :$
 
 ```console
-git clone -b devel git@github.com:inkVerb/VIP.git
+git clone -b devel git@github.com:JesseSteele/Codia.git
 ```
 
 - Now edit and push changes
@@ -536,7 +536,7 @@ git commit -m "My message on devel branch into main branch"
 ```
 ___
 
-*Git setup and beginner reference: the [GitCheat Cheat Sheet]((https://github.com/inkVerb/VIP/blob/master/Cheat-Sheets/GitCheat.md))*
+*Git setup and beginner reference: the [GitCheat Cheat Sheet]((https://github.com/JesseSteele/Codia/blob/master/Cheat-Sheets/GitCheat.md))*
 
 #### Clone Linux Kernel
 - The Linux kernel is available on Git
@@ -845,4 +845,4 @@ rm -rf ~/.ssh
 
 ___
 
-#### [Lesson 5: Kernel & Devices](https://github.com/inkVerb/vip/blob/master/601/Lesson-05.md)
+#### [Lesson 5: Kernel & Devices](https://github.com/JesseSteele/Codia/blob/master/601/Lesson-05.md)

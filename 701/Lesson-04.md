@@ -4,7 +4,7 @@
 Ready the CLI
 
 ```console
-cd ~/School/VIP/701
+cd ~/School/Codia/701
 ```
 
 Ready services
@@ -18,7 +18,7 @@ ___
 ### Rewrite GET URL
 *Make pretty URLs converted to GET values*
 
-*Previously, in [Lesson 5: RewriteMod (Pretty Permalinks)](https://github.com/inkVerb/vip/blob/master/501/Lesson-05.md), we re-wrote URLs using Apache settings in `.htaccess` inside the web folder*
+*Previously, in [Lesson 5: RewriteMod (Pretty Permalinks)](https://github.com/JesseSteele/Codia/blob/master/501/Lesson-05.md), we re-wrote URLs using Apache settings in `.htaccess` inside the web folder*
 
 *Python, Node.js, and Go can rewrite URLs as GET values from inside the app itself, meaning that no `.htaccess` `RewriteMod` settings are needed outside of the actual app*
 
@@ -792,7 +792,7 @@ Operative Go code:
 *(When finished: <kbd>Ctrl</kbd> + <kbd>C</kbd> in the terminal to exit)*
 
 ### User Profile with Pretty URL Rewrite
-*Display user profile based on database entries from our backend app in [Lesson 3](https://github.com/inkVerb/vip/blob/master/701/Lesson-03.md)*
+*Display user profile based on database entries from our backend app in [Lesson 3](https://github.com/JesseSteele/Codia/blob/master/701/Lesson-03.md)*
 
 #### CSS Additions
 
@@ -1677,4 +1677,4 @@ ___
   - This way, a team or developer focused on SQL calls can maintain that file separately from the overall product roadmap
 ___
 
-#### [Lesson 5: Async and AJAX](https://github.com/inkVerb/vip/blob/master/701/Lesson-05.md)
+#### [Lesson 5: Async and AJAX](https://github.com/JesseSteele/Codia/blob/master/701/Lesson-05.md)

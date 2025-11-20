@@ -2,10 +2,10 @@
 ## Lesson 0: 301 Cheat Sheets & Setup
 
 ### Cheat Sheets
-- [Variables](https://github.com/inkVerb/vip/blob/master/Cheat-Sheets/Variables.md)
-- [Tests](https://github.com/inkVerb/vip/blob/master/Cheat-Sheets/Tests.md)
-- [Arrays](https://github.com/inkVerb/vip/blob/master/Cheat-Sheets/Arrays.md)
-- [Resources](https://github.com/inkVerb/vip/blob/master/Cheat-Sheets/Resources.md)
+- [Variables](https://github.com/JesseSteele/Codia/blob/master/Cheat-Sheets/Variables.md)
+- [Tests](https://github.com/JesseSteele/Codia/blob/master/Cheat-Sheets/Tests.md)
+- [Arrays](https://github.com/JesseSteele/Codia/blob/master/Cheat-Sheets/Arrays.md)
+- [Resources](https://github.com/JesseSteele/Codia/blob/master/Cheat-Sheets/Resources.md)
 
 ___
 
@@ -91,7 +91,7 @@ exit
 > | **M3** :$
 >
 ```console
-mkdir -p ~/School/VIP
+mkdir -p ~/School/Codia
 ```
 >
 
@@ -100,7 +100,7 @@ mkdir -p ~/School/VIP
 | **1** :$
 
 ```console
-cd ~/School/VIP
+cd ~/School/Codia
 ```
 
 | **2** :$
@@ -136,4 +136,4 @@ ___
 
 ___
 
-#### [Lesson 1: if then fi, else & elif](https://github.com/inkVerb/vip/blob/master/301/Lesson-01.md)
+#### [Lesson 1: if then fi, else & elif](https://github.com/JesseSteele/Codia/blob/master/301/Lesson-01.md)

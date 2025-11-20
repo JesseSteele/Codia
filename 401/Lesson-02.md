@@ -4,14 +4,14 @@
 Ready the CLI
 
 ```console
-cd ~/School/VIP/401
+cd ~/School/Codia/401
 ```
 
 ___
 
 ### `netstat -natu` & `sudo tcpdump`
 
-| **1** :$ (Requires the `net-tools` package, installed from [201 Lesson 3](https://github.com/inkVerb/vip/blob/master/201/Lesson-03.md))
+| **1** :$ (Requires the `net-tools` package, installed from [201 Lesson 3](https://github.com/JesseSteele/Codia/blob/master/201/Lesson-03.md))
 
 ```console
 netstat -natu
@@ -31,7 +31,7 @@ su Username
 ```
 ___
 
-| **2** :$ (Requires the `tcpdump` package, installed from [201 Lesson 3](https://github.com/inkVerb/vip/blob/master/201/Lesson-03.md))
+| **2** :$ (Requires the `tcpdump` package, installed from [201 Lesson 3](https://github.com/JesseSteele/Codia/blob/master/201/Lesson-03.md))
 
 ```console
 sudo tcpdump
@@ -152,4 +152,4 @@ ___
 
 ___
 
-#### [Lesson 3: Cron Daemon & $PATH Variable](https://github.com/inkVerb/vip/blob/master/401/Lesson-03.md)
+#### [Lesson 3: Cron Daemon & $PATH Variable](https://github.com/JesseSteele/Codia/blob/master/401/Lesson-03.md)

@@ -4,7 +4,7 @@
 Ready the CLI
 
 ```console
-cd ~/School/VIP/701
+cd ~/School/Codia/701
 ```
 ___
 
@@ -182,7 +182,7 @@ sudo python hw3.py
 *Note no port is specified because it uses the default port `443`*
 
 *With this address you will get an SSL security warning from your browser*
-  - *You can view the certificate for `O=Snakeoil/OU=Learning/CN=myComputer` as we created in our [LENG Desktop](https://github.com/inkVerb/vip/blob/master/Cheat-Sheets/LENG-Desktop.md)*
+  - *You can view the certificate for `O=Snakeoil/OU=Learning/CN=myComputer` as we created in our [LENG Desktop](https://github.com/JesseSteele/Codia/blob/master/Cheat-Sheets/LENG-Desktop.md)*
 
 | **B-5** ://
 
@@ -427,7 +427,7 @@ sudo node hw3.js
 *Note no port is specified because it uses the default port `443`*
 
 *With this address you will get an SSL security warning from your browser*
-  - *You can view the certificate for `O=Snakeoil/OU=Learning/CN=myComputer` as we created in our [LENG Desktop](https://github.com/inkVerb/vip/blob/master/Cheat-Sheets/LENG-Desktop.md)*
+  - *You can view the certificate for `O=Snakeoil/OU=Learning/CN=myComputer` as we created in our [LENG Desktop](https://github.com/JesseSteele/Codia/blob/master/Cheat-Sheets/LENG-Desktop.md)*
 
 | **B-13** ://
 
@@ -712,7 +712,7 @@ sudo go run hw3.go
 *Note no port is specified because it uses the default port `443`*
 
 *With this address you will get an SSL security warning from your browser*
-  - *You can view the certificate for `O=Snakeoil/OU=Learning/CN=myComputer` as we created in our [LENG Desktop](https://github.com/inkVerb/vip/blob/master/Cheat-Sheets/LENG-Desktop.md)*
+  - *You can view the certificate for `O=Snakeoil/OU=Learning/CN=myComputer` as we created in our [LENG Desktop](https://github.com/JesseSteele/Codia/blob/master/Cheat-Sheets/LENG-Desktop.md)*
 
 | **B-21** ://
 
@@ -784,7 +784,7 @@ http {
 }
 ```
 
-*...but we aren't actually using this Nginx config because we have the two-part configs from our [LENG Desktop](https://github.com/inkVerb/vip/blob/master/Cheat-Sheets/LENG-Desktop.md) configuration*
+*...but we aren't actually using this Nginx config because we have the two-part configs from our [LENG Desktop](https://github.com/JesseSteele/Codia/blob/master/Cheat-Sheets/LENG-Desktop.md) configuration*
 
 *This is the short version, only with the `server` blocks for port `443` and port `80` redirecting, and passing as a proxy to internal port `9001` for our Pythin/Node.js/Go app...*
 
@@ -824,7 +824,7 @@ server {
 }
 ```
 
-*Assuming the [LENG Desktop](https://github.com/inkVerb/vip/blob/master/Cheat-Sheets/LENG-Desktop.md), we will move the reverse-proxy SSL Nginx config into place...*
+*Assuming the [LENG Desktop](https://github.com/JesseSteele/Codia/blob/master/Cheat-Sheets/LENG-Desktop.md), we will move the reverse-proxy SSL Nginx config into place...*
 
 | **22** :$
 
@@ -1030,4 +1030,4 @@ ___
 
 ___
 
-#### [Lesson 2: Method & RegEx Handling](https://github.com/inkVerb/vip/blob/master/701/Lesson-02.md)
+#### [Lesson 2: Method & RegEx Handling](https://github.com/JesseSteele/Codia/blob/master/701/Lesson-02.md)

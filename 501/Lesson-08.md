@@ -4,7 +4,7 @@
 Ready the CLI
 
 ```console
-cd ~/School/VIP/501
+cd ~/School/Codia/501
 ```
 
 Ready services
@@ -23,7 +23,7 @@ If teaching multiple students
 
 Prep directory
 ```console
-cd ~/School/VIP
+cd ~/School/Codia
 ```
 
 Webapp database ***dump***
@@ -61,7 +61,7 @@ sudo chown -R www:www 501/web
 Re-ready the CLI
 
 ```console
-cd ~/School/VIP/501
+cd ~/School/Codia/501
 ```
 
 ### This lesson uses two terminals and three browser tabs!
@@ -140,7 +140,7 @@ ls web
 * * * * * root /usr/bin/php /srv/www/html/web/cleanup.php
 ```
 
-*Install the app, same as in [Lesson 4](https://github.com/inkVerb/vip/blob/master/501/Lesson-04.md)*
+*Install the app, same as in [Lesson 4](https://github.com/JesseSteele/Codia/blob/master/501/Lesson-04.md)*
 
 | **B-R3** ://
 
@@ -1065,4 +1065,4 @@ ___
 
 ___
 
-#### [Lesson 9: Content List: Loops, Arrays, JSON & AJAX](https://github.com/inkVerb/vip/blob/master/501/Lesson-09.md)
+#### [Lesson 9: Content List: Loops, Arrays, JSON & AJAX](https://github.com/JesseSteele/Codia/blob/master/501/Lesson-09.md)

@@ -4,7 +4,7 @@
 Ready the CLI
 
 ```console
-cd ~/School/VIP/501
+cd ~/School/Codia/501
 ```
 
 Ready services
@@ -23,7 +23,7 @@ If teaching multiple students
 
 Prep directory
 ```console
-cd ~/School/VIP
+cd ~/School/Codia
 ```
 
 Webapp database ***dump***
@@ -1027,4 +1027,4 @@ ___
 
 ___
 
-#### [Lesson 3: MySQL & PHP MySQLi](https://github.com/inkVerb/vip/blob/master/501/Lesson-03.md)
+#### [Lesson 3: MySQL & PHP MySQLi](https://github.com/JesseSteele/Codia/blob/master/501/Lesson-03.md)

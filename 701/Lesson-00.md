@@ -3,7 +3,7 @@
 
 ### Cheat Sheets
 
-- [LENG Desktop](https://github.com/inkVerb/vip/blob/master/Cheat-Sheets/LENG-Desktop.md)
+- [LENG Desktop](https://github.com/JesseSteele/Codia/blob/master/Cheat-Sheets/LENG-Desktop.md)
 
 ___
 
@@ -91,13 +91,13 @@ exit
 > | **M3** :$
 >
 ```console
-mkdir -p ~/School/VIP
+mkdir -p ~/School/Codia
 ```
 >
 
 ### II. Install LENG Desktop
 
-Now, follow all instructions in [LENG Desktop](https://github.com/inkVerb/vip/blob/master/Cheat-Sheets/LENG-Desktop.md)
+Now, follow all instructions in [LENG Desktop](https://github.com/JesseSteele/Codia/blob/master/Cheat-Sheets/LENG-Desktop.md)
 - Setup the LENG server
   - This includes Nginx
 - Make sure Code-OSS and extensions are installed
@@ -111,16 +111,16 @@ Now, follow all instructions in [LENG Desktop](https://github.com/inkVerb/vip/bl
 
 ### IV. `git clone` our scripts for this lesson
 
-| **0** :$ (If the `School/VIP` directory doesn't already exist)
+| **0** :$ (If the `School/Codia` directory doesn't already exist)
 
 ```console
-mkdir -p ~/School/VIP
+mkdir -p ~/School/Codia
 ```
 
 | **1** :$
 
 ```console
-cd ~/School/VIP
+cd ~/School/Codia
 ```
 
 | **2** :$
@@ -147,4 +147,4 @@ exit
 
 ___
 
-#### [Lesson 1: Web Hosting & Proxied Services](https://github.com/inkVerb/vip/blob/master/701/Lesson-01.md)
+#### [Lesson 1: Web Hosting & Proxied Services](https://github.com/JesseSteele/Codia/blob/master/701/Lesson-01.md)

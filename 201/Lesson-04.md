@@ -4,10 +4,10 @@
 Ready the CLI
 
 ```console
-cd ~/School/VIP/201
+cd ~/School/Codia/201
 ```
 
-#### [Permissions Cheat Sheet](https://github.com/inkVerb/vip/blob/master/Cheat-Sheets/Permissions.md)
+#### [Permissions Cheat Sheet](https://github.com/JesseSteele/Codia/blob/master/Cheat-Sheets/Permissions.md)
 
 ___
 
@@ -165,7 +165,7 @@ chmod 600 whoown
 ls -l
 ```
 
-*Refer to this cheat-sheet for more about chmod:* [VIP/Cheat-Sheets: Permissions](https://github.com/inkVerb/VIP/blob/master/Cheat-Sheets/Permissions.md)
+*Refer to this cheat-sheet for more about chmod:* [Codia/Cheat-Sheets: Permissions](https://github.com/JesseSteele/Codia/blob/master/Cheat-Sheets/Permissions.md)
 
 #### Hidden files
 
@@ -252,7 +252,7 @@ ls -1r
 ___
 
 # The Take
-- `chmod` will change file permissions, see usage and examples here: [VIP/Cheat-Sheets: Permissions](https://github.com/inkVerb/VIP/blob/master/Cheat-Sheets/Permissions.md)
+- `chmod` will change file permissions, see usage and examples here: [Codia/Cheat-Sheets: Permissions](https://github.com/JesseSteele/Codia/blob/master/Cheat-Sheets/Permissions.md)
 - `ls -1` (with the number one `-1`, not `-l`) will list files vertically
 - `ls -l` will output a list of files with "long" information that includes the permissions that `chmod` changes
 - `ls -a` shows "all" files and directories, even those hidden
@@ -262,4 +262,4 @@ ___
 - <kbd>Ctrl</kbd> + <kbd>H</kbd> toggles hidden file and directory view in Nautilus
 ___
 
-#### [Lesson 5: su, adduser, deluser, chown](https://github.com/inkVerb/vip/blob/master/201/Lesson-05.md)
+#### [Lesson 5: su, adduser, deluser, chown](https://github.com/JesseSteele/Codia/blob/master/201/Lesson-05.md)

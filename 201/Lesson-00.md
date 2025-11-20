@@ -8,7 +8,7 @@ ___
 | **1** :$
 
 ```console
-mkdir -p ~/School/VIP/201
+mkdir -p ~/School/Codia/201
 ```
 
 ### Create `su` (Super User) password
@@ -73,7 +73,7 @@ su
 About `sudo` and "root"...
 
 ### Prompts show power
-*Remember from [Orientation](https://github.com/inkVerb/vip/blob/master/101/Orientation.md):*
+*Remember from [Orientation](https://github.com/JesseSteele/Codia/blob/master/101/Orientation.md):*
 
 - *`$` indicates a normal "user" prompt*
   - *This includes a sudoer and non-sudoer*
@@ -117,4 +117,4 @@ ___
 
 ___
 
-#### [Lesson 1: cp, mv, ln -s, rm, touch](https://github.com/inkVerb/vip/blob/master/201/Lesson-01.md)
+#### [Lesson 1: cp, mv, ln -s, rm, touch](https://github.com/JesseSteele/Codia/blob/master/201/Lesson-01.md)

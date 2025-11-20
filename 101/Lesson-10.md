@@ -4,7 +4,7 @@
 Ready the CLI
 
 ```console
-cd ~/School/VIP/101
+cd ~/School/Codia/101
 ```
 
 ___
@@ -92,4 +92,4 @@ ___
 
 ___
 
-#### [Lesson 11: Special Characters](https://github.com/inkVerb/vip/blob/master/101/Lesson-11.md)
+#### [Lesson 11: Special Characters](https://github.com/JesseSteele/Codia/blob/master/101/Lesson-11.md)

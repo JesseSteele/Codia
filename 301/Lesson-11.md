@@ -4,17 +4,17 @@
 Ready the CLI
 
 ```console
-cd ~/School/VIP/301
+cd ~/School/Codia/301
 ```
 
-- [Variables](https://github.com/inkVerb/vip/blob/master/Cheat-Sheets/Variables.md)
-- [Tests](https://github.com/inkVerb/vip/blob/master/Cheat-Sheets/Tests.md)
+- [Variables](https://github.com/JesseSteele/Codia/blob/master/Cheat-Sheets/Variables.md)
+- [Tests](https://github.com/JesseSteele/Codia/blob/master/Cheat-Sheets/Tests.md)
 
 ___
 
 ### I. `select`
 
-This works much like a `for` loop (from [Lesson 3](https://github.com/inkVerb/vip/blob/master/301/Lesson-03.md#i-for-var-in-lst-do))...
+This works much like a `for` loop (from [Lesson 3](https://github.com/JesseSteele/Codia/blob/master/301/Lesson-03.md#i-for-var-in-lst-do))...
 
 ```sh
 select Var in Some List
@@ -104,7 +104,7 @@ echo 2 | ./11-menu-case
 dialog --option1 "args" --option2 "args" [size] 2> Output_File
 ```
 
-*We learned about `2> output.file` as `STDERR` from [Lesson 6](https://github.com/inkVerb/vip/blob/master/301/Lesson-06.md#ouput-to-file)*
+*We learned about `2> output.file` as `STDERR` from [Lesson 6](https://github.com/JesseSteele/Codia/blob/master/301/Lesson-06.md#ouput-to-file)*
 
 *5 = height; 18 = width as [size]...*
 
@@ -228,7 +228,7 @@ dialog --title "Quick Question" --yesno "Do you ink?" 5 17
 echo $?
 ```
 
-*Note this uses `exit` codes, which we learned about in [Lesson 6](https://github.com/inkVerb/vip/blob/master/301/Lesson-06.md#iii-logging-with-exit-codes)*
+*Note this uses `exit` codes, which we learned about in [Lesson 6](https://github.com/JesseSteele/Codia/blob/master/301/Lesson-06.md#iii-logging-with-exit-codes)*
 
 *This belongs in a script to work properly*
 
@@ -334,9 +334,9 @@ echo "Size List" > size.file
 gedit 11-dialog-4
 ```
 
-*`dialog` in `$(`[Command Substitution](https://github.com/inkVerb/vip/blob/master/101/Lesson-05.md)`)` needs an exit code redirect on the end: `3>&1 1>&2 2>&3 3>&-`*
+*`dialog` in `$(`[Command Substitution](https://github.com/JesseSteele/Codia/blob/master/101/Lesson-05.md)`)` needs an exit code redirect on the end: `3>&1 1>&2 2>&3 3>&-`*
 
-  - *[Exit Codes](https://github.com/inkVerb/vip/blob/master/301/Lesson-06.md#iii-logging-with-exit-codes) usually output:*
+  - *[Exit Codes](https://github.com/JesseSteele/Codia/blob/master/301/Lesson-06.md#iii-logging-with-exit-codes) usually output:*
     - *Error output: `STDERR` via `exit 2`, using `2> Output_File` or*
     - *Normal output: `STDOUT` via `exit 1`, using `> Output_File`*
   - *The useful output from `dialog` is `STDERR` via `exit 2`*
@@ -414,7 +414,7 @@ done
   - `--msgbox` (one argument)
   - `--yesno` (no arguments)
   - `--menu "Heading" Height Width Num-Of-Options 1 Opt1 2 Opt2 Tail-Commands`
-- The output we want from `dialog` is `STDERR` (as if `exit 2`), which we learned in [Lesson 6](https://github.com/inkVerb/vip/blob/master/301/Lesson-06.md#iii-logging-with-exit-codes)
+- The output we want from `dialog` is `STDERR` (as if `exit 2`), which we learned in [Lesson 6](https://github.com/JesseSteele/Codia/blob/master/301/Lesson-06.md#iii-logging-with-exit-codes)
   - In a script, the tail command can directly output to a file via `2> Output_File`
   - `$(Command Substitution)` syntax: `$(dialog ... 3>&1 1>&2 2>&3 3>&-)`
 - How to capture a `dialog --yesno` response:
@@ -428,4 +428,4 @@ done
 - Consult the manual for more `dialog man`
 ___
 
-#### [Lesson 12: BASH getopts & getopt](https://github.com/inkVerb/vip/blob/master/301/Lesson-12.md)
+#### [Lesson 12: BASH getopts & getopt](https://github.com/JesseSteele/Codia/blob/master/301/Lesson-12.md)

@@ -4,7 +4,7 @@
 Ready the CLI
 
 ```console
-cd ~/School/VIP/501
+cd ~/School/Codia/501
 ```
 
 Ready services
@@ -23,7 +23,7 @@ If teaching multiple students
 
 Prep directory
 ```console
-cd ~/School/VIP
+cd ~/School/Codia
 ```
 
 Webapp database ***dump***
@@ -61,7 +61,7 @@ sudo chown -R www:www 501/web
 Re-ready the CLI
 
 ```console
-cd ~/School/VIP/501
+cd ~/School/Codia/501
 ```
 
 ### This lesson uses two terminals and three browser tabs!
@@ -314,7 +314,7 @@ localhost/web/upload.php
 ```
 
 1. Click "Browse..."
-2. Look in ~/School/VIP/501/test_uploads/
+2. Look in ~/School/Codia/501/test_uploads/
 3. Select & "open" test1.txt
 4. Click "Upload"
 
@@ -358,7 +358,7 @@ localhost/web/upload.php
 ```
 
 1. Click "Browse..."
-2. Look in ~/School/VIP/501/test_uploads/fakes/
+2. Look in ~/School/Codia/501/test_uploads/fakes/
 3. Select & "open" fake.png
 4. Click "Upload"
 
@@ -416,7 +416,7 @@ localhost/web/upload.php
 ```
 
 1. Click "Browse..."
-2. Look in ~/School/VIP/501/test_uploads/fakes/
+2. Look in ~/School/Codia/501/test_uploads/fakes/
 3. Select & "open" fake.jpg
 4. Click "Upload"
 
@@ -459,7 +459,7 @@ localhost/web/upload.php
 ```
 
 1. Click "Browse..."
-2. Look in ~/School/VIP/501/test_uploads/
+2. Look in ~/School/Codia/501/test_uploads/
 3. Select & "open" vip-chartreuse.png (Same as above)
 4. Click "Upload"
 
@@ -539,7 +539,7 @@ localhost/web/upload.php
 ```
 
 1. Click "Browse..."
-2. Look in ~/School/VIP/501/test_uploads/
+2. Look in ~/School/Codia/501/test_uploads/
 3. Select & "open" vipLinux-Meshtop.jpg
 4. Click "Upload"
 
@@ -698,7 +698,7 @@ localhost/web/upload.php
 ```
 
 1. Click "Browse..."
-2. Look in ~/School/VIP/501/test_uploads/
+2. Look in ~/School/Codia/501/test_uploads/
 3. Select & "open" ***various files***
   - Will fail: **.bmp, .wma, .flac, .flv, .avi, .mkv, .mov**
     - vip-red.bmp
@@ -770,7 +770,7 @@ ls web
 localhost/web/dropzone.html
 ```
 
-1. Browse files in ~/School/VIP/501/test_uploads/
+1. Browse files in ~/School/Codia/501/test_uploads/
 2. Drag files into the area: *"Drop files here to upload"*
 3. Check the dropzone_uploads directory:$ `ls web/dropzone_uploads`
 4. Repeat these steps with many files, including fake and disallowed; not all files will work, some only partially
@@ -874,7 +874,7 @@ localhost/web/medialibrary.php
     - Password: My#1Password
   - Then try **B-28** :// `localhost/web/medialibrary.php`
 
-1. Browse files in ~/School/VIP/501/test_uploads/
+1. Browse files in ~/School/Codia/501/test_uploads/
 2. Drag files into the area: *"Drop to upload!"*
 3. Check the dropzone_uploads directory:$ `ls web/dropzone_uploads`
 4. Repeat these steps with many files, including fake and disallowed; not all files will work, some only partially
@@ -922,7 +922,7 @@ acceptedFiles: "image/jpeg, image/png, image/gif, image/svg+xml, video/webm, vid
 localhost/web/medialibrary.php
 ```
 
-1. Browse files in ~/School/VIP/501/test_uploads/
+1. Browse files in ~/School/Codia/501/test_uploads/
 2. Drag files into the area: *"Drop to upload!"*
 3. Check the dropzone_uploads directory:$ `ls web/dropzone_uploads`
 4. Repeat these steps with many files, including fake and disallowed; not all files will work, some only partially
@@ -969,7 +969,7 @@ ls web web/media
 localhost/web/medialibrary.php
 ```
 
-1. Browse files in ~/School/VIP/501/test_uploads/
+1. Browse files in ~/School/Codia/501/test_uploads/
 2. Drag single, then multiple files into the area: *"Drop to upload!"*
 3. Before clicking "OK" to acknowledge the JS browser alert, check the dropzone_uploads directory:$ `ls web/dropzone_uploads`
 4. Repeat these steps with many files, including fake and disallowed; not all files will work, some only partially
@@ -1046,7 +1046,7 @@ addRemoveLinks: true, // Default: false
 localhost/web/medialibrary.php
 ```
 
-1. Browse files in ~/School/VIP/501/test_uploads/
+1. Browse files in ~/School/Codia/501/test_uploads/
 2. Drag multiple files into the area: *"Drop to upload!"*
 3. Before clicking "OK" to acknowledge the JS browser alert, check the dropzone_uploads directory:$ `ls web/dropzone_uploads`
 4. Repeat these steps with many files, including fake and disallowed; not all files will work, some only partially
@@ -1190,7 +1190,7 @@ init: function() {
 localhost/web/medialibrary.php
 ```
 
-1. Browse files in ~/School/VIP/501/test_uploads/
+1. Browse files in ~/School/Codia/501/test_uploads/
 2. Drag multiple files into the area: *"Drop to upload!"*
 3. Before clicking "OK" to acknowledge the JS browser alert, check the dropzone_uploads directory:$ `ls web/dropzone_uploads`
 4. Repeat these steps with many files, including fake and disallowed; not all files will work, some only partially
@@ -1213,7 +1213,7 @@ This helped us understand the order of events in multiple uploads, mainly that i
 We will stop using JavaScript browser alerts in the future
 
 ### V. Upload with TinyMCE
-From [Lesson 8](https://github.com/inkVerb/vip/blob/master/501/Lesson-08.md) we already have TinyMCE from [here](https://github.com/tinymce/tinymce-dist)
+From [Lesson 8](https://github.com/JesseSteele/Codia/blob/master/501/Lesson-08.md) we already have TinyMCE from [here](https://github.com/tinymce/tinymce-dist)
 
 The directory "tinymce-dist" is at "web/tinymce"
 
@@ -1246,7 +1246,7 @@ localhost/web/tiny.html
 
 **Upload with the image uploader**
 
-1. Browse files in ~/School/VIP/501/test_uploads/
+1. Browse files in ~/School/Codia/501/test_uploads/
 2. In TinyMCE: Click the "image" button > Upload
 3. Drag in or browse for any .png or .jpg file to the upload area
 4. Check the tinymce_uploads directory:$ `ls web/tinymce_uploads`
@@ -1259,7 +1259,7 @@ ls web/tinymce_uploads
 
 **Upload "automatically"** *(might not work at this point)*
 
-1. Browse files in ~/School/VIP/501/test_uploads/
+1. Browse files in ~/School/Codia/501/test_uploads/
 2. Drag any image directly into the TinyMCE editor area; only images will work
 3. Check the tinymce_uploads directory:$ `ls web/tinymce_uploads`
 4. Note whether the file name was preserved
@@ -1299,7 +1299,7 @@ localhost/web/tiny.html
 **Upload with the "file picker"**
 
 1. In TinyMCE: Click the "image" button > General: upload "Source" icon
-2. Select an image file from ~/School/VIP/501/test_uploads; only images will work
+2. Select an image file from ~/School/Codia/501/test_uploads; only images will work
 3. Check the tinymce_uploads directory:$ `ls web/tinymce_uploads`
 4. Note whether the file name was preserved
 
@@ -1481,7 +1481,7 @@ CREATE TABLE IF NOT EXISTS `media_library` (
 localhost/web/medialibrary.php
 ```
 
-1. Browse files in ~/School/VIP/501/test_uploads/
+1. Browse files in ~/School/Codia/501/test_uploads/
 2. Drag single or multiple files into the area: *"Drop to upload!"*
 3. Check in all subdirectories of the media directory:$ `ls web/media/*`
 4. Check for new SQL entries:> `SELECT * FROM media_library;`
@@ -1524,7 +1524,7 @@ ls web
 
 - *The media editor is loaded via AJAX*
   - *This uses a `<button>` to capture a hidden `<form>`*
-  - *This is borrowed from [Lesson 6](https://github.com/inkVerb/vip/blob/master/501/Lesson-06.md)*
+  - *This is borrowed from [Lesson 6](https://github.com/JesseSteele/Codia/blob/master/501/Lesson-06.md)*
 - *`ajax.mediainfo.php`*
   - *This both:*
     - *Creates the edit `<form>`*
@@ -1551,7 +1551,7 @@ ls web
   - *Added the `htm` & `html` file extensions to allowed `text/html` mimetypes*
     - *Already allowed in Dropzone (medialibrary.php) because our settings there only check mimetypes and `text/html` is already listed*
 - *`act.delmedia.php`*
-  - *This processes to-be-deleted items, similarly to act.bulkpieces.php from [Lesson 9](https://github.com/inkVerb/vip/blob/master/501/Lesson-09.md)*
+  - *This processes to-be-deleted items, similarly to act.bulkpieces.php from [Lesson 9](https://github.com/JesseSteele/Codia/blob/master/501/Lesson-09.md)*
   - *It receives the `POST` from `<form id="delete_action"` in `medialibrary.php`*
 - *`style.css`*
   - *A section `Hide notes` with the `.notehide` class to make some update notices disappear after a few seconds*
@@ -1603,14 +1603,14 @@ ls web/media/*
 ### VIII. Process Uploaded Files: Linux Processing
 *Install the Linux tools on our server...*
 
-- `imagemagick` *Images, from [401 Lesson 2](https://github.com/inkVerb/vip/blob/master/401/Lesson-02.md)*
+- `imagemagick` *Images, from [401 Lesson 2](https://github.com/JesseSteele/Codia/blob/master/401/Lesson-02.md)*
   - *Learn at: [https://imagemagick.org/script/command-line-processing.php]*
 - `ffmpeg` *Video & audio*
 - `lame` (Arch) / `libmp3lame0` (Debian) *Audio libraries for `ffmpeg`*
   - *This allows `ffmpeg` to process audio into an .mp3 file with the option: `-acodec libmp3lame`*
   - *On Debian, a more up-to-date alternative to `libmp3lame0` is: `libavcodec-extra57`*
     - *If `libavcodec-extra57` is not available, find the right number with: `sudo apt-cache search libavcodec-extra`*
-- `pandoc` *Documents, from [301 Lesson 2](https://github.com/inkVerb/vip/blob/master/301/Lesson-02.md)*
+- `pandoc` *Documents, from [301 Lesson 2](https://github.com/JesseSteele/Codia/blob/master/301/Lesson-02.md)*
   - `texlive-...` *Dependencies for `pandoc` to create .pdf files*
 
 Arch/Manjaro
@@ -2066,7 +2066,7 @@ localhost/web/medialibrary.php
 
 | **71** ://phpMyAdmin **> webapp_db > media_library**
 
-1. Browse files in ~/School/VIP/501/test_uploads/
+1. Browse files in ~/School/Codia/501/test_uploads/
 2. Drag multiple files into the area: *"Drop to upload!"*
   - Will fail:
     - too-marvellous-for-words.flac (PHP can't always recognize FLAC files)
@@ -2371,4 +2371,4 @@ tinymce.activeEditor.insertContent('some_html_here');
 
 ___
 
-#### [Lesson 11: Objects: OOP & PDO](https://github.com/inkVerb/vip/blob/master/501/Lesson-11.md)
+#### [Lesson 11: Objects: OOP & PDO](https://github.com/JesseSteele/Codia/blob/master/501/Lesson-11.md)

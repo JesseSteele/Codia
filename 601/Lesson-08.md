@@ -41,7 +41,7 @@ sudo make install
 
 ## Creating Packages
 - Packages are easier to understand if you have built a few packages first
-- The [Package Architectures Cheat Sheet](https://github.com/inkVerb/vip/blob/master/Cheat-Sheets/Package-Architectures.md) lists repositories that break down examples of actual Linux installer packages built from scratch
+- The [Package Architectures Cheat Sheet](https://github.com/JesseSteele/Codia/blob/master/Cheat-Sheets/Package-Architectures.md) lists repositories that break down examples of actual Linux installer packages built from scratch
 - They are build with:
   - Arch (`makepkg` for `pacman`)
   - Debian (`dpkg` for `apt-get`)
@@ -49,7 +49,7 @@ sudo make install
 - This Cheat Sheet is part of this lesson and teaching content
   - Complete that Cheat Sheet before continuing
 
-### [Package Architectures](https://github.com/inkVerb/vip/blob/master/Cheat-Sheets/Package-Architectures.md) Cheat Sheet
+### [Package Architectures](https://github.com/JesseSteele/Codia/blob/master/Cheat-Sheets/Package-Architectures.md) Cheat Sheet
 - Take-away points:
   - **Arch** uses a single `PKGBUILD` file in a directory named anything you want
     - Meta info and all scripts: `PKGBUILD`
@@ -766,4 +766,4 @@ zypper clean --all
 
 ___
 
-#### [Lesson 9: PAM & Cloud (SSH, SSL, LDAP, VM, Docker, Mail)](https://github.com/inkVerb/vip/blob/master/601/Lesson-09.md)
+#### [Lesson 9: PAM & Cloud (SSH, SSL, LDAP, VM, Docker, Mail)](https://github.com/JesseSteele/Codia/blob/master/601/Lesson-09.md)

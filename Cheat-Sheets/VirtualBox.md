@@ -192,4 +192,4 @@ ___
     - Adapter 2 > Name: *the same name as the new network just created - `vboxnet0`?*
 
 ### Other Networking Tools
-- [CISCO Packet Tracer](https://github.com/inkVerb/vip/blob/master/Cheat-Sheets/Packet-Tracer.md) to practice making your own networks in a simulator
+- [CISCO Packet Tracer](https://github.com/JesseSteele/Codia/blob/master/Cheat-Sheets/Packet-Tracer.md) to practice making your own networks in a simulator

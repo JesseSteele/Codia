@@ -1,6 +1,6 @@
 # SysAdmin Commands
 
-General final commands after completing **[Linux 601: SysAdmin](https://github.com/inkVerb/VIP/blob/master/601/README.md)**
+General final commands after completing **[Linux 601: SysAdmin](https://github.com/JesseSteele/Codia/blob/master/601/README.md)**
 
 # The Keys
 *Commands are meant to be run as `su` for practice*

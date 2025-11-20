@@ -4,7 +4,7 @@
 Ready the CLI
 
 ```console
-cd ~/School/VIP/201
+cd ~/School/Codia/201
 ```
 
 ___
@@ -285,4 +285,4 @@ ___
 
 ___
 
-#### [Lesson 2: cd, ../.., mkdir, rm -r](https://github.com/inkVerb/vip/blob/master/201/Lesson-02.md)
+#### [Lesson 2: cd, ../.., mkdir, rm -r](https://github.com/JesseSteele/Codia/blob/master/201/Lesson-02.md)

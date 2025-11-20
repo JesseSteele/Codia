@@ -4,7 +4,7 @@
 Ready the CLI
 
 ```console
-cd ~/School/VIP/101
+cd ~/School/Codia/101
 ```
 
 ___
@@ -161,7 +161,7 @@ ls
 ./allarg I like to eat bananas in the morning, with eggs, over easy that is.
 ```
 
-*This `@` means "everything" in web DNS, arrays ([Linux 301](https://github.com/inkVerb/vip/blob/master/301/README.md)), and many other things*
+*This `@` means "everything" in web DNS, arrays ([Linux 301](https://github.com/JesseSteele/Codia/blob/master/301/README.md)), and many other things*
 
 ### Terms: Variable, Argument, Constant
 ```sh
@@ -184,7 +184,7 @@ $10   : argument variable 1 followed by the number 0
 
 **Constant**: Variable that does not change
 
-*We will look at* ***constants*** *more in [401 Lesson 5](https://github.com/inkVerb/vip/blob/master/401/Lesson-05.md#viii-readonly-variables-constants)*
+*We will look at* ***constants*** *more in [401 Lesson 5](https://github.com/JesseSteele/Codia/blob/master/401/Lesson-05.md#viii-readonly-variables-constants)*
 
 ### Environment Constants
 
@@ -245,7 +245,7 @@ pwd
 | **25** :$
 
 ```console
-./how2arg $PWD $DESKTOP_SESSION VIP
+./how2arg $PWD $DESKTOP_SESSION Codia
 ```
 
 | **26** :$
@@ -289,7 +289,7 @@ ___
   - This shows the full, current location used by the terminal, AKA the "Present Working Directory"
 - Variables (environment constants also) can be used in a command
 - Variables used as arguments will pass their "value" as the argument
-- We will look at **constants**  more in [401 Lesson 5](https://github.com/inkVerb/vip/blob/master/401/Lesson-05.md#viii-readonly-variables-constants)
+- We will look at **constants**  more in [401 Lesson 5](https://github.com/JesseSteele/Codia/blob/master/401/Lesson-05.md#viii-readonly-variables-constants)
 ___
 
-#### [Lesson 4: Setting Variables & Setting Files](https://github.com/inkVerb/vip/blob/master/101/Lesson-04.md)
+#### [Lesson 4: Setting Variables & Setting Files](https://github.com/JesseSteele/Codia/blob/master/101/Lesson-04.md)

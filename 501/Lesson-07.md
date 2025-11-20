@@ -4,7 +4,7 @@
 Ready the CLI
 
 ```console
-cd ~/School/VIP/501
+cd ~/School/Codia/501
 ```
 
 Ready services
@@ -23,7 +23,7 @@ If teaching multiple students
 
 Prep directory
 ```console
-cd ~/School/VIP
+cd ~/School/Codia
 ```
 
 Webapp database ***dump***
@@ -61,7 +61,7 @@ sudo chown -R www:www 501/web
 Re-ready the CLI
 
 ```console
-cd ~/School/VIP/501
+cd ~/School/Codia/501
 ```
 
 ### This lesson uses two terminals and two browser tabs!
@@ -368,7 +368,7 @@ SELECT * FROM strings;
 *You may repeat all commands 8–9 to see this again*
 
 ### Cleanup via `cron` Task
-We learned about `cron` tasks in [Linux 401 Lesson 3](https://github.com/inkVerb/vip/blob/master/401/Lesson-03.md)
+We learned about `cron` tasks in [Linux 401 Lesson 3](https://github.com/JesseSteele/Codia/blob/master/401/Lesson-03.md)
 
 We can use `cron` to run a php file
 
@@ -473,9 +473,9 @@ Files for `cron` jobs are finicky; follow all instructions carefully:
 - *Being in the `/etc/` directory, we need `sudo`*
 - *Use `root /usr/bin/php` as the user because we need PHP to run this*
   - *We got `/usr/bin/php` by running: `which php`*
-- *[VIP/Cheat-Sheets: Cron Schedule Tasks](https://github.com/inkVerb/vip/blob/master/Cheat-Sheets/Cron.md)*
+- *[Codia/Cheat-Sheets: Cron Schedule Tasks](https://github.com/JesseSteele/Codia/blob/master/Cheat-Sheets/Cron.md)*
 
-*We will edit with `vim` from [Linux 201 Lesson 11](https://github.com/inkVerb/vip/blob/master/201/Lesson-11.md#vim-is-for-awesome-people)*
+*We will edit with `vim` from [Linux 201 Lesson 11](https://github.com/JesseSteele/Codia/blob/master/201/Lesson-11.md#vim-is-for-awesome-people)*
 
 | **18** :$
 
@@ -531,7 +531,7 @@ SELECT * FROM strings;
 *When finished, let's use a key for our login cookie...*
 
 ### Keys for Cookie Login
-Remember from [Lesson 4](https://github.com/inkVerb/vip/blob/master/501/Lesson-04.md#v-remember-me-login-cookies) that storing user info in a cookie is not secure
+Remember from [Lesson 4](https://github.com/JesseSteele/Codia/blob/master/501/Lesson-04.md#v-remember-me-login-cookies) that storing user info in a cookie is not secure
 
 Instead, one good option is to store a key, like the keys we just set up
 
@@ -694,7 +694,7 @@ ___
   - This: `require_once ('/srv/www/html/inc/config.php');`
   - NOT!: `require_once ('./inc/config.php');`
 - Files for `cron` jobs are finicky
-  - [VIP/Cheat-Sheets: Cron Schedule Tasks](https://github.com/inkVerb/vip/blob/master/Cheat-Sheets/Cron.md)
+  - [Codia/Cheat-Sheets: Cron Schedule Tasks](https://github.com/JesseSteele/Codia/blob/master/Cheat-Sheets/Cron.md)
 
 ## Login Cookies via Security Key
 - Cookies should never contain direct user information, including SQL table ID or username
@@ -719,4 +719,4 @@ ___
 
 ___
 
-#### [Lesson 8: CMS Blog: Edit, Display & TinyMCE](https://github.com/inkVerb/vip/blob/master/501/Lesson-08.md)
+#### [Lesson 8: CMS Blog: Edit, Display & TinyMCE](https://github.com/JesseSteele/Codia/blob/master/501/Lesson-08.md)

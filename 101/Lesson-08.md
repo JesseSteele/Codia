@@ -4,7 +4,7 @@
 Ready the CLI
 
 ```console
-cd ~/School/VIP/101
+cd ~/School/Codia/101
 ```
 
 ___
@@ -169,4 +169,4 @@ ___
   - But `tee -a` will append the contents to its output file
 ___
 
-#### [Lesson 9: find](https://github.com/inkVerb/vip/blob/master/101/Lesson-09.md)
+#### [Lesson 9: find](https://github.com/JesseSteele/Codia/blob/master/101/Lesson-09.md)

@@ -4,11 +4,11 @@
 Ready the CLI
 
 ```console
-cd ~/School/VIP/301
+cd ~/School/Codia/301
 ```
 
-- [Variables](https://github.com/inkVerb/vip/blob/master/Cheat-Sheets/Variables.md)
-- [Tests](https://github.com/inkVerb/vip/blob/master/Cheat-Sheets/Tests.md)
+- [Variables](https://github.com/JesseSteele/Codia/blob/master/Cheat-Sheets/Variables.md)
+- [Tests](https://github.com/JesseSteele/Codia/blob/master/Cheat-Sheets/Tests.md)
 
 ___
 
@@ -300,8 +300,8 @@ ___
   - `<` "less than"
   - `>=` "greater than or equal to"
   - `<=` "less than or equal to"
-- See usage and examples here: [Tests: Comparison](https://github.com/inkVerb/vip/blob/master/Cheat-Sheets/Tests.md#comparison)
+- See usage and examples here: [Tests: Comparison](https://github.com/JesseSteele/Codia/blob/master/Cheat-Sheets/Tests.md#comparison)
 
 ___
 
-#### [Lesson 10: BASH Trnary, Variable Variables & Arrays](https://github.com/inkVerb/vip/blob/master/301/Lesson-10.md)
+#### [Lesson 10: BASH Trnary, Variable Variables & Arrays](https://github.com/JesseSteele/Codia/blob/master/301/Lesson-10.md)

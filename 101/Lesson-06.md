@@ -4,7 +4,7 @@
 Ready the CLI
 
 ```console
-cd ~/School/VIP/101
+cd ~/School/Codia/101
 ```
 
 ___
@@ -92,7 +92,7 @@ echo "Add a line" | tee -a sedoutput.text
   - `sed 's/foo/bar/' < somefile`
 - An input file can be very useful to automate input responses to an interactive script
 
-We will explore more of the `read` command in [Linux 301 Lesson 2](https://github.com/inkVerb/vip/blob/master/301/Lesson-02.md)
+We will explore more of the `read` command in [Linux 301 Lesson 2](https://github.com/JesseSteele/Codia/blob/master/301/Lesson-02.md)
 
 *Create a simple, **interactive** script*
 
@@ -171,7 +171,7 @@ my last answer
 
 *We can also send all interactive responses we used in `answers` through a **heredoc***
 
-We will explore more about heredocs in [Linux 401 Lesson 11](https://github.com/inkVerb/vip/blob/master/401/Lesson-11.md)
+We will explore more about heredocs in [Linux 401 Lesson 11](https://github.com/JesseSteele/Codia/blob/master/401/Lesson-11.md)
 
 | **16** :$
 
@@ -213,8 +213,8 @@ ___
 - `command < inputfile` indicates input from a file
   - For many commands, this would be redundant
   - For interactive commands, each line of the input file can be an `STDIN` input response
-  - A [heredoc](https://github.com/inkVerb/vip/blob/master/401/Lesson-11.md#iii-heredoc-cat-eof) can also be used in place of the input file, which we will explore in depth in [Linux 401 Lesson 11](https://github.com/inkVerb/vip/blob/master/401/Lesson-11.md)
+  - A [heredoc](https://github.com/JesseSteele/Codia/blob/master/401/Lesson-11.md#iii-heredoc-cat-eof) can also be used in place of the input file, which we will explore in depth in [Linux 401 Lesson 11](https://github.com/JesseSteele/Codia/blob/master/401/Lesson-11.md)
 
 ___
 
-#### [Lesson 7: cat vs echo](https://github.com/inkVerb/vip/blob/master/101/Lesson-07.md)
+#### [Lesson 7: cat vs echo](https://github.com/JesseSteele/Codia/blob/master/101/Lesson-07.md)

@@ -4,11 +4,11 @@
 Ready the CLI
 
 ```console
-cd ~/School/VIP/401
+cd ~/School/Codia/401
 ```
 
-- [Resources & Things That Run](https://github.com/inkVerb/VIP/blob/master/Cheat-Sheets/Resources.md)
-- [LAMP Desktop](https://github.com/inkVerb/VIP/blob/master/Cheat-Sheets/LAMP-Desktop.md)
+- [Resources & Things That Run](https://github.com/JesseSteele/Codia/blob/master/Cheat-Sheets/Resources.md)
+- [LAMP Desktop](https://github.com/JesseSteele/Codia/blob/master/Cheat-Sheets/LAMP-Desktop.md)
 
 ___
 
@@ -478,7 +478,7 @@ cat mysqlinfofile
 | **48** :$
 
 ```console
-mysql --defaults-extra-file=~/School/VIP/401/mysqlinfofile -e "SHOW DATABASES;"
+mysql --defaults-extra-file=~/School/Codia/401/mysqlinfofile -e "SHOW DATABASES;"
 ```
 
 *...and that's how to put MySQL commands in a Shell script.*
@@ -492,7 +492,7 @@ mysql --defaults-extra-file=~/School/VIP/401/mysqlinfofile -e "SHOW DATABASES;"
 | **49** :$
 
 ```console
-mysql --defaults-extra-file=~/School/VIP/401/mysqlinfofile -e "DROP USER newadminuser@localhost;"
+mysql --defaults-extra-file=~/School/Codia/401/mysqlinfofile -e "DROP USER newadminuser@localhost;"
 ```
 
 ___
@@ -509,7 +509,7 @@ ___
 ## `systemctl`
 - `systemctl` manages background server "services", such as an SQL or web server
 - Syntax: `systemctl COMMAND SERVICE`
-- See usage and examples here: [Resources & Things That Run: systemctl vs service](https://github.com/inkVerb/VIP/blob/master/Cheat-Sheets/Resources.md)
+- See usage and examples here: [Resources & Things That Run: systemctl vs service](https://github.com/JesseSteele/Codia/blob/master/Cheat-Sheets/Resources.md)
 
 ## MySQL in Shell
 - A MySQL server is managed from the terminal
@@ -531,8 +531,8 @@ ___
   ```
 
 ## Develop PHP & MySQL on your Ubuntu desktop
-- For your own Ubuntu desktop developer setup for PHP & MySQL, follow the instructions here: [LAMP Desktop](https://github.com/inkVerb/VIP/blob/master/Cheat-Sheets/LAMP-Desktop.md)
+- For your own Ubuntu desktop developer setup for PHP & MySQL, follow the instructions here: [LAMP Desktop](https://github.com/JesseSteele/Codia/blob/master/Cheat-Sheets/LAMP-Desktop.md)
 
 ___
 
-#### [Lesson 5: More with Variables](https://github.com/inkVerb/vip/blob/master/401/Lesson-05.md)
+#### [Lesson 5: More with Variables](https://github.com/JesseSteele/Codia/blob/master/401/Lesson-05.md)

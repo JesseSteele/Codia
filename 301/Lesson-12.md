@@ -4,11 +4,11 @@
 Ready the CLI
 
 ```console
-cd ~/School/VIP/301
+cd ~/School/Codia/301
 ```
 
-- [Variables](https://github.com/inkVerb/vip/blob/master/Cheat-Sheets/Variables.md)
-- [Tests](https://github.com/inkVerb/vip/blob/master/Cheat-Sheets/Tests.md)
+- [Variables](https://github.com/JesseSteele/Codia/blob/master/Cheat-Sheets/Variables.md)
+- [Tests](https://github.com/JesseSteele/Codia/blob/master/Cheat-Sheets/Tests.md)
 
 ___
 
@@ -420,7 +420,7 @@ ___
   - `f)` what to do if this flag was argued (as many as needed)
   - `esac` closes the case index
   - `done` closes the getopt loop
-- See usage and examples here: [Tests: getopts](https://github.com/inkVerb/vip/blob/master/Cheat-Sheets/Tests.md#ix-getopts)
+- See usage and examples here: [Tests: getopts](https://github.com/JesseSteele/Codia/blob/master/Cheat-Sheets/Tests.md#ix-getopts)
 
 ## *Explaining `getopt` in detail is beyond the scope of this survey lesson*
 
@@ -440,7 +440,7 @@ ___
   - `esac` closes the case index
   - `done` closes the getopt loop
   - `shift "$((OPTIND-1))"` resets the same `getopt` native variables as before (good housekeeping)
-- See usage and examples here: [Tests: getopt](https://github.com/inkVerb/vip/blob/master/Cheat-Sheets/Tests.md#x-getopt)
+- See usage and examples here: [Tests: getopt](https://github.com/JesseSteele/Codia/blob/master/Cheat-Sheets/Tests.md#x-getopt)
 
 ___
 
@@ -488,4 +488,4 @@ pacman4console
 
 ___
 
-## Next: [Linux 401: Advance](https://github.com/inkVerb/VIP/blob/master/401/README.md)
+## Next: [Linux 401: Advance](https://github.com/JesseSteele/Codia/blob/master/401/README.md)

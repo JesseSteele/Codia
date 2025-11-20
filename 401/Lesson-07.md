@@ -4,7 +4,7 @@
 Ready the CLI
 
 ```console
-cd ~/School/VIP/401
+cd ~/School/Codia/401
 ```
 
 ___
@@ -130,7 +130,7 @@ sed -i "s/^/add2start_/" countfile
 sed -i "s/$/\n/" countfile
 ```
 
-*Note from [101 Lesson 11](https://github.com/inkVerb/vip/blob/master/101/Lesson-11.md) that `sed` requires the `-z` flag to search for `\n`*
+*Note from [101 Lesson 11](https://github.com/JesseSteele/Codia/blob/master/101/Lesson-11.md) that `sed` requires the `-z` flag to search for `\n`*
 
 #### `\s` = empty line
 *Remove each extra line*
@@ -441,4 +441,4 @@ ___
 
 ___
 
-#### [Lesson 8: $IFS (Internal Field Separator)](https://github.com/inkVerb/vip/blob/master/401/Lesson-08.md)
+#### [Lesson 8: $IFS (Internal Field Separator)](https://github.com/JesseSteele/Codia/blob/master/401/Lesson-08.md)

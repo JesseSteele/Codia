@@ -4,7 +4,7 @@
 Ready the CLI
 
 ```console
-cd ~/School/VIP/701
+cd ~/School/Codia/701
 ```
 ___
 
@@ -16,4 +16,4 @@ ___
 
 ___
 
-#### [Lesson 7: Files & Uploads](https://github.com/inkVerb/vip/blob/master/701/Lesson-07.md)
+#### [Lesson 7: Files & Uploads](https://github.com/JesseSteele/Codia/blob/master/701/Lesson-07.md)

@@ -4,7 +4,7 @@
 Ready the CLI
 
 ```console
-cd ~/School/VIP/401
+cd ~/School/Codia/401
 ```
 
 ___
@@ -25,7 +25,7 @@ file1 file2 file3 file4 file5
 file1${IFS}file2${IFS}file3${IFS}file4${IFS}file5
 ```
 
-"Fields" are important because a `for` loop will loop once per field. (We learned about `for` loops in [301-03](https://github.com/inkVerb/vip/blob/master/301/Lesson-03.md))
+"Fields" are important because a `for` loop will loop once per field. (We learned about `for` loops in [301-03](https://github.com/JesseSteele/Codia/blob/master/301/Lesson-03.md))
 
 ...The question is: ***What constitutes a field?***
 
@@ -246,7 +246,7 @@ done
 
 ### VI. `$IFS` in the `$PATH`
 
-*Remember learning about our `$PATH` in [Lesson 3]((https://github.com/inkVerb/vip/blob/master/401/Lesson-03.md))?*
+*Remember learning about our `$PATH` in [Lesson 3]((https://github.com/JesseSteele/Codia/blob/master/401/Lesson-03.md))?*
 
 | **14** :$
 
@@ -307,4 +307,4 @@ ___
 
 ___
 
-#### [Lesson 9: Interpreters, errors, logic, and empty testing](https://github.com/inkVerb/vip/blob/master/401/Lesson-09.md)
+#### [Lesson 9: Interpreters, errors, logic, and empty testing](https://github.com/JesseSteele/Codia/blob/master/401/Lesson-09.md)

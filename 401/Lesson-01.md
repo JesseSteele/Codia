@@ -4,7 +4,7 @@
 Ready the CLI
 
 ```console
-cd ~/School/VIP/401
+cd ~/School/Codia/401
 ```
 
 ___
@@ -97,7 +97,7 @@ This is a second line."
 | **9** :$
 
 ```console
-cd ~/School/VIP
+cd ~/School/Codia
 ```
 
 *Consider the `ls` command:*
@@ -128,7 +128,7 @@ ls\
 401
 ```
 
-*Press Up to see what your last command was: `ls-l~/School/VIP/401`*
+*Press Up to see what your last command was: `ls-l~/School/Codia/401`*
 
 *Even breakup character by character, TYPE IN THE ENTIRE COMMAND, INCLUDING SPACES:*
 
@@ -153,7 +153,7 @@ l\
 s \
 -\
 l \
-~/School/VIP/401
+~/School/Codia/401
 ```
 
 ### III. Shell History
@@ -225,7 +225,7 @@ history
 | **23** :$
 
 ```console
-cd ~/School/VIP/401
+cd ~/School/Codia/401
 ```
 
 ### IV. "Reverse Search"
@@ -277,4 +277,4 @@ ___
 
 ___
 
-#### [Lesson 2: netstat -natu, tcpdump, man, info](https://github.com/inkVerb/vip/blob/master/401/Lesson-02.md)
+#### [Lesson 2: netstat -natu, tcpdump, man, info](https://github.com/JesseSteele/Codia/blob/master/401/Lesson-02.md)

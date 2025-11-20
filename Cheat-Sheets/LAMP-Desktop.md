@@ -4,7 +4,7 @@
 
 ***This is for your local desktop developer environment only, not secure for production servers!***
 
-***This installs Apache!*** *For Nginx on Arch/Manjaro, see [LEMP Desktop](https://github.com/inkVerb/VIP/blob/master/Cheat-Sheets/LEMP-Desktop.md)*
+***This installs Apache!*** *For Nginx on Arch/Manjaro, see [LEMP Desktop](https://github.com/JesseSteele/Codia/blob/master/Cheat-Sheets/LEMP-Desktop.md)*
 
 ___
 

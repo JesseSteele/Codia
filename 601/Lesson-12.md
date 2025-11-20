@@ -1,7 +1,7 @@
 # Linux 601
 ## Lesson 12: Backup & System Rescue
 
-- [SysAdmin Commands](https://github.com/inkVerb/VIP/blob/master/Cheat-Sheets/SysAdmin-Commands.md)
+- [SysAdmin Commands](https://github.com/JesseSteele/Codia/blob/master/Cheat-Sheets/SysAdmin-Commands.md)
 
 # The Chalk
 ## Backup
@@ -68,13 +68,13 @@
 - `mt` - query and position tapes before backup and restore
 
 #### `tar` Tape Archive *(not only for tapes)*
-- For extended usage, see [201 Lesson 7: tar, xz, zip, gzip, bzip2](https://github.com/inkVerb/vip/blob/master/201/Lesson-07.md)
+- For extended usage, see [201 Lesson 7: tar, xz, zip, gzip, bzip2](https://github.com/JesseSteele/Codia/blob/master/201/Lesson-07.md)
 - `tar cf /place/archive.tar /source/dir` create `archive.tar` from `/source` directory
 - `tar Jcf /place/archive.txz /source/dir` archive and compress with `xz`
 - `tar xfp /place/archive.tar` extract, (`p` preserve permissions, should be default anyway)
 
 #### `dd` Device Duplicator
-- `dd` was introduced in [Lesson 7: Disk & Partitioning](https://github.com/inkVerb/vip/blob/master/601/Lesson-07.md)
+- `dd` was introduced in [Lesson 7: Disk & Partitioning](https://github.com/JesseSteele/Codia/blob/master/601/Lesson-07.md)
   - `dd if=/dev/sda of=/dev/sdb` - Backup `sda` to `sdb`
   - `dd if=/dev/sda of=sda.img` - Backup `sda` to an `.img` file
   - `dd if=/dev/sda1 of=sda1.img` - Backup the `sda1` partition to an `.img` file
@@ -103,7 +103,7 @@
     - Eg `-e ssh` uses `ssh` to make the connection
       - Requires that the `ssh` service is running on the remote machine
         - :# `systemctl start ssh`
-      - Requires standard `ssh` keys installed on both machines (from [Lesson 9](https://github.com/inkVerb/vip/blob/master/601/Lesson-09.md))
+      - Requires standard `ssh` keys installed on both machines (from [Lesson 9](https://github.com/JesseSteele/Codia/blob/master/601/Lesson-09.md))
     - Flag `-e` must be last or separate just before `ssh`
       - `-avzxxxxxxe ssh` *`e` is last in the flag group*
       - `-avzxxxxxx -e ssh` *`-e` is separate and just before `ssh`*
@@ -239,7 +239,7 @@ chroot /mnt/sysimage
   - This helps get the new OS get "moved in and arrange the furniture" when being installed (ie device drivers, user credentials, etc)
   - `chroot` is used manually when installing Arch
 - This is often called a "chroot-ed" environment
-- `chroot` is a standard start for fixing things on a broken Linux installation, including to repair GRUB (per [Lesson 5: Kernel & Devices](https://github.com/inkVerb/vip/blob/master/601/Lesson-05.md))
+- `chroot` is a standard start for fixing things on a broken Linux installation, including to repair GRUB (per [Lesson 5: Kernel & Devices](https://github.com/JesseSteele/Codia/blob/master/601/Lesson-05.md))
 - Some commands allow non-chroot-ed access, ie SUSE/CentOS :# `rpm -ivh --force --root=/mnt/sysimage /mnt/source/Packages/somepackage.rpm`
 
 ___
@@ -247,12 +247,12 @@ ___
 # The Keys
 *Practice commands for SysAdmins who already know what these mean*
 
-[Oracle VirtualBox](https://github.com/inkVerb/vip/blob/master/Cheat-Sheets/VirtualBox.md)
+[Oracle VirtualBox](https://github.com/JesseSteele/Codia/blob/master/Cheat-Sheets/VirtualBox.md)
 - **These commands should be attempted on practice machines, either:**
   1. On a practice machine running Linux with only expendable disks attached
   2. Or on a VM with additional volumes attached
-  - For **Backup** with `rsync`: two VMs should be running on a [hybervisor's virtual network](https://github.com/inkVerb/vip/blob/master/Cheat-Sheets/VirtualBox.md#Networking)
-  - Distro-agnostic; the two Debian machines from [Lesson 9](https://github.com/inkVerb/vip/blob/master/601/Lesson-09.md) should be sufficient, but need Internet access to install `rsync`
+  - For **Backup** with `rsync`: two VMs should be running on a [hybervisor's virtual network](https://github.com/JesseSteele/Codia/blob/master/Cheat-Sheets/VirtualBox.md#Networking)
+  - Distro-agnostic; the two Debian machines from [Lesson 9](https://github.com/JesseSteele/Codia/blob/master/601/Lesson-09.md) should be sufficient, but need Internet access to install `rsync`
   - For **System Rescue**, either:
     1. Attach a Linux `.iso` installer to the VM and boot to the `.iso`
     2. Or plug a bootable Linux USB to an expendable practice machine running Linux
@@ -285,7 +285,7 @@ sudo tar Jcvf /mnt/backup/srv.bak.txz /srv
 ```
 
 ### `rsync`
-- Presumes `ssh` keys are already set up per [Lesson 9](https://github.com/inkVerb/vip/blob/master/601/Lesson-09.md)
+- Presumes `ssh` keys are already set up per [Lesson 9](https://github.com/JesseSteele/Codia/blob/master/601/Lesson-09.md)
 
 | **Remote machine** :$
 
@@ -432,7 +432,7 @@ ___
 
 # Done! Have a cookie: ### #
 
-Practice commands for all Linux 601 one lessons in [VIP/Cheat-Sheets: SysAdmin Commands](https://github.com/inkVerb/VIP/blob/master/Cheat-Sheets/SysAdmin-Commands.md)
+Practice commands for all Linux 601 one lessons in [Codia/Cheat-Sheets: SysAdmin Commands](https://github.com/JesseSteele/Codia/blob/master/Cheat-Sheets/SysAdmin-Commands.md)
 
 Wait...
 

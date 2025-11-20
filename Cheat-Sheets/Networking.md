@@ -1,9 +1,9 @@
 # Networking
 
-Learn more about managing networks in **[Linux 601 Lesson 6: Networks](https://github.com/inkVerb/vip/blob/master/601/Lesson-06.md)**
+Learn more about managing networks in **[Linux 601 Lesson 6: Networks](https://github.com/JesseSteele/Codia/blob/master/601/Lesson-06.md)**
 
 ## Reference
-### [VIP/Cheat-Sheets: Packet Tracer](https://github.com/inkVerb/VIP/blob/master/Cheat-Sheets/Packet-Tracer.md)
+### [/Codia/Cheat-Sheets: Packet Tracer](https://github.com/JesseSteele/Codia/blob/master/Cheat-Sheets/Packet-Tracer.md)
 ### [CISCO Classes on Networking](https://skillsforall.com/catalog?category=course&subject+areas=networking) 
 ### [Udemy Class on Networking](https://www.udemy.com/course/complete-networking-fundamentals-course-ccna-start/)
 

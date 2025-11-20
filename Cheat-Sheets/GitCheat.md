@@ -1,7 +1,7 @@
 # GitHub
 *Setup & basic commands for beginners*
 
-## Learn more in [Code 601 Lesson 4: Git](https://github.com/inkVerb/vip/blob/master/601/Lesson-04.md)
+## Learn more in [Code 601 Lesson 4: Git](https://github.com/JesseSteele/Codia/blob/master/601/Lesson-04.md)
 
 ## Update an existing repo from the command line
 

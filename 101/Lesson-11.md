@@ -4,7 +4,7 @@
 Ready the CLI
 
 ```console
-cd ~/School/VIP/101
+cd ~/School/Codia/101
 ```
 
 ___
@@ -93,7 +93,7 @@ sed -i 's/\$/@/g' money.file
 
 *Sometimes we need BOTH 'single quotes' AND the "backslash" (`\`) quote/escape character!*
 
-*(Can you figure out what `$` means? The answer is in [401 Lesson 7](https://github.com/inkVerb/vip/blob/master/401/Lesson-07.md))*
+*(Can you figure out what `$` means? The answer is in [401 Lesson 7](https://github.com/JesseSteele/Codia/blob/master/401/Lesson-07.md))*
 
 *Use `\` with letters to represent **metacharacters***
 
@@ -172,8 +172,8 @@ ___
 
 # The Take
 - We must know when and how to quote or "escape" certain characters
-- We will revisit special characters when we learn about RegEx in [401 Lesson 11](https://github.com/inkVerb/vip/blob/master/401/Lesson-11.md)
-- Read more in the [Character Classes](https://github.com/inkVerb/vip/blob/master/Cheat-Sheets/Characters.md#Classes) cheat sheet
+- We will revisit special characters when we learn about RegEx in [401 Lesson 11](https://github.com/JesseSteele/Codia/blob/master/401/Lesson-11.md)
+- Read more in the [Character Classes](https://github.com/JesseSteele/Codia/blob/master/Cheat-Sheets/Characters.md#Classes) cheat sheet
   - ie: 'only letters' or 'only numbers' or 'only letters and numbers'
 
 ## Why "quote/escape" some characters?
@@ -190,10 +190,10 @@ ___
   - `\n` = "new line"
   - `\t` = "tab"
   - These are called "Metacharacters", which you can study more on your own
-    - See a short list here: [Characters](https://github.com/inkVerb/vip/blob/master/Cheat-Sheets/Characters.md#RegEx-Metacharacters)
+    - See a short list here: [Characters](https://github.com/JesseSteele/Codia/blob/master/Cheat-Sheets/Characters.md#RegEx-Metacharacters)
 - There is much more to working with special characters
-  - You can get a more in-depth information here: [find-grep-sed.md](https://github.com/inkVerb/VIP/blob/master/Cheat-Sheets/find-grep-sed.md)
+  - You can get a more in-depth information here: [find-grep-sed.md](https://github.com/JesseSteele/Codia/blob/master/Cheat-Sheets/find-grep-sed.md)
 
 ___
 
-#### [Lesson 12: grep with Special Characters](https://github.com/inkVerb/vip/blob/master/101/Lesson-12.md)
+#### [Lesson 12: grep with Special Characters](https://github.com/JesseSteele/Codia/blob/master/101/Lesson-12.md)

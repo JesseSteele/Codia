@@ -16,7 +16,7 @@
 
 ### Packet Filtering
 - *Most firewalls filter packets*
-- ***Packets** & **layers** are covered more in [Lesson 6: Networks](https://github.com/inkVerb/vip/blob/master/601/Lesson-06.md)*
+- ***Packets** & **layers** are covered more in [Lesson 6: Networks](https://github.com/JesseSteele/Codia/blob/master/601/Lesson-06.md)*
 - **Packet** - Protocol Data Unit (PDU) - sent in the **Network** layer
 - A **packet** contains:
   - Header
@@ -261,7 +261,7 @@ ___
 # The Keys
 *Practice commands for SysAdmins who already know what these mean*
 
-- These could be run on a local work machine or on machines in a [hybervisor's virtual network](https://github.com/inkVerb/vip/blob/master/Cheat-Sheets/VirtualBox.md#Networking) like the one used in [Lesson 9](https://github.com/inkVerb/vip/blob/master/601/Lesson-09.md)
+- These could be run on a local work machine or on machines in a [hybervisor's virtual network](https://github.com/JesseSteele/Codia/blob/master/Cheat-Sheets/VirtualBox.md#Networking) like the one used in [Lesson 9](https://github.com/JesseSteele/Codia/blob/master/601/Lesson-09.md)
 
 ```console
 man firewall-cmd
@@ -335,4 +335,4 @@ sudo firewall-cmd --zone=work --list-forward
 
 ___
 
-#### [Lesson 11: Security Modules](https://github.com/inkVerb/vip/blob/master/601/Lesson-11.md)
+#### [Lesson 11: Security Modules](https://github.com/JesseSteele/Codia/blob/master/601/Lesson-11.md)

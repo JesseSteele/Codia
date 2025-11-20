@@ -37,6 +37,6 @@ sudo dd bs=4M if=manjaro-gnome-20.X.X-XXXXXX-linuxXX.iso of=/dev/sdf conv=fdatas
 - [https://www.archlinux.org]
 - [https://www.archlinux.org/download/]
 
-### [BIOS, EFI & Other Settings for Linux](https://github.com/inkVerb/VIP/blob/master/install-BIOS-UEFI.md)
-### [IBUS for Taiwan and/or China Mandarin typing input](https://github.com/inkVerb/VIP/blob/master/ibus_zh_TW.md)
-### Setup the [Arch F12 Terminal](https://github.com/inkVerb/vip/blob/master/Arch-F12-Terminal.md)
+### [BIOS, EFI & Other Settings for Linux](https://github.com/JesseSteele/Codia/blob/master/install-BIOS-UEFI.md)
+### [IBUS for Taiwan and/or China Mandarin typing input](https://github.com/JesseSteele/Codia/blob/master/ibus_zh_TW.md)
+### Setup the [Arch F12 Terminal](https://github.com/JesseSteele/Codia/blob/master/Arch-F12-Terminal.md)

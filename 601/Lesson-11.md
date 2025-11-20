@@ -32,7 +32,7 @@
   - **DAC**: Discretionary Access Control (policy-based, mainly user/file permissions on every Unix/Linux kernel)
   - **MAC**: Mandatory Access Control (user-based, includes ACL, supplemental to Linux DAC)
   - **AVC**: Access Vector Cache (messages about SELinux violations)
-  - **ACL**: Access Control Lists (user/file permissions, see [Lesson 3: Users & Groups](https://github.com/inkVerb/vip/blob/master/601/Lesson-03.md))
+  - **ACL**: Access Control Lists (user/file permissions, see [Lesson 3: Users & Groups](https://github.com/JesseSteele/Codia/blob/master/601/Lesson-03.md))
   - Learn more on [UL.SE](https://unix.stackexchange.com/questions/16828)
 - Linux v6.7.4 (2024) LSMs include:
   - **SELinux** (v2.6: elaborate MAC)
@@ -65,7 +65,7 @@
 - Permanently disable: (either)
   - `SELINUX=disabled` (in `/etc/selinux/config`)
   - `selinux=0` to kernel via the `linux` line of GRUB config: `/boot/grub/grub.cfg`
-    - See [Lesson 5: Kernel & Devices](https://github.com/inkVerb/vip/blob/master/601/Lesson-05.md) for more
+    - See [Lesson 5: Kernel & Devices](https://github.com/JesseSteele/Codia/blob/master/601/Lesson-05.md) for more
   - Only disable SELinux if you ***never*** intend to re-enable it
     - Instead of "disable and re-enable", first use `setenforce Permissive` to disble enforcement, then `setenforce Enforcing` to enforce again
 - Tools:
@@ -328,7 +328,7 @@ ___
 # The Keys
 *Practice commands for SysAdmins who already know what these mean*
 
-- **These commands should be attempted on practice machines, such as via [Oracle VirtualBox](https://github.com/inkVerb/vip/blob/master/Cheat-Sheets/VirtualBox.md), using:**
+- **These commands should be attempted on practice machines, such as via [Oracle VirtualBox](https://github.com/JesseSteele/Codia/blob/master/Cheat-Sheets/VirtualBox.md), using:**
   - ***CentOS Stream* with SELinux** for **SELinux** command practice
     - Simple Virtualbox SELinux option is *PCI-DSS (Payment Card Industry Data Security Standard)* because it doesn't have partition mounting requirements
   - ***Debian*** or ***OpenSUSE*** for **AppArmor** command practice
@@ -504,4 +504,4 @@ exit
 
 ___
 
-#### [Lesson 12: Backup & System Rescue](https://github.com/inkVerb/vip/blob/master/601/Lesson-12.md)
+#### [Lesson 12: Backup & System Rescue](https://github.com/JesseSteele/Codia/blob/master/601/Lesson-12.md)

@@ -3,7 +3,7 @@
 Ready the CLI
 
 ```console
-cd ~/School/VIP/201
+cd ~/School/Codia/201
 ```
 
 ___
@@ -401,7 +401,7 @@ nano verb.ink.html
 *Take note of:* ^K ^W ^O ^X M-U
 
 *Note* ^Z *will "stop" the nano session, not "undo"*
-- If you ^Z back to the terminal, resume with `fg nano`, see [Linux 101 Lesson 0](https://github.com/inkVerb/VIP/blob/master/101/Lesson-00.md)
+- If you ^Z back to the terminal, resume with `fg nano`, see [Linux 101 Lesson 0](https://github.com/JesseSteele/Codia/blob/master/101/Lesson-00.md)
 
 *(<kbd>Ctrl</kbd> + <kbd>X</kbd> to eXit)*
 
@@ -486,4 +486,4 @@ ___
 
 ___
 
-#### [Lesson 12: Filesystem Hierarchy Standard (FHS)](https://github.com/inkVerb/vip/blob/master/201/Lesson-12.md)
+#### [Lesson 12: Filesystem Hierarchy Standard (FHS)](https://github.com/JesseSteele/Codia/blob/master/201/Lesson-12.md)

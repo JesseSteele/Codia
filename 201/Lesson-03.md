@@ -4,7 +4,7 @@
 Ready the CLI
 
 ```console
-cd ~/School/VIP/201
+cd ~/School/Codia/201
 ```
 
 ___
@@ -680,4 +680,4 @@ ___
 
 ___
 
-#### [Lesson 4: ls -1 -l -a -r, chmod](https://github.com/inkVerb/vip/blob/master/201/Lesson-04.md)
+#### [Lesson 4: ls -1 -l -a -r, chmod](https://github.com/JesseSteele/Codia/blob/master/201/Lesson-04.md)

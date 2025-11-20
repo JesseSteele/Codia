@@ -4,11 +4,11 @@
 Ready the CLI (might not be needed)
 
 ```console
-cd ~/School/VIP/201
+cd ~/School/Codia/201
 ```
 
-#### [VIP/Cheat-Sheets: Resources & Things That Run](https://github.com/inkVerb/VIP/blob/master/Cheat-Sheets/Resources.md)
-#### [VIP/Cheat-Sheets: File Size, Binary, Hexadecimal](https://github.com/inkVerb/VIP/blob/master/Cheat-Sheets/Sizes-Binary-Hex.md)
+#### [Codia/Cheat-Sheets: Resources & Things That Run](https://github.com/JesseSteele/Codia/blob/master/Cheat-Sheets/Resources.md)
+#### [Codia/Cheat-Sheets: File Size, Binary, Hexadecimal](https://github.com/JesseSteele/Codia/blob/master/Cheat-Sheets/Sizes-Binary-Hex.md)
 
 ___
 
@@ -98,7 +98,7 @@ df -T
 | **7** :$
 
 ```console
-cd ~/School/VIP/201
+cd ~/School/Codia/201
 ```
 
 | **8** :$
@@ -264,7 +264,7 @@ killall chromium-browser
 
 *Some processes can only be killed by PID*
 
-*Refer to this cheat-sheet for more about `ps`, `du`, `df` and others:* [VIP/Cheat-Sheets: Resources & Things That Run](https://github.com/inkVerb/VIP/blob/master/Cheat-Sheets/Resources.md)
+*Refer to this cheat-sheet for more about `ps`, `du`, `df` and others:* [Codia/Cheat-Sheets: Resources & Things That Run](https://github.com/JesseSteele/Codia/blob/master/Cheat-Sheets/Resources.md)
 
 ___
 
@@ -279,7 +279,7 @@ ___
   - `ps aux | grep PROCESS` helps to find a running process in the `ps aux` output list
 - `pgrep` outputs only a processes PID
   - This is useful to kill an app from the terminal via `kill PID`
-- See usage and examples here: [VIP/Cheat-Sheets: Resources & Things That Run](https://github.com/inkVerb/VIP/blob/master/Cheat-Sheets/Resources.md)
+- See usage and examples here: [Codia/Cheat-Sheets: Resources & Things That Run](https://github.com/JesseSteele/Codia/blob/master/Cheat-Sheets/Resources.md)
 - `top` outputs a realtime list of the system's top-biggest processes
   - **Q** will quit
   - `top` will only output what the height of the terminal can display without scrolling
@@ -301,4 +301,4 @@ ___
 
 ___
 
-#### [Lesson 10: COMMAND > FILE, pwd, uname, who, w](https://github.com/inkVerb/vip/blob/master/201/Lesson-10.md)
+#### [Lesson 10: COMMAND > FILE, pwd, uname, who, w](https://github.com/JesseSteele/Codia/blob/master/201/Lesson-10.md)

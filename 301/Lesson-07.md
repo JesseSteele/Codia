@@ -4,11 +4,11 @@
 Ready the CLI
 
 ```console
-cd ~/School/VIP/301
+cd ~/School/Codia/301
 ```
 
-- [Variables](https://github.com/inkVerb/vip/blob/master/Cheat-Sheets/Variables.md)
-- [Tests](https://github.com/inkVerb/vip/blob/master/Cheat-Sheets/Tests.md)
+- [Variables](https://github.com/JesseSteele/Codia/blob/master/Cheat-Sheets/Variables.md)
+- [Tests](https://github.com/JesseSteele/Codia/blob/master/Cheat-Sheets/Tests.md)
 
 ___
 
@@ -295,4 +295,4 @@ ___
   - `local Variable="value"`
 ___
 
-#### [Lesson 8: date & pwgen](https://github.com/inkVerb/vip/blob/master/301/Lesson-08.md)
+#### [Lesson 8: date & pwgen](https://github.com/JesseSteele/Codia/blob/master/301/Lesson-08.md)

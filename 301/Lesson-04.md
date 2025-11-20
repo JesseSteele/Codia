@@ -4,22 +4,22 @@
 Ready the CLI
 
 ```console
-cd ~/School/VIP/301/one
+cd ~/School/Codia/301/one
 ```
 
-- [Variables](https://github.com/inkVerb/vip/blob/master/Cheat-Sheets/Variables.md)
-- [Tests](https://github.com/inkVerb/vip/blob/master/Cheat-Sheets/Tests.md)
+- [Variables](https://github.com/JesseSteele/Codia/blob/master/Cheat-Sheets/Variables.md)
+- [Tests](https://github.com/JesseSteele/Codia/blob/master/Cheat-Sheets/Tests.md)
 
 ___
 
 *Quick prep first: Make symlinks of this lesson's scripts in the directory we will use*
 
-*Note, we aren't in our usual place; we are here: `~/School/VIP/301/one`*
+*Note, we aren't in our usual place; we are here: `~/School/Codia/301/one`*
 
 | **1** :$ *Make sure you include that period at the end!*
 
 ```console
-ln -sfn ~/School/VIP/301/04-* .
+ln -sfn ~/School/Codia/301/04-* .
 ```
 
 ### I. Replacing within Variables
@@ -370,7 +370,7 @@ ___
 - This can be useful to:
   1. Change a string quickly inside a script
   2. Call a known variable based on arguments or a settings file, etc
-- See usage and examples here: [Variables](https://github.com/inkVerb/vip/blob/master/Cheat-Sheets/Variables.md)
+- See usage and examples here: [Variables](https://github.com/JesseSteele/Codia/blob/master/Cheat-Sheets/Variables.md)
 ___
 
-#### [Lesson 5: while, until & case](https://github.com/inkVerb/vip/blob/master/301/Lesson-05.md)
+#### [Lesson 5: while, until & case](https://github.com/JesseSteele/Codia/blob/master/301/Lesson-05.md)

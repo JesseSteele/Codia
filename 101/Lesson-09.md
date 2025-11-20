@@ -4,7 +4,7 @@
 Ready the CLI
 
 ```console
-cd ~/School/VIP/101
+cd ~/School/Codia/101
 ```
 
 ___
@@ -187,4 +187,4 @@ ___
 
 ___
 
-#### [Lesson 10: grep](https://github.com/inkVerb/vip/blob/master/101/Lesson-10.md)
+#### [Lesson 10: grep](https://github.com/JesseSteele/Codia/blob/master/101/Lesson-10.md)

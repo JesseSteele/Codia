@@ -4,11 +4,11 @@
 Ready the CLI
 
 ```console
-cd ~/School/VIP/301
+cd ~/School/Codia/301
 ```
 
-- [Variables](https://github.com/inkVerb/vip/blob/master/Cheat-Sheets/Variables.md)
-- [Tests](https://github.com/inkVerb/vip/blob/master/Cheat-Sheets/Tests.md)
+- [Variables](https://github.com/JesseSteele/Codia/blob/master/Cheat-Sheets/Variables.md)
+- [Tests](https://github.com/JesseSteele/Codia/blob/master/Cheat-Sheets/Tests.md)
 
 ___
 
@@ -360,7 +360,7 @@ ___
 - Syntax of the `while` line:
   - `while` `[ Conditions_to_be_tested ]`
   - `while :` will loop without a test until a `break` or `exit`
-- See usage and examples here: [Tests: while](https://github.com/inkVerb/vip/blob/master/Cheat-Sheets/Tests.md#iv-while-do-done)
+- See usage and examples here: [Tests: while](https://github.com/JesseSteele/Codia/blob/master/Cheat-Sheets/Tests.md#iv-while-do-done)
 
 ## `until` (do something while `false` until `true`)
 - `until` loops a mini-script that runs as long as a test returns `false`, until a test returns `true`
@@ -375,7 +375,7 @@ ___
 - Syntax of the `until` line:
   - `until` `[ Conditions_to_be_tested ]`
   - `until :` will loop without a test until a `break` or `exit`
-- See usage and examples here: [Tests: until](https://github.com/inkVerb/vip/blob/master/Cheat-Sheets/Tests.md#v-until-do-done)
+- See usage and examples here: [Tests: until](https://github.com/JesseSteele/Codia/blob/master/Cheat-Sheets/Tests.md#v-until-do-done)
 
 ## `case` (multiple scripts for each of multiple conditions)
 - `case` runs any of many mini-scripts based on the value of a variable
@@ -385,7 +385,7 @@ ___
   3. Adapt to custom flag arguments (or more in-depth with BASH using `getopts`, later lessons)
   4. Do the job of a long `if`-`elif` test series without being as complex
   5. Work based on a variable's value set earlier in the script
-- *Note One common way to organize a `case` scenario is for each "case" to simply set a variable as `true`, then process that variable based on an `if` test later in the script. This makes scripts longer, but the `case` index is easier to read. This is seen in the cheat-sheet [Tests: case](https://github.com/inkVerb/vip/blob/master/Cheat-Sheets/Tests.md#vii-case-esac) under the "Lazy case" method example*
+- *Note One common way to organize a `case` scenario is for each "case" to simply set a variable as `true`, then process that variable based on an `if` test later in the script. This makes scripts longer, but the `case` index is easier to read. This is seen in the cheat-sheet [Tests: case](https://github.com/JesseSteele/Codia/blob/master/Cheat-Sheets/Tests.md#vii-case-esac) under the "Lazy case" method example*
 - Procedure of a `case` index:
   - `case` defines the variable to be matched
   - `in` opens the case index of possible value matches
@@ -402,8 +402,8 @@ ___
     Do Something Here
   ;;
   ```
-- See usage and examples here: [Tests: case](https://github.com/inkVerb/vip/blob/master/Cheat-Sheets/Tests.md#vii-case-esac)
+- See usage and examples here: [Tests: case](https://github.com/JesseSteele/Codia/blob/master/Cheat-Sheets/Tests.md#vii-case-esac)
 
 ___
 
-#### [Lesson 6: exit & journalctl](https://github.com/inkVerb/vip/blob/master/301/Lesson-06.md)
+#### [Lesson 6: exit & journalctl](https://github.com/JesseSteele/Codia/blob/master/301/Lesson-06.md)

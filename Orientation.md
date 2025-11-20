@@ -200,4 +200,4 @@ code for terminal
 - If a file is deleted while open in gedit, gedit will ask if you want to save before closing
 
 ___
-#### [Lesson 0: Terminal Control](https://github.com/inkVerb/vip/blob/master/101/Lesson-00.md)
+#### [Lesson 0: Terminal Control](https://github.com/JesseSteele/Codia/blob/master/101/Lesson-00.md)

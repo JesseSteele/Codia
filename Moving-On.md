@@ -1,7 +1,7 @@
 # Moving On
 
 ## You're ready for more
-After completing [Linux 101](https://github.com/inkVerb/VIP/blob/master/101/README.md), [Linux 201](https://github.com/inkVerb/VIP/blob/master/301/README.md), [Linux 301](https://github.com/inkVerb/VIP/blob/master/301/README.md) & [Linux 401](https://github.com/inkVerb/VIP/blob/master/401/README.md), other computer languages will be easier to understand.
+After completing [Linux 101](https://github.com/JesseSteele/Codia/blob/master/101/README.md), [Linux 201](https://github.com/JesseSteele/Codia/blob/master/301/README.md), [Linux 301](https://github.com/JesseSteele/Codia/blob/master/301/README.md) & [Linux 401](https://github.com/JesseSteele/Codia/blob/master/401/README.md), other computer languages will be easier to understand.
 
 - You already know why web languages and services will have settings in `/etc/...`.
 - You already know that web programs will likely reside in `www/html/domain.tld/...` as text-editable files.
@@ -16,8 +16,8 @@ After completing [Linux 101](https://github.com/inkVerb/VIP/blob/master/101/READ
 
 So, don't stop here. There's much more you can do. And, it's all much, much easier now to do. Keep moving and keep going!
 
-## Web Stack: [Linux 501](https://github.com/inkVerb/VIP/blob/master/501/README.md)
-To gain a stronger understanding of web apps, which is where Linux is ***applied*** to daily life, take [Linux 501](https://github.com/inkVerb/VIP/blob/master/501/README.md)
+## Web Stack: [Linux 501](https://github.com/JesseSteele/Codia/blob/master/501/README.md)
+To gain a stronger understanding of web apps, which is where Linux is ***applied*** to daily life, take [Linux 501](https://github.com/JesseSteele/Codia/blob/master/501/README.md)
 
 - This course is ***not*** for people fully trained in PHP web stack
   - But, it can be useful for:
@@ -45,14 +45,14 @@ To gain a stronger understanding of web apps, which is where Linux is ***applied
   - Studying PHP "properly" will need more training after this
   - Training in PHP or any other server-side logic web language will be much easier after this course
 - This gives a clear understanding of what a Linux server is used for
-  - The next course for System Administrators, [Linux 601](https://github.com/inkVerb/VIP/blob/master/601/README.md), seems more useful when you know how it is often used in the real world
+  - The next course for System Administrators, [Linux 601](https://github.com/JesseSteele/Codia/blob/master/601/README.md), seems more useful when you know how it is often used in the real world
 - Any PHP or other web language training course will be much easier after taking this
-- The [Linux 601: SysAdmin](https://github.com/inkVerb/VIP/blob/master/601/README.md) course will seem more useful because [Linux 501: Web Stack](https://github.com/inkVerb/VIP/blob/master/501/README.md) will give an understanding of what a Linux System Administrator is supporting for the real world
+- The [Linux 601: SysAdmin](https://github.com/JesseSteele/Codia/blob/master/601/README.md) course will seem more useful because [Linux 501: Web Stack](https://github.com/JesseSteele/Codia/blob/master/501/README.md) will give an understanding of what a Linux System Administrator is supporting for the real world
 
-## System Administrator: [Linux 601](https://github.com/inkVerb/VIP/blob/master/601/README.md)
-You can skip [Linux 501](https://github.com/inkVerb/VIP/blob/master/501/README.md) and take this course directly, but it is not recommended unless you already have web programming training
+## System Administrator: [Linux 601](https://github.com/JesseSteele/Codia/blob/master/601/README.md)
+You can skip [Linux 501](https://github.com/JesseSteele/Codia/blob/master/501/README.md) and take this course directly, but it is not recommended unless you already have web programming training
 
-- This course covers remaining topics for the Linux Foundation *Linux Foundation Certified System Administrator (LFCS)* exam, not yet covered in previous VIP courses
+- This course covers remaining topics for the Linux Foundation *Linux Foundation Certified System Administrator (LFCS)* exam, not yet covered in previous Codia courses
 - This does not claim to be a comprehensive study guide, but approaches learning from the same organic, real-world approach
 - This course is an in-depth ***preview*** of the topics covered in the *Linux Foundation System Administrator Essentials* course
   - All topics will be addressed, introduced, and explained

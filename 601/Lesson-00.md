@@ -5,8 +5,8 @@
 
 These are helpful for installing network simulation tools on Arch or Manjaro
 
-- [CISCO Packet Tracer](https://github.com/inkVerb/vip/blob/master/Cheat-Sheets/Packet-Tracer.md)
-- [Oracle VirtualBox](https://github.com/inkVerb/vip/blob/master/Cheat-Sheets/VirtualBox.md)
+- [CISCO Packet Tracer](https://github.com/JesseSteele/Codia/blob/master/Cheat-Sheets/Packet-Tracer.md)
+- [Oracle VirtualBox](https://github.com/JesseSteele/Codia/blob/master/Cheat-Sheets/VirtualBox.md)
 
 ___
 
@@ -46,10 +46,10 @@ ___
   - For shell scripts: `#!/bin/sh` is not POSIX-compliant; `#!/bin/bash` is POSIX-compliant
   - `source` is not a POSIX-compliant way to "include" files in a script; POSIX-compliance uses dot-space (`. `) at the start of the line
   - A "user" can be almost anything; a "POSIX user" is a registered user on a Unix/Linux operating system with log in credentials, permissions, groups, etc
-  - The Filesystem Hierarchy Standard (FHS) is used in [Linux and Unix, but not part of POSIX compliance](https://unix.stackexchange.com/questions/98751), see ([201 Lesson 12: FHS](https://github.com/inkVerb/vip/blob/master/201/Lesson-12.md))
+  - The Filesystem Hierarchy Standard (FHS) is used in [Linux and Unix, but not part of POSIX compliance](https://unix.stackexchange.com/questions/98751), see ([201 Lesson 12: FHS](https://github.com/JesseSteele/Codia/blob/master/201/Lesson-12.md))
 
 ### Daemons: `*d` Suffix
-- In unit [201 Lesson 12: FHS](https://github.com/inkVerb/vip/blob/master/201/Lesson-12.md), we saw how `/etc/SERVICE.d/` would be a directory containing multiple config files for a given service
+- In unit [201 Lesson 12: FHS](https://github.com/JesseSteele/Codia/blob/master/201/Lesson-12.md), we saw how `/etc/SERVICE.d/` would be a directory containing multiple config files for a given service
 - Many cloud services have tools for a client and a server
   - Nextcloud
   - WebDAV
@@ -60,7 +60,7 @@ ___
   - Countless others
 - Server service software is often called a **daemon**
 - While many client configs reside in `/etc/` as, say, `SERVICE`, the server configs may have a `d` appended to the end of the files or directories
-- A good example of this is the `ssh` service, which we will learn more about in [Lesson 9: PAM & Cloud](https://github.com/inkVerb/vip/blob/master/601/Lesson-09.md)
+- A good example of this is the `ssh` service, which we will learn more about in [Lesson 9: PAM & Cloud](https://github.com/JesseSteele/Codia/blob/master/601/Lesson-09.md)
   - SSH client configs: `/etc/ssh_config` & `/etc/ssh_config.d/`
   - SSH server configs: `/etc/sshd_config` & `/etc/sshd_config.d/` (daemons)
 - Seeing a service with both names of, say, `SERVICE` and `SERVICEd` can make it easy to know whether you are woring wiht the `SERVICE` client or with the `SERVICEd` daemon/server
@@ -279,14 +279,14 @@ ___
 - Some use their own domain, but are still part of the SE network
 
 ## Presume to Know:
-- `find` - [101 Lesson 9: find](https://github.com/inkVerb/vip/blob/master/101/Lesson-09.md)
+- `find` - [101 Lesson 9: find](https://github.com/JesseSteele/Codia/blob/master/101/Lesson-09.md)
   - `find . -iname '*henry*'` - find all files containing "henry", ignore case
     - `-name` - case-sensitive
     - `-type d`, `-type f` only file or directory
-- `grep` - [101 Lesson 10: grep](https://github.com/inkVerb/vip/blob/master/101/Lesson-10.md)
+- `grep` - [101 Lesson 10: grep](https://github.com/JesseSteele/Codia/blob/master/101/Lesson-10.md)
   - `grep "find me" *`
   - `some command | grep "find me"`
-- Linux Filesystem Hierarchy Standard (FHS) [201 Lesson 12: FHS](https://github.com/inkVerb/vip/blob/master/201/Lesson-12.md)
+- Linux Filesystem Hierarchy Standard (FHS) [201 Lesson 12: FHS](https://github.com/JesseSteele/Codia/blob/master/201/Lesson-12.md)
 ___
 
-#### [Lesson 1: Boot & System Init](https://github.com/inkVerb/vip/blob/master/601/Lesson-01.md)
+#### [Lesson 1: Boot & System Init](https://github.com/JesseSteele/Codia/blob/master/601/Lesson-01.md)

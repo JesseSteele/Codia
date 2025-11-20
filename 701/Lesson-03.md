@@ -4,7 +4,7 @@
 Ready the CLI
 
 ```console
-cd ~/School/VIP/701
+cd ~/School/Codia/701
 ```
 
 Ready services
@@ -3531,4 +3531,4 @@ ___
   - Plan for your code to use this structure
 ___
 
-#### [Lesson 4: URL Rewrite & Parsing](https://github.com/inkVerb/vip/blob/master/701/Lesson-04.md)
+#### [Lesson 4: URL Rewrite & Parsing](https://github.com/JesseSteele/Codia/blob/master/701/Lesson-04.md)

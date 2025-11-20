@@ -4,10 +4,10 @@
 Ready the CLI
 
 ```console
-cd ~/School/VIP/201
+cd ~/School/Codia/201
 ```
 
-#### [Permissions Cheat Sheet](https://github.com/inkVerb/vip/blob/master/Cheat-Sheets/Permissions.md)
+#### [Permissions Cheat Sheet](https://github.com/JesseSteele/Codia/blob/master/Cheat-Sheets/Permissions.md)
 
 ___
 
@@ -114,7 +114,7 @@ exit
 Ready the CLI (if needed)
 
 ```console
-cd ~/School/VIP/201
+cd ~/School/Codia/201
 ```
 
 *Note the user directories & settings were created at the first GUI login*
@@ -170,7 +170,7 @@ exit
 Ready the CLI (if needed)
 
 ```console
-cd ~/School/VIP/201
+cd ~/School/Codia/201
 ```
 
 | **12** :$
@@ -417,7 +417,7 @@ exit
 Ready the CLI (if needed)
 
 ```console
-cd ~/School/VIP/201
+cd ~/School/Codia/201
 ```
 
 `su Username`
@@ -768,7 +768,7 @@ ___
 - `useradd` & `userdel` only create and delete a user, no more
 - A user's "home" is in `/home/` by default
 - File "permissions" relate to users who own the files
-- `chown` sets file "ownership" (`chmod` sets permissions, from [401-04](https://github.com/inkVerb/vip/blob/master/201/Lesson-04.md)), see usage and examples here: [VIP/Cheat-Sheets: Permissions](https://github.com/inkVerb/VIP/blob/master/Cheat-Sheets/Permissions.md)
+- `chown` sets file "ownership" (`chmod` sets permissions, from [401-04](https://github.com/JesseSteele/Codia/blob/master/201/Lesson-04.md)), see usage and examples here: [Codia/Cheat-Sheets: Permissions](https://github.com/JesseSteele/Codia/blob/master/Cheat-Sheets/Permissions.md)
 - `ls -l` includes file ownership in the output list of files
 - Ownership is set with the syntax: `user:group`
 - Normal users have a group by the same name, only that user belongs to that group
@@ -785,4 +785,4 @@ ___
 
 ___
 
-#### [Lesson 6: wget, curl, git clone](https://github.com/inkVerb/vip/blob/master/201/Lesson-06.md)
+#### [Lesson 6: wget, curl, git clone](https://github.com/JesseSteele/Codia/blob/master/201/Lesson-06.md)

@@ -21,8 +21,8 @@ Close: <kbd>Alt</kbd> + <kbd>F4</kbd>
 | **1** :$
 
 ```console
-mkdir -p ~/School/VIP
-cd ~/School/VIP
+mkdir -p ~/School/Codia
+cd ~/School/Codia
 nautilus .
 ```
 
@@ -150,7 +150,7 @@ ls
 | **12** :$
 
 ```console
-cd ~/School/VIP/html
+cd ~/School/Codia/html
 gedit new.html
 ```
 

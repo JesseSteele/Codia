@@ -4,7 +4,7 @@
 Ready the CLI
 
 ```console
-cd ~/School/VIP/201
+cd ~/School/Codia/201
 ```
 
 - [Read more on Wikipedia](https://en.wikipedia.org/wiki/Filesystem_Hierarchy_Standard)
@@ -620,4 +620,4 @@ ___
 vimtutor
 ```
 
-## Next: [Linux 301: Logic](https://github.com/inkVerb/VIP/blob/master/301/README.md)
+## Next: [Linux 301: Logic](https://github.com/JesseSteele/Codia/blob/master/301/README.md)

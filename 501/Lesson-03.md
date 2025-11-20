@@ -4,7 +4,7 @@
 Ready the CLI
 
 ```console
-cd ~/School/VIP/501
+cd ~/School/Codia/501
 ```
 
 Ready services
@@ -23,7 +23,7 @@ If teaching multiple students
 
 Prep directory
 ```console
-cd ~/School/VIP
+cd ~/School/Codia
 ```
 
 Webapp database ***dump***
@@ -61,7 +61,7 @@ sudo chown -R www:www 501/web
 Re-ready the CLI
 
 ```console
-cd ~/School/VIP/501
+cd ~/School/Codia/501
 ```
 
 ### This lesson uses two terminals and two browser tabs!
@@ -656,4 +656,4 @@ $last_id = $database->insert_id;
 
 ___
 
-#### [Lesson 4: App Install & User Login](https://github.com/inkVerb/vip/blob/master/501/Lesson-04.md)
+#### [Lesson 4: App Install & User Login](https://github.com/JesseSteele/Codia/blob/master/501/Lesson-04.md)

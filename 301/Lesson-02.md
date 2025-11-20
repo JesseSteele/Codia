@@ -4,7 +4,7 @@
 Ready the CLI
 
 ```console
-cd ~/School/VIP/301
+cd ~/School/Codia/301
 ```
 
 **FOR** | **2 - 19** :$
@@ -534,4 +534,4 @@ ___
 
 ___
 
-#### [Lesson 3: for Var in Lst do done](https://github.com/inkVerb/vip/blob/master/301/Lesson-03.md)
+#### [Lesson 3: for Var in Lst do done](https://github.com/JesseSteele/Codia/blob/master/301/Lesson-03.md)

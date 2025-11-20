@@ -4,12 +4,12 @@
 Ready the CLI
 
 ```console
-cd ~/School/VIP/301
+cd ~/School/Codia/301
 ```
 
-- [Arrays](https://github.com/inkVerb/vip/blob/master/Cheat-Sheets/Arrays.md)
-- [Variables](https://github.com/inkVerb/vip/blob/master/Cheat-Sheets/Variables.md)
-- [Tests](https://github.com/inkVerb/vip/blob/master/Cheat-Sheets/Tests.md)
+- [Arrays](https://github.com/JesseSteele/Codia/blob/master/Cheat-Sheets/Arrays.md)
+- [Variables](https://github.com/JesseSteele/Codia/blob/master/Cheat-Sheets/Variables.md)
+- [Tests](https://github.com/JesseSteele/Codia/blob/master/Cheat-Sheets/Tests.md)
 
 ___
 
@@ -43,11 +43,11 @@ Use standard BASH
 chsh -s /bin/bash
 ```
 
-Learn more: [Resources & Things That Run: chsh](https://github.com/inkVerb/vip/blob/master/Cheat-Sheets/Resources.md#xi-chsh)
+Learn more: [Resources & Things That Run: chsh](https://github.com/JesseSteele/Codia/blob/master/Cheat-Sheets/Resources.md#xi-chsh)
 
 ### I. Ternary Statements
 
-Read the Cheat-Sheet: **[Ternary Statements](https://github.com/inkVerb/vip/blob/master/Cheat-Sheets/Tests.md#xi-ternary-statements-)**
+Read the Cheat-Sheet: **[Ternary Statements](https://github.com/JesseSteele/Codia/blob/master/Cheat-Sheets/Tests.md#xi-ternary-statements-)**
 
 **Ternary** statements work in three parts:
 
@@ -67,7 +67,7 @@ This is based on the logical flow of `&&` and `||`
 
 *Many coders might argue that this BASH statement is not a genuine, true "ternary" statement, but it is very close and logically it is near-identical*
 
-We address these more in [501-PHP: Ternary Statements](https://github.com/inkVerb/vip/blob/master/501/Lesson-01.md#ternary-statements)
+We address these more in [501-PHP: Ternary Statements](https://github.com/JesseSteele/Codia/blob/master/501/Lesson-01.md#ternary-statements)
 
 ```bash
 [[ "$test_var" = "five" ]] && echo "yes, five" || echo "not five"
@@ -482,4 +482,4 @@ ___
 - Arrays can be used as lists in `for` loops
 ___
 
-#### [Lesson 11: BASH select & dialog](https://github.com/inkVerb/vip/blob/master/301/Lesson-11.md)
+#### [Lesson 11: BASH select & dialog](https://github.com/JesseSteele/Codia/blob/master/301/Lesson-11.md)

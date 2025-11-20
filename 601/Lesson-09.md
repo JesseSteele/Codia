@@ -545,7 +545,7 @@ ou: People
 - Now we make entries using the schema we just created
 - These `.ldif` files (below) add "linuxusers" to Groups and "Bill" to People:
   - GID and UID are important because we don't want them to conflict with the Linux system users
-  - These can start with "high" numbers, well above `GID_MIN` and `UID_MIN` as defined in `/etc/login.defs` ([Lesson 3: Users & Groups](https://github.com/inkVerb/vip/blob/master/601/Lesson-03.md))
+  - These can start with "high" numbers, well above `GID_MIN` and `UID_MIN` as defined in `/etc/login.defs` ([Lesson 3: Users & Groups](https://github.com/JesseSteele/Codia/blob/master/601/Lesson-03.md))
 
 | **linuxuser-group.ldif** :
 
@@ -1061,7 +1061,7 @@ secrets:
 ```
 
 #### Custom Docker Container
-*From the [VIP/Docker-Hello-World](https://github.com/inkVerb/Docker-Hello-World) repo*
+*From the [Codia/Docker-Hello-World](https://github.com/inkVerb/Docker-Hello-World) repo*
 
 - **Three simple files**:
 
@@ -1118,7 +1118,7 @@ sudo docker rmi -f [ helloworld IMAGE ID ]
 ```
 
 ## Mail
-- [Mail Cheat Sheet](https://github.com/inkVerb/vip/blob/master/Cheat-Sheets/Mail-Postfix.md)
+- [Mail Cheat Sheet](https://github.com/JesseSteele/Codia/blob/master/Cheat-Sheets/Mail-Postfix.md)
 - Linux servers primarily use one of three email services:
   - Sendmail
   - Postfix
@@ -1133,7 +1133,7 @@ sudo docker rmi -f [ helloworld IMAGE ID ]
   - Managing an email server is almost a separate profession to itself
   - In the past, installing postfix was part of SysAdmin training, but not so much in 2024
   - Email is heavily dependent on DNS for security tools like SSL (viz `CAA` records) and [OpenDKIM](http://www.opendkim.org/), SPF (Sender Policy Framework viz [RFC 7208](https://datatracker.ietf.org/doc/html/rfc7208)), and [DMARC](https://dmarc.org/) `TXT` records
-  - Backup mail servers are declared in DNS and often synced via the Linux `rsync` tool (see [Rsync on the Samba homepage](https://rsync.samba.org/), more in [Lesson 12]((https://github.com/inkVerb/vip/blob/master/601/Lesson-12.md)))
+  - Backup mail servers are declared in DNS and often synced via the Linux `rsync` tool (see [Rsync on the Samba homepage](https://rsync.samba.org/), more in [Lesson 12]((https://github.com/JesseSteele/Codia/blob/master/601/Lesson-12.md)))
   - Proper setup of an email server can take one full working day for an experienced SysAdmin working on multiple servers in the cloud
 - It is important for any SysAdmin to know about the main tools used for email servers
 - ***Incoming mail uses port `25`***
@@ -1141,7 +1141,7 @@ sudo docker rmi -f [ helloworld IMAGE ID ]
   - This is not the same as using ports `465` or `587` rather than port `25` for SMTP *authentication*
   - Don't use port `25` for SMTP in your email client
   - Don't block port `25` on your email server either
-- For some mail server facts, overall Postfix structure, ports, troubleshooting, and mail server interaction via `telnet`, see the [Mail Cheat Sheet](https://github.com/inkVerb/vip/blob/master/Cheat-Sheets/Mail-Postfix.md)
+- For some mail server facts, overall Postfix structure, ports, troubleshooting, and mail server interaction via `telnet`, see the [Mail Cheat Sheet](https://github.com/JesseSteele/Codia/blob/master/Cheat-Sheets/Mail-Postfix.md)
 - The `sendmail` command is necessary for Postfix or a server using PHP web apps to send emails, but that command might be from the Postfix package, not from the Sendmail package
 
 ### Sendmail
@@ -1198,8 +1198,8 @@ ___
 ## On Debian
 *Practice specifically for Debian*
 
-- **These commands should be attempted on practice machines using Debian, such as via [Oracle VirtualBox](https://github.com/inkVerb/vip/blob/master/Cheat-Sheets/VirtualBox.md)**
-  - For `ssh`: two VMs should be running on the [hybervisor's virtual network](https://github.com/inkVerb/vip/blob/master/Cheat-Sheets/VirtualBox.md#Networking)
+- **These commands should be attempted on practice machines using Debian, such as via [Oracle VirtualBox](https://github.com/JesseSteele/Codia/blob/master/Cheat-Sheets/VirtualBox.md)**
+  - For `ssh`: two VMs should be running on the [hybervisor's virtual network](https://github.com/JesseSteele/Codia/blob/master/Cheat-Sheets/VirtualBox.md#Networking)
   - Any `ssh` keys on the machine will be replaced
   - LDAP and SSSD use Debian packages and configurations
 
@@ -1897,4 +1897,4 @@ session     optional    pam_permit.so
 
 ___
 
-#### [Lesson 10: Firewall](https://github.com/inkVerb/vip/blob/master/601/Lesson-10.md)
+#### [Lesson 10: Firewall](https://github.com/JesseSteele/Codia/blob/master/601/Lesson-10.md)

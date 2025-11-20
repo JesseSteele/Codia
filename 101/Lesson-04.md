@@ -4,7 +4,7 @@
 Ready the CLI
 
 ```console
-cd ~/School/VIP/101
+cd ~/School/Codia/101
 ```
 
 ___
@@ -120,4 +120,4 @@ ___
 
 ___
 
-#### [Lesson 5: Variables from Pipe & Command Substitution](https://github.com/inkVerb/vip/blob/master/101/Lesson-05.md)
+#### [Lesson 5: Variables from Pipe & Command Substitution](https://github.com/JesseSteele/Codia/blob/master/101/Lesson-05.md)

@@ -1,7 +1,7 @@
 # Linux 601
 ## Lesson 7: Disk & Partitioning
 
-- [File Size, Binary, Hexadecimal](https://github.com/inkVerb/VIP/blob/master/Cheat-Sheets/Sizes-Binary-Hex.md)
+- [File Size, Binary, Hexadecimal](https://github.com/JesseSteele/Codia/blob/master/Cheat-Sheets/Sizes-Binary-Hex.md)
 
 ___
 
@@ -508,7 +508,7 @@ Any of the one-line commands will work in the **Formatting** section
     - `nfs` Network File System (NFS)
     - `bind` serves as a hard link
   - `<options>`
-    - `umask=0077` for `/boot/efi` *(we learn about `umask` in [Lesson 3: Users & Groups](https://github.com/inkVerb/vip/blob/master/601/Lesson-03.md))*
+    - `umask=0077` for `/boot/efi` *(we learn about `umask` in [Lesson 3: Users & Groups](https://github.com/JesseSteele/Codia/blob/master/601/Lesson-03.md))*
     - `defaults,noatime` most normal filesystems
     - `defaults,noatime,mode=1777` `tmpfs`
     - `noatime` same as `lsatt` `A`, don't log access timestamp to files when not modified, this can same I/O cost
@@ -2317,4 +2317,4 @@ sudo rmmod nbd        # or this
 
 ___
 
-#### [Lesson 8: Packages](https://github.com/inkVerb/vip/blob/master/601/Lesson-08.md)
+#### [Lesson 8: Packages](https://github.com/JesseSteele/Codia/blob/master/601/Lesson-08.md)

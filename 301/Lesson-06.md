@@ -4,11 +4,11 @@
 Ready the CLI
 
 ```console
-cd ~/School/VIP/301
+cd ~/School/Codia/301
 ```
 
-- [Resources & Things That Run](https://github.com/inkVerb/VIP/blob/master/Cheat-Sheets/Resources.md)
-- [Tests](https://github.com/inkVerb/vip/blob/master/Cheat-Sheets/Tests.md)
+- [Resources & Things That Run](https://github.com/JesseSteele/Codia/blob/master/Cheat-Sheets/Resources.md)
+- [Tests](https://github.com/JesseSteele/Codia/blob/master/Cheat-Sheets/Tests.md)
 
 ___
 
@@ -283,7 +283,7 @@ mkdir logs && cd logs && touch one-file
 Ready the CLI (if needed)
 
 ```console
-cd ~/School/VIP/301/logs
+cd ~/School/Codia/301/logs
 ```
 
 ___
@@ -468,7 +468,7 @@ ls > /dev/null 2>&1
 
 *Note `journalctl` is for system logs, but you can create your own log files by directing output in this way*
 
-*Normally, in a full Linux app that honors the [Filesystem Hierarchy Standard (FHS)](https://github.com/inkVerb/vip/blob/master/201/Lesson-12.md) (explaind in [Linux 201]((https://github.com/inkVerb/vip/blob/master/201/README.md))) log files like these would be sent to `/var/log/somelogfile`, which must be owned by the Linux user running the script or needs `sudo` permissions, which is where most apps running on a Linux server send their logs, such as `apache`, `nginx`, `python`, `php`, `mysql`, `postfix`, etc*
+*Normally, in a full Linux app that honors the [Filesystem Hierarchy Standard (FHS)](https://github.com/JesseSteele/Codia/blob/master/201/Lesson-12.md) (explaind in [Linux 201]((https://github.com/JesseSteele/Codia/blob/master/201/README.md))) log files like these would be sent to `/var/log/somelogfile`, which must be owned by the Linux user running the script or needs `sudo` permissions, which is where most apps running on a Linux server send their logs, such as `apache`, `nginx`, `python`, `php`, `mysql`, `postfix`, etc*
 
 ### Review output numbers
 
@@ -573,7 +573,7 @@ Ready the CLI (if needed)
 *gedit: <kbd>Ctrl</kbd> + <kbd>W</kbd> to close previous files*
 
 ```console
-cd ~/School/VIP/301/logs
+cd ~/School/Codia/301/logs
 gedit error.log normal.log
 ```
 
@@ -1301,7 +1301,7 @@ some command >&3
 Ready the CLI (if needed)
 
 ```console
-cd ~/School/VIP/301/logs
+cd ~/School/Codia/301/logs
 ```
 
 ### Output channels & `exit` status work together *inside a script*
@@ -1316,7 +1316,7 @@ If there is some special situation in your script:
 
 Real life example:
 
-*FYI, preview of [Lesson 8](https://github.com/inkVerb/vip/blob/master/301/Lesson-08.md): `date`...*
+*FYI, preview of [Lesson 8](https://github.com/JesseSteele/Codia/blob/master/301/Lesson-08.md): `date`...*
 
 | **119** :$
 
@@ -1393,7 +1393,7 @@ echo $?
 
 *Note `06-routine-follow-up` basically said that `06-routine-check` did nothing*
 
-**On this page: [Resources: journalctl & logger](https://github.com/inkVerb/vip/blob/master/Cheat-Sheets/Resources.md#vi-logger--journalctl)...**
+**On this page: [Resources: journalctl & logger](https://github.com/JesseSteele/Codia/blob/master/Cheat-Sheets/Resources.md#vi-logger--journalctl)...**
 
 - Facility `local0` = `16`
 - So, make an `local0`-facility at `info`-priority log entry with:
@@ -1707,7 +1707,7 @@ ___
 - Example syntax:
   - Make entry: `logger -p daemon.info` *(`daemon` facility, `info` priority)*
   - Filter entry: `journalctl SYSLOG_FACILITY=3 -p info` *(`daemon` = facility `3`)*
-- See usage, facility numbers, and examples here: [Resources & Things That Run: journalctl & logger](https://github.com/inkVerb/vip/blob/master/Cheat-Sheets/Resources.md#vi-logger--journalctl)
+- See usage, facility numbers, and examples here: [Resources & Things That Run: journalctl & logger](https://github.com/JesseSteele/Codia/blob/master/Cheat-Sheets/Resources.md#vi-logger--journalctl)
 
 ## `exit` status & app log files
 - `exit` code numbers are important, always use an exit code with `exit`!
@@ -1757,4 +1757,4 @@ ___
 
 ___
 
-#### [Lesson 7: Multiple Tests, Counters, source & Functions](https://github.com/inkVerb/vip/blob/master/301/Lesson-07.md)
+#### [Lesson 7: Multiple Tests, Counters, source & Functions](https://github.com/JesseSteele/Codia/blob/master/301/Lesson-07.md)

@@ -4,22 +4,22 @@
 Ready the CLI
 
 ```console
-cd ~/School/VIP/301/one
+cd ~/School/Codia/301/one
 ```
 
-- [Variables](https://github.com/inkVerb/vip/blob/master/Cheat-Sheets/Variables.md)
-- [Tests](https://github.com/inkVerb/vip/blob/master/Cheat-Sheets/Tests.md)
+- [Variables](https://github.com/JesseSteele/Codia/blob/master/Cheat-Sheets/Variables.md)
+- [Tests](https://github.com/JesseSteele/Codia/blob/master/Cheat-Sheets/Tests.md)
 
 ___
 
 *Quick prep first: Make symlinks of this lesson's scripts in the directory we will use*
 
-*Note, we aren't in our usual place; we are here: `~/School/VIP/301/one`*
+*Note, we aren't in our usual place; we are here: `~/School/Codia/301/one`*
 
 | **1** :$ *Make sure you include that period at the end!*
 
 ```console
-ln -sfn ~/School/VIP/301/03-* .
+ln -sfn ~/School/Codia/301/03-* .
 ```
 
 *Create some files we can list through...*
@@ -344,7 +344,7 @@ ___
 - Syntax of the `for` line:
   - `for` `Variable` `in` `List`
   - (each item will sequentially be assigned as the value of `$Variable`)
-- See usage and examples here: [Tests: for](https://github.com/inkVerb/vip/blob/master/Cheat-Sheets/Tests.md#iii-for-variabl-in-lst)
+- See usage and examples here: [Tests: for](https://github.com/JesseSteele/Codia/blob/master/Cheat-Sheets/Tests.md#iii-for-variabl-in-lst)
 - An **iteration** is one cycle through a loop, such as a `for` loop
 
 ##  `break` & `continue`
@@ -353,8 +353,8 @@ ___
 - If a `for` loops through an empty list, the statement will trigger a single false loop
   - Fix this by testing for the looped list and using `continue` if true
 - Both of these can also be used in `until` and `while` loops (covered later)
-- See usage and examples here: [Tests: for – continue & break](https://github.com/inkVerb/vip/blob/master/Cheat-Sheets/Tests.md#continue--break)
+- See usage and examples here: [Tests: for – continue & break](https://github.com/JesseSteele/Codia/blob/master/Cheat-Sheets/Tests.md#continue--break)
 
 ___
 
-#### [Lesson 4: for Applied](https://github.com/inkVerb/vip/blob/master/301/Lesson-04.md)
+#### [Lesson 4: for Applied](https://github.com/JesseSteele/Codia/blob/master/301/Lesson-04.md)

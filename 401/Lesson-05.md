@@ -4,7 +4,7 @@
 Ready the CLI
 
 ```console
-cd ~/School/VIP/401
+cd ~/School/Codia/401
 ```
 
 ___
@@ -490,7 +490,7 @@ gedit variable-no-export variable-exported
 
 myVar="Hello world!"
 
-~/School/VIP/401/variable-exported
+~/School/Codia/401/variable-exported
 ```
 *The above script is in the next file...*
 
@@ -527,7 +527,7 @@ gedit variable-yes-export
 
 export myVar="Hello world!"
 
-~/School/VIP/401/variable-exported
+~/School/Codia/401/variable-exported
 ```
 
 *Run it and watch carefully*
@@ -577,7 +577,7 @@ var2: $var2"
 Ready the CLI (if needed)
 
 ```console
-cd ~/School/VIP/401
+cd ~/School/Codia/401
 ```
 
 #### Command line variables
@@ -626,9 +626,9 @@ set
 set | more
 ```
 
-*We will do more with `set` in [Lesson 9](https://github.com/inkVerb/vip/blob/master/401/Lesson-09.md)*
+*We will do more with `set` in [Lesson 9](https://github.com/JesseSteele/Codia/blob/master/401/Lesson-09.md)*
 
-#### `printenv` lists all variables in the *environment*; you may remember from [101-Lesson 3](https://github.com/inkVerb/vip/blob/master/101/Lesson-03.md)
+#### `printenv` lists all variables in the *environment*; you may remember from [101-Lesson 3](https://github.com/JesseSteele/Codia/blob/master/101/Lesson-03.md)
 
 | **34** :$
 
@@ -942,8 +942,8 @@ ___
   - `export` and `readonly` can be used together when assigning a variable; *order matters!*
     - `export readonly NewVariable="Variable's value"`
 
-- See usage and examples here: [Variables](https://github.com/inkVerb/VIP/blob/master/Cheat-Sheets/Variables.md)
+- See usage and examples here: [Variables](https://github.com/JesseSteele/Codia/blob/master/Cheat-Sheets/Variables.md)
 
 ___
 
-#### [Lesson 6: Data Types & Quotes](https://github.com/inkVerb/vip/blob/master/401/Lesson-06.md)
+#### [Lesson 6: Data Types & Quotes](https://github.com/JesseSteele/Codia/blob/master/401/Lesson-06.md)

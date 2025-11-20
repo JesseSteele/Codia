@@ -4,7 +4,7 @@
 Ready the CLI
 
 ```console
-cd ~/School/VIP/501
+cd ~/School/Codia/501
 ```
 
 Ready services
@@ -23,7 +23,7 @@ If teaching multiple students
 
 Prep directory
 ```console
-cd ~/School/VIP
+cd ~/School/Codia
 ```
 
 Webapp database ***dump***
@@ -61,7 +61,7 @@ sudo chown -R www:www 501/web
 Re-ready the CLI
 
 ```console
-cd ~/School/VIP/501
+cd ~/School/Codia/501
 ```
 
 ### This lesson uses two terminals and two browser tabs!
@@ -170,7 +170,7 @@ localhost/web/time.php
 $password_hashed = password_hash($password, PASSWORD_BCRYPT);
 ```
 
-This is much like a hash made in [201-08: Hash – md5sum, sha1sum, sha256sum, sha512sum](https://github.com/inkVerb/vip/blob/master/201/Lesson-08.md), ***but...***
+This is much like a hash made in [201-08: Hash – md5sum, sha1sum, sha256sum, sha512sum](https://github.com/JesseSteele/Codia/blob/master/201/Lesson-08.md), ***but...***
 
 This hash can't be decrypted because it creates a different hash each time
 
@@ -180,7 +180,7 @@ This hash can't be decrypted because it creates a different hash each time
 password_verify($password, $password_hashed);
 ```
 
-This is much like a hash check in [201-08: Hash – md5sum, sha1sum, sha256sum, sha512sum](https://github.com/inkVerb/vip/blob/master/201/Lesson-08.md), ***but...***
+This is much like a hash check in [201-08: Hash – md5sum, sha1sum, sha256sum, sha512sum](https://github.com/JesseSteele/Codia/blob/master/201/Lesson-08.md), ***but...***
 
 This only returns `true` or NULL because the hash is different each time
 
@@ -390,7 +390,7 @@ localhost/web/install.php
 *Note the new block of code checks for an existing `in.sql.php` file, for if it was already installed*
  - *`DEFINE ('DB_CONFIGURED', true);` sets if the installation is configured*
    - *Without this line, the installer will still work, but the fields in the form can be already filled-in, such as if we already created a database with credentials*
-     - *We will do more with this in [601 Lesson 8: Packages](https://github.com/inkVerb/vip/blob/master/601/Lesson-08.md) and the [Package Architectures Cheat Sheet](https://github.com/inkVerb/vip/blob/master/Cheat-Sheets/Package-Architectures.md) with the [**501webapp**](https://github.com/inkVerb/501webapp) package*
+     - *We will do more with this in [601 Lesson 8: Packages](https://github.com/JesseSteele/Codia/blob/master/601/Lesson-08.md) and the [Package Architectures Cheat Sheet](https://github.com/JesseSteele/Codia/blob/master/Cheat-Sheets/Package-Architectures.md) with the [**501webapp**](https://github.com/inkVerb/501webapp) package*
  - *If `(defined('DB_CONFIGURED')) && (DB_CONFIGURED == true)`, then `exit (header("Location: webapp.php"));` exits and redirects to the main blog*
  - *This allows for database credentials to be pre-configured, but not yet installed*
 
@@ -589,7 +589,7 @@ sleep($Seconds);
 usleep($MicroSseconds);
 ```
 
-This is similar to `sleep` from [301-02](https://github.com/inkVerb/vip/blob/master/301/Lesson-02.md#iv-sleep)
+This is similar to `sleep` from [301-02](https://github.com/JesseSteele/Codia/blob/master/301/Lesson-02.md#iv-sleep)
 
 **Rule #1: PHP renders HTML after**
 
@@ -995,4 +995,4 @@ ___
 
 ___
 
-#### [Lesson 5: RewriteMod (Pretty Permalinks)](https://github.com/inkVerb/vip/blob/master/501/Lesson-05.md)
+#### [Lesson 5: RewriteMod (Pretty Permalinks)](https://github.com/JesseSteele/Codia/blob/master/501/Lesson-05.md)

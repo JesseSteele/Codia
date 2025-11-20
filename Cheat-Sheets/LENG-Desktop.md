@@ -4,9 +4,9 @@
 
 ***This is for your local desktop developer environment only, not secure for production servers!***
 
-***This is only for Arch/Manjaro and installs Nginx!*** *For Apache on Arch/Manjaro or Debian/Ubuntu, see [LAMP Desktop](https://github.com/inkVerb/VIP/blob/master/Cheat-Sheets/LAMP-Desktop.md)*
+***This is only for Arch/Manjaro and installs Nginx!*** *For Apache on Arch/Manjaro or Debian/Ubuntu, see [LAMP Desktop](https://github.com/JesseSteele/Codia/blob/master/Cheat-Sheets/LAMP-Desktop.md)*
 
-***If you are running another Linux architecture, you may need to create a [Virtual Machine](https://github.com/inkVerb/VIP/blob/master/Cheat-Sheets/VirtualBox.md) with Arch or Manjaro***
+***If you are running another Linux architecture, you may need to create a [Virtual Machine](https://github.com/JesseSteele/Codia/blob/master/Cheat-Sheets/VirtualBox.md) with Arch or Manjaro***
 
 ### Update
 *And we need to ensure a make dependency*

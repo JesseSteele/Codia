@@ -4,16 +4,16 @@
 Ready the CLI
 
 ```console
-cd ~/School/VIP/401
+cd ~/School/Codia/401
 ```
 
-- [Characters for Classes & RegEx](https://github.com/inkVerb/VIP/blob/master/Cheat-Sheets/Characters.md)
+- [Characters for Classes & RegEx](https://github.com/JesseSteele/Codia/blob/master/Cheat-Sheets/Characters.md)
 
 ___
 
 ### I. RegEx Characters Classes
 
-*For more about working with characters, refer to:* [VIP/Cheat-Sheets: Characters](https://github.com/inkVerb/VIP/blob/master/Cheat-Sheets/Characters.md)
+*For more about working with characters, refer to:* [Codia/Cheat-Sheets: Characters](https://github.com/JesseSteele/Codia/blob/master/Cheat-Sheets/Characters.md)
 
 1. Character classes use `[[:colon brackets:] inside brackets]` not `[single brackets]`
 2. Carrot `^` means "start of the line or string"
@@ -137,7 +137,7 @@ sed "s/[2-6]/%/" code-of-poetry.txt
 sed "s/[a-u]/x/g" code-of-poetry.txt
 ```
 
-*Create and test more `grep` and `sed` commands against `code-of-poetry.txt` from the [Characters](https://github.com/inkVerb/VIP/blob/master/Cheat-Sheets/Characters.md) cheat sheet*
+*Create and test more `grep` and `sed` commands against `code-of-poetry.txt` from the [Characters](https://github.com/JesseSteele/Codia/blob/master/Cheat-Sheets/Characters.md) cheat sheet*
 
 ### II. Space via `echo`
 
@@ -527,7 +527,7 @@ ___
 # The Take
 ## RegEx Character Classes
 - A "character class" is a group of character types
-- Character classes are part of creating a "RegEx" (as introduced in [Lesson 101-11](https://github.com/inkVerb/vip/blob/master/101/Lesson-11.md))
+- Character classes are part of creating a "RegEx" (as introduced in [Lesson 101-11](https://github.com/JesseSteele/Codia/blob/master/101/Lesson-11.md))
 - Examples
   - All uppercase
   - All lowercase
@@ -540,7 +540,7 @@ ___
 - Classes use shortcuts Like
   - `[A-Z]` = `[:upper:]` = uppercase
   - `[0-9]` = `[:digit:]` = numeral digits
-- See usage and examples here: [Characters](https://github.com/inkVerb/VIP/blob/master/Cheat-Sheets/Characters.md)
+- See usage and examples here: [Characters](https://github.com/JesseSteele/Codia/blob/master/Cheat-Sheets/Characters.md)
 
 ## Heredocs
 - `cat <<EOF` opens a heredoc
@@ -575,8 +575,8 @@ ___
   - Don't include extra spaces/tabs inside your heredoc, even for code style
   - This does not apply to Shell and BASH
 
-### Know the [rules of a heredoc](https://github.com/inkVerb/vip/blob/master/401/Lesson-11.md#rules-of-a-heredoc)
+### Know the [rules of a heredoc](https://github.com/JesseSteele/Codia/blob/master/401/Lesson-11.md#rules-of-a-heredoc)
 
 ___
 
-#### [Lesson 12: Secure Scripting & Command Hacks](https://github.com/inkVerb/vip/blob/master/401/Lesson-12.md)
+#### [Lesson 12: Secure Scripting & Command Hacks](https://github.com/JesseSteele/Codia/blob/master/401/Lesson-12.md)

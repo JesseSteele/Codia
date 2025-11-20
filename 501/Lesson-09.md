@@ -4,7 +4,7 @@
 Ready the CLI
 
 ```console
-cd ~/School/VIP/501
+cd ~/School/Codia/501
 ```
 
 Ready services
@@ -23,7 +23,7 @@ If teaching multiple students
 
 Prep directory
 ```console
-cd ~/School/VIP
+cd ~/School/Codia
 ```
 
 Webapp database ***dump***
@@ -61,7 +61,7 @@ sudo chown -R www:www 501/web
 Re-ready the CLI
 
 ```console
-cd ~/School/VIP/501
+cd ~/School/Codia/501
 ```
 
 ### This lesson uses two terminals and three browser tabs!
@@ -431,7 +431,7 @@ In Atom:
 
 We will use this JavaScript package to find differences in two blocks of text and highlight their differences
 
-This is similar to the Linux tool `diff`, which we learned about in [201-11](https://github.com/inkVerb/vip/blob/master/201/Lesson-11.md#diff)
+This is similar to the Linux tool `diff`, which we learned about in [201-11](https://github.com/JesseSteele/Codia/blob/master/201/Lesson-11.md#diff)
 
 On your own, learn more about implementation at [github.com/poetryisCODE/htmldiff](https://github.com/poetryiscode/htmldiff/blob/master/README.md)
 
@@ -495,7 +495,7 @@ localhost/web/hist.php?p=3
 *Note: hist.php:*
 
 - *It requires a GET argument*
-- *It creates content using [heredocs](https://github.com/inkVerb/vip/blob/master/401/Lesson-11.md#ii-heredoc-cat-eof), which we saw in 401-11*
+- *It creates content using [heredocs](https://github.com/JesseSteele/Codia/blob/master/401/Lesson-11.md#ii-heredoc-cat-eof), which we saw in 401-11*
   - *Our delimeter is "EOP"*
   - *There are neither spaces before nor comments after the closing delimeter `EOP;`!!*
   - *Syntax for variable: `$Variable = <<<EOP`*
@@ -985,7 +985,7 @@ localhost/web/piece.php?p=3
 #### AJAX a `<form>` to `INSERT` SQL
 *First, a review...*
 
-In Lesson 6 we learned to [AJAX a `<form>`](https://github.com/inkVerb/vip/blob/master/501/Lesson-06.md#ajax-a-form)
+In Lesson 6 we learned to [AJAX a `<form>`](https://github.com/JesseSteele/Codia/blob/master/501/Lesson-06.md#ajax-a-form)
 
 | **24** :$
 
@@ -2066,7 +2066,7 @@ document.getElementById("bar_id").innerHTML = ourJSONresponse["title"]+' and som
     - Now, use: `$json_array['some_key']`
   - PHP-OOP Syntax: `$json_array = json_decode($json_string);`
     - Now, use: `$json_array->'some_key'`
-- Note we will address PHP-OOP syntax in [Lesson 11](https://github.com/inkVerb/vip/blob/master/501/Lesson-11.md)
+- Note we will address PHP-OOP syntax in [Lesson 11](https://github.com/JesseSteele/Codia/blob/master/501/Lesson-11.md)
 
 ## SQL Table/Row Cloning & Diffing
 - Create or insert a new SQL row from an existing row
@@ -2105,4 +2105,4 @@ WHERE B.a_id=5; -- The table_b match is more important, which could matter later
   
 ___
 
-#### [Lesson 10: Media Library, Files & Uploads](https://github.com/inkVerb/vip/blob/master/501/Lesson-10.md)
+#### [Lesson 10: Media Library, Files & Uploads](https://github.com/JesseSteele/Codia/blob/master/501/Lesson-10.md)

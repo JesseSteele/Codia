@@ -1,8 +1,8 @@
 # Linux 601
 ## Lesson 6: Networks
 
-- [File Size, Binary, Hexadecimal](https://github.com/inkVerb/VIP/blob/master/Cheat-Sheets/Sizes-Binary-Hex.md)
-- [Networking](https://github.com/inkVerb/VIP/blob/master/Cheat-Sheets/Networking.md)
+- [File Size, Binary, Hexadecimal](https://github.com/JesseSteele/Codia/blob/master/Cheat-Sheets/Sizes-Binary-Hex.md)
+- [Networking](https://github.com/JesseSteele/Codia/blob/master/Cheat-Sheets/Networking.md)
 
 ___
 
@@ -39,12 +39,12 @@ This shows how each service listens on the network:
 Your host machine is found on the network through its IP address, which actually exists as a binary number, best understood in hexadecimal numerals
 
 ## Binary & Hexadecimal
-For a thorough look at binary oclets and hexadecimal numbers, see [VIP/Cheat-Sheets: File Size, Binary, Hexadecimal](https://github.com/inkVerb/VIP/blob/master/Cheat-Sheets/Sizes-Binary-Hex.md)
+For a thorough look at binary oclets and hexadecimal numbers, see [Codia/Cheat-Sheets: File Size, Binary, Hexadecimal](https://github.com/JesseSteele/Codia/blob/master/Cheat-Sheets/Sizes-Binary-Hex.md)
 
 Everything after this will presume knowledge of binary oclets and corresponding hexadecimal pairs
 
 ## Networking Terms
-To understand the the behavior and structure of networks and IP addresses, see [VIP/Cheat-Sheets: Networking](https://github.com/inkVerb/VIP/blob/master/Cheat-Sheets/Networking.md)
+To understand the the behavior and structure of networks and IP addresses, see [Codia/Cheat-Sheets: Networking](https://github.com/JesseSteele/Codia/blob/master/Cheat-Sheets/Networking.md)
 
 Everything after this will presume knowledge and use of networks, network devices, and IP address structure
 
@@ -534,7 +534,7 @@ nameserver your:ISP:provider:name:server::
     - `ping inkisaverb.com`
     - `dig`, `host`
     - Trace packets: `traceroute`, `mtr`
-      - These are similar to CISCO's Packet Tracer, see [VIP/Cheat-Sheets: Packet Tracer](https://github.com/inkVerb/VIP/blob/master/Cheat-Sheets/Packet-Tracer.md)
+      - These are similar to CISCO's Packet Tracer, see [Codia/Cheat-Sheets: Packet Tracer](https://github.com/JesseSteele/Codia/blob/master/Cheat-Sheets/Packet-Tracer.md)
   - **Gateway**
     - `route -n` should should be in order
   - IP configuration
@@ -706,4 +706,4 @@ ping 192.168.1.1
 
 ___
 
-#### [Lesson 7: Disk & Partitioning](https://github.com/inkVerb/vip/blob/master/601/Lesson-07.md)
+#### [Lesson 7: Disk & Partitioning](https://github.com/JesseSteele/Codia/blob/master/601/Lesson-07.md)

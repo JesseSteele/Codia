@@ -4,7 +4,7 @@
 Ready the CLI
 
 ```console
-cd ~/School/VIP/401
+cd ~/School/Codia/401
 ```
 
 ___
@@ -260,4 +260,4 @@ ___
 
 ___
 
-#### [Lesson 11: RegEx Character Classes & Heredocs](https://github.com/inkVerb/vip/blob/master/401/Lesson-11.md)
+#### [Lesson 11: RegEx Character Classes & Heredocs](https://github.com/JesseSteele/Codia/blob/master/401/Lesson-11.md)

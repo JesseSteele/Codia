@@ -4,7 +4,7 @@
 Ready the CLI
 
 ```console
-cd ~/School/VIP/101
+cd ~/School/Codia/101
 ```
 
 ___
@@ -188,4 +188,4 @@ ___
 
 ___
 
-#### [Lesson 8: echo, sed, cat, tee & pipe scripts](https://github.com/inkVerb/vip/blob/master/101/Lesson-08.md)
+#### [Lesson 8: echo, sed, cat, tee & pipe scripts](https://github.com/JesseSteele/Codia/blob/master/101/Lesson-08.md)

@@ -4,7 +4,7 @@
 Ready the CLI
 
 ```console
-cd ~/School/VIP/501
+cd ~/School/Codia/501
 ```
 
 Ready services
@@ -23,7 +23,7 @@ If teaching multiple students
 
 Prep directory
 ```console
-cd ~/School/VIP
+cd ~/School/Codia
 ```
 
 Backup Student 1 schoolwork directory
@@ -51,7 +51,7 @@ sudo chown -R www:www 501/web
 Re-ready the CLI
 
 ```console
-cd ~/School/VIP/501
+cd ~/School/Codia/501
 ```
 
 - [AJAX Security](AJAX-security.md)
@@ -79,7 +79,7 @@ This "Asynchronous" action uses JavaScript to:
 - JavaScript was created in 1995 by Netscape to compete with Microsoft
   - Netscape became Firefox in 2002
 - JavaScript animates pieces of HTML and CSS
-- Remember [Lesson 0: HTML Fast](https://github.com/inkVerb/vip/blob/master/501/Lesson-00.md#html--css-crash-course):
+- Remember [Lesson 0: HTML Fast](https://github.com/JesseSteele/Codia/blob/master/501/Lesson-00.md#html--css-crash-course):
   - HTML is a manikin
   - CSS is the clothing
   - JavaScript "animates", so the manikin moves like a robot and changes clothes
@@ -105,8 +105,8 @@ This "Asynchronous" action uses JavaScript to:
   - JSON is an alternative to XML
   - JSON may be more common in AJAX
   - JSON & XML are covered more in later lessons, *not* in this lesson
-    - JSON in [Lesson 9](https://github.com/inkVerb/vip/blob/master/501/Lesson-09.md)
-    - XML in [Lesson 12](https://github.com/inkVerb/vip/blob/master/501/Lesson-12.md)
+    - JSON in [Lesson 9](https://github.com/JesseSteele/Codia/blob/master/501/Lesson-09.md)
+    - XML in [Lesson 12](https://github.com/JesseSteele/Codia/blob/master/501/Lesson-12.md)
   
 #### AJAX Components
 ##### JavaScript:
@@ -617,7 +617,7 @@ localhost/web/ajax.php
 ## AJAX Security
 Anyone can send their own AJAX requests to your ajax_handler.php file
 
-Read more about AJAX security in the VIP cheat sheets: [AJAX Security](AJAX-security.md)
+Read more about AJAX security in the Codia cheat sheets: [AJAX Security](AJAX-security.md)
 
 ### AJAX Token
 The `$_SESSION` is the same in both the client's web browser and for the AJAX handler, so we can match a random string to verify that it is the same `$_SESSION` and not a random AJAX inquiry
@@ -1050,4 +1050,4 @@ ___
 
 ___
 
-#### [Lesson 7: Security Keys](https://github.com/inkVerb/vip/blob/master/501/Lesson-07.md)
+#### [Lesson 7: Security Keys](https://github.com/JesseSteele/Codia/blob/master/501/Lesson-07.md)

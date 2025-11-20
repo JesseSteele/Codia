@@ -16,7 +16,7 @@
 
 ### Searching for Files
 - `find /etc -type d -iname "*.d"`
-- `find . -perm -u+s` (for `s` permissions on **setuid** programs, see [Lesson 2: Procesesses & Monitoring](https://github.com/inkVerb/vip/blob/master/601/Lesson-02.md))
+- `find . -perm -u+s` (for `s` permissions on **setuid** programs, see [Lesson 2: Procesesses & Monitoring](https://github.com/JesseSteele/Codia/blob/master/601/Lesson-02.md))
   - `-perm` - Permissions search with same notation at `chmod`, but prefix with `-` hyphen
 - `locate Some_File` finds a file
   - First run :# `updatedb` to build a current searchable database of all files to be found using `locate`
@@ -47,27 +47,27 @@
 2. **GPT** - GUID Partition Table (formerly MBR - Master Boot Record)
   - Bootable partition
   - Executes GRUB
-  - [Lesson 7: Disk & Partitioning](https://github.com/inkVerb/vip/blob/master/601/Lesson-07.md)
+  - [Lesson 7: Disk & Partitioning](https://github.com/JesseSteele/Codia/blob/master/601/Lesson-07.md)
 3. **GRUB** - Grand Unified Bootloader
   - Menu at boot up
   - Executes the **kernel command** (recorded at `/proc/cmdline` after boot)
-  - [Lesson 1: Boot & System Init](https://github.com/inkVerb/vip/blob/master/601/Lesson-01.md) (this lesson)
+  - [Lesson 1: Boot & System Init](https://github.com/JesseSteele/Codia/blob/master/601/Lesson-01.md) (this lesson)
 4. **Kernel** - The actual Operating System
   - Executes `/sbin/init`
-  - [Lesson 5: Kernel & Devices](https://github.com/inkVerb/vip/blob/master/601/Lesson-05.md)
+  - [Lesson 5: Kernel & Devices](https://github.com/JesseSteele/Codia/blob/master/601/Lesson-05.md)
 5. **Init** - Init (via `systemd`)
   - Executes **targets** (formerly **runlevels**)
-  - [Lesson 1: Boot & System Init - init](https://github.com/inkVerb/vip/blob/master/601/Lesson-01.md#init) (this lesson)
-  - [Lesson 2: Procesesses & Monitoring - Process Creation](https://github.com/inkVerb/vip/blob/master/601/Lesson-02.md#process-creation)
+  - [Lesson 1: Boot & System Init - init](https://github.com/JesseSteele/Codia/blob/master/601/Lesson-01.md#init) (this lesson)
+  - [Lesson 2: Procesesses & Monitoring - Process Creation](https://github.com/JesseSteele/Codia/blob/master/601/Lesson-02.md#process-creation)
 6. **Targets** - Stages of finishing the machine for normal use
   - Executes tools in `/usr/lib/systemd/` by configs in `/lib/systemd/system/`
-  - [Lesson 1: Boot & System Init - Targets](https://github.com/inkVerb/vip/blob/master/601/Lesson-01.md#targets) (this lesson)
+  - [Lesson 1: Boot & System Init - Targets](https://github.com/JesseSteele/Codia/blob/master/601/Lesson-01.md#targets) (this lesson)
 
 ## GRUB
 - The first menu normally seen on bootup, usually with name and logo of your Linux distro
   - If there is only one option, there may be no menu (standard on virtual machines and servers)
 - Can boot to either Linux or Windows with various options for each system
-- Updating/repairing GRUB is discussed in [Lesson 5: Kernel & Devices](https://github.com/inkVerb/vip/blob/master/601/Lesson-05.md)
+- Updating/repairing GRUB is discussed in [Lesson 5: Kernel & Devices](https://github.com/JesseSteele/Codia/blob/master/601/Lesson-05.md)
 
 ### How GRUB works
 - Each menu item represents a **kernel command**
@@ -77,7 +77,7 @@
   2. Press <kbd>E</kbd> for "edit"
   - This will show you the kernel config for that menu item, including the **kernel command** (seen at `/proc/cmdline` after boot)
     - Many of these may involve `if` statements, but they all prepare and run the **kernel command**
-  - The **kernel command** is descussed at length in [Lesson 5: Kernel & Devices](https://github.com/inkVerb/vip/blob/master/601/Lesson-05.md)
+  - The **kernel command** is descussed at length in [Lesson 5: Kernel & Devices](https://github.com/JesseSteele/Codia/blob/master/601/Lesson-05.md)
 - GRUB is simple, and this is about all that it does: select a **kernel command**
 - GRUB has an option for an interactive GRUB prompt with even more options, beyond the scope of this course
 
@@ -624,4 +624,4 @@ exit
 
 ___
 
-#### [Lesson 2: Procesesses & Monitoring](https://github.com/inkVerb/vip/blob/master/601/Lesson-02.md)
+#### [Lesson 2: Procesesses & Monitoring](https://github.com/JesseSteele/Codia/blob/master/601/Lesson-02.md)

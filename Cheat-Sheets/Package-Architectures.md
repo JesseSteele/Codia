@@ -696,7 +696,7 @@ These repositories contain examples of actual Linux installer packages built fro
   - Adds an AppArmor profile in `/etc/apparmor.d/...`
 
 ### `501webapp` 501 Web App
-- The VIP Code 501 CMS web app-as-package called [**`501webapp`**](https://github.com/inkVerb/501webapp)
+- The Codia 501 CMS web app-as-package called [**`501webapp`**](https://github.com/inkVerb/501webapp)
   - Checks an elaborate list of dependencies needed for the PHP web app to work
-  - `git` clones the 501 CMS web app created in [Linux 501: PHP-XML Stack](https://github.com/inkVerb/VIP/blob/master/501/README.md) and places the production portion in the web folder
+  - `git` clones the 501 CMS web app created in [Linux 501: PHP-XML Stack](https://github.com/JesseSteele/Codia/blob/master/501/README.md) and places the production portion in the web folder
   - Includes `pkgver()` function for Arch `PKGBUILD`

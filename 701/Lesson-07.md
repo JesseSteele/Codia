@@ -4,7 +4,7 @@
 Ready the CLI
 
 ```console
-cd ~/School/VIP/701
+cd ~/School/Codia/701
 ```
 ___
 
@@ -15,4 +15,4 @@ ___
 
 ___
 
-#### [Lesson 8: Web Installer](https://github.com/inkVerb/vip/blob/master/701/Lesson-08.md)
+#### [Lesson 8: Web Installer](https://github.com/JesseSteele/Codia/blob/master/701/Lesson-08.md)

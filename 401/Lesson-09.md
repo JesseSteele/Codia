@@ -4,7 +4,7 @@
 Ready the CLI
 
 ```console
-cd ~/School/VIP/401
+cd ~/School/Codia/401
 ```
 
 ___
@@ -34,7 +34,7 @@ Special instructions for non-Ubuntu machines:
 
 This lesson requires a proper `/bin/sh` for the first two sections to demonstrate the limits of Bourne Shell (`/bin/sh`)
 
-Use the [Cheat Sheet: Bourne Shell](https://github.com/inkVerb/vip/blob/master/Cheat-Sheets/Bourne-Shell.md) to install
+Use the [Cheat Sheet: Bourne Shell](https://github.com/JesseSteele/Codia/blob/master/Cheat-Sheets/Bourne-Shell.md) to install
 
 Many of the failures you will see in this lesson will not affect most machines since few machines actually use the legacy `/bin/sh`
 
@@ -310,7 +310,7 @@ echo ${Array[@]}
 
 *...the array works in BASH (`#!/bin/bash`)*
 
-*Refer to this cheat-sheet section for more about Shell-BASH differences:* [VIP/Cheat-Sheets: Tests – Welcome to BASH](https://github.com/inkVerb/VIP/blob/master/Cheat-Sheets/Tests.md#welcome-to-bash)
+*Refer to this cheat-sheet section for more about Shell-BASH differences:* [Codia/Cheat-Sheets: Tests – Welcome to BASH](https://github.com/JesseSteele/Codia/blob/master/Cheat-Sheets/Tests.md#welcome-to-bash)
 
 *Here's a great Wiki article about shells: [List of command-line interpreters](https://en.wikipedia.org/wiki/List_of_command-line_interpreters)*
 
@@ -553,7 +553,7 @@ echo "Done with verbchacho test"
 *Remember `$?` is the variable for the last `exit` code*
 
 *If you need to handle errors in a normal-production script, use `if` tests with `$?` `exit` codes.*
--See: [Lesson 5: More with Variables](https://github.com/inkVerb/vip/blob/master/401/Lesson-05.md)
+-See: [Lesson 5: More with Variables](https://github.com/JesseSteele/Codia/blob/master/401/Lesson-05.md)
 
 ### III. Simple Tests via `&&` & `||`
 
@@ -960,7 +960,7 @@ fi
 ```
 
 ### V. Pass child `exit` to parent
-We looked at different `exit` codes in [301 Lesson 6](https://github.com/inkVerb/vip/blob/master/301/Lesson-06.md)
+We looked at different `exit` codes in [301 Lesson 6](https://github.com/JesseSteele/Codia/blob/master/301/Lesson-06.md)
 
 Now, we will pass a child script's exit code to make the parent script exit with the same code using this one line exit pass:
 
@@ -1275,4 +1275,4 @@ ___
  
  ___
 
-#### [Lesson 10: Dynamics of Functions](https://github.com/inkVerb/vip/blob/master/401/Lesson-10.md)
+#### [Lesson 10: Dynamics of Functions](https://github.com/JesseSteele/Codia/blob/master/401/Lesson-10.md)

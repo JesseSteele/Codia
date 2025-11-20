@@ -121,7 +121,7 @@ ___
 *Converting between binary and hexadecimal is easier because the places cycle every `4` bits, while decimal cycle places don't even match up*
 
 ## File Size Relations
-*From [201 Lesson 9](https://github.com/inkVerb/vip/blob/master/201/Lesson-09.md)*
+*From [201 Lesson 9](https://github.com/JesseSteele/Codia/blob/master/201/Lesson-09.md)*
 
 - **`1 bit`** = A single binary digit (`0` or `1`)
 - **`1 Byte`** = 8 bits

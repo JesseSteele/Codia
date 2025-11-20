@@ -1,4 +1,4 @@
-# VIP Code
+# Codia
 ## Learn Command Line Linux and Code
 
 ### Start with Linux.
@@ -14,28 +14,28 @@ Who is this course for?
 - Parents who want their children to learn that phones and computers are tools, not only toys
 
 ## Course Unit List:
-### [Linux 101: Arguments](https://github.com/inkVerb/VIP/blob/master/101/README.md)
+### [Linux 101: Arguments](https://github.com/JesseSteele/Codia/blob/master/101/README.md)
 - How the basic command line makes its way into a Linux script
 
-### [Linux 201: Files](https://github.com/inkVerb/VIP/blob/master/201/README.md)
+### [Linux 201: Files](https://github.com/JesseSteele/Codia/blob/master/201/README.md)
 - Files, directories, formats, and power user tips
 
-### [Linux 301: Logic](https://github.com/inkVerb/VIP/blob/master/301/README.md)
+### [Linux 301: Logic](https://github.com/JesseSteele/Codia/blob/master/301/README.md)
 - `if`, `while`, and other logic concepts used in every computer language (easiest to understand here in Linux)
 
-### [Linux 401: Advance](https://github.com/inkVerb/VIP/blob/master/401/README.md)
+### [Linux 401: Advance](https://github.com/JesseSteele/Codia/blob/master/401/README.md)
 - Taking everything so far and doing more
 
-### [Linux 501: PHP-XML Stack](https://github.com/inkVerb/VIP/blob/master/501/README.md)
+### [Linux 501: PHP-XML Stack](https://github.com/JesseSteele/Codia/blob/master/501/README.md)
 - Basic web app concepts for many server-side languages, using PHP, SQL, AJAX, XML linting, and building a basic blog app
 
-### [Linux 601: SysAdmin](https://github.com/inkVerb/VIP/blob/master/601/README.md)
+### [Linux 601: SysAdmin](https://github.com/JesseSteele/Codia/blob/master/601/README.md)
 - Administration of the Linux system, networking basics, creating and using install packages, Git, security, and under the hood
 
-### [Linux 701: SaaS Draft](https://github.com/inkVerb/VIP/blob/master/701/README.md)
+### [Linux 701: SaaS Draft](https://github.com/JesseSteele/Codia/blob/master/701/README.md)
 - Survey and side-by-side comparison of server & base concepts for: Node.js, Go language, and Python
 
-### [Cheat Sheets](https://github.com/inkVerb/VIP/blob/master/Cheat-Sheets/README.md)
+### [Cheat Sheets](https://github.com/JesseSteele/Codia/blob/master/Cheat-Sheets/README.md)
 
 ## Why learn Linux?
 *Learn your roots first, then everything makes more sense.*
@@ -63,21 +63,21 @@ Who is this course for?
 ___
 
 ## Install Linux
-- [BIOS, EFI & Other Settings for Linux](https://github.com/inkVerb/VIP/blob/master/install-BIOS-UEFI.md)
-### [Arch/Manjaro (text)](https://github.com/inkVerb/VIP/blob/master/Arch-Install.md)
-- [IBUS for Taiwan and/or China Mandarin typing input](https://github.com/inkVerb/VIP/blob/master/ibus_zh_TW.md)
+- [BIOS, EFI & Other Settings for Linux](https://github.com/JesseSteele/Codia/blob/master/install-BIOS-UEFI.md)
+### [Arch/Manjaro (text)](https://github.com/JesseSteele/Codia/blob/master/Arch-Install.md)
+- [IBUS for Taiwan and/or China Mandarin typing input](https://github.com/JesseSteele/Codia/blob/master/ibus_zh_TW.md)
 - Vrk desktop tools at [verb.ink](http://verb.ink)
 ### [Ubuntu (video)](https://www.youtube.com/watch?v=sYfEs0lQA8Y&index=4&list=PLizgE6nGB1Kx8jIY1JE2v9rcL9G9s_UDj) create your bootable Linux USB
 - Partitioning and Linux install instructions apply to Arch/Manjaro and others
-- [Fcitx for Taiwan and/or China Mandarin typing input](https://github.com/inkVerb/VIP/blob/master/Fcitx_zh_TW.md)
+- [Fcitx for Taiwan and/or China Mandarin typing input](https://github.com/JesseSteele/Codia/blob/master/Fcitx_zh_TW.md)
 
-## [Prepare: Apps used in these lessons](https://github.com/inkVerb/VIP/blob/master/Prepare.md)
+## [Prepare: Apps used in these lessons](https://github.com/JesseSteele/Codia/blob/master/Prepare.md)
 - Install and set up specific apps in these lessons
 
-## [Dropdown Terminal: Setup the "F12" Dropdown terminal on Arch/Manjaro](https://github.com/inkVerb/VIP/blob/master/Arch-Drop-Terminal.md)
+## [Dropdown Terminal: Setup the "F12" Dropdown terminal on Arch/Manjaro](https://github.com/JesseSteele/Codia/blob/master/Arch-Drop-Terminal.md)
 - Install the common, convenient dropdown terminal used in many Linux distros
 
-## [Code Headers: Learn about the first line of code files](https://github.com/inkVerb/VIP/blob/master/SH-XML-HTML-PHP-headers.md)
+## [Code Headers: Learn about the first line of code files](https://github.com/JesseSteele/Codia/blob/master/SH-XML-HTML-PHP-headers.md)
 - Simple (and quite useful) example lesson
 
 ## Type with correct fingers
@@ -114,6 +114,6 @@ ___
 
 [The Linux Documentation Project at tldp.org](http://tldp.org) more beyond this crash course
 
-[VIP/Links](https://github.com/inkVerb/vip/blob/master/Links.md) places to get more help and specific examples
+[Codia/Links](https://github.com/JesseSteele/Codia/blob/master/Links.md) places to get more help and specific examples
 
 [GNU Bash Reference manual](https://www.gnu.org/software/bash/manual/bash.html#Bourne-Shell-Builtins) the official Shell/BASH manual

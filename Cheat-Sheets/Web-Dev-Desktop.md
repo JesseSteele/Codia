@@ -1,9 +1,9 @@
 # Web-Dev Desktop
 ## These scripts will install a webstack
 
-- [LAMP Desktop script](https://github.com/inkVerb/VIP/blob/master/Cheat-Sheets/desktoplamp.sh) (Apache; HTML and PHP)
-- [LEMP Desktop script](https://github.com/inkVerb/VIP/blob/master/Cheat-Sheets/desktoplemp.sh) (Nginx; broken: only HTML, not PHP)
-- [phpMyAdmin script](https://github.com/inkVerb/VIP/blob/master/Cheat-Sheets/desktopsqladmin.sh) (MySQL GUI)
+- [LAMP Desktop script](https://github.com/JesseSteele/Codia/blob/master/Cheat-Sheets/desktoplamp.sh) (Apache; HTML and PHP)
+- [LEMP Desktop script](https://github.com/JesseSteele/Codia/blob/master/Cheat-Sheets/desktoplemp.sh) (Nginx; broken: only HTML, not PHP)
+- [phpMyAdmin script](https://github.com/JesseSteele/Codia/blob/master/Cheat-Sheets/desktopsqladmin.sh) (MySQL GUI)
 
 ## LAMP/LEMP Install
 1. Download the script to the current directory with the same file name
@@ -16,7 +16,7 @@
 3. Extract and rename the folder to the current directory: `phpMyAdmin`
 
 ### Install with script
-4. Download the **phpMyAdmin** script ([desktopsqladmin.sh](https://github.com/inkVerb/VIP/blob/master/Cheat-Sheets/desktopsqladmin.sh)) to the current directory with the same file name
+4. Download the **phpMyAdmin** script ([desktopsqladmin.sh](https://github.com/JesseSteele/Codia/blob/master/Cheat-Sheets/desktopsqladmin.sh)) to the current directory with the same file name
 5. `chmod ug+x desktopsqladmin.sh`
 
 ### Install with these commands (no script)
