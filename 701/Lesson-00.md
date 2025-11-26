@@ -126,7 +126,7 @@ cd ~/School/Codia
 | **2** :$
 
 ```console
-git clone https://github.com/inkVerb/701
+git clone https://github.com/JesseSteele/701
 ```
 
 #### Always own the web directory with `chown -R www...`!

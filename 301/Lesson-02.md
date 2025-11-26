@@ -131,7 +131,7 @@ gedit ODT-FILE.txt
 gedit markdown.md
 ```
 
-*View the rendered markdown file: [markdown.md](https://github.com/inkVerb/301/blob/master/markdown.md)*
+*View the rendered markdown file: [markdown.md](https://github.com/JesseSteele/301/blob/master/markdown.md)*
 
 *...convert that into LibreOffice Writer document...*
 

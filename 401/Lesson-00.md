@@ -108,7 +108,7 @@ cd ~/School/Codia
 | **2** :$
 
 ```console
-git clone https://github.com/inkVerb/401
+git clone https://github.com/JesseSteele/401
 ```
 
 | **3** :$

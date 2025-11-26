@@ -191,7 +191,7 @@ cd ~/School/Codia
 | **AP2** :$
 
 ```console
-git clone https://github.com/inkVerb/501
+git clone https://github.com/JesseSteele/501
 ```
 
 | **AP3** :$
@@ -223,7 +223,7 @@ cd ~/School/Codia
 | **DP2** :$
 
 ```console
-git clone https://github.com/inkVerb/501
+git clone https://github.com/JesseSteele/501
 ```
 
 | **DP3** :$
@@ -262,7 +262,7 @@ cd ~/School/Codia
 | **EP2** :$
 
 ```console
-git clone https://github.com/inkVerb/501
+git clone https://github.com/JesseSteele/501
 ```
 
 | **EP3** :$
@@ -294,7 +294,7 @@ cd ~/School/Codia
 | **CP2** :$
 
 ```console
-git clone https://github.com/inkVerb/501
+git clone https://github.com/JesseSteele/501
 ```
 
 | **CP3** :$
