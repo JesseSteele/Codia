@@ -1136,7 +1136,7 @@ function escape_sql($data) {
 	return mysqli_real_escape_string($database, $trimmed_data); // Escapes, no quote
 }
 $name = escape_sql($_POST['name']);
-$query = "SELECT * FROM fruit WHERE name = '$name'"; // $name needs `quotes`
+$query = "SELECT * FROM fruit WHERE name = '$name'"; // $name needs 'quotes'
 ```
 
 | **PDO Escape & Quote** :
