@@ -1088,7 +1088,7 @@ sudo vim /etc/php/php.ini
 
 #### Database Connection
 
-| **Database Constants** :
+| **Database Credentials** :
 
 ```php
 $db_name = 'some_database';
