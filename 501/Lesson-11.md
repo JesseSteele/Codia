@@ -1284,7 +1284,11 @@ function mysqli_error($query) {
 	echo "SQL error from <pre>$query</pre>";
 }
 
-// Run the query
+// Construct and run the query
+$query = "INSERT INTO fruit (name) VALUES ('apple')";
+$call = mysqli_query($database, $query);
+
+// Test the query
 if (mysqli_affected_rows($database) == 1) {
   success();
 } else {
