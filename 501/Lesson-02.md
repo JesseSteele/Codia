@@ -62,8 +62,8 @@ MySQL is one such database software
 
 Other SQL database software includes:
 
-- SQLite
-- PostgreSQL
+- SQLite (no server, can include in distributing an app)
+- PostgreSQL (handles heavier traffic well)
 - MariaDB (forked from MySQL by the original developers after MySQL was acquired by Oracle in 2009)
 
 SQL is a more secure, interactive alternative to XML, another way to store information data
