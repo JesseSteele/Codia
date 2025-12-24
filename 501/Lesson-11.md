@@ -1662,7 +1662,7 @@ $database = new PDO($nameHostChar, $db_user, $db_pass, $opt);
 $statement = $database->query($query);
 ```
 
-| **Database Connection (OOP)** : (pdo24.php)
+| **Database Connection (OOP)** : (pdo25.php)
 
 ```php
 class DB {
