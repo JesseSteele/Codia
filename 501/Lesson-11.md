@@ -2135,7 +2135,7 @@ $this->lastid = $database->lastInsertId();
 
 *For fun, change the arguments for `select()`, `insert()`, and `delete()` methods where HTML renders at the end of the file*
 
-  - *Both in pdo29.php & `pdo28.php`*
+  - *Both in pdo29.php & pdo28.php*
   - *Observe how errors are handled differently with `pdo_error()`*
 
 | **B-29** :// (Same)
