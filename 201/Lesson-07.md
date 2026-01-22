@@ -15,7 +15,7 @@ cd verb.ink
 
 Reference
 
-`wget -O vip.zip https://github.com/JesseSteele/Codia/archive/master.zip`
+`wget -O codia.zip https://github.com/JesseSteele/Codia/archive/master.zip`
 
 #### [Compression Cheat Sheet](https://github.com/JesseSteele/Codia/blob/master/Cheat-Sheets/Compression.md)
 
@@ -40,7 +40,7 @@ ls -l
 | **3** :$
 
 ```console
-unzip vip.zip
+unzip codia.zip
 ```
 
 | **4** :$
@@ -54,7 +54,7 @@ ls -l
 | **5** :$
 
 ```console
-mv Codia-master vip
+mv Codia-master codia
 ```
 
 | **6** :$
@@ -68,7 +68,7 @@ ls -l
 | **7** :$
 
 ```console
-rm vip.zip
+rm codia.zip
 ```
 
 | **8** :$
@@ -82,7 +82,7 @@ ls -l
 | **9** :$
 
 ```console
-zip -r vip.zip vip
+zip -r codia.zip codia
 ```
 
 | **10** :$
@@ -91,20 +91,20 @@ zip -r vip.zip vip
 ls -l
 ```
 
-*You can see the `vip` directory*
+*You can see the `codia` directory*
 
 *This time use `-d` to unzip it to the `compress` directory*
 
 | **11** :$
 
 ```console
-unzip vip.zip -d compress/
+unzip codia.zip -d compress/
 ```
 
 | **12** :$
 
 ```console
-cp vip.zip compress/
+cp codia.zip compress/
 ```
 
 | **13** :$
@@ -119,12 +119,12 @@ cd compress
 ls -l
 ```
 
-*It works, but we don't need this extra `vip` directory; delete it*
+*It works, but we don't need this extra `codia` directory; delete it*
 
 | **15** :$
 
 ```console
-rm -r vip
+rm -r codia
 ```
 
 | **16** :$
@@ -140,7 +140,7 @@ cd ..
 | **17** :$
 
 ```console
-tar -cvf vip.tar vip
+tar -cvf codia.tar codia
 ```
 
 | **18** :$
@@ -152,7 +152,7 @@ ls -l
 | **19** :$
 
 ```console
-cp vip.tar compress/
+cp codia.tar compress/
 ```
 
 | **20** :$
@@ -167,14 +167,14 @@ cd compress
 ls -l
 ```
 
-*Note `vip.tar` is not compressed, larger than `vip.zip`*
+*Note `codia.tar` is not compressed, larger than `codia.zip`*
 
 *Note `-x` is for "eXtract"; `-v` is for "Verbose"; `-f` is for "File"*
 
 | **22** :$
 
 ```console
-tar -xvf vip.tar
+tar -xvf codia.tar
 ```
 
 | **23** :$
@@ -186,7 +186,7 @@ ls -l
 | **24** :$
 
 ```console
-rm -r vip
+rm -r codia
 ```
 
 ### xz: `xz file`; `xz -d file.xz`
@@ -200,7 +200,7 @@ cd ~/School/Codia/201/compress
 | **25** :$
 
 ```console
-xz vip.tar
+xz codia.tar
 ```
 
 | **26** :$
@@ -209,14 +209,14 @@ xz vip.tar
 ls -l
 ```
 
-*Note it replaced the original file `vip.tar`*
+*Note it replaced the original file `codia.tar`*
 
 *Note `-d` is for "Decompress"*
 
 | **27** :$
 
 ```console
-xz -d vip.tar.xz
+xz -d codia.tar.xz
 ```
 
 | **28** :$
@@ -232,7 +232,7 @@ ls -l
 | **29** :$
 
 ```console
-tar -xf vip.tar
+tar -xf codia.tar
 ```
 
 | **30** :$
@@ -246,7 +246,7 @@ ls -l
 | **31** :$
 
 ```console
-xz -c vip.tar > vip.tar.xz
+xz -c codia.tar > codia.tar.xz
 ```
 
 | **32** :$
@@ -264,7 +264,7 @@ ls -l
 | **33** :$
 
 ```console
-rm vip.tar.xz vip.tar
+rm codia.tar.xz codia.tar
 ```
 
 | **34** :$
@@ -280,7 +280,7 @@ ls -l
 | **35** :$
 
 ```console
-tar -cf - vip | xz > vip.tar.xz
+tar -cf - codia | xz > codia.tar.xz
 ```
 
 | **36** :$
@@ -292,17 +292,17 @@ ls -l
 *Breakdown:*
 - `-c` *"Create" something new*
 - `-f` *"File" output filename will be specified*
-- `-` *placeholder where the output tarball filename normally goes, i.e. `vip.tar`*
-- `vip` *the tarball content source, here one directory, being tarred up*
+- `-` *placeholder where the output tarball filename normally goes, i.e. `codia.tar`*
+- `codia` *the tarball content source, here one directory, being tarred up*
 - `|` *"pipe" (send) that output to whatever comes next*
 - `xz` *the next command, using `xz` compression*
 - `>` *...to an output file...*
-- `vip.tar.xz` *is the actual output file*
+- `codia.tar.xz` *is the actual output file*
 
 | **37** :$
 
 ```console
-rm vip.tar.xz
+rm codia.tar.xz
 ```
 
 | **38** :$
@@ -316,7 +316,7 @@ ls -l
 | **39** :$
 
 ```console
-tar -c vip | xz > vip.tar.xz
+tar -c codia | xz > codia.tar.xz
 ```
 
 | **40** :$
@@ -344,7 +344,7 @@ ___
 | **41** :$
 
 ```console
-cp ../vip.tar . && ls -l
+cp ../codia.tar . && ls -l
 ```
 
 *Note `-2` is the compression level...*
@@ -352,7 +352,7 @@ cp ../vip.tar . && ls -l
 | **42** :$
 
 ```console
-xz -2 -c vip.tar > vip.2.tar.xz
+xz -2 -c codia.tar > codia.2.tar.xz
 ```
 
 | **43** :$
@@ -372,7 +372,7 @@ ls -l
 | **44** :$
 
 ```console
-gzip vip.tar
+gzip codia.tar
 ```
 
 | **45** :$
@@ -381,12 +381,12 @@ gzip vip.tar
 ls -l
 ```
 
-*Note vip.tar.gz replaced the original file `vip.tar`*
+*Note codia.tar.gz replaced the original file `codia.tar`*
 
 | **46** :$
 
 ```console
-cp ../vip.tar .
+cp ../codia.tar .
 ```
 
 | **47** :$
@@ -400,7 +400,7 @@ ls -l
 | **48** :$
 
 ```console
-rm vip.tar.gz
+rm codia.tar.gz
 ```
 
 | **49** :$
@@ -414,7 +414,7 @@ ls -l
 | **50** :$
 
 ```console
-gzip -c vip.tar > vip.tar.gz
+gzip -c codia.tar > codia.tar.gz
 ```
 
 *Note there was no question this time; `-c` is a good idea with `gzip`*
@@ -428,7 +428,7 @@ ls -l
 | **52** :$
 
 ```console
-rm vip.tar
+rm codia.tar
 ```
 
 | **53** :$
@@ -442,7 +442,7 @@ ls -l
 | **54** :$
 
 ```console
-gzip -d vip.tar.gz
+gzip -d codia.tar.gz
 ```
 
 | **55** :$
@@ -451,14 +451,14 @@ gzip -d vip.tar.gz
 ls -l
 ```
 
-*Note `vip.tar.gz` is was replaced, just as with `xz`*
+*Note `codia.tar.gz` is was replaced, just as with `xz`*
 
-*We want `vip.tar.gz` for reference, so cleanup...*
+*We want `codia.tar.gz` for reference, so cleanup...*
 
 | **56** :$
 
 ```console
-gzip -c vip.tar > vip.tar.gz
+gzip -c codia.tar > codia.tar.gz
 ```
 
 #### bzip2: `bzip2 -c file > file.bz2`; `bzip2 -d file.bz2`
@@ -472,10 +472,10 @@ ls -l
 | **58** :$
 
 ```console
-bzip2 vip.tar
+bzip2 codia.tar
 ```
 
-*Note `vip.tar.bz2` replaced `vip.tar`, just as with `xz` and `gzip`*
+*Note `codia.tar.bz2` replaced `codia.tar`, just as with `xz` and `gzip`*
 
 | **59** :$
 
@@ -488,7 +488,7 @@ ls -l
 | **60** :$
 
 ```console
-bzip2 -d vip.tar.bz2
+bzip2 -d codia.tar.bz2
 ```
 
 | **61** :$
@@ -497,12 +497,12 @@ bzip2 -d vip.tar.bz2
 ls -l
 ```
 
-*Note `vip.tar.bz2` is gone, we want it back for reference...*
+*Note `codia.tar.bz2` is gone, we want it back for reference...*
 
 | **62** :$
 
 ```console
-bzip2 -c vip.tar > vip.tar.bz2
+bzip2 -c codia.tar > codia.tar.bz2
 ```
 
 *Note `-c` is for "Create, keep original" just as with `gzip`*
@@ -524,7 +524,7 @@ ls -l
 | **64** :$
 
 ```console
-rm -r vip
+rm -r codia
 ```
 
 | **65** :$
@@ -536,7 +536,7 @@ ls -l
 | **66** :$
 
 ```console
-tar -xf vip.tar.gz
+tar -xf codia.tar.gz
 ```
 
 | **67** :$
@@ -545,14 +545,14 @@ tar -xf vip.tar.gz
 ls -l
 ```
 
-*Done in one step AND the original `vip.tar.gz` file is still there!*
+*Done in one step AND the original `codia.tar.gz` file is still there!*
 
 *"Again!" — Baby Dinosaur*
 
 | **68** :$
 
 ```console
-rm -r vip && ls -l
+rm -r codia && ls -l
 ```
 
 *(Oh, and the dash `-` is optional with `tar` options)*
@@ -560,7 +560,7 @@ rm -r vip && ls -l
 | **69** :$
 
 ```console
-tar xf vip.tar.bz2
+tar xf codia.tar.bz2
 ```
 
 | **70** :$
@@ -574,7 +574,7 @@ ls -l
 | **71** :$
 
 ```console
-rm -r vip && ls -l
+rm -r codia && ls -l
 ```
 
 *Now with `xz`*
@@ -582,7 +582,7 @@ rm -r vip && ls -l
 | **72** :$
 
 ```console
-tar xf vip.tar.xz
+tar xf codia.tar.xz
 ```
 
 | **73** :$
@@ -612,7 +612,7 @@ ___
 | **74** :$
 
 ```console
-tar tf vip.tar
+tar tf codia.tar
 ```
 
 *Note that only shows the contents, no files changed*
@@ -628,19 +628,19 @@ ls -l
 | **76** :$
 
 ```console
-tar tf vip.tar.gz
+tar tf codia.tar.gz
 ```
 
 | **77** :$
 
 ```console
-tar tf vip.tar.bz2
+tar tf codia.tar.bz2
 ```
 
 | **78** :$
 
 ```console
-tar tf vip.tar.xz
+tar tf codia.tar.xz
 ```
 
 *The list is quite long, so put it into a file for easy viewing*
@@ -648,7 +648,7 @@ tar tf vip.tar.xz
 | **79** :$
 
 ```console
-tar tf vip.tar.xz > vip-tar-tf
+tar tf codia.tar.xz > codia-tar-tf
 ```
 
 | **80** :$
@@ -660,7 +660,7 @@ ls -l
 | **81** :$
 
 ```console
-gedit vip-tar-tf
+gedit codia-tar-tf
 ```
 
 *tar up the `cpdir` directory*
@@ -750,7 +750,7 @@ tar tf files.tar
 | **93** :$
 
 ```console
-rm vip.tar.xz && ls -l
+rm codia.tar.xz && ls -l
 ```
 
 *Tar up and xz-compress in one command:*
@@ -758,7 +758,7 @@ rm vip.tar.xz && ls -l
 | **94** :$
 
 ```console
-tar c vip | xz > vip.tar.xz
+tar c codia | xz > codia.tar.xz
 ```
 
 *`-J` flag to tar up and xz-compress in one command:*
@@ -766,7 +766,7 @@ tar c vip | xz > vip.tar.xz
 | **95** :$
 
 ```console
-tar Jcf vipJ.tar.xz vip
+tar Jcf codiaJ.tar.xz codia
 ```
 
 - `-J` use `xz`
@@ -786,7 +786,7 @@ ls -l
 | **97** :$
 
 ```console
-rm -r vip && ls -l
+rm -r codia && ls -l
 ```
 
 *Untar and decompress in one command:*
@@ -794,7 +794,7 @@ rm -r vip && ls -l
 | **98** :$
 
 ```console
-tar xf vip.tar.xz
+tar xf codia.tar.xz
 ```
 
 *See, it worked...*

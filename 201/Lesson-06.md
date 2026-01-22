@@ -135,7 +135,7 @@ ls
 | **15** :$
 
 ```console
-wget -O vip.zip https://github.com/JesseSteele/Codia/archive/master.zip
+wget -O codia.zip https://github.com/JesseSteele/Codia/archive/master.zip
 ```
 
 | **16** :$
@@ -177,7 +177,7 @@ curl -L https://github.com/JesseSteele/Codia/archive/master.zip
 | **20** :$
 
 ```console
-curl -L https://github.com/JesseSteele/Codia/archive/master.zip > vip-curl.zip
+curl -L https://github.com/JesseSteele/Codia/archive/master.zip > codia-curl.zip
 ```
 
 | **21** :$
@@ -191,7 +191,7 @@ ls
 | **22** :$
 
 ```console
-rm vip-curl.zip
+rm codia-curl.zip
 ```
 
 ### `.tar` file (tarball) via `curl`
@@ -201,7 +201,7 @@ rm vip-curl.zip
 | **23** :$
 
 ```console
-curl -L https://api.github.com/repos/JesseSteele/Codia/tarball > vip.tar
+curl -L https://api.github.com/repos/JesseSteele/Codia/tarball > codia.tar
 ```
 
 | **24** :$
@@ -215,7 +215,7 @@ ls
 | **25** :$
 
 ```console
-tar xzf vip.tar
+tar xzf codia.tar
 ```
 
 | **26** :$
@@ -239,7 +239,7 @@ rm -r inkVerb-Codia-SOME_CRAZY_NUMBER
 | **28** :$
 
 ```console
-rm vip.tar
+rm codia.tar
 ```
 
 ### tarball via `curl` & `tar xz` (single command)
@@ -287,7 +287,7 @@ ls
 | **34** :$
 
 ```console
-cd vip
+cd codia
 ```
 
 | **35** :$
@@ -323,7 +323,7 @@ cd ..
 | **39** :$
 
 ```console
-rm -r vip
+rm -r codia
 ```
 
 *Note the error message because of the read-only files (<kbd>Ctrl</kbd> + <kbd>C</kbd> to get out of there!)*
@@ -335,7 +335,7 @@ rm -r vip
 | **40** :$
 
 ```console
-rm -rf vip
+rm -rf codia
 ```
 
 | **41** :$

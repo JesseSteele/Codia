@@ -22,25 +22,25 @@ cd compress
 | **2** :$ (1990s, out of date, never use)
 
 ```console
-md5sum vip.tar.xz
+md5sum codia.tar.xz
 ```
 
 | **3** :$ (1990s, better, not good enough)
 
 ```console
-sha1sum vip.tar.xz
+sha1sum codia.tar.xz
 ```
 
 | **4** :$ (better yet)
 
 ```console
-sha256sum vip.tar.xz
+sha256sum codia.tar.xz
 ```
 
 | **5** :$ (great, big)
 
 ```console
-sha512sum vip.tar.xz
+sha512sum codia.tar.xz
 ```
 
 *Generate a sha256sum hash*
@@ -48,7 +48,7 @@ sha512sum vip.tar.xz
 | **6** :$
 
 ```console
-sha256sum vip.tar.xz
+sha256sum codia.tar.xz
 ```
 
 *It's always the same, that way you are confident the file is not even 1 bit different since downloaded*
@@ -56,7 +56,7 @@ sha256sum vip.tar.xz
 | **7** :$
 
 ```console
-sha256sum vip.tar.xz
+sha256sum codia.tar.xz
 ```
 
 *Note every file's hash is different*
@@ -64,19 +64,19 @@ sha256sum vip.tar.xz
 | **8** :$
 
 ```console
-sha256sum vip.tar.gz
+sha256sum codia.tar.gz
 ```
 
 | **9** :$
 
 ```console
-sha256sum vip.tar.bz2
+sha256sum codia.tar.bz2
 ```
 
 | **10** :$
 
 ```console
-sha256sum vip.tar
+sha256sum codia.tar
 ```
 
 *Another way: create a hash file so we can check it all at once*
@@ -84,7 +84,7 @@ sha256sum vip.tar
 | **11** :$
 
 ```console
-sha256sum vip.tar.xz > vip.tar.xz.sha256
+sha256sum codia.tar.xz > codia.tar.xz.sha256
 ```
 
 | **12** :$
@@ -98,13 +98,13 @@ ls
 | **13** :$
 
 ```console
-cat vip.tar.xz.sha256
+cat codia.tar.xz.sha256
 ```
 
 | **14** :$
 
 ```console
-gedit vip.tar.xz.sha256
+gedit codia.tar.xz.sha256
 ```
 
 *Now check it with `-c` and the hash file, in the same directory as the file*
@@ -112,7 +112,7 @@ gedit vip.tar.xz.sha256
 | **15** :$
 
 ```console
-sha256sum -c vip.tar.xz.sha256
+sha256sum -c codia.tar.xz.sha256
 ```
 
 *The sha256sum hash file knows what it's looking for, play hide-and-seek*
@@ -120,7 +120,7 @@ sha256sum -c vip.tar.xz.sha256
 | **16** :$
 
 ```console
-mv vip.tar.xz vip.tar.xz.HIDING
+mv codia.tar.xz codia.tar.xz.HIDING
 ```
 
 | **17** :$
@@ -132,7 +132,7 @@ ls
 | **18** :$
 
 ```console
-sha256sum -c vip.tar.xz.sha256
+sha256sum -c codia.tar.xz.sha256
 ```
 
 *Fail!*
@@ -142,13 +142,13 @@ sha256sum -c vip.tar.xz.sha256
 | **19** :$
 
 ```console
-mv vip.tar.bz2 vip.tar.xz
+mv codia.tar.bz2 codia.tar.xz
 ```
 
 | **20** :$
 
 ```console
-sha256sum -c vip.tar.xz.sha256
+sha256sum -c codia.tar.xz.sha256
 ```
 
 *FAIL*
@@ -160,7 +160,7 @@ sha256sum -c vip.tar.xz.sha256
 | **21** :$
 
 ```console
-mv vip.tar.xz vip.tar.bz2 && mv vip.tar.xz.HIDING vip.tar.xz
+mv codia.tar.xz codia.tar.bz2 && mv codia.tar.xz.HIDING codia.tar.xz
 ```
 
 ___
