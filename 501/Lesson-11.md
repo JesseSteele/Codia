@@ -2548,11 +2548,12 @@ GRANT ALL PRIVILEGES ON blog_db.* TO blog_db_user@localhost IDENTIFIED BY 'blogd
 FLUSH PRIVILEGES;
 ```
 
+Now, we have a one-click install page
+
 | **34** :$
 
 ```console
 sudo rm -rf web/* && \
-sudo cp -r pdo/* web/ && \
 sudo mv web/htaccess web/.htaccess && \
 git clone https://github.com/inkverb/tinymce-dist.git && \
 sudo mv tinymce-dist web/tinymce && \
@@ -2563,10 +2564,29 @@ rm -rf dropzone && \
 git clone https://github.com/poetryisCODE/htmldiff.git && \
 sudo cp htmldiff/htmldiff.min.js web/ && \
 rm -rf htmldiff && \
-sudo mkdir -p web/media/docs web/media/audio web/media/video web/media/images web/media/uploads web/media/original/images web/media/original/video web/media/original/audio web/media/original/docs web/media/pro && \
+sudo mkdir -p web/media/docs web/media/audio web/media/video web/media/images web/media/uploads web/media/original/images web/media/original/video web/media/original/audio web/media/original/docs web/media/pro
+sudo cp -r pdo/* web/ && \
 sudo chown -R www:www /srv/www/html && \
+code pdo/install.php pdo/in.conf.php && \
 ls web
 ```
+
+*Note our database is empty*
+
+| **34** :>
+
+```sql
+USE blog_db;
+SHOW TABLES;
+```
+
+| **34** ://phpMyAdmin **> blog_db**
+
+*Note the database is already populated because we already created `in.conf.php` populating the `value=` attributes in `install.php`*
+
+*Not all web installers are this simple*
+
+*We want a one-click installer accessible from the web browser*
 
 | **B-34a** :// (fill-in from below)
 
