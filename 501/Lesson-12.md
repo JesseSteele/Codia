@@ -279,7 +279,7 @@ ls web
 
 *The prefix is defined by a URI in the first set of each hierarchy it is used*
 
-| **Prefix `s:** :
+| **Prefix `s:`** :
 
 ```xml
 <s:table xmlns:s="https://verb.ink/stock">
@@ -357,7 +357,7 @@ localhost/web/syntax.xml
 sudo cp core/12-xmlrender6.php web/xmlrender.php && \
 sudo cp core/12-htaccess6 web/.htaccess && \
 sudo chown -R www:www /srv/www/html && \
-code core/12-xmlrender6.php 12-htaccess6 && \
+code core/12-xmlrender6.php core/12-htaccess6 && \
 ls web
 ```
 
@@ -404,7 +404,7 @@ localhost/web/xmlrender.xml
 ```console
 sudo cp core/12-validate7.xml web/validate.xml && \
 sudo chown -R www:www /srv/www/html && \
-code core/12-syntax7.xml && \
+code core/12-validate7.xml && \
 ls web
 ```
 
@@ -537,7 +537,7 @@ localhost/web/validate.xml
 ```console
 sudo cp core/12-validate9.xml web/validate.xml && \
 sudo chown -R www:www /srv/www/html && \
-code core/12-syntax9.xml && \
+code core/12-validate9.xml && \
 ls web
 ```
 
@@ -601,10 +601,10 @@ ls web
 </root>
 ```
 
-| **B-9** ://
+| **B-9** :// (<kbd>Ctrl</kbd> + <kbd>R</kbd> to reload)
 
 ```console
-localhost/web/validate.xml (<kbd>Ctrl</kbd> + <kbd>R</kbd> to reload)
+localhost/web/validate.xml
 ```
 
 ##### Include XSD
@@ -1147,7 +1147,7 @@ Add style with this after the header:
 ```console
 sudo cp core/12-style12.xml web/style.xml && \
 sudo chown -R www:www /srv/www/html && \
-code core/12-style12.xml core/12-style12.xsl && \
+code core/12-style12.xml && \
 ls web
 ```
 
