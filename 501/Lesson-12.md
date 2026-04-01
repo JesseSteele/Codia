@@ -1345,6 +1345,7 @@ localhost/web/style.xml
 - `<` is not allowed, use `&lt;`
 - Common operators (not complete list)
 
+|         |                          |
 | ------- | ------------------------ |
 | `>`     | Greater than             |
 | `&lt;`  | Less than                |
@@ -1741,6 +1742,7 @@ localhost/web/style.xml
 
 #### B. Operators
 
+|         |                          |
 | ------- | ------------------------ |
 | `>`     | Greater than             |
 | `&lt;`  | Less than                |
@@ -1760,6 +1762,7 @@ localhost/web/style.xml
 
 #### C. Axes
 
+|                      |                                                                                                 |
 | -------------------- | ----------------------------------------------------------------------------------------------- |
 | `ancestor`           | All ancestors of current node                                                                   |
 | `ancestor-or-self`   | Current node and all ancestors of current node                                                  |
