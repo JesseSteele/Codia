@@ -527,7 +527,7 @@ localhost/web/validate.xml
 - `standalone=` has NO effect on XSD, which we prefer over DTD anyway
 
 #### B. XSD (XML Schema Definition)
-##### XSD Basics
+##### 1. XSD Basics
 *XSD uses validation terms in XML language, not DTD (SGML) language*
 
 *Note this example defines validation for the same XML in the previous two examples...*
@@ -607,7 +607,7 @@ ls web
 localhost/web/validate.xml
 ```
 
-##### Include XSD
+##### 2. Include XSD
 *You can include the XSD schema from a separate file*
 
 *These have the same XML and XSD...*
@@ -690,7 +690,7 @@ localhost/web/validate.xml
 
 *Note everything works just the same*
 
-##### Different XSD Include Declarations
+##### 3. Different XSD Include Declarations
 
 *There are different ways to publish XML and XSD headers*
 
@@ -765,9 +765,9 @@ ls web
 localhost/web/validate.xml
 ```
 
-##### XSD Elements & Attributes
+##### 4. XSD Elements & Attributes
 
-###### Restricting options
+###### a. Restricting options
 
 - Restricted: `type="somelist"` indicating `<xs:restriction>`
 - Any value: `type="xs:string"` accepts any string
@@ -806,7 +806,7 @@ Restricted attribute: `type="sportattrlist"`
 </xs:element>
 ```
 
-###### `<xs:complexType>` vs `<xs:simpleType>`
+###### b. `<xs:complexType>` vs `<xs:simpleType>`
 
 - `<xs:complexType>` & `<xs:simpleType>` can apply to:
   - `<xs:element>`
@@ -816,13 +816,13 @@ Restricted attribute: `type="sportattrlist"`
   - Attributes
   - Elements
 
-| **<elem>` `simpleType` self-closing** : (XDS considers same as empty)
+| **`<elem>` `simpleType` self-closing** : (XDS considers same as empty)
 
 ```xml
 <elem/>
 ```
 
-| **<elem>` `simpleType` empty** : (XDS considers same as self-closing)
+| **`<elem>` `simpleType` empty** : (XDS considers same as self-closing)
 
 ```xml
 <elem></elem>
@@ -866,13 +866,13 @@ Restricted attribute: `type="sportattrlist"`
   - Attributes
   - Elements
 
-| **<elem>` `complexType` with attributes** :
+| **`<elem>` `complexType` with attributes** :
 
 ```xml
 <elem attr="here"/>
 ```
 
-| **<elem>` `complexType` with other elements** :
+| **`<elem>` `complexType` with other elements** :
 
 ```xml
 <elem>
@@ -920,7 +920,7 @@ Restricted attribute: `type="sportattrlist"`
 
 - `<xs:sequence>` defines defines that the order of elements matters
 
-##### Restrict Value Options
+##### 5. Restrict Value Options
 
 *There are two ways to restrict options for a value*
 
@@ -970,7 +970,7 @@ Restricted attribute: `type="sportattrlist"`
 <xs:element name="here" type="somelist" default="val1"/>
 ```
 
-###### Single vs Inherited Definitions
+###### a. Single vs Inherited Definitions
 
 | **XML** :
 
@@ -1028,7 +1028,7 @@ Restricted attribute: `type="sportattrlist"`
 </xs:element>
 ```
 
-###### Basic XSD Terminology
+###### b. Basic XSD Terminology
 
 | **XSD `element`, `attribute` & type** :
 
@@ -1107,7 +1107,7 @@ Restricted attribute: `type="sportattrlist"`
 - `xs:time`
 - Custom, defined by `<xs:simpleType name="custom_type_name_here">...</xs:simpleType>`
 
-##### DTD vs XSD Summary:
+#### C. DTD vs XSD Summary:
 - *DTD is older and simpler*
   - *Less control*
   - *Uses SGML syntax*
@@ -1345,6 +1345,7 @@ localhost/web/style.xml
 - `<` is not allowed, use `&lt;`
 - Common operators (not complete list)
 
+| ------- | ------------------------ |
 | `>`     | Greater than             |
 | `&lt;`  | Less than                |
 | `>=`    | Greater than or equal to |
@@ -1353,13 +1354,14 @@ localhost/web/style.xml
 | `!=`    | Not equal to             |
 
 - *We have seen:*
-  1. *`<xsl:for-each select="">`*
-  2. *`<xsl:value-of select=""/>`*
-  3. *`<xsl:sort select=""/>`*
+1. *`<xsl:for-each select="">`*
+2. *`<xsl:value-of select=""/>`*
+3. *`<xsl:sort select=""/>`*
+
 - *Now, let's see:*
-  4. *`<xsl:if test="">`*
-  5. *`<xsl:choose><xsl:when test=""><xsl:otherwise test="">`*
-  6. Operators
+4. *`<xsl:if test="">`*
+5. *`<xsl:choose><xsl:when test=""><xsl:otherwise test="">`*
+6. Operators
 
 | **14** :$
 
@@ -1739,6 +1741,7 @@ localhost/web/style.xml
 
 #### B. Operators
 
+| ------- | ------------------------ |
 | `>`     | Greater than             |
 | `&lt;`  | Less than                |
 | `>=`    | Greater than or equal to |
@@ -1755,8 +1758,9 @@ localhost/web/style.xml
 | `not()` | not `(`condition `)`     |
 | `|`     | Two node sets            |
 
-##### C. Axes
+#### C. Axes
 
+| -------------------- | ----------------------------------------------------------------------------------------------- |
 | `ancestor`           | All ancestors of current node                                                                   |
 | `ancestor-or-self`   | Current node and all ancestors of current node                                                  |
 | `attribute`          | All attributes of current node                                                                  |
@@ -1788,7 +1792,7 @@ We use XML Path syntax with many other XML tools, including CLI tools like XMLSt
   - `-u`: update
   - `-d`: delete
 
-#### Local address book
+#### A. Local address book
 
 | **17** :$
 
@@ -1889,7 +1893,7 @@ xml sel -t -v "//visitors/visitor[@login='jupitersong']/name" xml/contacts.xml
 
 *We can also change content*
 
-*Watch in Atom for this to change: `<visitor login="jdoe">`...*
+*Watch in Code for this to change: `<visitor login="jdoe">`...*
 
 | **22** :$
 
@@ -1953,7 +1957,7 @@ sudo cp xml/contacts.xml web/contacts.xml
 localhost/web/contacts.xml
 ```
 
-#### Settings file
+#### B. Settings file
 XML can be used to store settings, such as on your desktop
 
 This is not a real settings file, but the settings for your desktop machine could look very similar to this
@@ -1982,7 +1986,7 @@ xml ed -L -s /conf/displays -t elem -n display \
     xml/settings.xml
 ```
 
-*Note in Atom:*
+*Note in Code:*
   - *We just made a mess: `settings.xml` `<display>` elements now have the new information, plus the new `<display>` entry with the same information*
   - *All the empty lines were removed, which is good*
     - *`xmlstarlet` will format the XML document to remove unneeded white space*
@@ -2072,7 +2076,7 @@ xml ed -L -u "/conf/mice/mouse[@id='2']/tracking" -v "relative" xml/settings.xml
 xml ed -L -u "/conf/audio/adevice[@id='1']/level" -v "50" xml/settings.xml
 ```
 
-#### Hack an Open Document `.odt` file
+#### C. Hack an Open Document `.odt` file
 *Copy the `.odt` we want to use*
 
 | **35** :$
@@ -2151,7 +2155,7 @@ This will change every `<text:p>` node to contain "I was a paragraph, inserted b
 xml ed --inplace -u "//text:p" -v "I was a paragraph, inserted by XMLStarlet." xml/markdown.xml
 ```
 
-*Note the changes to `markdown.xml` in Atom*
+*Note the changes to `markdown.xml` in Code*
 
 *Let's hack that `.odt` file in the odt directory and change it from the command line...*
 
@@ -2172,8 +2176,8 @@ cd ..
 lowriter xml/hacked.odt
 ```
 
-#### RSS Feed from WordPress
-##### WP-RSS via Simple CSS
+#### D. RSS Feed from WordPress
+##### 1. WP-RSS via Simple CSS
 
 | **44** :$
 
@@ -2224,7 +2228,7 @@ localhost/web/wordpress-css.xml
 
 *To render HTML, we need an XSL stylesheet...*
 
-##### WP-RSS via XSL Stylesheet
+##### 2. WP-RSS via XSL Stylesheet
 
 | **46** :$
 
@@ -2265,7 +2269,7 @@ sudo chown -R www:www /srv/www/html
 localhost/web/wordpress-xsl.xml
 ```
 
-#### iTunes Podcast Feed
+#### E. iTunes Podcast Feed
 
 | **48** :$
 
@@ -2305,7 +2309,7 @@ localhost/web/podcast.xml
 ```
 
 ### VI. PHP Integration
-#### Create an iTunes podcast-ready RSS feed
+#### A. Create an iTunes podcast-ready RSS feed
 *You can learn more about iTunes podcast RSS feed tags [here](https://help.apple.com/itc/podcasts_connect/#/itcb54353390), along with other [requirements](https://podcasters.apple.com/support/823-podcast-requirements)*
 
 | **50** :$
@@ -2426,7 +2430,7 @@ header('Content-type: text/xml');
 <!-- <?xml-stylesheet type="text/xsl" href="rss.xsl" ?> -->
 ```
 
-#### Aggregate another RSS feed
+#### B. Aggregate another RSS feed
 *Take this example of an iTunes-ready feed*
 
 | **feed.rss** :
@@ -2437,7 +2441,7 @@ header('Content-type: text/xml');
 <rss version="2.0"
   xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"
   xmlns:content="http://purl.org/rss/1.0/modules/content/"
-  xmlns:atom="http://www.w3.org/2005/Atom"
+  xmlns:atom="http://www.w3.org/2005/Code"
 	xmlns:dc="http://purl.org/dc/elements/1.1/"
   >
 <channel>
@@ -2542,7 +2546,7 @@ foreach ($rss->channel->item as $item) {
 
   $itunes = $item->children('http://www.itunes.com/dtds/podcast-1.0.dtd');
   $content = $item->children('http://purl.org/rss/1.0/modules/content/');
-  $atom = $item->children('http://www.w3.org/2005/Atom'); // For future use
+  $atom = $item->children('http://www.w3.org/2005/Code'); // For future use
   $dc = $item->children('http://purl.org/dc/elements/1.1/');
 
   echo '<p><b><a href="'.$item->link.'">'.$item->title."</a></b></p>";
@@ -2766,12 +2770,12 @@ $col = NULL;
 $query->bindParam(':column', $col);
 ```
 
-##### Testing for learning purposes
+##### 1. Testing for learning purposes
 *You can test and see how changes to a feed will affect what the feed processes*
 
 *We will create a small place to play and learn, called a "sandbox"*
 
-1. Copy our feed.rss sample to a file to test, then view edit our files in Atom:
+1. Copy our feed.rss sample to a file to test, then view edit our files in Code:
 
 | **Sandbox prep** :$
 
@@ -2813,7 +2817,7 @@ localhost/web/aggregator.php
 
 | **Publications** ://phpMyAdmin **> webapp_db > publications**
 
-4. Make and save any changes you want to play.rss in Atom
+4. Make and save any changes you want to play.rss in Code
 
 5. Copy your edited play.rss file to the web folder
 
@@ -2851,7 +2855,7 @@ sudo cp play.rss web/ && \
 sudo chown -R www:www /srv/www/html
 ```
 
-##### Create a `cron` task to process feeds
+##### 2. Create a `cron` task to process feeds
 *For the feed processor to work (task.aggregatefetch.php), we need a `cron` task to call the file*
 
 - *PHP is a "dead" system; it only works when a file is accessed*
@@ -3288,7 +3292,7 @@ xml ed -L -s /root/visitors -t elem -n visitorINS \
 - RSS feeds have standard elements
 - RSS feeds can also be ready for:
   - iTunes podcasts
-  - Atom feeds (more sophisticated than normal RSS, but not universal)
+  - Code feeds (more sophisticated than normal RSS, but not universal)
   - Others
 - ***Always*** use HTML entities in feeds or any XML
   - Not `&`, but `&amp;`
@@ -3311,7 +3315,7 @@ xml ed -L -s /root/visitors -t elem -n visitorINS \
 - It is good for the `<rss>` element to accept common prefixes, such as:
   - iTunes `xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"`
   - Content `xmlns:content="http://purl.org/rss/1.0/modules/content/"`
-  - Atom `xmlns:atom="http://www.w3.org/2005/Atom"`
+  - Code `xmlns:atom="http://www.w3.org/2005/Code"`
   - DC `xmlns:dc="http://purl.org/dc/elements/1.1/"`
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -3319,7 +3323,7 @@ xml ed -L -s /root/visitors -t elem -n visitorINS \
 <rss version="2.0"
   xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"
   xmlns:content="http://purl.org/rss/1.0/modules/content/"
-  xmlns:atom="http://www.w3.org/2005/Atom"
+  xmlns:atom="http://www.w3.org/2005/Code"
 	xmlns:dc="http://purl.org/dc/elements/1.1/"
   >
 ```
@@ -3438,7 +3442,7 @@ foreach ($rss->channel->item as $item) {
 
   $itunes = $item->children('http://www.itunes.com/dtds/podcast-1.0.dtd');
   $content = $item->children('http://purl.org/rss/1.0/modules/content/');
-  $atom = $item->children('http://www.w3.org/2005/Atom'); // For Atom
+  $atom = $item->children('http://www.w3.org/2005/Code'); // For Code
   $dc = $item->children('http://purl.org/dc/elements/1.1/');
 
   echo '<p><b><a href="'.$item->link.'">'.$item->title."</a></b></p>";
