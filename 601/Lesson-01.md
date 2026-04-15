@@ -16,7 +16,7 @@
 
 ### Searching for Files
 - `find /etc -type d -iname "*.d"`
-- `find . -perm -u+s` (for `s` permissions on **setuid** programs, see [Lesson 2: Procesesses & Monitoring](https://github.com/JesseSteele/Codia/blob/master/601/Lesson-02.md))
+- `find /usr/bin -perm -u+s` (for `s` permissions on **setuid** programs, see [Lesson 2: Procesesses & Monitoring](https://github.com/JesseSteele/Codia/blob/master/601/Lesson-02.md))
   - `-perm` - Permissions search with same notation at `chmod`, but prefix with `-` hyphen
 - `locate Some_File` finds a file
   - First run :# `updatedb` to build a current searchable database of all files to be found using `locate`
