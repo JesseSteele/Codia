@@ -2194,7 +2194,7 @@ code xml/wordpress-css.rss xml/rss.css && \
 ls web
 ```
 
-*When entering an address with .rss in a browser, it could either display raw text or initiate a download...*
+*When entering an address with `.rss` in a browser, it could either display raw text or initiate a download...*
 
 | **B-44** :// **`.rss`**
 
@@ -2319,9 +2319,9 @@ localhost/web/podcast.xml
 
 ```console
 sudo cp pdo-feed/* web/ && \
-sudo mv web/htaccess web/.htaccess && \
+sudo cp pdo-feed/htaccess web/.htaccess && \
 sudo chown -R www:www /srv/www/html
-code pdo-feed/feed.php rss.xsl blog.php in.head.php settings.php && \
+code pdo-feed/feed.php pdo-feed/rss.xsl pdo-feed/blog.php pdo-feed/in.head.php pdo-feed/settings.php pdo-feed/htaccess && \
 ls pdo-feed
 ```
 
