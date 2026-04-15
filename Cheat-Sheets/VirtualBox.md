@@ -44,13 +44,14 @@ sudo pacman -Syy virtualbox
 
 *...in which case we use `69` for `linux69` in the `linux*-virtualbox-host-modules` package...*
 
-|  If the `pacman` installer asked about the above package, then skip step 3
-|  
-|  | **3** :$ (this command will need to be modified to correct `linux69` to your current kernel version number)
-|  
-|  ```console
-|  sudo pacman -S linux69-virtualbox-host-modules
-|  ```
+>  If the `pacman` installer asked about the above package, then skip step 3
+>  
+>  | **3** :$ (this command will need to be modified to correct `linux69` to your current kernel version number)
+> 
+```console
+sudo pacman -S linux69-virtualbox-host-modules
+```
+>  
 
 *Avoid trouble, make your current desktop user a member of the `vboxusers` group*
 

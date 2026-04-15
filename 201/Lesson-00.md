@@ -33,6 +33,7 @@ ___
 ```console
 su username
 ```
+>
 ___
 
 *This sets a password for `su` if it has not been done already...*
