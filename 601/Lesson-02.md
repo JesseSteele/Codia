@@ -66,8 +66,8 @@
   - `ps aux`
     - `ps aux | grep gedit` (GNOME)
     - `pgrep gedit` (GNOME)
-    - `ps aux | grep gedit` (Xfce)
-    - `pgrep gedit` (Xfce)
+    - `ps aux | grep mousepad` (Xfce)
+    - `pgrep mousepad` (Xfce)
   - `ps -elLf`
     - `ps -elf` shows parent PIDs as PPIDs
   - `ps -C gedit`

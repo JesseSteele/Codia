@@ -766,7 +766,7 @@ localhost/web/webapp.php
 ```
 
 #### Never put username, password, email, name, or other user info in a cookie!
-- This is a matter or proper security habits
+- This is a matter of proper security habits
 - Cookies should only store information that only your app can interpret
 - Cookies store otherwise useless information which you then use to look up the user's specific information in your SQL database
 - This was only an example of how a cookie behaves

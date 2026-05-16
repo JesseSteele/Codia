@@ -117,7 +117,7 @@ ___
   - *Information Security* - [security.stackexchange.com](https://security.stackexchange.com/)
     - IS.SE
     - Security.SE
-  - *English Language & Usage* - [english.stackexchange.com/](https://english.stackexchange.com)
+  - *English Language & Usage* - [english.stackexchange.com](https://english.stackexchange.com)
     - ELU.SE
   - *English Language Learners* - [ell.stackexchange.com](https://ell.stackexchange.com)
     - ELL.SE
