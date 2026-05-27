@@ -334,12 +334,6 @@ localhost/web/webapp.php
 localhost/web/account.php/
 ```
 
-| **B-7d** ://
-
-```console
-localhost/web/account.php
-```
-
 *Use all these in our new `.htaccess` file and restore our last `pretty_page.php` file...*
 
 | **8** :$

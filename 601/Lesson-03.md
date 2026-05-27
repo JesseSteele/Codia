@@ -248,12 +248,12 @@
 
 #### ACL Tools: `getfacl` & `setfacl`
 - `getfacl somefile` get the ACL permissions for `somefile`
-- `setfacl -m u:someuer:rwx somefile` (Modify User `someuser` to have `rwx` permissions on `somefile`)
+- `setfacl -m u:someuser:rwx somefile` (Modify User `someuser` to have `rwx` permissions on `somefile`)
   - `-m` Modify
   - `u:` User permissions being set
   - `someuser:` the user
   - `rwx` any of `r`. `w`, or `x` for the permissions
-  - `setfacl -m d:u:someuer:rwx somedir` for a Directory (`d:`)
+  - `setfacl -m d:u:someuser:rwx somedir` for a Directory (`d:`)
 - `setfacl -x u:someuser somefile` (remove ACL permissions for `someuser` on `somefile`)
 
 ___
