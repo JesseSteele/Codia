@@ -244,7 +244,7 @@ Now, we use `POST`
 ```javascript
 ajaxHandler.open("POST", "ajax_responder.php", true); // POST could change to GET
 
-// Send: &_POST['foo'] = 'AJAX'; &_POST['bar'] = '5';
+// Send: $_POST['foo'] = 'AJAX'; $_POST['bar'] = '5';
 ajaxHandler.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 ajaxHandler.send("foo=AJAX&bar=5");
 ```
