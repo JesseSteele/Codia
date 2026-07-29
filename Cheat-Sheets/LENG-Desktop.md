@@ -301,7 +301,7 @@ server {
 
 *To enable any site, create a link to the `include` directory from `nginx.conf`: `/etc/nginx/enabled.d/`*
 
-- *We will enable only the reverse proxy for https in this situation*
+- *We will enable only the reverse proxy for http in this situation*
 - *Any of the created sites would work*
 - *Because they all listen to `localhost`, only one of these should be used at a time*
   - *This is why we always create the symlink to `active.conf` regardless of the original `.conf` file, so only one works at a time*
@@ -380,15 +380,26 @@ sudo systemctl stop nginx
 | **NGP1** :$
 
 ```console
-sudo pacman -Syy --noconfirm python pip
+sudo pacman -Syy --noconfirm python python-pip
 ```
 
 *Database dependencies for SQLite, MySQL/MariaDB, and PostgreSQL*
 
-| **NG2** :$
+| **NG2** :$ (Global, use this)
 
 ```console
-pip3 install mysql-connector-python psycopg2-binary
+sudo pacman -Syu python-mysql-connector python-psycopg2
+```
+
+- *This would use a virtual environment and directory for this setup*
+
+| **NG2-Alt** :$ (Single-User Alternative)
+
+```console
+mkdir -p ~/School/Codia/Python && cd ~/School/Codia/Python
+python -m venv venv
+source venv/bin/activate
+pip install mysql-connector-python psycopg2-binary
 ```
 
 | **Confirm Python DB Dependencies** :$
@@ -442,7 +453,11 @@ sudo pacman -Syy --noconfirm go
 | **NGP7** :$
 
 ```console
+mkdir -p ~/go/pkg/mod
+cd ~/go/pkg/mod
+go mod init codia
 go get github.com/mattn/go-sqlite3 github.com/go-sql-driver/mysql github.com/lib/pq
+cd
 ```
 
 | **Confirm Go DB Dependencies** :$
@@ -460,7 +475,7 @@ ls -l ~/go/pkg/mod
 | **L1** :$
 
 ```console
-sudo pacman -Syy --noconfirm sqlite 
+sudo pacman -Syy --noconfirm sqlite
 ```
 
 2. Install a handy-dandy browser tool written in Qt
@@ -707,8 +722,6 @@ systemLog:
   path: "/var/log/mongodb/mongod.log"
 storage:
   dbPath: /var/lib/mongodb
-  journal:
-    enabled: true
 processManagement:
   fork: true
   timeZoneInfo: /usr/share/zoneinfo

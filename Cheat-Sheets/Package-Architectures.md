@@ -118,7 +118,7 @@ package() {
 | **`somescript.install`** : ([Read more on `install=`](https://wiki.archlinux.org/title/PKGBUILD#install), [prototype .install file](https://gitlab.archlinux.org/pacman/pacman/raw/master/proto/proto.install))
 
 ```
-# This is a default template for a post-install scriptlet.
+# This is a default template for a install scriptlet.
 # Uncomment only required functions and remove any functions
 # you don't need (and this header).
 
@@ -382,7 +382,7 @@ pkgver() {
 | **Debian Maintainter Structure** : (Run `dpkg-buildpackage -us -uc` on this to assemble package structure below)
 
 ```
-PWD/
+$PWD
 └─ build-name-me-anything/
    ├─ debian/
    │  ├─ compat

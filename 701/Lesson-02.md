@@ -306,6 +306,26 @@ localhost/?ONE=one&TWO=two&THREE=three
 sudo systemctl start nginx
 ```
 
+*Start any **one** of the backend scripts... (choose one)*
+
+| **12-p** :$
+
+```console
+python dump-get.py
+```
+
+| **12-n** :$
+
+```console
+node dump-get.js
+```
+
+| **12-g** :$
+
+```console
+go run dump-get.go
+```
+
 *Again, try any of the backend scripts with only `localhost`-GET URL...*
 
 | **B-12** ://
@@ -847,7 +867,7 @@ const server = http.createServer((req, res) => {
     // Start the document
     res.writeHead(200, {'Content-Type': 'text/html'});
 
-    // Parse the URL for POST entries
+    // Parse for POST entries
     let body = '';
     req.on('data', chunk => {
         body += chunk.toString(); // convert Buffer to string
@@ -972,7 +992,7 @@ func handler(w http.ResponseWriter, r *http.Request) {
     // Start the document
     w.Header().Set("Content-Type", "text/html; charset=utf-8")
     
-    // Parse the URL for FORM entries
+    // Parse for FORM entries
     err := r.ParseForm()
     if err != nil {
         http.Error(w, "Error parsing form", http.StatusBadRequest)
