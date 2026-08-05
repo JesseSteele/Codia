@@ -15,4 +15,4 @@ ___
 
 ___
 
-#### [Lesson 10: BASH as server-side via Go](https://github.com/JesseSteele/Codia/blob/master/701/Lesson-10.md)
+#### [Lesson 10: Frontend State Intergration](https://github.com/JesseSteele/Codia/blob/master/701/Lesson-10.md)

@@ -1,5 +1,5 @@
 # Linux 701
-## Lesson 10: BASH as server-side via Go
+## Lesson 10: Frontend State Intergration
 
 Ready the CLI
 
@@ -17,4 +17,4 @@ ___
 
 ___
 
-#### [Lesson 11: Frontend State Intergration](https://github.com/JesseSteele/Codia/blob/master/701/Lesson-11.md)
+#### [Lesson 11: Web App as System Service](https://github.com/JesseSteele/Codia/blob/master/701/Lesson-11.md)

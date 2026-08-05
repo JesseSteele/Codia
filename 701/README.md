@@ -72,8 +72,8 @@ Create a backend language with BASH
 
 ### [Lesson 9: API](https://github.com/JesseSteele/Codia/blob/master/701/Lesson-09.md)
 
-### [Lesson 10: BASH as server-side via Go](https://github.com/JesseSteele/Codia/blob/master/701/Lesson-10.md)
+### [Lesson 10: Frontend State Intergration](https://github.com/JesseSteele/Codia/blob/master/701/Lesson-10.md)
 
-### [Lesson 11: Frontend State Intergration](https://github.com/JesseSteele/Codia/blob/master/701/Lesson-11.md)
+### [Lesson 11: Web App as System Service](https://github.com/JesseSteele/Codia/blob/master/701/Lesson-11.md)
 
 ### [Lesson 12: Linux Installer Packages](https://github.com/JesseSteele/Codia/blob/master/701/Lesson-12.md)

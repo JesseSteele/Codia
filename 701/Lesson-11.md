@@ -1,5 +1,5 @@
 # Linux 701
-## Lesson 11: Frontend State Intergration
+## Lesson 11: Web App as System Service
 
 Ready the CLI
 
