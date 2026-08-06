@@ -652,7 +652,7 @@ AJAX.setRequestHeader("ajax-token", "<?php echo $ajax_token; ?>");
 OR
 
 ```javascript
-AJAX.setRequestHeader("ajax-token", "<?php echo $token; ?>");
+AJAX.setRequestHeader("ajax-token", "<?php echo $ajax_token; ?>");
 ```
 
 *Note:*
@@ -684,7 +684,7 @@ if ( empty($_SESSION['ajax_token']) ) {
 AJAX.open(...);
 
 // Add your token header; use the `_SESSION` array
-AJAX.setRequestHeader("ajax-token", "<?php echo $_SESSION['token']; ?>");
+AJAX.setRequestHeader("ajax-token", "<?php echo $_SESSION['ajax_token']; ?>");
 
 // Finally send
 AJAX.send(...);
@@ -795,14 +795,14 @@ Rather than sending the token in the XML head, we can simply add the token as an
 Instead of:
 
 ```javascript
-AJAX.setRequestHeader("ajax-token", "<?php echo $_SESSION['token']; ?>");
+AJAX.setRequestHeader("ajax-token", "<?php echo $_SESSION['ajax_token']; ?>");
 ```
 
 Add an item to the `_POST`, *before or after* `.open`:
 
 ```javascript
 // This can go either before or after AJAX.open()
-FD.append('ajax_token', <?php echo $_SESSION['token']; ?>);
+FD.append('ajax_token', <?php echo $_SESSION['ajax_token']; ?>);
 
 AJAX.open(...);
 ```
@@ -816,7 +816,7 @@ if ( $_SERVER['HTTP_AJAX_TOKEN'] === $_SESSION['ajax_token'] ) {...}
 Simply check a `_POST` value:
 
 ```php
-if ( $_POST['ajax_token'] === $_SESSION['token'] ) {...}
+if ( $_POST['ajax_token'] === $_SESSION['ajax_token'] ) {...}
 ```
 
 | **10** :$
