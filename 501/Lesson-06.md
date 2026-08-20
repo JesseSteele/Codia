@@ -932,8 +932,8 @@ if ($_SERVER['HTTP_AJAX_TOKEN'] === $_SESSION["ajax_token"]) {
 *Note, these are redundant; only one is needed:*
 
 ```javascript
-FD.append()
-AJAX.setRequestHeader()
+FD.append('ajax_token', TOKEN);
+AJAX.setRequestHeader("ajax-token", TOKEN);
 ```
 
 *...appear in the AJAX handler...*
