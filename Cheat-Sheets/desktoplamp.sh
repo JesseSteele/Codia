@@ -42,6 +42,7 @@ for deskuser in /home/*; do
 done
 
 # PHP Settings
+/usr/bin/sed -i "s|;date.timezone =.*|date.timezone = \"$(/usr/bin/cat /etc/timezone)\"|" /etc/php/php.ini
 /usr/bin/sed -i 's/;extension=mysqli/extension=mysqli/' /etc/php/php.ini
 /usr/bin/sed -i 's/;extension=pdo_mysql/extension=pdo_mysql/' /etc/php/php.ini
 /usr/bin/sed -i 's/;extension=iconv/extension=iconv/' /etc/php/php.ini

@@ -83,6 +83,10 @@ sudo vim /etc/php/php.ini
 In php.ini:
 
   - Uncomment & set values (remove the semicolon `;` at the start of the line)
+    - `date.timezone = "America/New_York"` (or your timezone)
+      - *Timezone matters!*
+        - *Get your machine's timezone :$ `cat /etc/timezone`*
+        - *Get a complete list :$ `timedatectl list-timezones`*
     - `extension=mysqli`
     - `extension=pdo_mysql`
     - `extension=iconv`
