@@ -683,11 +683,16 @@ These repositories contain examples of actual Linux installer packages built fro
 ### `gophersay` Command Package
 - Minimum `Println` talkback command package called [**`gophersay`**](https://github.com/JesseSteele/gophersay)
   - Compiles a Go script into an executable command
-  - Demonstrates a variety of compiling workflows, including:
-    - Local code to compile ([`gophersay`](https://github.com/JesseSteele/gophersay))
-    - Tarball `.tar` file inincluded ([`gophersay-tar`](https://github.com/JesseSteele/gophersay-tar))
-    - Download from source ([`gophersay-git`](https://github.com/JesseSteele/gophersay-git))
-  - Includes `pkgver()` function for Arch `PKGBUILD` ([`gophersay-git`](https://github.com/JesseSteele/gophersay-git))
+  - Includes:
+    - Arch layout for `PKGBUILD`, even `pkgver()` function for static `-git` package preparation
+    - Debian maintainer build structures for `dpkg-buildpackage`, then `dpkg-deb` and `dpkg` for normal install
+    - RPM package build templates for both `dnf` and `zypper` package managers
+
+  - Demonstrates a variety of source code compiling workflows, including:
+    - ([`gophersay`](https://github.com/JesseSteele/gophersay)) - Local source to compile
+    - ([`gophersay-tar`](https://github.com/JesseSteele/gophersay-tar)) : Tarball `.tar` source included
+    - ([`gophersay-git`](https://github.com/JesseSteele/gophersay-git)) : Download source from GitHub
+    - ([`gophersay-bin`](https://github.com/JesseSteele/gophersay-bin)) : Precompiled binary
 
 ### `toplogger` Service Package
 - `top` per-minute logger service package called [**`toplogger`**](https://github.com/inkVerb/toplogger)
