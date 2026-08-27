@@ -26,7 +26,9 @@ ___
 - *JSON GET `/api/profile` and POST `/api/notes` (ready; we study them next)*
 - *Static paths for Lesson 10: `/vue.html` `/react.html` `/angular.html`*
 
-### Install and run (Python)
+## Install and run
+
+### Python
 
 | **1** :$
 
