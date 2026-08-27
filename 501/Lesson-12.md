@@ -2872,7 +2872,7 @@ sudo chown -R www:www /srv/www/html
 | **cron.d/webapp** :
 
 ```code
-*/15 * * * * root /usr/bin/php /srv/www/html/web/task.aggregatefetch.php.php
+*/15 * * * * root /usr/bin/php /srv/www/html/web/task.aggregatefetch.php
 ```
 
 | **53** :$ *`touch` the file first so we can set permissions before editing*
@@ -2890,7 +2890,7 @@ sudo vim /etc/cron.d/webapp
 1. Copy this with <kyb>Ctrl</kybd> + <kyb>C</kybd>:
 
 ```console
-*/15 * * * * root /usr/bin/php /srv/www/html/web/task.aggregatefetch.php.php
+*/15 * * * * root /usr/bin/php /srv/www/html/web/task.aggregatefetch.php
 ```
 
 2. Press:
