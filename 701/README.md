@@ -64,11 +64,11 @@ Create a backend language with BASH
 
 ### [Lesson 5: Async and AJAX](https://github.com/JesseSteele/Codia/blob/master/701/Lesson-05.md)
 
-### [Lesson 6: Login, SESSION & COOKIES](https://github.com/JesseSteele/Codia/blob/master/701/Lesson-06.md)
+### [Lesson 6: Login, email, SESSION & COOKIES](https://github.com/JesseSteele/Codia/blob/master/701/Lesson-06.md)
 
 ### [Lesson 7: Files & Uploads](https://github.com/JesseSteele/Codia/blob/master/701/Lesson-07.md)
 
-### [Lesson 8: Web Installer](https://github.com/JesseSteele/Codia/blob/master/701/Lesson-08.md)
+### [Lesson 8: Web App & Installer](https://github.com/JesseSteele/Codia/blob/master/701/Lesson-08.md)
 
 ### [Lesson 9: API](https://github.com/JesseSteele/Codia/blob/master/701/Lesson-09.md)
 

@@ -8,8 +8,9 @@ cd ~/School/Codia/701
 ```
 ___
 
-
-<!-- Make sure to go all the way to make BASH functions to handle common server-side logic -->
+<!-- Vue, React, Angular -->
+<!-- Create our own, basic frontend state manager, extremely simple and smaller, more dependent on function/method parameters than knowledge of multiple objects and properties, just enough to handle a few forms -->
+<!-- This interacts with our web app we made in Lesson 8; the custom state manager will be our default with options for Vue, React, and Angular, and examples for each -->
 
 ___
 

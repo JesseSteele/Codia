@@ -9,6 +9,8 @@ cd ~/School/Codia/701
 ___
 
 
+<!-- Basic service config files for each webapp written in each of the three server languages, using the custom frontend state as the default -->
+
 ___
 
 # The Take

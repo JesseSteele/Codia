@@ -1,5 +1,5 @@
 # Linux 701
-## Lesson 6: Login, SESSION & COOKIES
+## Lesson 6: Login, email, SESSION & COOKIE
 
 Ready the CLI
 
@@ -8,7 +8,9 @@ cd ~/School/Codia/701
 ```
 ___
 
-
+<!-- Also a basic login code authenticator and forgotten password authenticator, not actually sending the email, but displaying the code inside the window styled using <pre> tags and an <hr> separator -->
+<!-- Show in theory the email process, but explain that the actual email probably won't send from a test server -->
+<!-- Introduce SESSION and COOKIE use -->
 
 ___
 
