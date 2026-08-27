@@ -30,7 +30,7 @@ ___
 *Note the filenames will be the same in these scripts, regardless of which database we use:*
 
 - `db.*` for the database config
-- `process-db.*` for the implemenation that processes database calls
+- `process-db.*` for the implementation that processes database calls
 
 *Note that we have new "Create" & "Update" `type="submit"` buttons*
 
@@ -302,6 +302,7 @@ module.exports = { checkPost, formInput, errors };
 const http = require('http');
 const querystring = require('querystring');
 const functions = require('./functions');
+const dbProcess = require('./db-process');
 
 const PORT = 9001;
 const HOST = '127.0.0.1';
@@ -365,12 +366,12 @@ const server = http.createServer(async (req, res) => {
         }
 
         // Quote for HTML rendering
-        const escapeHtml = unsafe => unsafe
+        const escapeHtml = unsafe => String(unsafe)
             .replace(/&/g, "&")
             .replace(/</g, "<")
             .replace(/>/g, ">")
             .replace(/"/g, """)
-            .replace(/'/g, "'");
+            .replace(/'/g, "&#039;");
         let fullname_h = escapeHtml(fullname);
         let username_h = escapeHtml(username);
         let email_h = escapeHtml(email);
@@ -709,7 +710,7 @@ CREATE TABLE users (
 .quit
 ```
 
-*Note our databse configs (for each backend language)*
+*Note our database configs (for each backend language)*
 
 | **6** :$
 
@@ -763,7 +764,7 @@ func getDbConnection() (*sql.DB, error) {
 }
 ```
 
-*Note our databse process implementations (for each backend language)*
+*Note our database process implementations (for each backend language)*
 
 | **7** :$
 
@@ -871,7 +872,7 @@ func HandleFormSubmission(processType, fullname, username, email, webpage, numbe
 
 ```console
 cp sqlite-db.py db.py
-cp sqlite-process.py db-process.py
+cp sqlite-process.py db_process.py
 python backend-app.py
 ```
 
@@ -956,7 +957,7 @@ CREATE TABLE users (
 quit;
 ```
 
-*Note our databse configs (for each backend language)*
+*Note our database configs (for each backend language)*
 
 | **13** :$
 
@@ -1015,7 +1016,7 @@ func getDbConnection() (*sql.DB, error) {
 }
 ```
 
-*Note our databse process implementations (for each backend language)*
+*Note our database process implementations (for each backend language)*
 
 | **14** :$
 
@@ -1131,7 +1132,7 @@ func HandleFormSubmission(processType, fullname, username, email, webpage, numbe
 
 ```console
 cp mysql-db.py db.py
-cp mysql-process.py db-process.py
+cp mysql-process.py db_process.py
 python backend-app.py
 ```
 
@@ -1215,7 +1216,7 @@ CREATE TABLE users (
 \q
 ```
 
-*Note our databse configs (for each backend language)*
+*Note our database configs (for each backend language)*
 
 | **20** :$
 
@@ -1275,7 +1276,7 @@ func getDbConnection() (*sql.DB, error) {
 }
 ```
 
-*Note our databse process implementations (for each backend language)*
+*Note our database process implementations (for each backend language)*
 
 | **21** :$
 
@@ -1386,7 +1387,7 @@ func HandleFormSubmission(processType, fullname, username, email, webpage, numbe
 
 ```console
 cp postgres-db.py db.py
-cp postgres-process.py db-process.py
+cp postgres-process.py db_process.py
 python backend-app.py
 ```
 
@@ -1443,12 +1444,12 @@ localhost
 
 *These are only examples of using `INSERT`, `UPDATE`, and now `SELECT`*
 
-*Note our databse configs haven't changed because the database and login credentials are the same*
+*Note our database configs haven't changed because the database and login credentials are the same*
 
 *Same as before, the filenames will be the same in these scripts, regardless of which database we use:*
 
 - `db.*` for the database config
-- `process-db.*` for the implemenation that processes database calls
+- `process-db.*` for the implementation that processes database calls
 
 *Note that we have new HTML tables with links to edit each user*
 
@@ -1672,6 +1673,7 @@ const http = require('http');
 const querystring = require('querystring');
 const url = require('url');
 const functions = require('./functions');
+const dbProcess = require('./db-process');
 
 const PORT = 9001;
 const HOST = '127.0.0.1';
@@ -1735,12 +1737,12 @@ const server = http.createServer(async (req, res) => {
         }
 
         // Quote for HTML rendering
-        const escapeHtml = unsafe => unsafe
+        const escapeHtml = unsafe => String(unsafe)
             .replace(/&/g, "&")
             .replace(/</g, "<")
             .replace(/>/g, ">")
             .replace(/"/g, """)
-            .replace(/'/g, "'");
+            .replace(/'/g, "&#039;");
         let fullname_h = escapeHtml(fullname);
         let username_h = escapeHtml(username);
         let email_h = escapeHtml(email);
@@ -2238,7 +2240,7 @@ func GetUser(username string) (map[string]string, error) {
 
 ```console
 cp sqlite-db.py db.py
-cp sqlite-full-process.py db-process.py
+cp sqlite-full-process.py db_process.py
 cp backend-users-app.py backend.py
 python backend.py
 ```
@@ -2317,7 +2319,7 @@ ALTER TABLE users ADD COLUMN date_updated DATETIME DEFAULT CURRENT_TIMESTAMP;
 quit;
 ```
 
-*Note our databse process implementations (for each backend language)*
+*Note our database process implementations (for each backend language)*
 
 | **37** :$
 
@@ -2550,7 +2552,7 @@ func GetUser(username string) (map[string]string, error) {
 
 ```console
 cp mysql-db.py db.py
-cp mysql-full-process.py db-process.py
+cp mysql-full-process.py db_process.py
 python backend.py
 ```
 
@@ -2626,7 +2628,7 @@ ALTER TABLE users ADD COLUMN date_updated TIMESTAMP DEFAULT CURRENT_TIMESTAMP;
 \q
 ```
 
-*Note our databse process implementations (for each backend language)*
+*Note our database process implementations (for each backend language)*
 
 | **43** :$
 
@@ -2838,7 +2840,7 @@ func GetUser(username string) (map[string]string, error) {
 
 ```console
 cp postgres-db.py db.py
-cp postgres-full-process.py db-process.py
+cp postgres-full-process.py db_process.py
 python backend.py
 ```
 
@@ -3003,10 +3005,10 @@ db_host=localhost
 | **48** :$
 
 ```console
-code db-process.py db-process.js db-process.go
+code db_process.py db-process.js db-process.go
 ```
 
-| **`db-process.py`** :
+| **`db_process.py`** :
 
 ```py
 import sqlite3

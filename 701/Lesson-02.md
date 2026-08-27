@@ -284,7 +284,7 @@ go run dump-get.go
 localhost:9001?ONE=one&TWO=two&THREE=three
 ```
 
-*They should work because the backend serviec is running on port `9001` and we specified that in our URL with `:9001`*
+*They should work because the backend service is running on port `9001` and we specified that in our URL with `:9001`*
 
 *Now try any of the backend scripts with only `localhost`-GET URL...*
 
@@ -1061,7 +1061,7 @@ localhost
 
 *(When finished: <kbd>Ctrl</kbd> + <kbd>C</kbd> in the terminal to exit)*
 
-<!-- DEV these need to be reviewed for workflow. Eg sometimes a suggess message will appear only with a GET request -->
+<!-- DEV: POST forms must print success on POST, not only after a GET reload -->
 ### Validate & Sanitize with RegEx
 *Basic RegEx checks for POST submissions*
 

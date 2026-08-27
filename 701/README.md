@@ -46,7 +46,11 @@ Create a backend language with BASH
   - Angular
 
 ## Cheat Sheets
-- [LEMP Desktop](https://github.com/JesseSteele/Codia/blob/master/Cheat-Sheets/LEMP-Desktop.md)
+- [LENG Desktop](https://github.com/JesseSteele/Codia/blob/master/Cheat-Sheets/LENG-Desktop.md)
+- [Package Architectures](https://github.com/JesseSteele/Codia/blob/master/Cheat-Sheets/Package-Architectures.md)
+
+Scripts and 701bio packages: [JesseSteele/701](https://github.com/JesseSteele/701) (`core/` + `701bio/`)
+
 
 ## Prerequisites: [Linux 501](https://github.com/JesseSteele/Codia/tree/master/501) & [Linux 601](https://github.com/JesseSteele/Codia/tree/master/601)
 - The [Linux 501](https://github.com/JesseSteele/Codia/tree/master/501) unit introduces concepts that are assumed in this course

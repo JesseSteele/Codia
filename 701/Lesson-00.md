@@ -76,7 +76,7 @@ sudo dnf update
 ```console
 sudo dnf install -y curl cowsay dialog git net-tools tcpdump htop dos2unix pwgen unzip redhat-lsb-core
 ```
-> Currently thest are broken and will not work on CentOS: `odt2txt pandoc`
+> Currently these are broken and will not work on CentOS: `odt2txt pandoc`
 >
 >
 > Optional: IF you logged in as a "sudoer", now exit

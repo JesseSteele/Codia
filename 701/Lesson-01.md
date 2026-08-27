@@ -79,7 +79,7 @@ code hw2.py
 *Note:*
 - *`port` is assigned to `80` for normal browser use*
 - *Using port `80` requires permissions, so `python` must be run with `sudo`*
-  - *This is **dangerous** and can create **security vulnerabilityes** on a production server*
+  - *This is **dangerous** and can create **security vulnerabilities** on a production server*
   - *Use for learning purposes only!*
 - *Loading `socketserver` takes advantage of Python's built-in HTTP handling for the `with socketserver...` statement*
 
@@ -266,7 +266,7 @@ code hw1.js
 ```
 
 *Note:*
-- *We use `BaseHTTPRequestHandler` and `HTTPServer` Python `http.server` classes*
+- *We use Node's built-in `http` module*
 - *`port` is assigned to `9001`*
 - *`localhost` is defined by using `127.0.0.1`*
 - *Loading `http` brings native tools in Node for an HTTP server*
@@ -322,7 +322,7 @@ code hw2.js
 *Note:*
 - *`port` is assigned to `80` for normal browser use*
 - *Using port `80` requires permissions, so `node` must be run with `sudo`*
-  - *This is **dangerous** and can create **security vulnerabilityes** on a production server*
+  - *This is **dangerous** and can create **security vulnerabilities** on a production server*
   - *Use for learning purposes only!*
 - *This implements arrow functions, which isn't quite so old-school Node*
 - *Running `server.listen` organizes things a little better*
@@ -515,7 +515,7 @@ code hw1.go
 ```
 
 *Note:*
-- *We use `BaseHTTPRequestHandler` and `HTTPServer` Python `http.server` classes*
+- *We use Go's `net` package to listen on TCP, then write a tiny HTTP response by hand*
 - *`port` is assigned to `9001`*
 - *`localhost` is defined by using `127.0.0.1`*
 - *Loading `net` brings us tools in Go for an HTTP server*
@@ -589,10 +589,10 @@ code hw2.go
 
 *Note:*
 - *`port` is assigned to `80` for normal browser use*
-- *Using port `80` requires permissions, so `node` must be run with `sudo`*
-  - *This is **dangerous** and can create **security vulnerabilityes** on a production server*
+- *Using port `80` requires permissions, so `go` must be run with `sudo`*
+  - *This is **dangerous** and can create **security vulnerabilities** on a production server*
   - *Use for learning purposes only!*
-- *Loading `net/http` takes advantage of Go's built-in HTTP handling so we don't need to creat loops*
+- *Loading `net/http` takes advantage of Go's built-in HTTP handling so we don't need to create loops*
 - *Loading `log` takes advantage of Go's built-in error logging so we don't need an `if` statement to trigger errors*
 
 | **`hw2.go`** : port `80` for HTTP
@@ -786,7 +786,7 @@ http {
 
 *...but we aren't actually using this Nginx config because we have the two-part configs from our [LENG Desktop](https://github.com/JesseSteele/Codia/blob/master/Cheat-Sheets/LENG-Desktop.md) configuration*
 
-*This is the short version, only with the `server` blocks for port `443` and port `80` redirecting, and passing as a proxy to internal port `9001` for our Pythin/Node.js/Go app...*
+*This is the short version, only with the `server` blocks for port `443` and port `80` redirecting, and passing as a proxy to internal port `9001` for our Python/Node.js/Go app...*
 
 | **`rphttps.conf`** :
 

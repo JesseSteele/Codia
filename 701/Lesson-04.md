@@ -704,7 +704,7 @@ python rewrite-multi-get.py
 | **B-10** ://
 
 ```console
-localhost/first-get-arg
+localhost/first-get-arg/second-get-arg/third-get-arg
 ```
 
 Operative Python code:
@@ -735,7 +735,7 @@ node rewrite-multi-get.js
 | **B-11** ://
 
 ```console
-localhost/first-get-arg
+localhost/first-get-arg/second-get-arg/third-get-arg
 ```
 
 Operative Node.js code:
@@ -766,7 +766,7 @@ go run rewrite-multi-get.go
 | **B-12** ://
 
 ```console
-localhost/first-get-arg
+localhost/first-get-arg/second-get-arg/third-get-arg
 ```
 
 Operative Go code:
@@ -1040,12 +1040,12 @@ async function handleProfileRequest(path) {
         const username = match[1];
         const user = await dbProcess.getUser(username);
         if (user) {
-            const escapeHtml = unsafe => unsafe
+            const escapeHtml = unsafe => String(unsafe)
                 .replace(/&/g, "&")
                 .replace(/</g, "<")
                 .replace(/>/g, ">")
                 .replace(/"/g, """)
-                .replace(/'/g, "'");
+                .replace(/'/g, "&#039;");
             return `<div class="profile"><h2>Profile: ${escapeHtml(user.username)}</h2><p>Full Name: ${escapeHtml(user.fullname)}</p><p>Email: ${escapeHtml(user.email)}</p><p>Webpage: ${escapeHtml(user.webpage)}</p><p>Favorite Number: ${escapeHtml(String(user.number))}</p></div>`;
         }
         return '<code class="error">User not found</code>';
