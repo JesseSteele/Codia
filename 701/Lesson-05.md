@@ -16,9 +16,9 @@ ___
 
 *AJAX means the browser talks to the server **without reloading the page***
 
-*In [Linux 501 Lesson 6](https://github.com/JesseSteele/Codia/blob/master/501/Lesson-06.md) we did this with PHP. Here the backend is Python, Node.js, or Go behind Nginx on port `9001`*
+*The backend is Python, Node.js, or Go behind Nginx on port `9001`*
 
-*We copy from `core/` like 501. We do **not** copy into a `web/` folder — Nginx already reverse-proxies `localhost` to `127.0.0.1:9001`*
+*We copy from `core/`. We do **not** copy into a `web/` folder — Nginx already reverse-proxies `localhost` to `127.0.0.1:9001`*
 
 ### SQL engine as a setting
 *Lesson 3 ended by putting `db_type` inside `db.*`. Starting here, that file is **global**. Change the engine, keep the app*
@@ -28,13 +28,13 @@ ___
 | **1** :$
 
 ```console
-cp core/05-db.py db.py && \
-cp core/05-db.js db.js && \
-cp core/05-db.conf db.conf && \
+cp core/05-db1.py db.py && \
+cp core/05-db1.js db.js && \
+cp core/05-db1.conf db.conf && \
 cp core/05-db-process.py db_process.py && \
 cp core/05-db-process.js db-process.js && \
 cp core/05-db-process.go db-process.go && \
-code core/05-db.py core/05-db.js core/05-db.conf core/05-db-process.py
+code core/05-db1.py core/05-db1.js core/05-db1.conf core/05-db-process.py
 ```
 
 *Note:*
@@ -61,13 +61,13 @@ def get_db_connection():
 *To use MariaDB instead:*
 
 ```console
-cp core/05-mysql-db.py db.py
+cp core/05-db2.py db.py
 ```
 
 *PostgreSQL:*
 
 ```console
-cp core/05-postgres-db.py db.py
+cp core/05-db3.py db.py
 ```
 
 *Same idea for `.js` and `.conf`*
@@ -194,12 +194,12 @@ localhost
 
 *(When finished: <kbd>Ctrl</kbd> + <kbd>C</kbd> in the terminal to exit)*
 
-### XMLHttpRequest vs `fetch`
-*501 used `XMLHttpRequest()`. That still works. These files use `fetch()` because it is the current common practice for the same idea*
+### `XMLHttpRequest` vs `fetch`
+*`XMLHttpRequest()` still works. These files use `fetch()` because it is the current common practice for the same idea*
 
 *Both are AJAX: a request that does not replace the whole document*
 
-*JSON here, not XML — 501 already said AJAX can use either*
+*JSON here, and XML in Lesson 9*
 
 ### What just happened
 - *The browser ran JavaScript*

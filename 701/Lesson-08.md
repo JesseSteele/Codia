@@ -12,34 +12,62 @@ Ready services
 ```console
 sudo systemctl start nginx
 ```
+
+### This lesson uses the main terminal plus three SQL tabs
+
+Ready the SQL tabs and leave them open *(<kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>T</kbd>; <kbd>Ctrl</kbd> + <kbd>PageUp</kbd>/<kbd>PageDown</kbd> to switch)*
+
+| **S0** :$ *(password in the terminal, not safe outside these lessons!)*
+
+```console
+mariadb -u admin -padminpassword
+```
+
+| **S1** :$
+
+```console
+psql -U postgres
+```
+
+| **S2** :$
+
+```console
+sqlite3 backendapp.db
+```
+
 ___
 
-*This is where **701bio** starts. Later lessons add ways to **use** it. They should not force you to rewrite this app*
+*This is where **701bio** starts: web installer, login `user_key`, public profile tabs, notes as `notes/*.md`, uploads in `media/`*
 
-*Already in this copy:*
-- *Web installer (creates the admin user + tables)*
-- *Login COOKIE/SESSION (`user_key`)*
-- *Public profile with Notes / Pictures / Audio / Video tabs (lazy `fetch`)*
-- *Notes as `notes/*.md` + browser autosave (`localStorage`, same idea as 501cms)*
-- *Uploads into `media/` — no public media index, only the profile tabs*
-- *`api_keys` table and **Developer dash** (Lesson 9 will call the API)*
-- *JSON GET `/api/profile` and POST `/api/notes` (ready; we study them next)*
-- *Static paths for Lesson 10: `/vue.html` `/react.html` `/angular.html`*
+*Later lessons add an API host and a client. They should not force you to rewrite this web UI*
 
 ## Install and run
 
 ### Python
 
+| **S2** :>
+
+```sql
+.tables
+```
+
 | **1** :$
 
 ```console
 cp core/08-bio.py bio.py && \
-cp core/05-db.py db.py && \
+cp core/05-db1.py db.py && \
 cp core/05-db-process.py db_process.py && \
 code core/08-bio.py
 ```
 
-*Note first visit with no users → the app points you at `/install`*
+| **S2** :>
+
+```sql
+DROP TABLE IF EXISTS users;
+DROP TABLE IF EXISTS sessions;
+DROP TABLE IF EXISTS api_keys;
+DROP TABLE IF EXISTS media;
+```
 
 Operative installer gate:
 
@@ -82,7 +110,7 @@ localhost/edit
 
 *Title, check Public, write a sentence, Save*
 
-*Autosave: type, wait a few seconds, refresh, confirm restore — that is `localStorage` key `as_` + slug, same *feel* as 501cms `as_` + piece id*
+*Autosave: type, wait a few seconds, refresh, confirm restore — `localStorage` key `as_` + slug*
 
 *There is no history table. Save overwrites `notes/your-slug.md`*
 
@@ -111,8 +139,6 @@ localhost
 
 *You should see the bio, and four buttons. Click **Notes**. The tab `fetch`es `/ajax/public?tab=notes`. The page did not reload*
 
-*Pictures / Audio / Video are empty until you upload something **and** mark it public*
-
 Operative lazy load:
 
 ```js
@@ -124,17 +150,24 @@ async function loadTab(tab) {
 }
 ```
 
-*Images use `loading="lazy"` as well — two kinds of lazy: wait to request the tab, wait to load the bytes*
-
-*(Keep `python bio.py` running. Open a second terminal for the next copies. <kbd>Ctrl</kbd> + <kbd>C</kbd> only when you switch languages)*
+*(Keep `python bio.py` running until you switch languages. <kbd>Ctrl</kbd> + <kbd>C</kbd> then)*
 
 ### Node.js
+
+| **S2** :>
+
+```sql
+DROP TABLE IF EXISTS users;
+DROP TABLE IF EXISTS sessions;
+DROP TABLE IF EXISTS api_keys;
+DROP TABLE IF EXISTS media;
+```
 
 | **3** :$
 
 ```console
 cp core/08-bio.js bio.js && \
-cp core/05-db.js db.js && \
+cp core/05-db1.js db.js && \
 cp core/05-db-process.js db-process.js && \
 code core/08-bio.js
 ```
@@ -151,18 +184,25 @@ node bio.js
 localhost/install
 ```
 
-*If Python already installed into the same SQLite file, `/install` will say already installed — log in with that admin, or delete `backendapp.db` and `notes/` to start over*
-
 *(When finished: <kbd>Ctrl</kbd> + <kbd>C</kbd> in the terminal to exit)*
 
 ### Go
+
+| **S2** :>
+
+```sql
+DROP TABLE IF EXISTS users;
+DROP TABLE IF EXISTS sessions;
+DROP TABLE IF EXISTS api_keys;
+DROP TABLE IF EXISTS media;
+```
 
 | **5** :$
 
 ```console
 cp core/08-bio.go bio.go && \
 cp core/05-db-process.go db-process.go && \
-cp core/05-db.conf db.conf && \
+cp core/05-db1.conf db.conf && \
 code core/08-bio.go
 ```
 
@@ -181,9 +221,7 @@ localhost/install
 *(When finished: <kbd>Ctrl</kbd> + <kbd>C</kbd> in the terminal to exit)*
 
 ### Developer dash
-*Logged in, open `/dev`. Create an API key. Copy it once. Lesson 9 will use it*
-
-*SQL already has `api_keys`. We are not adding that table later*
+*Logged in, open `/dev`. Create an API key. Copy it once*
 
 | **B-7** :// *(logged in)*
 
@@ -193,20 +231,31 @@ localhost/dev
 
 *Create a key named `class`. Copy the hex. You will not see the full key again — only `…` plus the last four characters*
 
-### Disk layout
+### Drop everything before Lesson 9
 
-```
-db.py / db.js / db.conf
-db_process.py / db-process.js / db-process.go
-bio.py | bio.js | bio.go
-notes/*.md
-media/pictures/
-media/audio/
-media/video/
-backendapp.db
+| **S0** :>
+
+```sql
+DROP DATABASE IF EXISTS backendapp_db;
 ```
 
-*Nginx still owns 80/443. The app still owns 9001. No `web/` folder*
+| **S1** :>
+
+```sql
+DROP DATABASE IF EXISTS backendapp_db;
+```
+
+| **S2** :>
+
+```sql
+.quit
+```
+
+| **8** :$
+
+```console
+rm -f backendapp.db
+```
 
 <!-- Start by making the SQL engine a settings option with a global database file, using modules to work with the separate database engines -->
 <!-- Quickly move to the dashboard page with basic the web renders, showing the mechanics, all using no login -->
@@ -224,24 +273,20 @@ ___
 # The Take
 ## Installer
 - First visit with no users → `/install`
-- After that, `/install` should not be your homepage
+- DROP tables (or the sqlite file) so the installer can run again
 - Installer writes the admin row and creates tables
-## 701bio vs 501cms
-- 501cms stored pieces in SQL and kept `publication_history`
-- 701bio stores notes as files; saving replaces the file
-- Autosave is in the browser (`localStorage` `as_` keys), same *feel* as 501, no extra SQL
+## 701bio notes
+- Notes are files; saving replaces the file
+- Autosave is in the browser (`localStorage` `as_` keys)
 ## Profile tabs
 - Public only
 - Loaded when clicked (`/ajax/public?tab=`)
 - Images use `loading="lazy"`
-- No separate media library URL for visitors
-## API is already there
-- Keys in Developer dash
-- Lesson 9 is about **calling** it, not inventing it
 ## Later lessons
-- 10: Vue/React/AngularJS + BASH functions, same API
-- 11: systemd unit, same app
-- 12: packages, same app
+- 9: API host + client (separate apps)
+- 10: `codia.html` default state, Vue/React/AngularJS optional
+- 11: systemd units
+- 12: packages
 ___
 
 #### [Lesson 9: API](https://github.com/JesseSteele/Codia/blob/master/701/Lesson-09.md)

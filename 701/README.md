@@ -41,6 +41,7 @@ Create a backend language with BASH
 - Handle methods
 - Functions for common processing
 - Intergration with Frontend State JS libraries
+  - `codia.html` (default)
   - Vue
   - React
   - Angular

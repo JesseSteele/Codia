@@ -24,9 +24,9 @@ ___
 *If those copies are gone:*
 
 ```console
-cp core/05-db.py db.py && \
-cp core/05-db.js db.js && \
-cp core/05-db.conf db.conf && \
+cp core/05-db1.py db.py && \
+cp core/05-db1.js db.js && \
+cp core/05-db1.conf db.conf && \
 cp core/05-db-process.py db_process.py && \
 cp core/05-db-process.js db-process.js && \
 cp core/05-db-process.go db-process.go
@@ -151,8 +151,6 @@ localhost
 *If the cookie held the password, every request would send the password, and JavaScript (or a stolen cookie log) would have it*
 
 *The cookie holds a **random token**. SQL maps token → user. Logout deletes the map*
-
-*501cms used PHP `$_SESSION` plus cookies. 701bio will use this same `user_key` + `sessions` table*
 
 <!-- Also a basic login code authenticator and forgotten password authenticator, not actually sending the email, but displaying the code inside the window styled using <pre> tags and an <hr> separator -->
 <!-- Show in theory the email process, but explain that the actual email probably won't send from a test server -->

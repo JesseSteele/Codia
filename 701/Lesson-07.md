@@ -25,8 +25,6 @@ media/video/
 
 *You can `vim notes/hello.md` on the server. The web app will see it. There is **no** version history — the file is the note*
 
-*501cms kept `publication_history` in SQL. 701bio will not. Saving overwrites the file*
-
 ### Save a note as a file
 
 #### Python
@@ -150,7 +148,7 @@ localhost
 ### Why not version the files
 *vim on the server is the editor of last resort. A second SQL history would fight that*
 
-*Browser autosave (Lesson 8) is `localStorage` — the same *feel* as 501cms — and it is **not** a second copy on disk*
+*Browser autosave (Lesson 8) is `localStorage`, and it is **not** a second copy on disk*
 
 <!-- Use a 'media' folder -->
 <!-- validate, thumbnail, and process using the same BASH scripts and UI/UX workflow we had from media uploads in the 501 unit; this may need Linux install commands for the media processing BASH script package dependencies, with appropriate commands for package managers we are using according to Lesson 6 (pacman, apt, dnf, zypper) -->
@@ -167,7 +165,7 @@ ___
 - In the note header: `public: true`
 - 701bio profile tabs will only show public items
 ## No versioning
-- Unlike 501cms history tables, saving a note **overwrites** the file
+- Saving a note **overwrites** the file
 - Autosave (next lesson) is in the **browser**, not a second copy on disk
 ## Uploads
 - Multipart POST, not a JSON body

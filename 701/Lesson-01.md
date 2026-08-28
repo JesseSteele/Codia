@@ -14,7 +14,8 @@ ___
 | **1** :$
 
 ```console
-code hw1.py
+cp core/01-hw1.py hw1.py && \
+code core/01-hw1.py
 ```
 
 *Note:*
@@ -23,30 +24,7 @@ code hw1.py
 - *`localhost` is defined by using `127.0.0.1`*
 - *Loading `BaseHTTPRequestHandler` requires a little more custom code and takes less advantage of Python's built-in HTTP handling code*
 
-| **`hw1.py`** : port `9001`
 
-```py
-from http.server import HTTPServer, BaseHTTPRequestHandler
-
-PORT = 9001
-HOST = "127.0.0.1"
-
-class SimpleHTTPRequestHandler(BaseHTTPRequestHandler):
-  def do_GET(self):
-    self.send_response(200)
-    self.send_header("Content-type", "text/html")
-    self.end_headers()
-    self.wfile.write(b"Ink is a verb. Ink!")
-
-if __name__ == "__main__":
-  server_address = (HOST, PORT)
-  httpd = HTTPServer(server_address, SimpleHTTPRequestHandler)
-  print(f"Starting Python server on port {PORT}...")
-  try:
-    httpd.serve_forever()
-  except KeyboardInterrupt:
-    print("Server stopped by user.")
-```
 
 *Note that we don't use `sudo` to run this `.py` app because it uses a **non-privileged port** (above `1024`)*
 
@@ -73,7 +51,8 @@ localhost:9001
 | **3** :$
 
 ```console
-code hw2.py
+cp core/01-hw2.py hw2.py && \
+code core/01-hw2.py
 ```
 
 *Note:*
@@ -83,29 +62,7 @@ code hw2.py
   - *Use for learning purposes only!*
 - *Loading `socketserver` takes advantage of Python's built-in HTTP handling for the `with socketserver...` statement*
 
-| **`hw2.py`** : port `80` for HTTP
 
-```py
-import http.server
-import socketserver
-
-PORT = 80
-HOST = "127.0.0.1"
-
-class CustomHandler(http.server.SimpleHTTPRequestHandler):
-  def do_GET(self):
-    self.send_response(200)
-    self.send_header("Content-type", "text/html")
-    self.end_headers()
-    self.wfile.write(b"Ink is a verb. Ink!")
-
-with socketserver.TCPServer((HOST, PORT), CustomHandler) as httpd:
-  print(f"Starting Python server on port {PORT}...")
-  try:
-    httpd.serve_forever()
-  except KeyboardInterrupt:
-    print("Server stopped by user.")
-```
 
 | **3** :$
 
@@ -132,46 +89,15 @@ localhost
 | **4** :$
 
 ```console
-code hw3.py
+cp core/01-hw3.py hw3.py && \
+code core/01-hw3.py
 ```
 
 *Note:*
 - *`port` is assigned to `443` for SSL*
 - *Loading `ssl` allows us to use SSL features (noted with comments)*
 
-| **`hw3.py`** : port `443` for HTTPS-SSL
 
-```py
-import http.server
-import socketserver
-import ssl
-
-PORT = 443
-HOST = "127.0.0.1"
-
-class CustomHandler(http.server.SimpleHTTPRequestHandler):
-  def do_GET(self):
-    self.send_response(200)
-    self.send_header("Content-type", "text/html")
-    self.end_headers()
-    self.wfile.write(b"Ink is a verb. Ink!")
-
-# SSL certs
-certfile = '/etc/ssl/desk/snakeoil.crt.pem'
-keyfile  = '/etc/ssl/desk/snakeoil.key.pem'
-
-# SSL context
-context = ssl.SSLContext(ssl.PROTOCOL_TLS_SERVER)
-context.load_cert_chain(certfile=certfile, keyfile=keyfile)
-
-with socketserver.TCPServer((HOST, PORT), CustomHandler) as httpd:
-  httpd.socket = context.wrap_socket(httpd.socket, server_side=True) # Wrap the socket with the SSL context
-  print(f"Starting Python server on port {PORT} with SSL...")
-  try:
-    httpd.serve_forever()
-  except KeyboardInterrupt:
-    print("Server stopped by user.")
-```
 
 | **5** :$
 
@@ -201,46 +127,15 @@ https://localhost
 | **6** :$
 
 ```console
-code hw4.py
+cp core/01-hw4.py hw4.py && \
+code core/01-hw4.py
 ```
 
 *Note everything is the same as `hw3.py` for SSL, except we have two `dhparams` statements (noted with `DH` comments)*
 
-| **`hw4.py`** : SSL with DH
 
-```py
-import http.server
-import socketserver
-import ssl
+*SSL with DH*
 
-PORT = 443
-HOST = "127.0.0.1"
-
-class CustomHandler(http.server.SimpleHTTPRequestHandler):
-  def do_GET(self):
-    self.send_response(200)
-    self.send_header("Content-type", "text/html")
-    self.end_headers()
-    self.wfile.write(b"Ink is a verb. Ink!")
-
-# SSL certs
-certfile = '/etc/ssl/desk/snakeoil.crt.pem'
-keyfile  = '/etc/ssl/desk/snakeoil.key.pem'
-dhparams = '/etc/ssl/desk/dhparams.pem'      # DH key
-
-# SSL context
-context = ssl.SSLContext(ssl.PROTOCOL_TLS_SERVER)
-context.load_cert_chain(certfile=certfile, keyfile=keyfile)
-context.load_dh_params(dhparams)             # DH context
-
-with socketserver.TCPServer((HOST, PORT), CustomHandler) as httpd:
-  httpd.socket = context.wrap_socket(httpd.socket, server_side=True) # Wrap the socket with the SSL context
-  print(f"Starting Python server on port {PORT} with SSL...")
-  try:
-    httpd.serve_forever()
-  except KeyboardInterrupt:
-    print("Server stopped by user.")
-```
 
 | **7** :$
 
@@ -262,7 +157,8 @@ https://localhost
 | **8** :$
 
 ```console
-code hw1.js
+cp core/01-hw1.js hw1.js && \
+code core/01-hw1.js
 ```
 
 *Note:*
@@ -271,25 +167,7 @@ code hw1.js
 - *`localhost` is defined by using `127.0.0.1`*
 - *Loading `http` brings native tools in Node for an HTTP server*
 
-| **`hw1.js`** : port `9001`
 
-```js
-var http = require('http');
-
-var PORT = 9001;
-var HOST = '127.0.0.1';
-
-http.createServer(function (req, res) {
-  res.writeHead(200, {'Content-Type': 'text/html'});
-  res.end('Ink is a verb. Ink!');
-}).listen(PORT, HOST);
-console.log('Server running at http://' + HOST + ':' + PORT + '/');
-
-process.on('SIGINT', function () {
-  console.log('Server stopped by user.');
-  process.exit(0);
-});
-```
 
 *Note that we don't use `sudo` to run this `.js` app because it uses a **non-privileged port** (above `1024`)*
 
@@ -316,7 +194,8 @@ localhost:9001
 | **10** :$
 
 ```console
-code hw2.js
+cp core/01-hw2.js hw2.js && \
+code core/01-hw2.js
 ```
 
 *Note:*
@@ -328,30 +207,7 @@ code hw2.js
 - *Running `server.listen` organizes things a little better*
 - *Running `server.close` makes for a more graceful shutdown of the server*
 
-| **`hw2.js`** : port `80` for HTTP
 
-```js
-const http = require('http');
-
-const PORT = 80;
-const HOST = '127.0.0.1';
-
-const server = http.createServer((req, res) => {
-  res.writeHead(200, {'Content-Type': 'text/html'});
-  res.end('Ink is a verb. Ink!', 'utf8');
-});
-
-server.listen(PORT, HOST, () => {
-  console.log(`Starting Node.js server on port ${PORT}...`);
-});
-
-process.on('SIGINT', () => {
-  console.log('Server stopped by user.');
-  server.close(() => {  // More graceful
-    process.exit(0);
-  });
-});
-```
 
 | **11** :$
 
@@ -378,45 +234,15 @@ localhost
 | **12** :$
 
 ```console
-code hw3.js
+cp core/01-hw3.js hw3.js && \
+code core/01-hw3.js
 ```
 
 *Note:*
 - *`port` is assigned to `443` for SSL*
 - *Loading `https` allows us to use SSL features (noted with comments)*
 
-| **`hw3.js`** : port `443` for HTTPS-SSL
 
-```js
-const https = require('https');
-const fs = require('fs');
-
-const PORT = 443;
-const HOST = '127.0.0.1';
-
-// SSL certs
-const options = {
-  key: fs.readFileSync('/etc/ssl/desk/snakeoil.key.pem'),
-  cert: fs.readFileSync('/etc/ssl/desk/snakeoil.crt.pem')
-};
-
-// HTTPS
-const server = https.createServer(options, (req, res) => {
-  res.writeHead(200, {'Content-Type': 'text/html'});
-  res.end('Ink is a verb. Ink!', 'utf8');
-});
-
-server.listen(PORT, HOST, () => {
-  console.log(`Starting Node.js server on port ${PORT} with SSL...`);
-});
-
-process.on('SIGINT', () => {
-  console.log('Server stopped by user.');
-  server.close(() => {
-    process.exit(0);
-  });
-});
-```
 
 | **13** :$
 
@@ -446,45 +272,15 @@ https://localhost
 | **14** :$
 
 ```console
-code hw4.js
+cp core/01-hw4.js hw4.js && \
+code core/01-hw4.js
 ```
 
 *Note everything is the same as `hw3.js` for SSL, except we have one `dhparams` statement (noted with a DH comment)*
 
-| **`hw4.js`** : SSL with DH
 
-```js
-const https = require('https');
-const fs = require('fs');
+*SSL with DH*
 
-const PORT = 443;
-const HOST = '127.0.0.1';
-
-// SSL certs
-const options = {
-  key: fs.readFileSync('/etc/ssl/desk/snakeoil.key.pem'),
-  cert: fs.readFileSync('/etc/ssl/desk/snakeoil.crt.pem'),
-  dhparam: fs.readFileSync('/etc/ssl/desk/dhparams.pem') // DH
-};
-
-
-// HTTPS
-const server = https.createServer(options, (req, res) => {
-  res.writeHead(200, {'Content-Type': 'text/html'});
-  res.end('Ink is a verb. Ink!', 'utf8');
-});
-
-server.listen(PORT, HOST, () => {
-  console.log(`Starting Node.js server on port ${PORT} with SSL...`);
-});
-
-process.on('SIGINT', () => {
-  console.log('Server stopped by user.');
-  server.close(() => {
-    process.exit(0);
-  });
-});
-```
 
 | **15** :$
 
@@ -511,7 +307,8 @@ https://localhost
 | **16** :$
 
 ```console
-code hw1.go
+cp core/01-hw1.go hw1.go && \
+code core/01-hw1.go
 ```
 
 *Note:*
@@ -520,44 +317,7 @@ code hw1.go
 - *`localhost` is defined by using `127.0.0.1`*
 - *Loading `net` brings us tools in Go for an HTTP server*
 
-| **`hw1.go`** : port `9001`
 
-```go
-package main
-
-import (
-  "fmt"
-  "net"
-)
-
-func main() {
-  PORT := 9001
-  HOST := "127.0.0.1"
-
-  listener, err := net.Listen("tcp", fmt.Sprintf("%s:%d", HOST, PORT))
-  if err != nil {
-    fmt.Println(err)
-    return
-  }
-  defer listener.Close()
-
-  fmt.Printf("Starting Go server on port %d...\n", PORT)
-
-  for {
-    conn, err := listener.Accept()
-    if err != nil {
-      fmt.Println(err)
-      continue
-    }
-    go handleConnection(conn)
-  }
-}
-
-func handleConnection(conn net.Conn) {
-  defer conn.Close()
-  conn.Write([]byte("HTTP/1.1 200 OK\r\nContent-Type: text/html\r\n\r\nInk is a verb. Ink!"))
-}
-```
 
 *Note that we don't use `sudo` to run this `.go` app because it uses a **non-privileged port** (above `1024`)*
 
@@ -584,7 +344,8 @@ localhost:9001
 | **18** :$
 
 ```console
-code hw2.go
+cp core/01-hw2.go hw2.go && \
+code core/01-hw2.go
 ```
 
 *Note:*
@@ -595,34 +356,7 @@ code hw2.go
 - *Loading `net/http` takes advantage of Go's built-in HTTP handling so we don't need to create loops*
 - *Loading `log` takes advantage of Go's built-in error logging so we don't need an `if` statement to trigger errors*
 
-| **`hw2.go`** : port `80` for HTTP
 
-```go
-package main
-
-import (
-  "fmt"
-  "log"
-  "net/http"
-)
-
-func main() {
-  const (
-    PORT = 80
-    HOST = "127.0.0.1"
-  )
-
-  http.HandleFunc("/", handler)
-
-  fmt.Printf("Starting Go server on port %d...\n", PORT)
-  log.Fatal(http.ListenAndServe(fmt.Sprintf("%s:%d", HOST, PORT), nil))
-}
-
-func handler(w http.ResponseWriter, r *http.Request) {
-  w.Header().Set("Content-Type", "text/html; charset=utf-8")
-  w.Write([]byte("Ink is a verb. Ink!"))
-}
-```
 
 | **19** :$
 
@@ -643,65 +377,15 @@ localhost
 | **20** :$
 
 ```console
-code hw3.go
+cp core/01-hw3.go hw3.go && \
+code core/01-hw3.go
 ```
 
 *Note:*
 - *`port` is assigned to `443` for SSL*
 - *Loading `crypto/tls` allows us to use SSL features (noted with comments)*
 
-| **`hw3.go`** : port `443` for HTTPS-SSL
 
-```go
-package main
-
-import (
-  "fmt"
-  "log"
-  "net/http"
-
-  "crypto/tls"
-)
-
-func main() {
-  const (
-    PORT = 443
-    HOST = "127.0.0.1"
-  )
-
-  // SSL certs
-  cert, err := tls.LoadX509KeyPair("/etc/ssl/desk/snakeoil.crt.pem", "/etc/ssl/desk/snakeoil.key.pem")
-  if err != nil {
-    log.Fatal(err)
-  }
-
-  // SSL/TLS ciphers
-  tlsConfig := &tls.Config{
-    Certificates: []tls.Certificate{cert},
-    CipherSuites: []uint16{
-      tls.TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256,
-      tls.TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384,
-      tls.TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384,
-    },
-    PreferServerCipherSuites: true,
-  }
-  tlsConfig.BuildNameToCertificate()
-
-  server := &http.Server{
-    Addr:      fmt.Sprintf("%s:%d", HOST, PORT),
-    Handler:   http.HandlerFunc(handler),
-    TLSConfig: tlsConfig,
-  }
-
-  fmt.Printf("Starting Go server on port %d with SSL...\n", PORT)
-  log.Fatal(server.ListenAndServeTLS("", ""))
-}
-
-func handler(w http.ResponseWriter, r *http.Request) {
-  w.Header().Set("Content-Type", "text/html; charset=utf-8")
-  w.Write([]byte("Ink is a verb. Ink!"))
-}
-```
 
 | **21** :$
 
@@ -740,88 +424,22 @@ The more efficient web server
 
 *As a base of reference, this is what a basic reverse-proxy single-file config for Nginx could be...*
 
-| **`nginx-reverse-proxy.conf`** :
+| **21a** :$
 
-```
-http {
-  # Global SSL
-  ssl_protocols TLSv1.2 TLSv1.3;
-  ssl_prefer_server_ciphers on;
-  ssl_ciphers ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-CHACHA20-POLY1305:ECDHE-RSA-CHACHA20-POLY1305:ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES256-SHA384:ECDHE-RSA-AES256-SHA384:ECDHE-ECDSA-AES128-SHA256:ECDHE-RSA-AES128-SHA256;
-  ssl_session_cache shared:SSL:10m;
-  ssl_session_timeout 10m;
-
-  # HTTPS port 443
-  server {
-    listen 443 ssl;
-    listen [::]:443 ssl;
-    http2 on;
-    server_name localhost;  # Can replace with a domain
-
-    ssl_certificate      /etc/ssl/desk/snakeoil.crt.pem;
-    ssl_certificate_key  /etc/ssl/desk/snakeoil.key.pem;
-    ssl_dhparam          /etc/ssl/desk/dhparams.pem;
-
-    location / {
-      proxy_pass http://127.0.0.1:9001;
-      proxy_http_version 1.1;
-      proxy_set_header Upgrade $http_upgrade;
-      proxy_set_header Connection 'upgrade';
-      proxy_set_header Host $host;
-      proxy_set_header X-Real-IP $remote_addr;
-      proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
-      proxy_set_header X-Forwarded-Proto $scheme;
-      proxy_hide_header Upgrade;
-    }
-  }
-
-  # Redirect HTTP port 80 to HTTPS port 443
-  server {
-    listen 80;
-    server_name localhost;  # Can replace with a domain
-    return 302 https://$host$request_uri;
-  }
-}
+```console
+cp core/01-nginx-reverse-proxy.conf nginx-reverse-proxy.conf && \
+code core/01-nginx-reverse-proxy.conf
 ```
 
 *...but we aren't actually using this Nginx config because we have the two-part configs from our [LENG Desktop](https://github.com/JesseSteele/Codia/blob/master/Cheat-Sheets/LENG-Desktop.md) configuration*
 
 *This is the short version, only with the `server` blocks for port `443` and port `80` redirecting, and passing as a proxy to internal port `9001` for our Python/Node.js/Go app...*
 
-| **`rphttps.conf`** :
+| **21b** :$
 
-```
-# HTTPS port 443
-server {
-  listen 443 ssl;
-  listen [::]:443 ssl;
-  http2 on;
-  server_name localhost;
-
-  ssl_certificate      /etc/ssl/desk/snakeoil.crt.pem;
-  ssl_certificate_key  /etc/ssl/desk/snakeoil.key.pem;
-
-  location / {
-    proxy_pass http://127.0.0.1:9001;
-    proxy_http_version 1.1;
-    proxy_set_header Upgrade $http_upgrade;
-    proxy_set_header Connection 'upgrade';
-    proxy_set_header Host $host;
-    proxy_set_header X-Real-IP $remote_addr;
-    proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
-    proxy_set_header X-Forwarded-Proto $scheme;
-    proxy_hide_header Upgrade;
-  }
-}
-
-# Redirect HTTP port 80 to HTTPS port 443
-server {
-  listen 80;
-  listen [::]:80;
-  server_name localhost;
-  
-  return 301 https://$host$request_uri;
-}
+```console
+cp core/01-rphttps.conf rphttps.conf && \
+code core/01-rphttps.conf
 ```
 
 *Assuming the [LENG Desktop](https://github.com/JesseSteele/Codia/blob/master/Cheat-Sheets/LENG-Desktop.md), we will move the reverse-proxy SSL Nginx config into place...*
@@ -854,32 +472,10 @@ Apps that run behind an Nginx reverse-proxy server
 | **24** :$
 
 ```console
-code hwrp.py
+cp core/01-hwrp.py hwrp.py && \
+code core/01-hwrp.py
 ```
 
-| **`hwrp.py`** :
-
-```py
-import http.server
-
-PORT = 9001
-HOST = "127.0.0.1"
-
-class CustomHandler(http.server.SimpleHTTPRequestHandler):
-  def do_GET(self):
-    self.send_response(200)
-    self.send_header("Content-type", "text/html")
-    self.end_headers()
-    self.wfile.write(b"Ink is a verb. Ink!")
-
-if __name__ == "__main__":
-  with http.server.HTTPServer((HOST, PORT), CustomHandler) as httpd:
-    print(f"Starting Python server on port {PORT}...")
-    try:
-      httpd.serve_forever()
-    except KeyboardInterrupt:
-      print("Server stopped by user.")
-```
 
 | **25** :$
 
@@ -900,33 +496,10 @@ https://localhost
 | **26** :$
 
 ```console
-code hwrp.js
+cp core/01-hwrp.js hwrp.js && \
+code core/01-hwrp.js
 ```
 
-| **`hwrp.js`** :
-
-```js
-const http = require('http');
-
-const PORT = 9001;
-const HOST = '127.0.0.1';
-
-const server = http.createServer((req, res) => {
-  res.writeHead(200, {'Content-Type': 'text/html'});
-  res.end('Ink is a verb. Ink!', 'utf8');
-});
-
-server.listen(PORT, HOST, () => {
-  console.log(`Starting Node.js server on port ${PORT}...`);
-});
-
-process.on('SIGINT', () => {
-  console.log('Server stopped by user.');
-  server.close(() => {
-  process.exit(0);
-  });
-});
-```
 
 | **27** :$
 
@@ -947,39 +520,10 @@ https://localhost
 | **28** :$
 
 ```console
-code hwrp.go
+cp core/01-hwrp.go hwrp.go && \
+code core/01-hwrp.go
 ```
 
-| **`hwrp.go`** :
-
-```go
-package main
-
-import (
-  "fmt"
-  "net/http"
-)
-
-func main() {
-  const (
-    PORT = 9001
-    HOST = "127.0.0.1"
-  )
-
-  http.HandleFunc("/", handler)
-
-  fmt.Printf("Starting Go server on port %d...\n", PORT)
-  err := http.ListenAndServe(fmt.Sprintf("%s:%d", HOST, PORT), nil)
-  if err != nil {
-    fmt.Printf("Server error: %v\n", err)
-  }
-}
-
-func handler(w http.ResponseWriter, r *http.Request) {
-  w.Header().Set("Content-Type", "text/html; charset=utf-8")
-  w.Write([]byte("Ink is a verb. Ink!"))
-}
-```
 
 | **29** :$
 
