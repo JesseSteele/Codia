@@ -28,7 +28,7 @@ echo "Apple Jay" > abc/jayapple
 | **3** :$
 
 ```console
-gedit abc/*
+edit abc/*
 ```
 
 *Search for a **text string** inside file contents with `grep`*

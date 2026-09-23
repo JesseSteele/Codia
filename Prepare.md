@@ -26,12 +26,12 @@ sudo apt install gedit gnome-text-editor nautilus chromium-browser firefox
 
 ### Alias for the GNOME Text Editor
 
-*This makes the `vedit` command point to `gnome-text-editor` if it is installed, otherwise to `gedit`*
+*This makes the `edit` command point to `gnome-text-editor` if it is installed, otherwise to `gedit`*
 
 | **2** :$
 
 ```console
-if which gnome-text-editor; then echo 'alias vedit=gnome-text-editor' >> ~/.bashrc; else echo 'alias vedit=gedit' >> ~/.bashrc; fi
+if which gnome-text-editor; then echo 'alias edit=gnome-text-editor' >> ~/.bashrc; else echo 'alias edit=gedit' >> ~/.bashrc; fi
 ```
 
 ### Settings for GNOME Text Editor

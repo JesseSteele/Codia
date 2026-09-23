@@ -12,7 +12,7 @@ ___
 | **1** :$
 
 ```console
-gedit abcsed abcsed.setting abcd
+edit abcsed abcsed.setting abcd
 ```
 
 *Update `abcsed` to version 05:*
@@ -39,7 +39,7 @@ sed -i "s/$myFOO/$myBAR/g" $myFILE
 ./abcsed h z abcd
 ```
 
-*gedit: Reload `abcd`*
+*editor: Reload `abcd`*
 
 | **3** :$
 
@@ -47,7 +47,7 @@ sed -i "s/$myFOO/$myBAR/g" $myFILE
 ./abcsed z j abcd
 ```
 
-*gedit: Reload `abcd`*
+*editor: Reload `abcd`*
 
 *Update `abcsed` to version 06:*
 
@@ -80,7 +80,7 @@ myFILE=abcd
 ./abcsed i z
 ```
 
-*gedit: Reload `abcd`*
+*editor: Reload `abcd`*
 
 | **5** :$
 
@@ -88,7 +88,7 @@ myFILE=abcd
 ./abcsed z j
 ```
 
-*gedit: Reload `abcd`*
+*editor: Reload `abcd`*
 
 *Note this line starting with a `.` period will "**source**" or "include" the text of any file as if it was text of the script itself*
 

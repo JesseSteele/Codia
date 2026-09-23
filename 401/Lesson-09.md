@@ -154,7 +154,7 @@ Shell:
 | **1** :$
 
 ```console
-gedit math-sh
+edit math-sh
 ```
 
 *It should look like this:*
@@ -201,7 +201,7 @@ BASH:
 | **3** :$
 
 ```console
-gedit math-bash
+edit math-bash
 ```
 
 *It should look like this:*
@@ -249,7 +249,7 @@ Shell:
 | **5** :$
 
 ```console
-gedit array-sh
+edit array-sh
 ```
 
 *It should look like this:*
@@ -283,7 +283,7 @@ BASH:
 | **7** :$
 
 ```console
-gedit array-bash
+edit array-bash
 ```
 
 *It should look like this:*
@@ -372,7 +372,7 @@ Or
 | **9** :$
 
 ```console
-gedit set-normal
+edit set-normal
 ```
 
 *It should look like this:*
@@ -406,7 +406,7 @@ echo "Done with verbchacho test"
 | **11** :$
 
 ```console
-gedit set-e
+edit set-e
 ```
 
 *It should look like this:*
@@ -442,7 +442,7 @@ echo "Done with verbchacho test"
 | **13** :$
 
 ```console
-gedit set-x
+edit set-x
 ```
 
 *It should look like this:*
@@ -478,7 +478,7 @@ echo "Done with verbchacho test"
 | **15** :$
 
 ```console
-gedit set-v
+edit set-v
 ```
 
 *It should look like this:*
@@ -514,7 +514,7 @@ echo "Done with verbchacho test"
 | **17** :$
 
 ```console
-gedit set-xe
+edit set-xe
 ```
 
 *It should look like this:*
@@ -638,7 +638,7 @@ false || echo "Or is false."
 | **25** :$
 
 ```console
-gedit truefalse
+edit truefalse
 ```
 
 *It should look like this:*
@@ -680,7 +680,7 @@ false || echo "Or is false."
 | **27** :$
 
 ```console
-gedit truefalsevar
+edit truefalsevar
 ```
 
 *It should look like this:*
@@ -726,7 +726,7 @@ $Var || echo "Or is false."
 | **29** :$
 
 ```console
-gedit truefalsevarstring
+edit truefalsevarstring
 ```
 
 *It should look like this:*
@@ -809,7 +809,7 @@ mkdir iamhere && touch iamhere/file1 iamhere/file2
 | **36** :$
 
 ```console
-gedit ls-test
+edit ls-test
 ```
 
 *It should look like this:*
@@ -856,7 +856,7 @@ Test with `-z`:
 | **38** :$
 
 ```console
-gedit varset-z
+edit varset-z
 ```
 
 *It should look like this:*
@@ -911,7 +911,7 @@ Test with `-n`:
 | **40** :$
 
 ```console
-gedit varset-n
+edit varset-n
 ```
 
 *It should look like this:*
@@ -981,7 +981,7 @@ e="$?"; if [ "$e" != "0" ]; then exit "$e"; fi
 | **42** :$
 
 ```console
-gedit child-exit parent-exit
+edit child-exit parent-exit
 ```
 
 | **parent-exit** :

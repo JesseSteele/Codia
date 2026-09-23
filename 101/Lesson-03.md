@@ -12,7 +12,7 @@ ___
 | **1** :$
 
 ```console
-gedit how2arg
+edit how2arg
 ```
 
 ### Arguments (`$1`, `$2`, etc)
@@ -112,7 +112,7 @@ first \
 | **10** :$
 
 ```console
-gedit allarg
+edit allarg
 ```
 
 *Create allarg as this:*

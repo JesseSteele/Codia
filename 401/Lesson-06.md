@@ -72,7 +72,7 @@ Example of 'single' & "double" quotes in declaring variable values:
 | **1** :$
 
 ```console
-gedit varquote
+edit varquote
 ```
 
 *It should look like this:*
@@ -109,7 +109,7 @@ Example of boolean values and quotes:
 | **3** :$
 
 ```console
-gedit varbool
+edit varbool
 ```
 
 *It should look like this:*
@@ -182,7 +182,7 @@ fi
 | **5** :$
 
 ```console
-gedit varmath
+edit varmath
 ```
 
 *It should look like this:*

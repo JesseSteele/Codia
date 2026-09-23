@@ -105,7 +105,7 @@ echo $?
 | **11** :$
 
 ```console
-gedit functionreturns
+edit functionreturns
 ```
 
 *It should look like this:*
@@ -182,7 +182,7 @@ echo "Return code: $?"
 | **14** :$
 
 ```console
-gedit functionlocal
+edit functionlocal
 ```
 
 *It should look like this:*

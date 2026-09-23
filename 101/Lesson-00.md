@@ -98,7 +98,7 @@ jobs
 | **10** :$
 
 ```console
-gedit
+edit
 ```
 
 *Terminal: <kbd>Ctrl</kbd> + <kbd>C</kbd>*
@@ -116,7 +116,7 @@ jobs
 | **12** :$
 
 ```console
-gedit &
+edit &
 ```
 
 *Note the terminal is not **occupied** because we added `&`*
@@ -199,4 +199,4 @@ ___
 
 ___
 
-#### [Lesson 1: gedit, echo & sed](https://github.com/JesseSteele/Codia/blob/master/101/Lesson-01.md)
+#### [Lesson 1: editor, echo & sed](https://github.com/JesseSteele/Codia/blob/master/101/Lesson-01.md)

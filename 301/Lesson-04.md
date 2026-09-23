@@ -32,7 +32,7 @@ ${Variable}Hello
 | **2** :$
 
 ```console
-gedit 04-var-form-1
+edit 04-var-form-1
 ```
 
 | **3** :$
@@ -44,7 +44,7 @@ gedit 04-var-form-1
 | **4** :$
 
 ```console
-gedit 04-var-form-2
+edit 04-var-form-2
 ```
 
 | **5** :$
@@ -56,7 +56,7 @@ gedit 04-var-form-2
 | **6** :$
 
 ```console
-gedit 04-var-form-3
+edit 04-var-form-3
 ```
 
 | **7** :$
@@ -74,7 +74,7 @@ ${Variable%food}
 | **8** :$
 
 ```console
-gedit 04-var-form-4
+edit 04-var-form-4
 ```
 
 | **9** :$
@@ -110,7 +110,7 @@ ${Variable//$food/$bard}
 | **11** :$
 
 ```console
-gedit 04-var-form-5
+edit 04-var-form-5
 ```
 
 | **12** :$
@@ -124,7 +124,7 @@ gedit 04-var-form-5
 | **13** :$
 
 ```console
-gedit 04-echo-rename-1
+edit 04-echo-rename-1
 ```
 
 | **14** :$
@@ -144,7 +144,7 @@ ls *.one
 | **16** :$
 
 ```console
-gedit 04-echo-rename-2
+edit 04-echo-rename-2
 ```
 
 | **17** :$
@@ -180,7 +180,7 @@ ls
 | **20** :$
 
 ```console
-gedit 04-do-mv-1
+edit 04-do-mv-1
 ```
 
 | **21** :$
@@ -206,7 +206,7 @@ ls
 | **24** :$
 
 ```console
-gedit 04-do-mv-2
+edit 04-do-mv-2
 ```
 
 | **25** :$
@@ -232,7 +232,7 @@ ls
 | **28** :$
 
 ```console
-gedit 04-do-mv-3
+edit 04-do-mv-3
 ```
 
 | **29** :$
@@ -272,7 +272,7 @@ cp *THREE* 04-FOR/
 | **34** :$
 
 ```console
-gedit 04-do-rm
+edit 04-do-rm
 ```
 
 | **35** :$
@@ -309,7 +309,7 @@ ls *.odt && ls *.txt
 | **39** :$
 
 ```console
-gedit 04-do-odt2txt
+edit 04-do-odt2txt
 ```
 
 | **40** :$
@@ -329,7 +329,7 @@ ls *.odt && ls *.txt
 | **42** :$
 
 ```console
-gedit *.txt
+edit *.txt
 ```
 
 *Backup today's work*

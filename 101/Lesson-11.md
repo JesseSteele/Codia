@@ -18,7 +18,7 @@ echo "$$//" > money.file
 | **2** :$
 
 ```console
-gedit money.file
+edit money.file
 ```
 
 *Note how **special characters** don't always behave as expected*
@@ -35,7 +35,7 @@ gedit money.file
 echo "\$\$//" > money.file
 ```
 
-*gedit: Reload `money.file`*
+*editor: Reload `money.file`*
 
 | **4** :$
 
@@ -51,7 +51,7 @@ sed -i "s///!/g" money.file
 sed -i "s/\//\!/g" money.file
 ```
 
-*gedit: Reload `money.file`*
+*editor: Reload `money.file`*
 
 | **6** :$
 
@@ -59,7 +59,7 @@ sed -i "s/\//\!/g" money.file
 sed -i "s/$/@/g" money.file
 ```
 
-*gedit: Reload `money.file`*
+*editor: Reload `money.file`*
 
 *Note the `@` symbol appeares at the end of the line*
 
@@ -69,7 +69,7 @@ sed -i "s/$/@/g" money.file
 sed -i "s/\$/@/g" money.file
 ```
 
-*gedit: Reload `money.file`*
+*editor: Reload `money.file`*
 
 *Note even quoted, the `@` symbol appeares at the end of the line*
 
@@ -79,7 +79,7 @@ sed -i "s/\$/@/g" money.file
 sed -i 's/$/@/g' money.file
 ```
 
-*gedit: Reload `money.file`*
+*editor: Reload `money.file`*
 
 *Note even with 'single quotes', the `@` symbol appeares at the end of the line*
 
@@ -89,7 +89,7 @@ sed -i 's/$/@/g' money.file
 sed -i 's/\$/@/g' money.file
 ```
 
-*gedit: Reload `money.file`*
+*editor: Reload `money.file`*
 
 *Sometimes we need BOTH 'single quotes' AND the "backslash" (`\`) quote/escape character!*
 
@@ -108,7 +108,7 @@ echo "no tab one line" > tab.file
 | **11** :$
 
 ```console
-gedit tab.file
+edit tab.file
 ```
 
 | **12** :$
@@ -117,7 +117,7 @@ gedit tab.file
 sed -i "s/no/\t no/" tab.file
 ```
 
-*gedit: Reload `tab.file`*
+*editor: Reload `tab.file`*
 
 *Note the tab*
 
@@ -127,7 +127,7 @@ sed -i "s/no/\t no/" tab.file
 sed -i "s/\t no/no/" tab.file
 ```
 
-*gedit: Reload `tab.file`*
+*editor: Reload `tab.file`*
 
 *Note the tab is gone*
 
@@ -137,7 +137,7 @@ sed -i "s/\t no/no/" tab.file
 sed -i "s/one/one\n/" tab.file
 ```
 
-*gedit: Reload `tab.file`*
+*editor: Reload `tab.file`*
 
 | **15** :$
 
@@ -145,7 +145,7 @@ sed -i "s/one/one\n/" tab.file
 sed -i "s/one\n/one/g" tab.file
 ```
 
-*gedit: Reload `tab.file`*
+*editor: Reload `tab.file`*
 
 *Note the line was not removed*
 
@@ -157,7 +157,7 @@ sed -i "s/one\n/one/g" tab.file
 sed -i -z "s/one\n/one/g" tab.file
 ```
 
-*gedit: Reload `tab.file`*
+*editor: Reload `tab.file`*
 
 ___
 

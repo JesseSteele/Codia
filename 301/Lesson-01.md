@@ -30,7 +30,7 @@ Test for an existing *file* by name
 | **1** :$
 
 ```console
-gedit 01-if-file
+edit 01-if-file
 ```
 
 | **2** :$
@@ -84,7 +84,7 @@ Test for an existing *directory* by name
 | **8** :$
 
 ```console
-gedit 01-if-dir
+edit 01-if-dir
 ```
 
 | **9** :$
@@ -155,7 +155,7 @@ fi
 | **17** :$
 
 ```console
-gedit 01-if-else-file
+edit 01-if-else-file
 ```
 
 | **18** :$
@@ -173,7 +173,7 @@ gedit 01-if-else-file
 | **20** :$
 
 ```console
-gedit 01-if-else-dir
+edit 01-if-else-dir
 ```
 
 | **21** :$
@@ -191,7 +191,7 @@ gedit 01-if-else-dir
 | **23** :$
 
 ```console
-gedit 01-if-else-e
+edit 01-if-else-e
 ```
 
 *Note `-e` checks only whether something "exists", whether as a file, directory, or link*
@@ -241,7 +241,7 @@ fi
 | **28** :$
 
 ```console
-gedit 01-if-elif
+edit 01-if-elif
 ```
 
 *Note `-z` checks whether a variable is empty (not set)*
@@ -289,7 +289,7 @@ This is standard practice for `if` and many other logic statements
 | **34** :$
 
 ```console
-gedit 01-style
+edit 01-style
 ```
 
 *Note `;` means "new line of logic" and **whitespace** at the beginning of lines is ignored*
@@ -321,7 +321,7 @@ elif [ $1 = "foobar" ]; then
 | **38** :$
 
 ```console
-gedit 01-minimum
+edit 01-minimum
 ```
 
 *Note the entire `if` statement can go on one line using `;`*
@@ -365,7 +365,7 @@ The command runs; if it succeeds, the test answers true
 | **42** :$
 
 ```console
-gedit markdown.md
+edit markdown.md
 ```
 
 *Note the contents of `markdown.md`*
@@ -427,7 +427,7 @@ echo $?
 | **51** :$
 
 ```console
-gedit 01-ifcomm1
+edit 01-ifcomm1
 ```
 
 ```sh
@@ -551,7 +551,7 @@ echo $?
 | **69** :$
 
 ```console
-gedit 01-ifcomm2
+edit 01-ifcomm2
 ```
 
 | **70** :$
@@ -597,7 +597,7 @@ echo $?
 | **75** :$
 
 ```console
-gedit 01-ifcomm3
+edit 01-ifcomm3
 ```
 
 | **76** :$

@@ -10,7 +10,7 @@ ___
 
 ### [Lesson 0: Terminal Control](https://github.com/JesseSteele/Codia/blob/master/101/Lesson-00.md)
 
-### [Lesson 1: gedit, echo & sed](https://github.com/JesseSteele/Codia/blob/master/101/Lesson-01.md)
+### [Lesson 1: editor, echo & sed](https://github.com/JesseSteele/Codia/blob/master/101/Lesson-01.md)
 
 ### [Lesson 2: Arguments & Variables](https://github.com/JesseSteele/Codia/blob/master/101/Lesson-02.md)
 

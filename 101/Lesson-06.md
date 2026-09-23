@@ -14,7 +14,7 @@ ___
 | **1** :$
 
 ```console
-gedit applefoo
+edit applefoo
 ```
 
 | **2** :$
@@ -32,7 +32,7 @@ sed "s/foo/bar/" applefoo > sedoutput.text
 | **4** :$
 
 ```console
-gedit sedoutput.text
+edit sedoutput.text
 ```
 
 | **5** :$
@@ -41,7 +41,7 @@ gedit sedoutput.text
 echo "Add a line" >> sedoutput.text
 ```
 
-*gedit: Reload sedoutput.text*
+*editor: Reload sedoutput.text*
 
 *Both `echo` and `sed` (without `-i`) will send output to the terminal*
 
@@ -55,7 +55,7 @@ echo "Add a line" >> sedoutput.text
 sed "s/foo/bar/" applefoo | tee sedoutput.text
 ```
 
-*gedit: Reload sedoutput.text*
+*editor: Reload sedoutput.text*
 
 *Note `tee` used two **output destinations***
 
@@ -65,7 +65,7 @@ sed "s/foo/bar/" applefoo | tee sedoutput.text
 echo "Add a line" >> sedoutput.text
 ```
 
-*gedit: Reload sedoutput.text*
+*editor: Reload sedoutput.text*
 
 | **8** :$
 
@@ -73,7 +73,7 @@ echo "Add a line" >> sedoutput.text
 sed "s/foo/bar/" applefoo | tee -a sedoutput.text
 ```
 
-*gedit: Reload sedoutput.text*
+*editor: Reload sedoutput.text*
 
 | **9** :$
 
@@ -81,7 +81,7 @@ sed "s/foo/bar/" applefoo | tee -a sedoutput.text
 echo "Add a line" | tee -a sedoutput.text
 ```
 
-*gedit: Reload sedoutput.text*
+*editor: Reload sedoutput.text*
 
 ## `<` File Input Source
 - Many commands use a file as the final argument to indicate the source of the command's input, eg: `somefile`
@@ -99,7 +99,7 @@ We will explore more of the `read` command in [Linux 301 Lesson 2](https://githu
 | **10** :$
 
 ```console
-gedit interact
+edit interact
 ```
 
 *Create `interact` as this:*
@@ -140,7 +140,7 @@ chmod ug+x interact
 | **13** :$
 
 ```console
-gedit answers
+edit answers
 ```
 
 *Create `answers` as this:*

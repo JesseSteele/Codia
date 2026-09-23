@@ -59,7 +59,7 @@ expr 7 \* 13
 | **7** :$
 
 ```console
-gedit 09-expr
+edit 09-expr
 ```
 
 | **8** :$
@@ -95,7 +95,7 @@ gedit 09-expr
 | **13** :$
 
 ```console
-gedit 09-expr-show
+edit 09-expr-show
 ```
 
 | **14** :$
@@ -126,7 +126,7 @@ if [ 1 -gt 2 ]; then
 | **17** :$
 
 ```console
-gedit 09-operators
+edit 09-operators
 ```
 
 | **18** :$
@@ -232,7 +232,7 @@ if [ "$one" -gt "$two" ]; then
 | **33** :$
 
 ```console
-gedit 09-operators-subvar
+edit 09-operators-subvar
 ```
 
 | **34** :$
@@ -257,7 +257,7 @@ if (( "$one" >= "$two" )); then
 | **36** :$
 
 ```console
-gedit 09-operators-symbol
+edit 09-operators-symbol
 ```
 
 *Note at the top: `#!/bin/bash`*

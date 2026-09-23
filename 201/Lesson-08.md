@@ -104,7 +104,7 @@ cat codia.tar.xz.sha256
 | **14** :$
 
 ```console
-gedit codia.tar.xz.sha256
+edit codia.tar.xz.sha256
 ```
 
 *Now check it with `-c` and the hash file, in the same directory as the file*

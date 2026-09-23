@@ -309,7 +309,7 @@ ls > log
 | **20** :$
 
 ```console
-gedit log
+edit log
 ```
 
 *Now `ls` something that doesn't exist, the output is an error...*
@@ -328,7 +328,7 @@ ls bozo
 ls bozo > log
 ```
 
-*gedit: Reload `log`*
+*editor: Reload `log`*
 
 *Nothing is there!*
 
@@ -342,7 +342,7 @@ ls bozo > log
 ls bozo 2> log
 ```
 
-*gedit: Reload `log`*
+*editor: Reload `log`*
 
 | **24** :$
 
@@ -350,7 +350,7 @@ ls bozo 2> log
 ls 2> log
 ```
 
-*gedit: Reload `log`*
+*editor: Reload `log`*
 
 *Cleanup...*
 
@@ -399,10 +399,10 @@ ls
 | **29** :$
 
 ```console
-gedit error.log
+edit error.log
 ```
 
-*gedit: Reload error.log*
+*editor: Reload error.log*
 
 | **30** :$
 
@@ -410,7 +410,7 @@ gedit error.log
 ls bozo 2>> error.log
 ```
 
-*gedit: Reload error.log*
+*editor: Reload error.log*
 
 | **31** :$
 
@@ -427,7 +427,7 @@ ls
 | **33** :$
 
 ```console
-gedit normal.log
+edit normal.log
 ```
 
 *Combine this into one command with: `>> STDOUT-file 2>> STDERR-file`*
@@ -438,7 +438,7 @@ gedit normal.log
 ls bozo >> normal.log 2>> error.log
 ```
 
-*gedit: Reload `error.log`*
+*editor: Reload `error.log`*
 
 | **35** :$
 
@@ -446,7 +446,7 @@ ls bozo >> normal.log 2>> error.log
 ls >> normal.log 2>> error.log
 ```
 
-*gedit: Reload `normal.log`*
+*editor: Reload `normal.log`*
 
 *Send `STDERR` (error output) into the nothingness with: `> /dev/null 2>&1`...*
 
@@ -512,24 +512,24 @@ ls 2> 2.log
 ls
 ```
 
-*View each of them in gedit*
+*View each of them in the editor*
 
 | **43** :$ ...nothing—because "0" (no output) is nothing
 
 ```console
-gedit 0.log
+edit 0.log
 ```
 
 | **44** :$ ...file list—because `ls` succeeded
 
 ```console
-gedit 1.log
+edit 1.log
 ```
 
 | **45** :$ ...nothing—because `ls` didn't fail
 
 ```console
-gedit 2.log
+edit 2.log
 ```
 
 #### Generate error output
@@ -560,21 +560,21 @@ ls bozo 2> 2.log
 
 *Review at the three "`.log`" files just updated...*
 
-- *gedit: Reload `0.log`* ...nothing—because "0" (no output) is nothing
+- *editor: Reload `0.log`* ...nothing—because "0" (no output) is nothing
 
-- *gedit: Reload `1.log`* ...nothing—because `ls` didn't succeed
+- *editor: Reload `1.log`* ...nothing—because `ls` didn't succeed
 
-- *gedit: Reload `2.log`* ...error message—because `ls` failed
+- *editor: Reload `2.log`* ...error message—because `ls` failed
 
 ## III. Logging with `exit` Codes
 
 Ready the CLI (if needed)
 
-*gedit: <kbd>Ctrl</kbd> + <kbd>W</kbd> to close previous files*
+*editor: <kbd>Ctrl</kbd> + <kbd>W</kbd> to close previous files*
 
 ```console
 cd ~/School/Codia/301/logs
-gedit error.log normal.log
+edit error.log normal.log
 ```
 
 ___
@@ -601,7 +601,7 @@ exec 2>> erroroutput.log
 | **49** :$
 
 ```console
-gedit ../06-logging-1
+edit ../06-logging-1
 ```
 
 *Note:*
@@ -630,14 +630,14 @@ ls bozo
 ../06-logging-1
 ```
 
-*gedit Reload:*
+*editor Reload:*
 
 - *`error.log`*
 
 | **53** :$
 
 ```console
-gedit ../06-logging-2
+edit ../06-logging-2
 ```
 
 *Note:*
@@ -652,7 +652,7 @@ gedit ../06-logging-2
 ../06-logging-2
 ```
 
-*gedit Reload:*
+*editor Reload:*
 
 - *`error.log`*
 - *`normal.log`*
@@ -674,7 +674,7 @@ exec 2>&1
 | **55** :$
 
 ```console
-gedit ../06-logging-3
+edit ../06-logging-3
 ```
 
 *Note:*
@@ -700,7 +700,7 @@ ls
 | **58** :$
 
 ```console
-gedit all.log
+edit all.log
 ```
 
 *Note all the output is in the same file*
@@ -716,7 +716,7 @@ set -e
 | **59** :$
 
 ```console
-gedit ../06-logging-4
+edit ../06-logging-4
 ```
 
 *Note:*
@@ -742,7 +742,7 @@ gedit ../06-logging-4
 | **61** :$
 
 ```console
-gedit ../06-logging-5
+edit ../06-logging-5
 ```
 
 *Note:*
@@ -756,7 +756,7 @@ gedit ../06-logging-5
 ../06-logging-5
 ```
 
-*gedit Reload: `all.log`*
+*editor Reload: `all.log`*
 
 ### Notes about `exit` status (AKA 'exit codes')
 
@@ -902,7 +902,7 @@ echo $?
 | **79** :$
 
 ```console
-gedit ../06-status0
+edit ../06-status0
 ```
 
 *Note this only runs a simple, successful command: `ls`*
@@ -926,7 +926,7 @@ echo $?
 | **82** :$
 
 ```console
-gedit ../06-status1
+edit ../06-status1
 ```
 
 *Note this only runs a simple, successful command: `ls`, then exists with `exit` status `1`*
@@ -950,7 +950,7 @@ echo $?
 | **85** :$
 
 ```console
-gedit ../06-status2
+edit ../06-status2
 ```
 
 *Note this only runs a simple, successful command: `ls`, then exists with `exit` status `2`*
@@ -982,7 +982,7 @@ exit 599
 | **88** :$
 
 ```console
-gedit ../06-status3
+edit ../06-status3
 ```
 
 *Note this only runs a simple, successful command: `ls`, then exists with `exit` status `3`*
@@ -1008,7 +1008,7 @@ echo $?
 | **91** :$
 
 ```console
-gedit ../06-status599
+edit ../06-status599
 ```
 
 *Note this only runs a simple, successful command: `ls`, then exists with `exit` status `599`*
@@ -1029,7 +1029,7 @@ echo $?
 
 *The last `exit` status was `87` because they can't go higher than `87`*
 
-*gedit: <kbd>Ctrl</kbd> + <kbd>W</kbd> to close previous files*
+*editor: <kbd>Ctrl</kbd> + <kbd>W</kbd> to close previous files*
 
 | **Find last exit code** :
 
@@ -1042,7 +1042,7 @@ lastExit=$?
 | **94** :$
 
 ```console
-gedit ../06-exit3 ../06-exit-check-1
+edit ../06-exit3 ../06-exit-check-1
 ```
 
 *Note:*
@@ -1075,7 +1075,7 @@ echo $?
 | **98** :$
 
 ```console
-gedit ../06-exit-check-2
+edit ../06-exit-check-2
 ```
 
 | **99** :$
@@ -1086,7 +1086,7 @@ gedit ../06-exit-check-2
 
 *Now it recognizes the last `exit` status because it was generated inside the same script*
 
-*gedit: <kbd>Ctrl</kbd> + <kbd>W</kbd> to close previous files*
+*editor: <kbd>Ctrl</kbd> + <kbd>W</kbd> to close previous files*
 
 ### Sent custom messages to output channels 3-87
 
@@ -1107,7 +1107,7 @@ echo "My STDOUT message" >&1
 | **101** :$
 
 ```console
-gedit ../06-output-1
+edit ../06-output-1
 ```
 
 | **102** :$
@@ -1127,7 +1127,7 @@ ls
 | **104** :$
 
 ```console
-gedit out-1.log
+edit out-1.log
 ```
 
 **Make your own error channel message**
@@ -1141,7 +1141,7 @@ echo "My STDERR message" >&2
 | **105** :$
 
 ```console
-gedit ../06-output-2
+edit ../06-output-2
 ```
 
 | **106** :$
@@ -1161,7 +1161,7 @@ ls
 | **108** :$
 
 ```console
-gedit out-2.log
+edit out-2.log
 ```
 
 **...But we already knew about channels `1>` and `2>`; let's do channel `3>`**
@@ -1177,7 +1177,7 @@ echo "My custom channel message" >&3
 | **109** :$
 
 ```console
-gedit ../06-output-3
+edit ../06-output-3
 ```
 
 | **110** :$
@@ -1197,7 +1197,7 @@ ls
 | **112** :$
 
 ```console
-gedit out-3.log
+edit out-3.log
 ```
 
 **Make your own zero channel message**
@@ -1213,7 +1213,7 @@ echo "My zero channel message" >&0
 | **113** :$
 
 ```console
-gedit ../06-output-0
+edit ../06-output-0
 ```
 
 | **114** :$
@@ -1233,7 +1233,7 @@ ls
 | **116** :$
 
 ```console
-gedit out-0.log
+edit out-0.log
 ```
 
 **Send channels to files, not terminal**
@@ -1257,7 +1257,7 @@ echo "Custom channel message" >&3
 | **117** :$
 
 ```console
-gedit ../06-output-4
+edit ../06-output-4
 ```
 
 | **118** :$
@@ -1266,7 +1266,7 @@ gedit ../06-output-4
 ../06-output-4
 ```
 
-*gedit: Reload*
+*editor: Reload*
 
 - *`out-0.log`*
 - *`out-1.log`*
@@ -1356,7 +1356,7 @@ fi
 | **120** :$
 
 ```console
-gedit ../06-routine-check ../06-routine-follow-up
+edit ../06-routine-check ../06-routine-follow-up
 ```
 
 *Note these are basically the same scripts as the above example*
@@ -1461,7 +1461,7 @@ ls
 | **132** :$
 
 ```console
-gedit Check.log
+edit Check.log
 ```
 
 *Check the logs for:*
@@ -1507,7 +1507,7 @@ echo $?
 | **138** :$
 
 ```console
-gedit ../06-routine-montage
+edit ../06-routine-montage
 ```
 
 | **139** :$
@@ -1534,7 +1534,7 @@ journalctl -rt RoutineCheck SYSLOG_FACILITY=16 -p info
 | **141** :$
 
 ```console
-gedit ../06-logging-strong
+edit ../06-logging-strong
 ```
 
 ### *Multiple channels*

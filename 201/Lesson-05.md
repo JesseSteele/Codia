@@ -739,7 +739,7 @@ sudo cat /etc/sudoers
 | **72** :$ *Look, then close right away, use <kbd>Ctrl</kbd> + <kbd>C</kbd> in the terminal*
 
 ```console
-sudo gedit
+sudo edit
 ```
 
 | **73** :$ *Look, then close right away, use <kbd>Ctrl</kbd> + <kbd>C</kbd> in the terminal*

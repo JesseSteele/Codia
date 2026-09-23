@@ -78,7 +78,7 @@ We address these more in [501-PHP: Ternary Statements](https://github.com/JesseS
 | **1** :$
 
 ```console
-gedit 10-ternary-echo
+edit 10-ternary-echo
 ```
 
 | **2** :$
@@ -102,7 +102,7 @@ gedit 10-ternary-echo
 | **4** :$
 
 ```console
-gedit 10-ternary-var
+edit 10-ternary-var
 ```
 
 | **5** :$
@@ -126,7 +126,7 @@ ${#variable} #shows number of characters in $variable
 | **7** :$
 
 ```console
-gedit 10-count
+edit 10-count
 ```
 
 | **8** :$
@@ -151,7 +151,7 @@ ${!variable} # Same as $changeme
 | **10** :$
 
 ```console
-gedit 10-varvar
+edit 10-varvar
 ```
 
 | **11** :$
@@ -177,7 +177,7 @@ echo ${NumArray[1]} # two
 | **12** :$
 
 ```console
-gedit 10-array
+edit 10-array
 ```
 
 | **13** :$
@@ -193,7 +193,7 @@ gedit 10-array
 | **14** :$
 
 ```console
-gedit 10-array-index-id
+edit 10-array-index-id
 ```
 
 | **15** :$
@@ -232,7 +232,7 @@ echo ${KeyArray[key4]} # value4
 | **17** :$
 
 ```console
-gedit 10-array-associative
+edit 10-array-associative
 ```
 
 *Note `declare -A ARRAYNAME` precedes*
@@ -304,7 +304,7 @@ gedit 10-array-associative
 | **28** :$
 
 ```console
-gedit 10-array-associative-declare
+edit 10-array-associative-declare
 ```
 
 | **29** :$
@@ -354,7 +354,7 @@ ___
 | **31** :$
 
 ```console
-gedit 10-array-keys
+edit 10-array-keys
 ```
 
 | **32** :$
@@ -376,7 +376,7 @@ echo ${myArray[1]} # One_word
 | **33** :$
 
 ```console
-gedit 10-array-strings
+edit 10-array-strings
 ```
 
 | **34** :$
@@ -399,7 +399,7 @@ echo ${myArray[key2]} # One_word
 | **35** :$
 
 ```console
-gedit 10-array-associative-strings
+edit 10-array-associative-strings
 ```
 
 | **36** :$
@@ -424,7 +424,7 @@ done
 | **37** :$
 
 ```console
-gedit 10-array-for
+edit 10-array-for
 ```
 
 *Note `${myArray[*]}` means "all values"*
@@ -440,7 +440,7 @@ gedit 10-array-for
 | **39** :$
 
 ```console
-gedit 10-array-for-associative
+edit 10-array-for-associative
 ```
 
 *Note `${myArray[@]}` also means "all values"*

@@ -24,7 +24,7 @@ ___
 | **1** :$
 
 ```console
-gedit code-of-poetry.txt
+edit code-of-poetry.txt
 ```
 
 | **2** :$
@@ -259,7 +259,7 @@ ls
 | **28** :$
 
 ```console
-gedit neweof
+edit neweof
 ```
 
 *You can pipe a heredoc this way:*
@@ -287,7 +287,7 @@ ls
 | **31** :$
 
 ```console
-gedit neweofpipe
+edit neweofpipe
 ```
 
 *You can start with `tee`:*
@@ -315,7 +315,7 @@ ls
 | **34** :$
 
 ```console
-gedit neweoftee
+edit neweoftee
 ```
 
 **Heredoc as variable in a script:**
@@ -325,7 +325,7 @@ gedit neweoftee
 | **35** :$
 
 ```console
-gedit eofcomsub
+edit eofcomsub
 ```
 
 *It should look like this:*
@@ -370,7 +370,7 @@ echo "$EOFvar"
 | **37** :$
 
 ```console
-gedit eofvarheredoc
+edit eofvarheredoc
 ```
 
 *It should look like this:*
@@ -405,7 +405,7 @@ EOF
 | **39** :$
 
 ```console
-gedit eofvarnowdoc
+edit eofvarnowdoc
 ```
 
 *It should look like this:*
@@ -440,7 +440,7 @@ EOF
 | **41** :$
 
 ```console
-gedit eofherenow
+edit eofherenow
 ```
 
 *It should look like this:*
@@ -477,7 +477,7 @@ EOF
 | **43** :$
 
 ```console
-gedit eofout
+edit eofout
 ```
 
 **Cancel `$Variables` via `\$` in a heredoc**
@@ -487,7 +487,7 @@ gedit eofout
 | **44** :$
 
 ```console
-gedit eofvariables
+edit eofvariables
 ```
 
 *It should look like this:*

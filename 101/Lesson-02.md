@@ -12,10 +12,10 @@ ___
 | **1** :$
 
 ```console
-gedit abcsed abcd
+edit abcsed abcd
 ```
 
-*Note the two tabs in gedit; abcsed is open, but the file does not exist*
+*Note the two tabs in the editor; abcsed is open, but the file does not exist*
 
 ### Say "HaSHSHSH" `#`
 
@@ -85,7 +85,7 @@ ls -l
 
 *Now, it works, no error message*
 
-*gedit: Reload `abcd`*
+*editor: Reload `abcd`*
 
 | **7** :$
 
@@ -93,7 +93,7 @@ ls -l
 ./abcsed b
 ```
 
-*gedit: Reload `abcd`*
+*editor: Reload `abcd`*
 
 | **8** :$
 
@@ -101,7 +101,7 @@ ls -l
 ./abcsed c
 ```
 
-*gedit: Reload `abcd`*
+*editor: Reload `abcd`*
 
 ***Update** `abcsed` to **version** 02:*
 
@@ -121,7 +121,7 @@ sed -i "s/$1/$2/" abcd
 ./abcsed d z
 ```
 
-*gedit: Reload `abcd`*
+*editor: Reload `abcd`*
 
 | **10** :$
 
@@ -129,7 +129,7 @@ sed -i "s/$1/$2/" abcd
 ./abcsed e z
 ```
 
-*gedit: Reload `abcd`*
+*editor: Reload `abcd`*
 
 | **11** :$
 
@@ -137,7 +137,7 @@ sed -i "s/$1/$2/" abcd
 ./abcsed z j
 ```
 
-*gedit: Reload `abcd`*
+*editor: Reload `abcd`*
 
 | **12** :$
 
@@ -145,7 +145,7 @@ sed -i "s/$1/$2/" abcd
 ./abcsed z j
 ```
 
-*gedit: Reload `abcd`*
+*editor: Reload `abcd`*
 
 | **13** :$
 
@@ -153,7 +153,7 @@ sed -i "s/$1/$2/" abcd
 ./abcsed z j
 ```
 
-*gedit: Reload `abcd`*
+*editor: Reload `abcd`*
 
 *Update `abcsed` to version 03:*
 
@@ -175,7 +175,7 @@ sed -i "s/$1/$2/g" abcd
 ./abcsed z j
 ```
 
-*gedit: Reload `abcd`*
+*editor: Reload `abcd`*
 
 | **15** :$
 
@@ -183,7 +183,7 @@ sed -i "s/$1/$2/g" abcd
 ./abcsed f z
 ```
 
-*gedit: Reload `abcd`*
+*editor: Reload `abcd`*
 
 | **16** :$
 
@@ -191,7 +191,7 @@ sed -i "s/$1/$2/g" abcd
 ./abcsed z j
 ```
 
-*gedit: Reload `abcd`*
+*editor: Reload `abcd`*
 
 | **17** :$
 
@@ -202,7 +202,7 @@ echo "Apples like foo." >> applefoo
 | **18** :$
 
 ```console
-gedit applefoo
+edit applefoo
 ```
 
 *Update `abcsed` to version 04:*
@@ -223,7 +223,7 @@ sed -i "s/$1/$2/g" $3
 ./abcsed foo bar applefoo
 ```
 
-*gedit: Reload `applefoo`*
+*editor: Reload `applefoo`*
 
 | **20** :$
 
@@ -231,7 +231,7 @@ sed -i "s/$1/$2/g" $3
 ./abcsed g z abcd
 ```
 
-*gedit: Reload `abcd`*
+*editor: Reload `abcd`*
 
 | **21** :$
 
@@ -239,7 +239,7 @@ sed -i "s/$1/$2/g" $3
 ./abcsed z j abcd
 ```
 
-*gedit: Reload `abcd`*
+*editor: Reload `abcd`*
 
 ___
 

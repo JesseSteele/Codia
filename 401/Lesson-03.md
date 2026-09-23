@@ -46,7 +46,7 @@ printenv PATH
 | **3** :$
 
 ```console
-echo $PATH | sed "s/:/\n/g" | tee mypath && gedit mypath
+echo $PATH | sed "s/:/\n/g" | tee mypath && edit mypath
 ```
 
 *The `$PATH` is why commands work as commands, why we can type `echo` instead of `./echo`*
@@ -75,7 +75,7 @@ echo $PATH
 | **5** :$
 
 ```console
-gedit iamexec
+edit iamexec
 ```
 
 *It should look like this:*

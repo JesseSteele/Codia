@@ -49,15 +49,15 @@ lowriter *.odt &
 killall soffice.bin
 ```
 
-*Try to open one `.odt` file with gedit...*
+*Try to open one `.odt` file with the editor...*
 
 | **5** :$
 
 ```console
-gedit ODT-FILE.odt
+edit ODT-FILE.odt
 ```
 
-*Close the file in gedit with <kbd>Ctrl</kbd> + <kbd>W</kbd>*
+*Close the file in the editor with <kbd>Ctrl</kbd> + <kbd>W</kbd>*
 
 *Note .odt files are very big and can't be opened with text editors, but we can convert them...*
 
@@ -92,10 +92,10 @@ ls
 | **10** :$
 
 ```console
-gedit ODT-FILE.txt
+edit ODT-FILE.txt
 ```
 
-*Close the file in gedit with <kbd>Ctrl</kbd> + <kbd>W</kbd>, then delete the `.txt` file so we can try another way...*
+*Close the file in the editor with <kbd>Ctrl</kbd> + <kbd>W</kbd>, then delete the `.txt` file so we can try another way...*
 
 | **11** :$
 
@@ -120,7 +120,7 @@ ls
 | **14** :$
 
 ```console
-gedit ODT-FILE.txt
+edit ODT-FILE.txt
 ```
 
 *Let's do markdown*
@@ -128,7 +128,7 @@ gedit ODT-FILE.txt
 | **15** :$
 
 ```console
-gedit markdown.md
+edit markdown.md
 ```
 
 *View the rendered markdown file: [markdown.md](https://github.com/JesseSteele/301/blob/master/markdown.md)*
@@ -206,7 +206,7 @@ echo $Variable
 | **23** :$
 
 ```console
-gedit 02-read-1
+edit 02-read-1
 ```
 
 ```sh
@@ -225,7 +225,7 @@ echo $myVariable
 | **25** :$
 
 ```console
-gedit 02-read-2
+edit 02-read-2
 ```
 
 *Note -p is for "prompt", making things simpler*
@@ -244,7 +244,7 @@ echo $myVariable
 | **27** :$
 
 ```console
-gedit 02-read-3
+edit 02-read-3
 ```
 
 *Space and markers at the end of the "prompt" message is better*
@@ -279,7 +279,7 @@ ls
 | **31** :$
 
 ```console
-gedit 02-read-4
+edit 02-read-4
 ```
 
 *Escape "quote" marks in the prompt message*
@@ -302,7 +302,7 @@ echo $myVariable
 | **33** :$
 
 ```console
-gedit 02-read-5
+edit 02-read-5
 ```
 
 *This assumes that the user input will have special characters*
@@ -341,7 +341,7 @@ sleep 3
 | **37** :$
 
 ```console
-gedit 02-sleep-1
+edit 02-sleep-1
 ```
 
 | **38** :$
@@ -353,7 +353,7 @@ gedit 02-sleep-1
 | **39** :$
 
 ```console
-gedit 02-sleep-2
+edit 02-sleep-2
 ```
 
 | **40** :$
@@ -367,7 +367,7 @@ gedit 02-sleep-2
 | **41** :$
 
 ```console
-gedit 02-sleep-3
+edit 02-sleep-3
 ```
 
 | **42** :$
@@ -422,7 +422,7 @@ lowriter &
 | **46** :$
 
 ```console
-gedit 02-waiter-1
+edit 02-waiter-1
 ```
 
 | **47** :$
@@ -436,7 +436,7 @@ gedit 02-waiter-1
 | **48** :$
 
 ```console
-gedit 02-waiter-2
+edit 02-waiter-2
 ```
 
 | **49** :$
@@ -452,7 +452,7 @@ gedit 02-waiter-2
 | **50** :$
 
 ```console
-gedit 02-waiter-3
+edit 02-waiter-3
 ```
 
 | **51** :$

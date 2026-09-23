@@ -27,7 +27,7 @@ done
 | **1** :$
 
 ```console
-gedit 05-while-read
+edit 05-while-read
 ```
 
 *Note `-z` means "Zero" or "Zilch" for a variable that is empty*
@@ -53,7 +53,7 @@ done
 | **3** :$
 
 ```console
-gedit 05-while-count
+edit 05-while-count
 ```
 
 *Note `!` means "not"*
@@ -69,7 +69,7 @@ gedit 05-while-count
 | **5** :$
 
 ```console
-gedit 05-while-count-read
+edit 05-while-count-read
 ```
 
 *Note `!` means "not"*
@@ -113,7 +113,7 @@ done
 | **8** :$
 
 ```console
-gedit 05-until-count
+edit 05-until-count
 ```
 
 | **9** :$
@@ -161,7 +161,7 @@ cd ..
 | **16** :$
 
 ```console
-gedit 05-until-read
+edit 05-until-read
 ```
 
 | **17** :$
@@ -197,7 +197,7 @@ esac
 | **19** :$
 
 ```console
-gedit 05-case-numlett
+edit 05-case-numlett
 ```
 
 | **20** :$
@@ -241,7 +241,7 @@ gedit 05-case-numlett
 | **26** :$
 
 ```console
-gedit 05-case-options
+edit 05-case-options
 ```
 
 *Note `while :` will loop without a test and only stop with a `break` or `exit`*
@@ -257,7 +257,7 @@ gedit 05-case-options
 | **28** :$
 
 ```console
-gedit 05-case-chat
+edit 05-case-chat
 ```
 
 *Note `:` makes a `while` or `until` loop continue forever, `break` ends a loop*
@@ -294,7 +294,7 @@ esac
 | **31** :$
 
 ```console
-gedit 05-case-yn
+edit 05-case-yn
 ```
 
 | **32** :$
@@ -323,7 +323,7 @@ esac
 | **33** :$
 
 ```console
-gedit 05-case-yn-loop
+edit 05-case-yn-loop
 ```
 
 *Note `exit 1` will produce* `STDOUT` *to `1>` but `exit 0` has no output just as `2>` is from an unwritten `exit 2` event*

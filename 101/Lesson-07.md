@@ -12,7 +12,7 @@ ___
 | **1** :$
 
 ```console
-gedit abcd sedoutput.text
+edit abcd sedoutput.text
 ```
 
 *Remember `cat` outputs contents of a file as raw output (`STDOUT`)...*
@@ -51,7 +51,7 @@ echo $(sed "s/jjjjjjjjj/Apple likes to say abcdefghi and /" abcd)
 cat abcd | tee sedoutput.text
 ```
 
-*gedit: Reload `sedoutput.text`*
+*editor: Reload `sedoutput.text`*
 
 | **7** :$
 
@@ -59,7 +59,7 @@ cat abcd | tee sedoutput.text
 echo $(cat abcd) | tee sedoutput.text
 ```
 
-*gedit: Reload `sedoutput.text`*
+*editor: Reload `sedoutput.text`*
 
 | **8** :$
 
@@ -67,7 +67,7 @@ echo $(cat abcd) | tee sedoutput.text
 sed "s/jjjjjjjjj/Apple likes to say abcdefghi and /" abcd | tee sedoutput.text
 ```
 
-*gedit: Reload `sedoutput.text`*
+*editor: Reload `sedoutput.text`*
 
 | **9** :$
 
@@ -75,7 +75,7 @@ sed "s/jjjjjjjjj/Apple likes to say abcdefghi and /" abcd | tee sedoutput.text
 echo $(sed "s/jjjjjjjjj/Apple likes to say abcdefghi and /" abcd) | tee sedoutput.text
 ```
 
-*gedit: Reload `sedoutput.text`*
+*editor: Reload `sedoutput.text`*
 
 | **10** :$
 

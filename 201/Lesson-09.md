@@ -141,7 +141,7 @@ top -n 1 -b > top.file
 | **12** :$
 
 ```console
-gedit top.file
+edit top.file
 ```
 
 *FYI, this is a little program we installed in Lesson 3, a little more colorful than `top`...*

@@ -1,5 +1,5 @@
 # Linux 101
-## Lesson 1: gedit, echo & sed
+## Lesson 1: editor, echo & sed
 
 Ready the CLI
 
@@ -60,7 +60,7 @@ ls
 | **7** :$
 
 ```console
-gedit abcd
+edit abcd
 ```
 
 *See the **contents** of the file*
@@ -71,7 +71,7 @@ gedit abcd
 echo "abcdefghijklmnopqrstuvwxyz" > abcd
 ```
 
-*gedit: **Reload***
+*editor: **Reload***
 
 *Note `>` will **overwrite** file contents, what we had before is gone*
 
@@ -81,7 +81,7 @@ echo "abcdefghijklmnopqrstuvwxyz" > abcd
 echo "abcdefghijklmnopqrstuvwxyz" >> abcd
 ```
 
-*gedit: Reload*
+*editor: Reload*
 
 *Note `>>` will **append** file contents, what we had before is still there, plus what we just added*
 
@@ -91,7 +91,7 @@ echo "abcdefghijklmnopqrstuvwxyz" >> abcd
 echo "abcdefghijklmnopqrstuvwxyz" >> abcd
 ```
 
-*gedit: Reload*
+*editor: Reload*
 
 *Note the **number** of **lines***
 
@@ -101,7 +101,7 @@ echo "abcdefghijklmnopqrstuvwxyz" >> abcd
 echo "foo :-)" >> abcd
 ```
 
-*gedit: Reload*
+*editor: Reload*
 
 | **12** :$
 
@@ -109,7 +109,7 @@ echo "foo :-)" >> abcd
 sed -i "s/foo/bar/" abcd
 ```
 
-*gedit: Reload*
+*editor: Reload*
 
 *Note `foo` ware **replaced** with `bar`*
 
@@ -119,7 +119,7 @@ sed -i "s/foo/bar/" abcd
 sed -i "s/bar//" abcd
 ```
 
-*gedit: Reload*
+*editor: Reload*
 
 | **14** :$
 
@@ -127,7 +127,7 @@ sed -i "s/bar//" abcd
 echo "add foo and then some" >> abcd
 ```
 
-*gedit: Reload*
+*editor: Reload*
 
 | **15** :$
 
@@ -135,7 +135,7 @@ echo "add foo and then some" >> abcd
 sed -i "s/foo/bar/" abcd
 ```
 
-*gedit: Reload*
+*editor: Reload*
 
 *Note the line number of "add bar and then some"*
 
@@ -145,7 +145,7 @@ sed -i "s/foo/bar/" abcd
 sed -i "/bar/d" abcd
 ```
 
-*gedit: Reload*
+*editor: Reload*
 
 *Note the line with "bar" is gone; we **deleted** it*
 
@@ -155,7 +155,7 @@ sed -i "/bar/d" abcd
 echo "Replace this Apple delBar line." >> abcd
 ```
 
-*gedit: Reload*
+*editor: Reload*
 
 | **18** :$
 
@@ -163,9 +163,9 @@ echo "Replace this Apple delBar line." >> abcd
 sed -i "/Replace.*/ c\The line with Mr. Apple delBar has been replaced" abcd
 ```
 
-*gedit: Reload*
+*editor: Reload*
 
-*<kbd>Ctrl</kbd> + <kbd>D</kbd> deletes a line in gedit*
+*<kbd>Ctrl</kbd> + <kbd>D</kbd> deletes a line in the editor*
 - Use <kbd>Ctrl</kbd> + <kbd>D</kbd> to delete the line about "Mr. Apple delBar"
 - Then <kbd>Ctrl</kbd> + <kbd>S</kbd> to **save** the file
 

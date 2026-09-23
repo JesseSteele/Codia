@@ -28,7 +28,7 @@ done
 | **1** :$
 
 ```console
-gedit 11-menu-if
+edit 11-menu-if
 ```
 
 | **2** :$
@@ -46,7 +46,7 @@ gedit 11-menu-if
 | **3** :$
 
 ```console
-gedit 11-menu-if-var
+edit 11-menu-if-var
 ```
 
 | **4** :$
@@ -73,7 +73,7 @@ done
 | **5** :$
 
 ```console
-gedit 11-menu-case
+edit 11-menu-case
 ```
 
 | **6** :$
@@ -137,7 +137,7 @@ dialog --title "Read This" --msgbox "Ink\nis a\nverb." 6 10
 | **11** :$
 
 ```console
-gedit 11-dialog-text.txt
+edit 11-dialog-text.txt
 ```
 
 | **12** :$ *(try arrow keys, see what happens)*
@@ -195,7 +195,7 @@ ls *.file
 | **19** :$
 
 ```console
-gedit color.file
+edit color.file
 ```
 
 *Yes/No question*
@@ -235,7 +235,7 @@ echo $?
 | **24** :$
 
 ```console
-gedit 11-dialog-1
+edit 11-dialog-1
 ```
 
 | **25** :$
@@ -255,7 +255,7 @@ gedit 11-dialog-1
 | **27** :$
 
 ```console
-gedit 11-dialog-2
+edit 11-dialog-2
 ```
 
 | **28** :$
@@ -289,7 +289,7 @@ ls *.file
 | **32** :$
 
 ```console
-gedit size.file
+edit size.file
 ```
 
 *Note numbers "11, 23, 4" are for "height, width, menu height", let's change the menu height...*
@@ -305,7 +305,7 @@ dialog --menu "Choose a Size:" 11 23 2 1 X-Large 2 Large 3 Medium 4 Small 2> siz
 | **34** :$
 
 ```console
-gedit 11-dialog-3
+edit 11-dialog-3
 ```
 
 *Note it is the same, just in a Shell script*
@@ -316,7 +316,7 @@ gedit 11-dialog-3
 ./11-dialog-3
 ```
 
-*gedit: Reload size.file*
+*editor: Reload size.file*
 
 *Cleanup...*
 
@@ -331,7 +331,7 @@ echo "Size List" > size.file
 | **37** :$
 
 ```console
-gedit 11-dialog-4
+edit 11-dialog-4
 ```
 
 *`dialog` in `$(`[Command Substitution](https://github.com/JesseSteele/Codia/blob/master/101/Lesson-05.md)`)` needs an exit code redirect on the end: `3>&1 1>&2 2>&3 3>&-`*
@@ -349,7 +349,7 @@ gedit 11-dialog-4
 ./11-dialog-4
 ```
 
-*gedit: Reload `size.file`*
+*editor: Reload `size.file`*
 
 | **39** :$ *(select any size)*
 
@@ -357,14 +357,14 @@ gedit 11-dialog-4
 ./11-dialog-4
 ```
 
-*gedit: Reload `size.file`*
+*editor: Reload `size.file`*
 
 *Do the same thing with `if` tests*
 
 | **40** :$
 
 ```console
-gedit 11-dialog-5
+edit 11-dialog-5
 ```
 
 | **41** :$ *(select any size)*
@@ -373,7 +373,7 @@ gedit 11-dialog-5
 ./11-dialog-5
 ```
 
-*gedit: Reload `size.file`*
+*editor: Reload `size.file`*
 
 *Lots more to learn, easily*
 

@@ -12,7 +12,7 @@ ___
 | **1** :$
 
 ```console
-gedit abcd comboshell sedoutput.text
+edit abcd comboshell sedoutput.text
 ```
 
 *Note `tee` will overwrite any contents in the output file*
@@ -49,7 +49,7 @@ echo "$myOutput" >> sedoutput.text
 ./comboshell abcd j "z-"
 ```
 
-*gedit: Reload `sedoutput.text`*
+*editor: Reload `sedoutput.text`*
 
 *Update `comboshell` to version 3:*
 
@@ -71,7 +71,7 @@ echo "$myOutput" | tee sedoutput.text
 ./comboshell abcd j "z00 zoo "
 ```
 
-*gedit: Reload `sedoutput.text`*
+*editor: Reload `sedoutput.text`*
 
 | **6** :$
 
@@ -79,7 +79,7 @@ echo "$myOutput" | tee sedoutput.text
 echo "Took out the trash." > sedoutput.text
 ```
 
-*gedit: Reload `sedoutput.text`*
+*editor: Reload `sedoutput.text`*
 
 *Update `comboshell` to version 4:*
 
@@ -99,7 +99,7 @@ sed "s/$2/$3/g" $1 | tee sedoutput.text
 ./comboshell abcd j "z-"
 ```
 
-*gedit: Reload `sedoutput.text`*
+*editor: Reload `sedoutput.text`*
 
 *Update `comboshell` to version 5:*
 
@@ -119,7 +119,7 @@ cat $1 | sed "s/$2/$3/g" | tee sedoutput.text
 ./comboshell abcd j "vip-"
 ```
 
-*gedit: Reload `sedoutput.text`*
+*editor: Reload `sedoutput.text`*
 
 *Update `comboshell` to version 6:*
 
@@ -139,7 +139,7 @@ cat $1 | sed "s/$2/$3/g" | tee -a sedoutput.text
 ./comboshell abcd j "ink-"
 ```
 
-*gedit: Reload `sedoutput.text`*
+*editor: Reload `sedoutput.text`*
 
 *When we use the `-a` **flag** with `tee`, it will append to the output file, not overwrite, similar to using `echo >>`*
 
@@ -149,7 +149,7 @@ cat $1 | sed "s/$2/$3/g" | tee -a sedoutput.text
 ./comboshell abcd j "codeTheo-"
 ```
 
-*gedit: Reload `sedoutput.text`*
+*editor: Reload `sedoutput.text`*
 
 ___
 

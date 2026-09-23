@@ -660,7 +660,7 @@ ls -l
 | **81** :$
 
 ```console
-gedit codia-tar-tf
+edit codia-tar-tf
 ```
 
 *tar up the `cpdir` directory*

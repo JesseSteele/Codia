@@ -32,7 +32,7 @@ done
 | **1** :$
 
 ```console
-gedit 12-flags-1
+edit 12-flags-1
 ```
 
 *Note the line with `while getopts`*
@@ -121,7 +121,7 @@ gedit 12-flags-1
 | **12** :$
 
 ```console
-gedit 12-flags-2
+edit 12-flags-2
 ```
 
 | **13** :$
@@ -209,7 +209,7 @@ done
 | **15** :$
 
 ```console
-gedit 12-flags-3
+edit 12-flags-3
 ```
 
 | **16** :$
@@ -241,7 +241,7 @@ gedit 12-flags-3
 | **19** :$
 
 ```console
-gedit 12-flags-4
+edit 12-flags-4
 ```
 
 | **20** :$
@@ -286,7 +286,7 @@ how_to_use
 | **23** :$
 
 ```console
-gedit 12-flags-5
+edit 12-flags-5
 ```
 
 | **24** :$
@@ -337,7 +337,7 @@ basename -a /path/one /path/two
 | **29** :$
 
 ```console
-gedit 12-long
+edit 12-long
 ```
 
 *Note `--long` alternative options are included*

@@ -246,7 +246,7 @@ echo $(date +%Y-%m-%d_%H-%M-%S)_$(pwgen -1 9)
 | **28** :$
 
 ```console
-gedit 08-date-name
+edit 08-date-name
 ```
 
 *See your new mad skills with `date` and `pwgen` at work in this script...*

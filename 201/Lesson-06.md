@@ -45,7 +45,7 @@ ls
 | **5** :$
 
 ```console
-gedit index.html
+edit index.html
 ```
 
 *Download the verb.ink index page using `curl`*
@@ -83,7 +83,7 @@ ls
 | **10** :$
 
 ```console
-gedit verb.ink.html
+edit verb.ink.html
 ```
 
 *Open it with whatever browser you are using:*

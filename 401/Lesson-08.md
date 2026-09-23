@@ -40,7 +40,7 @@ ___
 | **1** :$
 
 ```console
-gedit looplines
+edit looplines
 ```
 
 *It should look like this:*
@@ -75,7 +75,7 @@ Integrate `pwgen` with `sed` in a `for` loop...
 | **3** :$
 
 ```console
-gedit looprandom
+edit looprandom
 ```
 
 *It should look like this:*
@@ -118,7 +118,7 @@ ls
 | **6** :$
 
 ```console
-gedit randomlooped
+edit randomlooped
 ```
 
 ### III. `$IFS` = tab
@@ -129,7 +129,7 @@ gedit randomlooped
 
 `sed -i "s/\t\t/\tword1\tword2\tword3\t/" randomlooped`
 
-*gedit: Reload randomlooped*
+*editor: Reload randomlooped*
 
 Set `$IFS` to a "tab"
 
@@ -138,7 +138,7 @@ Set `$IFS` to a "tab"
 | **7** :$
 
 ```console
-gedit looptab
+edit looptab
 ```
 
 *It should look like this:*
@@ -172,7 +172,7 @@ unset IFS # We don't want our strange settings messing with other things.
 | **9** :$
 
 ```console
-gedit countfile
+edit countfile
 ```
 
 *Note that the IFS separated items at the tab after "add2start_" on each line*
@@ -184,7 +184,7 @@ gedit countfile
 | **10** :$
 
 ```console
-gedit loopcolon
+edit loopcolon
 ```
 
 *It should look like this:*
@@ -217,7 +217,7 @@ done
 | **12** :$
 
 ```console
-gedit looppipe
+edit looppipe
 ```
 
 *It should look like this:*
@@ -261,7 +261,7 @@ echo $PATH
 | **15** :$
 
 ```console
-gedit listpath
+edit listpath
 ```
 
 *It should look like this:*

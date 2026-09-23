@@ -260,7 +260,7 @@ ___
 - `vim` will display carriage returns as `^M` by entering the `vim` command: `:e ++ff=unix`
 - There are three ways to fix problems relating to carriage returns:
   1. Don't use Windows in the first place
-  2. Copy and paste raw text from the questionable file into a Linux text editor like Atom, gedit, `nano`, or `vim`
+  2. Copy and paste raw text from the questionable file into a Linux text editor like gedit, Gnome Text Editor, `nano`, or `vim`
     - There's a slim chance it might not work
   3. Use `dos2unix File-to-Fix`, installed with the `dos2unix` package
     - Most certain conversion

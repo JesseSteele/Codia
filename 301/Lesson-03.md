@@ -46,7 +46,7 @@ one*
 | **3** :$
 
 ```console
-gedit 03-do-echo-1
+edit 03-do-echo-1
 ```
 
 | **4** :$
@@ -66,7 +66,7 @@ one-1*
 | **6** :$
 
 ```console
-gedit 03-do-echo-2
+edit 03-do-echo-2
 ```
 
 | **7** :$
@@ -86,7 +86,7 @@ ls one-1*
 | **9** :$
 
 ```console
-gedit 03-do-echo-3
+edit 03-do-echo-3
 ```
 
 | **10** :$
@@ -116,7 +116,7 @@ done
 | **12** :$
 
 ```console
-gedit 03-do-echo-4
+edit 03-do-echo-4
 ```
 
 | **13** :$
@@ -136,7 +136,7 @@ ls *t.one
 | **15** :$
 
 ```console
-gedit 03-do-echo-5
+edit 03-do-echo-5
 ```
 
 | **16** :$
@@ -156,7 +156,7 @@ ls 3.*
 | **18** :$
 
 ```console
-gedit 03-do-echo-6
+edit 03-do-echo-6
 ```
 
 | **19** :$
@@ -176,7 +176,7 @@ ls *3*
 | **21** :$
 
 ```console
-gedit 03-do-echo-7
+edit 03-do-echo-7
 ```
 
 | **22** :$
@@ -222,7 +222,7 @@ break
 | **25** :$
 
 ```console
-gedit 03-do-echo-8
+edit 03-do-echo-8
 ```
 
 | **26** :$
@@ -264,7 +264,7 @@ continue
 | **29** :$
 
 ```console
-gedit 03-do-echo-9
+edit 03-do-echo-9
 ```
 
 | **30** :$
@@ -291,7 +291,7 @@ done
 | **32** :$
 
 ```console
-gedit 03-do-echo-10
+edit 03-do-echo-10
 ```
 
 *Note there are no files starting with "two-"*
@@ -319,7 +319,7 @@ done
 | **34** :$
 
 ```console
-gedit 03-do-echo-11
+edit 03-do-echo-11
 ```
 
 | **33** :$

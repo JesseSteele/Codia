@@ -48,7 +48,7 @@ cat file2
 | **7** :$
 
 ```console
-gedit file1 file2
+edit file1 file2
 ```
 
 | **8** :$
@@ -110,7 +110,7 @@ ls -l file5
 | **16** :$
 
 ```console
-gedit file4 file5
+edit file4 file5
 ```
 
 | **17** :$
@@ -119,7 +119,7 @@ gedit file4 file5
 echo FILE-5 >> file5
 ```
 
-*gedit: Reload `file4` & `file5`*
+*editor: Reload `file4` & `file5`*
 
 *Note both `file4` and `file5` say the same thing*
 
@@ -129,7 +129,7 @@ echo FILE-5 >> file5
 echo SILLY-FILE5 >> file5
 ```
 
-*gedit: Reload `file4` & `file5`*
+*editor: Reload `file4` & `file5`*
 
 | **19** :$
 
@@ -137,7 +137,7 @@ echo SILLY-FILE5 >> file5
 echo INTO-FILE4 >> file4
 ```
 
-*gedit: Reload `file4` & `file5`*
+*editor: Reload `file4` & `file5`*
 
 | **20** :$
 
@@ -166,7 +166,7 @@ cat file6
 | **24** :$
 
 ```console
-gedit file6
+edit file6
 ```
 
 *Note `file6` is the same as `file4` & `file5`*
@@ -225,7 +225,7 @@ touch file4
 cat file4
 ```
 
-*gedit: Reload file4 & file5*
+*editor: Reload file4 & file5*
 
 | **33** :$
 
@@ -235,7 +235,7 @@ ls -l
 
 *Note file5 is no longer a broken symlink, but `file4` isn't the same as it used to be*
 
-*gedit: Save `file6`*
+*editor: Save `file6`*
 
 | **34** :$
 

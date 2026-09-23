@@ -113,7 +113,9 @@ ls
 
 | **9** :$
 
-`gedit head.php`
+```console
+gedit head.php
+```
 
 | **head.php** :
 

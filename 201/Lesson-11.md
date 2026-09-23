@@ -19,7 +19,7 @@ cd verb.ink
 | **2** :$
 
 ```console
-gedit verb.ink.html
+edit verb.ink.html
 ```
 
 ### `cat`
@@ -133,7 +133,7 @@ cd 201-11
 | **15** :$
 
 ```console
-gedit sortme
+edit sortme
 ```
 
 *Lines in alphabetical order*
@@ -162,7 +162,7 @@ There are three main commands that compare files:
 | **18** :$
 
 ```console
-gedit frc-*
+edit frc-*
 ```
 
 *Compare 1 & 2*
@@ -341,7 +341,7 @@ sort frc-3 > sorted/frc-3
 sort frc-4 > sorted/frc-4
 sort frc-5 > sorted/frc-5
 sort frc-6 > sorted/frc-6
-gedit sorted/*
+edit sorted/*
 ```
 
 *Remember, these are sorted, so all lines have been re-arranged for alphabetical order...*

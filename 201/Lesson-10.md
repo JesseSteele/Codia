@@ -52,7 +52,7 @@ ls
 | **7** :$
 
 ```console
-gedit top.file
+edit top.file
 ```
 
 | **8** :$
@@ -61,7 +61,7 @@ gedit top.file
 top -n 1 -b > top.file
 ```
 
-*gedit: Reload `top.file`*
+*editor: Reload `top.file`*
 
 *Note the file contents changed*
 
@@ -86,7 +86,7 @@ ls
 | **12** :$
 
 ```console
-gedit psaux.file
+edit psaux.file
 ```
 
 *Some other useful commands...*
@@ -108,7 +108,7 @@ pwd > pwd.file
 | **15** :$
 
 ```console
-gedit pwd.file
+edit pwd.file
 ```
 
 | **16** :$
@@ -174,7 +174,7 @@ ls
 | **25** :$
 
 ```console
-gedit ls.file
+edit ls.file
 ```
 
 *You can even output `ls` into a file!*
@@ -193,7 +193,7 @@ ls ..
 ls .. > ls.file
 ```
 
-*gedit: Reload `ls.file`*
+*editor: Reload `ls.file`*
 
 *...or into another directory*
 
@@ -226,7 +226,7 @@ ls outputs
 | **32** :$
 
 ```console
-gedit outputs/ls.file
+edit outputs/ls.file
 ```
 
 ___

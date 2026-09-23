@@ -15,7 +15,7 @@ ___
 | **1** :$
 
 ```console
-gedit loopcount
+edit loopcount
 ```
 
 *It should look like this:*
@@ -54,7 +54,7 @@ ls
 | **4** :$
 
 ```console
-gedit countfile
+edit countfile
 ```
 
 ### II. `sed` Special Characters
@@ -69,7 +69,7 @@ gedit countfile
 sed -i "s/No\./Number/" countfile
 ```
 
-*gedit: Reload `countfile`*
+*editor: Reload `countfile`*
 
 *Change "`Number`" to "`Num`"...*
 
@@ -79,7 +79,7 @@ sed -i "s/No\./Number/" countfile
 sed -i "s/Nu*/Num/" countfile
 ```
 
-*gedit: Reload `countfile`*
+*editor: Reload `countfile`*
 
 *Note it now reads "`Nummber`" because `*` needs concatenating*
 
@@ -91,7 +91,7 @@ sed -i "s/Nu*/Num/" countfile
 sed -i "s/Nu.*. /Num /" countfile
 ```
 
-*gedit: Reload `countfile`*
+*editor: Reload `countfile`*
 
 *Now it reads "`Num`" correctly*
 
@@ -108,7 +108,7 @@ This is the same in `vim`, so get used to it.
 sed -i "s/$/_add2end/" countfile
 ```
 
-*gedit: Reload `countfile`*
+*editor: Reload `countfile`*
 
 #### `^` = "start of line"
 *Add something to the start of each line*
@@ -119,7 +119,7 @@ sed -i "s/$/_add2end/" countfile
 sed -i "s/^/add2start_/" countfile
 ```
 
-*gedit: Reload `countfile`*
+*editor: Reload `countfile`*
 
 #### `\n` = new line
 *Add a new line to the end of each line*
@@ -160,7 +160,7 @@ sed -i "s/\t/ TAB /" countfile
 sed -i "s/TAB/|/" countfile
 ```
 
-*gedit: Reload `countfile`*
+*editor: Reload `countfile`*
 
 *Let's put a tab after the "`start_`" string...*
 
@@ -170,7 +170,7 @@ sed -i "s/TAB/|/" countfile
 sed -i "s/start_/start_\t/" countfile
 ```
 
-*gedit: Reload `countfile`*
+*editor: Reload `countfile`*
 
 ## III. `sed` "Delimiter"
 *The "delimiter" separates "`foo`" from "`bar`" in `sed "s/foo/bar/"`, here: `/`*
@@ -254,7 +254,7 @@ echo "Your_City" > sedfile
 | **22** :$
 
 ```console
-gedit sed-delim-var-1 sedfile
+edit sed-delim-var-1 sedfile
 ```
 
 | **23** :$
@@ -276,7 +276,7 @@ gedit sed-delim-var-1 sedfile
 | **25** :$
 
 ```console
-gedit sed-delim-var-3
+edit sed-delim-var-3
 ```
 
 | **26** :$
@@ -377,7 +377,7 @@ echo "Change the foo" > rsed/one/1-file
 echo "Change the foo" > rsed/two/2-file
 echo "Change the foo" > rsed/three/3-file
 cat rsed/0-file rsed/one/1-file rsed/two/2-file rsed/three/3-file
-gedit rsed/0-file rsed/one/1-file rsed/two/2-file rsed/three/3-file
+edit rsed/0-file rsed/one/1-file rsed/two/2-file rsed/three/3-file
 ls rsed rsed/one rsed/two rsed/three
 ```
 
@@ -401,7 +401,7 @@ grep foo * | xargs sed 's/foo/bar/'
 grep -rl foo . | xargs sed -i 's/foo/bar/g'
 ```
 
-*gedit: reload each file*
+*editor: reload each file*
 
 *See the change in the terminal...*
 

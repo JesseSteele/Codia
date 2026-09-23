@@ -67,7 +67,7 @@ if [ "$2" = "two" ] && [ "$1" = "one" ]; then
 | **5** :$
 
 ```console
-gedit 07-or-if
+edit 07-or-if
 ```
 
 | **6** :$
@@ -115,7 +115,7 @@ if [ "$1" = "one" ] || (([ "$1" = "skip" ] && [ "$2" = "two" ]) && [ -z "$3" ]) 
 | **11** :$
 
 ```console
-gedit 07-while-count-read
+edit 07-while-count-read
 ```
 
 | **12** :$ *Enter nothing, then letters, then negative numbers, then nothing*
@@ -139,7 +139,7 @@ gedit 07-while-count-read
 | **14** :$
 
 ```console
-gedit 07-source 07-sourced 07-sourced-also
+edit 07-source 07-sourced 07-sourced-also
 ```
 
 | **15** :$
@@ -191,7 +191,7 @@ newFunctionName Lemmons
 | **18** :$
 
 ```console
-gedit 07-function
+edit 07-function
 ```
 
 *Note functions work with `#!/bin/sh` on the first line, but also work with `#!/bin/bash`*
@@ -205,7 +205,7 @@ gedit 07-function
 | **20** :$
 
 ```console
-gedit 07-function-breakdown
+edit 07-function-breakdown
 ```
 
 *Note a few things before we continue...*
@@ -248,7 +248,7 @@ ___
 | **22** :$
 
 ```console
-gedit 07-function-variables
+edit 07-function-variables
 ```
 
 *Note the global variables and the local-function variables and what is set/used inside/outside the function*

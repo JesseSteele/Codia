@@ -64,7 +64,7 @@ echo $?
 | **6** :$
 
 ```console
-gedit varexit
+edit varexit
 ```
 
 *It should look like this:*
@@ -109,7 +109,7 @@ echo "$? notacommand is not a real command, so exit code \"127\""
 | **8** :$
 
 ```console
-gedit varshift
+edit varshift
 ```
 
 *It should look like this:*
@@ -174,7 +174,7 @@ echo "After shift 3
 | **10** :$
 
 ```console
-gedit varargs
+edit varargs
 ```
 
 *It should look like this:*
@@ -218,7 +218,7 @@ $*
 | **12** :$
 
 ```console
-gedit varargsvar
+edit varargsvar
 ```
 
 *It should look like this:*
@@ -261,7 +261,7 @@ Arguments entered via \$(echo \$*) ..."
 | **14** :$
 
 ```console
-gedit vargcount
+edit vargcount
 ```
 
 *It should look like this:*
@@ -299,7 +299,7 @@ unset variable
 | **16** :$
 
 ```console
-gedit varunset
+edit varunset
 ```
 
 *It should look like this:*
@@ -362,7 +362,7 @@ myShiftedCount = $myShiftedCount
 | **18** :$
 
 ```console
-gedit varbrackett-sh
+edit varbrackett-sh
 ```
 
 *It should look like this:*
@@ -418,7 +418,7 @@ echo "${myVar}"
 | **20** :$
 
 ```console
-gedit varbrackett-bash
+edit varbrackett-bash
 ```
 
 *It should look like this:*
@@ -478,7 +478,7 @@ export var="some value"
 | **22** :$
 
 ```console
-gedit variable-no-export variable-exported
+edit variable-no-export variable-exported
 ```
 
 *They should look like this:*
@@ -515,7 +515,7 @@ echo "${myVar}"
 | **24** :$
 
 ```console
-gedit variable-yes-export
+edit variable-yes-export
 ```
 
 *It should look like this:*
@@ -546,7 +546,7 @@ export myVar="Hello world!"
 | **26** :$
 
 ```console
-gedit varfoo
+edit varfoo
 ```
 
 *It should look like this:*
@@ -837,7 +837,7 @@ readonly ConstantVar="some value"
 | **61** :$
 
 ```console
-gedit variable-readonly-1
+edit variable-readonly-1
 ```
 
 *It should look like this:*
@@ -871,7 +871,7 @@ MYROVAR="I am changed!"
 | **63** :$
 
 ```console
-gedit variable-readonly-2
+edit variable-readonly-2
 ```
 
 *It should look like this:*

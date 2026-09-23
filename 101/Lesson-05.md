@@ -12,7 +12,7 @@ ___
 | **1** :$
 
 ```console
-gedit applefoo
+edit applefoo
 ```
 
 | **2** :$
@@ -34,13 +34,13 @@ cat abcsed
 | **4** :$
 
 ```console
-gedit abcsed
+edit abcsed
 ```
 
 | **5** :$
 
 ```console
-gedit abcsed.setting
+edit abcsed.setting
 ```
 
 | **6** :$
@@ -52,7 +52,7 @@ cat abcsed.setting
 | **7** :$
 
 ```console
-gedit abcd
+edit abcd
 ```
 
 | **8** :$
@@ -69,7 +69,7 @@ cat abcd
 sed -i "s/bar/foo/" applefoo
 ```
 
-*gedit: Reload `applefoo`*
+*editor: Reload `applefoo`*
 
 *Now, use `sed` without the `-i` ...*
   - *It won't change the file*
@@ -130,7 +130,7 @@ cat applefoo
 | **17** :$
 
 ```console
-gedit how2arg
+edit how2arg
 ```
 
 | **18** :$
@@ -202,7 +202,7 @@ echo $(cat applefoo | sed "s/foo/bar/") > echocatsed_applefoo
 | **28** :$
 
 ```console
-gedit echocatsed_applefoo
+edit echocatsed_applefoo
 ```
 
 | **29** :$
@@ -251,13 +251,13 @@ echo "$(hostnamectl)"
 echo "$(hostnamectl)" > hostnamectl_echo
 ```
 
-*gedit: Reload `hostnamectl_echo`*
+*editor: Reload `hostnamectl_echo`*
 
 
 | **35** :$
 
 ```console
-gedit hostnamectl_echo
+edit hostnamectl_echo
 ```
 
 *Note the content is all on one line, this is the result of `echo`*
@@ -327,7 +327,7 @@ kill $(pgrep gnome-mines)
 | **44** :$
 
 ```console
-gedit comboshell
+edit comboshell
 ```
 
 *Create `comboshell` as this:*
