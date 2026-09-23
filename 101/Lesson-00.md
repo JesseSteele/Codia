@@ -98,7 +98,7 @@ jobs
 | **10** :$
 
 ```console
-edit
+gedit
 ```
 
 *Terminal: <kbd>Ctrl</kbd> + <kbd>C</kbd>*
@@ -116,7 +116,7 @@ jobs
 | **12** :$
 
 ```console
-edit &
+gedit &
 ```
 
 *Note the terminal is not **occupied** because we added `&`*
