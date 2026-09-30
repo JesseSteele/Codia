@@ -430,6 +430,8 @@ echo $?
 edit 01-ifcomm1
 ```
 
+*Note the `grep` command pattern*
+
 ```sh
 if grep "foobar" somefile.txt; then
 ```
