@@ -562,7 +562,9 @@ edit 01-ifcomm2
 ./01-ifcomm2
 ```
 
-*This `!` operator works with any command...*
+*This `!` operator works with any command*
+
+*We will try these three...*
 
 ```sh
 if echo "Hello"; then
@@ -649,7 +651,7 @@ ___
   - `0` = `true`
   - `1`, `2`, `3`... = `false`
   - This is how `if` performs tests
-- `if` tests can be used just as they are in the reminal directly
+- `if` tests can be used just as they are in the terminal directly
 - See usage and examples here: [Tests: if](https://github.com/JesseSteele/Codia/blob/master/Cheat-Sheets/Tests.md#ii-if-then-else--elif-fi)
 ___
 
