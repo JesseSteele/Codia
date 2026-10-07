@@ -228,7 +228,7 @@ echo $myVariable
 edit 02-read-2
 ```
 
-*Note -p is for "prompt", making things simpler*
+*Note -p is for "prompt", explaining things more*
 
 ```sh
 read -p "Some message" myVariable
@@ -295,9 +295,11 @@ echo $myVariable
 ./02-read-4
 ```
 
-*Copy-paste this with "special" characters: `Yo & ^^ / hello \ \ \ Dolly! :-)`*
+*Copy-paste this with "special" characters:*
 
-*Note the `-r` flag is for "Raw", to allow all special characters*
+```console
+Yo & ^^ / hello \ \ \ Dolly! :-)
+```
 
 | **33** :$
 
@@ -305,12 +307,14 @@ echo $myVariable
 edit 02-read-5
 ```
 
-*This assumes that the user input will have special characters*
+*Note the `-r` flag is for "Raw", to allow all special characters*
 
 ```sh
 read -rp "Some  message: " myVariable
 echo $myVariable
 ```
+
+*This assumes that the user input will have special characters*
 
 | **34** :$
 
@@ -318,7 +322,11 @@ echo $myVariable
 ./02-read-5
 ```
 
-*Copy-paste this with special characters: `Yo & ^^ / hello \ \ \ Dolly! :-)`*
+*Copy-paste this with "special" characters:*
+
+```console
+Yo & ^^ / hello \ \ \ Dolly! :-)
+```
 
 ### III. `sleep`
 
