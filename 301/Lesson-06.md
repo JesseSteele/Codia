@@ -368,8 +368,10 @@ This redirects actual `STDOUT` and `STDERR` to a file, it is not `STDOUT` or `ST
 - *Send `STDERR` (error output) to a file with: `2> outputfile`*
 
 ```sh
-some_command > output.file
+some_command > output.file # Same: some_command 1> output.file
 some_command 2> error.file
+some_command >> output.file # Same: some_command 1>> output.file
+some_command 2>> error.file
 ```
 
 *Send `STDOUT` and `STDERR` to different log files*
