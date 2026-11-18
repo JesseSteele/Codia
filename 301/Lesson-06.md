@@ -166,6 +166,17 @@ logger -p 6 "I also logged this number mere moments ago."
 journalctl -r -p 6
 ```
 
+**"Priority" has seven levels:** *(input either text or the number)*
+
+- `0` = `emerg` (emergency, system unusable)
+- `1` = `alert` (alert, take immediate action)
+- `2` = `crit` (critical)
+- `3` = `err` (error)
+- `4` = `warn` (warning)
+- `5` = `notice` (notice, normal but significant)
+- `6` = `info` (information)
+- `7` = `debug` (debug, so much info that only geeks & developers are interested)
+
 *Also use `-p` with a "facility" before the "priority":*
 
 - Usage: `-p FACILITY.PRIORITY`
@@ -185,17 +196,6 @@ journalctl -r -p 6
 *Note for your own "local facilities", you can use "local0–7"*
 
 - `16`–`23` = `local0`–`local7`
-
-**"Priority" has seven levels:** *(input either text or the number)*
-
-- `0` = `emerg` (emergency, system unusable)
-- `1` = `alert` (alert, take immediate action)
-- `2` = `crit` (critical)
-- `3` = `err` (error)
-- `4` = `warn` (warning)
-- `5` = `notice` (notice, normal but significant)
-- `6` = `info` (information)
-- `7` = `debug` (debug, so much info that only geeks & developers are interested)
 
 *Note the "facility" doesn't show up in most log views, it needs "verbose"*
 
@@ -266,7 +266,7 @@ ___
 journalctl --since today > journalctl-today.txt
 ```
 
-*If you dare: `gedit journalctl-today.txt`*
+*If you dare: `edit journalctl-today.txt`*
 
 *Also try: `--since yesterday`*
 
